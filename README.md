@@ -1,4 +1,4 @@
-Template Data Repo
+Middle-earth v2: War of the Rohirrim™ 
 ==================
 
 [![Latest release](https://img.shields.io/github/release/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/releases/latest)
@@ -8,6 +8,10 @@ Template Data Repo
 [![Commit activity the past year](https://img.shields.io/github/commit-activity/y/BSData/TemplateDataRepo.svg?style=flat-square)](https://github.com/BSData/TemplateDataRepo/pulse/monthly)
 
 [![Chat on Discord](https://img.shields.io/discord/558412685981777922.svg?logo=discord&style=popout-square)](https://www.bsdata.net/discord)
+
+See https://www.games-workshop.com/Middle-earth
+
+Thie repository can also be used in New Recruit.
 
 ## Overview ##
 
