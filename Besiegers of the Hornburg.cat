@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="9c3f-99c9-c68b-9aec" name="Besiegers of the Hornburg" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="6165-e159-9b55-246f" name="Wulf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="02e9-b621-273c-a0cd" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6426-3c9a-c27c-db79" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d61f-6470-aca3-fe59" name="Wulf, High Lord of the Hill Tribes" hidden="false" collective="false" import="true" targetId="86c2-2306-87db-1375" type="selectionEntry"/>
+        <entryLink id="bdc2-ca54-919b-2029" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b0d7-a518-7064-991f" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ad9f-72d2-4d36-7a4e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7123-5261-c09a-f690" name="Hill Tribes Chieftain" hidden="false" collective="false" import="true" targetId="31c1-b539-8fc3-c85f" type="selectionEntry"/>
+        <entryLink id="2e20-08d9-274c-2ba0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="76bc-f048-09dd-8e93" name="Targg&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4fd1-a40a-98b5-1232" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b3f0-aaa7-8bf3-9250" name="General Targg" hidden="false" collective="false" import="true" targetId="4848-8de9-bb38-b77e" type="selectionEntry"/>
+        <entryLink id="9c24-f718-498a-284b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="1080-6451-1416-8063" name="Shank &amp; Wrot, Orc Scavengers" hidden="false" collective="false" import="true" targetId="e850-5306-d752-5f3f" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="4cca-f1e4-cbfa-5905" name="Wulf&apos;s Revenge" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Whenever Wulf Moves, he must always Charge an enemy model if possible. Additionally, once per game Wulf may declare a Heroic Challenge for free, though this Heroic Challenge must target the enemy General. Wulf may still do this even if the enemy General has a lower Heroic Tier.</description>
+    </rule>
+    <rule id="2df1-c857-0b1b-233a" name="The Promise of Wealth" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Dunland Warrior models within range of an Objective Marker gain a bonus of +1 To Wound when making Strikes.</description>
+    </rule>
+    <rule id="20fc-8030-3f17-cb6d" name="Shank &amp; Wrot" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Mordor models cannot benefit from the Heroic Actions or Stand Fast of friendly Dunland models and friendly Dunland models cannot benefit from the Heroic Actions or Stand Fast of friendly Mordor models.</description>
+    </rule>
+  </rules>
+</catalogue>

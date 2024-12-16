@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="75b4-5ec5-6896-b88d" name="The Black Gate" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="7710-aa28-4041-d8b4" name="Mouth&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2f65-2727-9132-6f4c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8c73-bf30-9ddd-d2ae" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4d87-8871-0ec2-7820" name="The Mouth of Sauron" hidden="false" collective="false" import="true" targetId="8748-ade8-ad48-ef35" type="selectionEntry"/>
+        <entryLink id="52ae-2c5b-38c3-687e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2fc4-da15-b777-c063" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8716-a3ff-5bd8-7db7" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="65a7-5557-fdd5-94e5" name="Mordor Troll Chieftain" hidden="false" collective="false" import="true" targetId="a25e-d316-a85a-235f" type="selectionEntry"/>
+        <entryLink id="d855-6374-97d6-e5e6" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8dff-94eb-7772-972f" name="Ringwraith&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e458-8acb-69f5-273b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1d1a-275a-9f28-31d5" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8c06-48bf-6b7f-15c9" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1c9e-e2fa-9210-6440" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8fb3-2b60-802d-32f8" name="Taskmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="13bb-9c1c-e7a4-e51c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="575b-dae5-533c-178f" name="Mordor Orc Taskmaster" hidden="false" collective="false" import="true" targetId="e062-6d95-9bca-cfed" type="selectionEntry"/>
+        <entryLink id="2639-9b73-d54c-8bae" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d526-4ee2-e817-b6a0" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="984b-2779-af52-55dc" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="603d-d3c5-83fe-3eac" name="Morannon Orc Captain" hidden="false" collective="false" import="true" targetId="3e87-be33-d96e-2b50" type="selectionEntry"/>
+        <entryLink id="0032-e92c-4516-98d3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ef9-7430-389d-4c1a" name="Troll General&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8630-d44b-71f8-ac5c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4dd0-c835-9d24-c18c" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0611-20d3-a007-615e" name="Black Gate Troll Chieftain" hidden="false" collective="false" import="true" targetId="6224-6ee5-3d87-d988" type="selectionEntry"/>
+        <entryLink id="b189-2001-a408-556c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="0440-a1b7-e104-f024" name="Greatest of the Trolls" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>The Mordor Troll Chieftain that is your General gains the Fearless special rule, and an additional point each of Might, Will and Fate.</description>
+    </rule>
+    <rule id="553d-4d15-f5a0-a8af" name="The Hordes of Mordor" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Mordor Orc models Engaged in Combat gain a bonus of +1 To Wound when making Strikes against an outnumbered opponent.</description>
+    </rule>
+    <rule id="a0fd-a97d-55a4-2a8f" name="Temptation of Sauron" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the start of each Move Phase, before the Declare Heroic Actions Step, you may choose a single enemy model on the battliefield. The chosen model must immediately take an Intelligence Test. If the test is failed, you may immediately Move the chosen model up to its Move Value following all the usual rules for Moving, including making them Charge if you wish. The chosen model may not Move later in the Move Phase, but may otherwise act normally.</description>
+    </rule>
+  </rules>
+</catalogue>

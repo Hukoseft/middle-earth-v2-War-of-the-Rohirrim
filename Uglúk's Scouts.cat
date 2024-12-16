@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="013b-7330-66c7-6e43" name="Uglúk&apos;s Scouts" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="91f9-8a36-6a8d-0db4" name="Uglúk&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6be0-593c-5eb1-391c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5b1b-e685-a959-ffa9" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="2373-892e-87b8-d6ac" name="Uruk-hai" hidden="false" targetId="b418-cc56-8f23-7008" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1ed7-3cc5-e403-3ae9" name="Uglúk, Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="6639-dc82-2442-33fc" type="selectionEntry"/>
+        <entryLink id="52bb-121e-6941-02cc" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7e95-08a3-222a-7356" name="Snaga&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9b48-0efd-49cb-5f4f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="b311-a144-8ff3-3162" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a52d-27f2-175a-a1ff" name="Snaga, Orc Captain" hidden="false" collective="false" import="true" targetId="5e2b-011c-b039-047e" type="selectionEntry"/>
+        <entryLink id="4c5b-a9c5-9f44-4d0b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="44c3-dad7-983b-9646" name="Scout Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d472-041d-4d1b-6630" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="02d3-84d7-3315-c166" name="Uruk-hai" hidden="false" targetId="b418-cc56-8f23-7008" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="db0b-b196-7eaf-38f6" name="Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="57ce-308a-abe6-b341" type="selectionEntry"/>
+        <entryLink id="98b3-0499-275b-02a8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4a6a-ec23-0f09-556d" name="Grishnákh&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3dc2-53e5-a954-7864" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="9cbb-b2a1-8e47-dc67" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6de1-062f-94ca-85f5" name="Grishnákh, Orc Captain" hidden="false" collective="false" import="true" targetId="8879-08e4-022c-a523" type="selectionEntry"/>
+        <entryLink id="6cc5-d204-a266-5482" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="97a2-7dc7-65a1-65ae" name="Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a2ca-3c44-6518-8810" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="ffc2-dc2a-0f01-2368" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="235c-8a84-fe49-ec14" name="Isengard Orc Captain" hidden="false" collective="false" import="true" targetId="f0cf-6669-2e6b-a37c" type="selectionEntry"/>
+        <entryLink id="0121-f1ea-d45f-8a8e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="fd1d-a01a-f2e9-b2fb" name="Uruk-hai Drummer" hidden="false" collective="false" import="true" targetId="4234-6502-2ed4-8658" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="2b7d-aa40-386e-f040" name="&quot;Get a fire going&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Once per game, in Scenarios that use Objective Markers, Uglúk can use this special rule during his Move to choose an Objective Marker in base contact. So long as Uglúk is alive and on the battlefield, friendly models within range of the chosen Objective Marker gain the Dominant (2) special rule.</description>
+    </rule>
+    <rule id="b655-725d-26cd-3bc9" name="&quot;Their pace has quickened&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Uruk-hai models increase their Move Value to 8&quot;. Additionally, friendly Uruk-hai models gain the Woodland Creature special rule.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="c4a1-ea28-566f-b562" name="Animosity" hidden="false" targetId="1b59-1aeb-afed-4119" type="rule"/>
+  </infoLinks>
+</catalogue>

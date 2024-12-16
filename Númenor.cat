@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="5202-f7c6-9ff4-1988" name="Númenor" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="a48a-8c6c-9cc5-b0a0" name="Elendil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="48ea-097b-521e-fe7e" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8af5-2aca-772c-e6ca" name="Elendil, High King of Gondor and Arnor" hidden="false" collective="false" import="true" targetId="e499-8560-efa7-5676" type="selectionEntry"/>
+        <entryLink id="a4db-c5d3-3bae-2d51" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2203-a649-2aaf-e65b" name="Isildur&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fe66-b206-ea9d-6e47" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0dcd-7463-2026-4ea1" name="Isildur, Prince of Númenor" hidden="false" collective="false" import="true" targetId="db13-df84-5b76-8c93" type="selectionEntry"/>
+        <entryLink id="9eae-bfd4-6d3f-dc07" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a702-0406-86f2-35cd" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9f22-0d1e-0bb5-8e09" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aa15-a1c8-ebec-54f8" name="Captain of Númenor" hidden="false" collective="false" import="true" targetId="27c2-b047-6942-4120" type="selectionEntry"/>
+        <entryLink id="8b6d-3993-9ba4-e8d0" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="cc3c-b424-befb-e2bd" name="Blood of Númenor" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Númenor models gain the Resistant to Magic special rule whilst they are within 6&quot; of a friendly Unique Númenor Hero.</description>
+    </rule>
+    <rule id="3d6a-29e1-293d-0a26" name="The Resolve of Men" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Númenor models gain a bonus of +1 to any Courage Tests they have to take.</description>
+    </rule>
+    <rule id="822e-56e1-1ca6-ec22" name="The Line of Kings" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>If they have the Unique keyword, your General gains the General Hunter special rule. Additionally, your General must always accept a Heroic Challenge directed at them.</description>
+    </rule>
+  </rules>
+</catalogue>

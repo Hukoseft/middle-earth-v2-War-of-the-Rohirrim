@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="197d-2b06-50e7-1ae2" name="Army of Gothmog" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="0c44-d3ee-6c81-d541" name="Gothmog&apos;s Lieutenant of Sauron" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f3df-d56f-64ff-c567" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dbe2-e095-1d08-7b91" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e75a-42b3-53dc-45f7" name="Gothmog Lieutenant of Sauron" hidden="false" collective="false" import="true" targetId="1da5-b8f6-10eb-f3b6" type="selectionEntry"/>
+        <entryLink id="cbb4-6c9f-b0c8-e106" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="333f-d0f7-ece9-d9b6" name="Enforcer&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a7ef-1692-1478-b0c2" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="545e-57fb-73da-cc2f" name="Gothmog&apos;s Enforcer" hidden="false" collective="false" import="true" targetId="8daf-1434-566c-e3b3" type="selectionEntry"/>
+        <entryLink id="828c-3e18-624f-ac13" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0b9d-e1e6-9555-5d0c" name="Guritz&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6ad5-5d97-e20a-570e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="82b5-1b31-e514-f7d9" name="Guritz, Master of Reserves" hidden="false" collective="false" import="true" targetId="a628-65dd-fbb2-29f6" type="selectionEntry"/>
+        <entryLink id="4645-cdce-5afe-7386" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a51-97ca-fd49-d5d5" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ea58-5020-bee2-0be7" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="da2a-d12d-fe85-0c22" name="Morannon Orc Captain" hidden="false" collective="false" import="true" targetId="3e87-be33-d96e-2b50" type="selectionEntry"/>
+        <entryLink id="32e4-5c15-216d-4275" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="b115-2657-8b2e-ef7f" name="Mordor War Catapult" hidden="false" collective="false" import="true" targetId="207d-1974-4adb-f1cc" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6a51-97ca-fd49-d5d5" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0c44-d3ee-6c81-d541" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="333f-d0f7-ece9-d9b6" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0b9d-e1e6-9555-5d0c" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="90cc-c235-a4df-a7d4" name="The Destruction of Men" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>The range of Gothmog&apos;s &quot;The Age of Men is Over&quot; special rule is increased to 12&quot;. Additionally, the range of Gothmog&apos;s &quot;The Time of the Orc has come&quot; special rule is increased to battlefield wide.</description>
+    </rule>
+    <rule id="a03e-d258-7fbf-91fa" name="Tyrannical Rule" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Orc Hero models may benefit from Gothmog&apos;s Stand Fast.</description>
+    </rule>
+    <rule id="fc7d-46f2-8add-04da" name="Ruthless Assault" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Orc models may re-roll To Wound rolls of a natural 1 when making Strikes against a Trapped model.</description>
+    </rule>
+  </rules>
+</catalogue>

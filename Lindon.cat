@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="08d0-1ea8-df00-37b0" name="Lindon" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="6710-20d8-61b8-3721" name="Gil-Galad&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f98d-e475-185d-826e" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5ed1-9d25-527a-a365" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="f315-0050-71fb-005c" name="Gil-Galad" hidden="false" targetId="18c5-eb06-bdf4-e180" primary="false"/>
+        <categoryLink id="10e6-55d9-8d94-0f7f" name="Lindon" hidden="false" targetId="3b6b-d16a-376b-4f1a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9033-1eb4-6c2f-4f6b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="1350-e8d8-2190-4d96" name="Gil-Galad, High King of the Noldor" hidden="false" collective="false" import="true" targetId="ced9-2c70-14cb-a7a3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1526-4c15-e39c-053e" name="Elrond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e0b0-ef93-4b88-f19a" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="e0cc-df89-5d8c-52b1" name="Lindon" hidden="false" targetId="3b6b-d16a-376b-4f1a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b74d-db39-0d7c-86d9" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="abfa-473a-6a39-7bfd" name="Elrond, Master of Rivendell" hidden="false" collective="false" import="true" targetId="5126-1b1a-3e92-b853" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c44a-64ad-1c58-2128" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6bca-e220-6a13-1895" name="Círdan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1f05-0adb-fed7-ebcb" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="b803-5a6e-a411-d9e2" name="Lindon" hidden="false" targetId="3b6b-d16a-376b-4f1a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ca74-2b06-cd36-2e68" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="536c-c57b-479a-f9cc" name="Círdan" hidden="false" collective="false" import="true" targetId="ebe2-9b3a-818f-8c88" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c572-88e6-f5ab-0544" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="af27-d1e0-415d-03b7" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="cacb-1a0f-fec9-1c99" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="0bab-4983-4b7d-f555" name="Lindon" hidden="false" targetId="3b6b-d16a-376b-4f1a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a8d3-9b59-0b1c-f01c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="27bc-475c-03d5-93d8" name="Rivendell Captain" hidden="false" collective="false" import="true" targetId="0d9e-0553-2909-729c" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="0019-3538-cb48-2424" name="Tangado haid, leithio i philinn!" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Whilst within 3&quot; of a friendly Hero, friendly Warrior models may re-roll failed To Hit rolls when making a shooting attack, provided they didn&apos;t Move in the preceding Move Phase.</description>
+    </rule>
+    <rule id="13b5-ad8b-9eea-2b51" name="The Power of the Noldor" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models within 6&quot; of Gil-galad gain the Resistant to Magic special rule.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="81fc-5f43-ce28-0432" name="Resistant to Magic" hidden="false" targetId="48fb-9eea-f6c7-e577" type="rule"/>
+  </infoLinks>
+</catalogue>

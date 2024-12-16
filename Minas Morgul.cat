@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="083c-50d2-89a7-e73f" name="Minas Morgul" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="58c1-2bd1-b9c4-92fe" name="Witch-king&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9e51-a55c-a3b5-3734" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f2a3-c1b4-4f47-862e" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6c4f-8159-a4e9-33bf" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f51a-1eeb-13c7-94a0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a795-1584-1faf-0ec7" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9395-2a3c-277b-f748" name="Mordor Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="40a6-e84d-d5ab-7347" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="60ac-d84b-5e73-5429" name="Mordor Orc Captain" hidden="false" collective="false" import="true" targetId="8d65-4f5b-0377-030e" type="selectionEntry"/>
+        <entryLink id="6053-96e2-5e4f-60d0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf40-20ca-b604-904e" name="Morannon Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7f2a-d41e-d365-cec8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c9df-c6cb-9f00-17c9" name="Morannon Orc Captain" hidden="false" collective="false" import="true" targetId="3e87-be33-d96e-2b50" type="selectionEntry"/>
+        <entryLink id="948c-ff87-28bd-df78" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8de9-a224-e4dd-ea7d" name="Taskmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2726-4eb3-d159-cd77" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4ed6-e9e5-265c-d8ff" name="Mordor Orc Taskmaster" hidden="false" collective="false" import="true" targetId="e062-6d95-9bca-cfed" type="selectionEntry"/>
+        <entryLink id="2fc0-7592-3adc-6873" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="45f7-0f94-455c-887a" name="Ringwraith&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1f2d-f4f0-b400-66bb" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3ad7-f1c4-ebb0-69ab" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7b17-5302-483b-f9c3" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="173c-4156-0585-d357" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="0a4f-f017-0e69-4337" name="Mordor Orc Drummer" hidden="false" collective="false" import="true" targetId="3761-bc72-e9e0-a232" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="c06f-448c-9a20-583b" name="The Dead City" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Mordor Orc Captains and Mordor Orc Warriors gain the Blades of the Dead special rule.</description>
+    </rule>
+    <rule id="287a-0136-c5eb-5c08" name="Call of Morgul" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>If the enemy Army contains a Ringbearer, they will suffer a -1 penalty when rolling for Sauron&apos;s Will.</description>
+    </rule>
+    <rule id="e2b9-b026-9744-310c" name="Lead through fear" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Orc models within 3&quot; of a friendly Spirit model automatically pass Courage Tests when attempting to Charge a model with the Terror special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b6a1-d2aa-cde5-d87b" name="Riders of Éomer" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="3245-6e2c-2924-fbb4" name="Gandalf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3ba4-efb4-e5a8-47ea" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="da34-917a-025b-899f" name="Gandalf the White" hidden="false" collective="false" import="true" targetId="c15a-7bab-4d4a-c016" type="selectionEntry"/>
+        <entryLink id="cc5a-6489-54e4-0b20" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="864b-532e-67d2-7b85" name="Éomer&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="efaa-4998-cd93-b79c" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a711-a65f-2fd8-e9f7" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="94c4-1b74-b305-1faa" name="Éomer, Marshal of the Riddermark" hidden="false" collective="false" import="true" targetId="16a7-271a-69c0-6b85" type="selectionEntry"/>
+        <entryLink id="f9c1-fdcd-d555-f0d8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b82-eb33-54ec-4dc1" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="170c-1aa6-8e1d-6bec" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c63d-9e35-1620-abb3" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="c058-5567-801c-9a91" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="9abb-f9a2-a2a7-6ae2" name="Look to the sun" publicationId="a40a-1ac4-b5c2-a481" hidden="false">
+      <description>Once per game, at the start of any friendly Activation Phase, Gandalf can use this special rule so long as he is alive and on the battlefield. If he does, then until the end of the turn, enemy models Engaged in Combat with a friendly Cavalry model that made a Charge that turn, or Supporting a Combat against a friendly Cavalry model that made a Charge that turn, suffer a -1 penalty to their Duel Roll.</description>
+    </rule>
+    <rule id="9ef2-41aa-cd2c-5111" name="&quot;To the King!&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Éomer may declare a Heroic Combat each turn for free.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="3c5d-c366-78ae-321e" name="&quot;Ride for ruin and the world&apos;s ending&quot;" hidden="false" targetId="39a8-55c7-92ef-83f5" type="rule"/>
+  </infoLinks>
+</catalogue>

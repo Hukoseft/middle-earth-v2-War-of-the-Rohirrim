@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="cb1a-7c68-cac7-dba6" name="Garrison of Ithilien" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="bf11-36c1-d972-a142" name="Faramir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="725f-5eca-d948-da3a" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a061-ad2e-aa42-6c5b" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="ccaf-fd04-cb17-1b1a" name="Faramir" hidden="false" targetId="ff98-daaf-9172-877b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2db2-b8fe-707e-b291" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="74f1-3e43-9363-7105" name="Faramir, Captain of Gondor" hidden="false" collective="false" import="true" targetId="b729-0f18-3646-42ba" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c59-6665-53b4-5db1" name="Madril&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5c60-466b-34aa-79a3" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1682-1fd1-8195-cc8e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="2f5a-757b-f148-9ec7" name="Madril, Captain of Ithilien" hidden="false" collective="false" import="true" targetId="4726-8a9b-c0e3-8765" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ff6-e850-4ced-f529" name="Damrod&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7ecf-d327-58ca-8f0f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bf05-2c13-3f57-2029" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="aa74-ff7c-774f-008f" name="Damrod, Ranger of Ithilien" hidden="false" collective="false" import="true" targetId="df0d-f139-650d-8783" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f7a4-f42a-ccef-8c02" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="386f-6279-653e-017c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5fbf-d18c-3cd5-6aaa" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="8c90-216d-2e66-bbeb" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2682-dd0b-e29f-91e9" name="Frodo&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0f13-17e1-f378-892f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="801f-cee3-30f8-7afe" name="Frodo" hidden="false" targetId="263b-3910-d2af-beaf" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0f0b-2365-f6e7-1848" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="d66c-ffd3-f559-bcbb" name="Frodo Baggins" hidden="false" collective="false" import="true" targetId="45ac-cd57-e718-c76a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2559-7d15-73a1-fd07" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="6a44-722a-6316-411f" name="Captured by Gondor" publicationId="5d2d-eaa5-64b5-2f28" page="109" hidden="false">
+      <description>Frodo, Sam, and Sméagol may either be deployed as a single Warband with Frodo as the Warband&apos;s Captain, or as part of Faramir&apos;s Warband.</description>
+    </rule>
+    <rule id="254e-5e54-734d-e1a9" name="Faramir&apos;s Rangers" publicationId="5d2d-eaa5-64b5-2f28" page="109" hidden="false">
+      <description>A Garrison of Ithilien Army has a Bow Limit of 50% rather than the usual 33%.</description>
+    </rule>
+    <rule id="4287-afba-50f0-d547" name="Experienced Trackers" publicationId="5d2d-eaa5-64b5-2f28" page="109" hidden="false">
+      <description>At the start of each game, you may choose either Woodland Creatur or Mountain Dwellers. Friendly Gondor models gain the chosen special rule for the duration of the game.</description>
+    </rule>
+    <rule id="5e6a-3248-ef15-a41e" name="&quot;I think at least we understand one another, Frodo Baggins&quot;" publicationId="5d2d-eaa5-64b5-2f28" page="109" hidden="false">
+      <description>At the end of the game, you will score an additional Victory Point for each of Frodo, Sam and Sméagol that are still alive, or have escaped the battlefield in Scenarios where this applies. This can never take your total number of Victory Points for a Scenario above 20.</description>
+    </rule>
+  </rules>
+</catalogue>

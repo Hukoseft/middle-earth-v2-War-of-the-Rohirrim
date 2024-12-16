@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="48ac-227e-e93d-2844" name="The Last Alliance" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="2ea0-037a-dc40-b770" name="Elendil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="1a3b-de1f-c6ba-47d5" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="730f-ac21-475c-bc2a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1a3b-de1f-c6ba-47d5" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="dac3-ef59-4545-d005" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="4535-f4cb-2277-6fb0" name="Númenor" hidden="false" targetId="734e-e20e-e60f-72ec" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c2f3-aa55-13a4-2744" name="Elendil, High King of Gondor and Arnor" hidden="false" collective="false" import="true" targetId="e499-8560-efa7-5676" type="selectionEntry"/>
+        <entryLink id="ab5e-4762-4aea-89c0" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88bb-178a-2f91-0272" name="Gil-Galad&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="f5c9-22d9-702a-6792" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0dc4-ee21-ac34-490a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f5c9-22d9-702a-6792" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3eca-0391-19ff-e487" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="4d4b-2b3f-d7b9-088e" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="de06-cd9a-05e2-05e9" name="Gil-Galad, High King of the Noldor" hidden="false" collective="false" import="true" targetId="ced9-2c70-14cb-a7a3" type="selectionEntry"/>
+        <entryLink id="ae45-d4ce-c997-8032" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f16c-ace1-6f04-18dd" name="Rivendell Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6bd8-1fec-76dd-23f9" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+        <categoryLink id="4800-1d58-833a-0ddf" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="31ef-b6b5-57b1-4d09" name="Rivendell Captain" hidden="false" collective="false" import="true" targetId="0d9e-0553-2909-729c" type="selectionEntry"/>
+        <entryLink id="1301-e707-a6dd-ca9c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0dc4-ee21-ac34-490a" name="Elrond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="019d-c6bc-9231-8516" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88bb-178a-2f91-0272" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="019d-c6bc-9231-8516" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="25b5-faf3-d2f4-1800" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="1e90-a489-0d3a-4cad" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c43d-5d45-1cb0-1a8b" name="Elrond, Master of Rivendell" hidden="false" collective="false" import="true" targetId="5126-1b1a-3e92-b853" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6e0c-a401-d2e0-a74e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a4e0-577f-e809-5c6b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="730f-ac21-475c-bc2a" name="Isildur&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="6b38-166c-4941-1a44" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2ea0-037a-dc40-b770" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6b38-166c-4941-1a44" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9cf5-1e99-be16-60ff" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="e865-2860-54e9-3719" name="Númenor" hidden="false" targetId="734e-e20e-e60f-72ec" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f027-3a4e-bb13-307a" name="Isildur, Prince of Númenor" hidden="false" collective="false" import="true" targetId="db13-df84-5b76-8c93" type="selectionEntry"/>
+        <entryLink id="8d01-5005-7aab-3cfd" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5fb2-2429-db99-ea76" name="Captain of Númenor&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fbf4-bba4-4c1c-13ac" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="68a6-98db-5d31-d8f8" name="Númenor" hidden="false" targetId="734e-e20e-e60f-72ec" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dcea-283b-2b9e-6a13" name="Captain of Númenor" hidden="false" collective="false" import="true" targetId="27c2-b047-6942-4120" type="selectionEntry"/>
+        <entryLink id="bdf9-26d4-d846-f0e6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="e218-a46c-7626-6036" name="Whirl of Steel" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Whenever a friendly Rivendell Infantry model that is not Engaged in Combat is Charged, they may roll a D6. On a natural 6, the model that Charged then immediately suffers a Wound. If this model was a Cavalry model, roll a futher D6. On a 1-3 it will be the Mount that suffers the Wound, on a 4+ it will be the rider that suffers the Wound. This is considered an Active ability.</description>
+    </rule>
+    <rule id="ae0b-f39b-778d-2847" name="&quot;There were some who resisted&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models may re-roll any dice that roll a 1 when making Courage Tests.</description>
+    </rule>
+    <rule id="2264-35e4-9f99-a161" name="Strength of Númenor" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Whilst being Supported by or Supporting a friendly Rivendell model, friendly Númenor models may re-roll To Wound Rolls of a natural 1 when making Strikes.</description>
+    </rule>
+  </rules>
+</catalogue>

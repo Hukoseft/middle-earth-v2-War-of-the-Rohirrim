@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="2f52-2ba8-beb6-aa7a" name="Breaking of the Fellowship" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="51a0-85f9-9345-0e3f" name="Haldir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8d43-4b45-a7ee-b8ea" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="7ea9-859a-b705-c2e0" name="Elf" hidden="false" targetId="2f21-68f2-eb43-5167" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="333b-304a-6b5a-3a2f" name="Haldir, Galadhrim Captain" hidden="false" collective="false" import="true" targetId="41a3-1fb6-558e-2a69" type="selectionEntry"/>
+        <entryLink id="7bd2-746c-4c9a-8817" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b077-d835-6d29-69c4" name="Aragorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="00b2-f93d-408e-f823" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5b81-9444-8e32-dd01" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="16cc-5ebe-955a-f263" name="Aragorn" hidden="false" targetId="1c8b-942d-084e-0c7e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9135-d76c-8d31-6e18" name="Aragorn (Strider)" hidden="false" collective="false" import="true" targetId="a615-398c-c397-a883" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c0c8-dfaa-b4b7-cf5a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fe3a-757c-cd90-9b9b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="45d6-27c8-3bef-240a" name="Gifts of Galadriel" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Each Fellowship model will gain the Wargear listed next to their name below, which have the effects detailed;
+
+•Frodo - Light of Eärendil [Active] - At the start of each of his Activations, Frodo may roll a D6. On a 3+, Frodo counts as having Cast the Blinding Light Magical Power.
+
+•Sam - Elven Rope [Active] - Sam always counts as rolling a 6 for any Climb, Leap or Jump Tests he is required to make.
+
+•Merry &amp; Pippin - Daggers of the Noldorin [Active] - These are Elven hand weapons. Whilst wielding these weapons, Merry and Pippin may re-roll failed To Wound roll when making Strikes.
+
+•Aragorn - Elven Dagger [Active] - This is an Elven hand weapon with the Uruk-haibane special rule.
+
+•Legolas - Bow of the Galadhrim [Active] - Whilst within 3&quot; of a friendly Lothlórien model, Legolas may re-roll failed To Hit rolls when making shooting attacks.
+
+•Gimlli - Galadriel&apos;s Locks [Active] - Gimli may use this Wargear to re-roll a single D6 in a Duel Roll. Gimli may only use this Wargear three times during the course of the game.
+
+•Boromir	 - Golden Belt [Active] - Boromir gains the Woodland Creature special rule.</description>
+    </rule>
+    <rule id="c3ce-19b3-3afb-c8f7" name="Blessing of Galadriel" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models count as being under the effects of Fortify Spirit Magical Power, even if they have no Will Points remaining.</description>
+    </rule>
+    <rule id="648a-828a-7ef8-fc7c" name="Shielded from Unfriendly Eyes" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Hero models gain an Elven Cloak for free.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="198a-f5d7-8aaf-3284" name="&quot;You have my sword&quot;" hidden="false" targetId="90a7-581e-c925-cff6" type="rule"/>
+  </infoLinks>
+</catalogue>

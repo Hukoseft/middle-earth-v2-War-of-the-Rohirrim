@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="85da-8b76-4e50-f671" name="Azog&apos;s Hunters" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="8ed6-a980-a5d4-9412" name="Azog&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2607-0f01-dec3-bfa9" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b91a-e54d-9957-77fb" name="Azog the Defiler" hidden="false" collective="false" import="true" targetId="7353-27ba-4958-f106" type="selectionEntry"/>
+        <entryLink id="6c88-c32e-0197-7055" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5fd7-7a5b-2700-6f00" name="Bolg&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="89da-e99f-3f20-8424" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="61c3-efb3-d254-2bae" name="Bolg, Spawn of Azog" hidden="false" collective="false" import="true" targetId="968d-45b8-7364-5eae" type="selectionEntry"/>
+        <entryLink id="e856-ec77-c717-9df5" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5fc3-ceb4-e25b-5cb0" name="Yazneg&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5d1f-95d6-7bdc-2dc0" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="84c4-ee14-7215-e2cb" name="Yazneg, Hunter Orc Captain" hidden="false" collective="false" import="true" targetId="a963-988c-f46b-30bc" type="selectionEntry"/>
+        <entryLink id="ec23-2b87-8321-55f4" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="3f36-b79b-828b-5719" name="Fimbul&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d147-116e-feb1-4d96" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4c8d-89a2-a7c9-649e" name="Fimbul, Hunter Orc Captain" hidden="false" collective="false" import="true" targetId="4b13-b1ec-02bc-cdc8" type="selectionEntry"/>
+        <entryLink id="ffa6-1254-e333-5194" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="42d7-481f-8206-c181" name="Narzug&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1f9a-c81c-c228-877f" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8623-0be4-440c-a59a" name="Narzug, Hunter Orc Captain" hidden="false" collective="false" import="true" targetId="9be0-2c8a-f64a-16cf" type="selectionEntry"/>
+        <entryLink id="62ac-0051-b4a6-88e3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4fe7-a3d5-2ab0-6144" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="92b2-41e3-e844-ce86" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c0c1-7c0c-6bf9-ba06" name="Hunter Orc Captain" hidden="false" collective="false" import="true" targetId="97a4-6881-02ff-c245" type="selectionEntry"/>
+        <entryLink id="2793-4588-a754-3048" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="25a3-6d16-49fe-3aeb" name="The Pale Orc&apos;s Demands" publicationId="a40a-1ac4-b5c2-a481" page="151" hidden="false">
+      <description>Whilst within 6&quot; of a friendly Hero, friendly Orc Warrior models gain a bonus of +1 to any Courage Tests to Charge an enemy model with the Terror special rule.</description>
+    </rule>
+    <rule id="0d09-d9e0-69d0-f2fa" name="&quot;They Strike in the wee small hours when everyone&apos;s asleep&quot;" publicationId="a40a-1ac4-b5c2-a481" page="151" hidden="false">
+      <description>An Azog&apos;s Hunters Army has a Bow Limit of 50% rather than the usual 33%.</description>
+    </rule>
+    <rule id="6795-6c16-4dad-612e" name="Morgul Arrows" publicationId="a40a-1ac4-b5c2-a481" page="151" hidden="false">
+      <description>Any enemy model that suffers a Wound from a shooting attack made by a friendly model, and that Wound isn&apos;t prevented, must roll a D6 during the End Phase of every turn after suffering the Wound. On the roll of a 1, the model immediately suffers a Wound. A model that has suffered multiple Wounds in the manner still only rolls a single D6 during the End Phase.</description>
+    </rule>
+    <rule id="1854-9855-bcc2-e5fb" name="Relentless Hunters" publicationId="a40a-1ac4-b5c2-a481" page="151" hidden="false">
+      <description>All models in this army list gain the Woodland Creature and Mountain Dweller special rules.</description>
+    </rule>
+  </rules>
+</catalogue>

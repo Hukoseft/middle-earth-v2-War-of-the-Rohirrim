@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="5ce8-ac7f-d0b2-d2c8" name="The Black Riders" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="13bb-b013-57ce-d4b8" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="be9e-a2de-e307-d793" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="40f5-cc2b-2b2c-0ac4" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6323-17d9-74a8-8222" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="830a-8a04-ea39-1372" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="da0a-e8f3-abba-3abe" name="Terror in the night" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>An enemy model within the range of multiple friendly Ringwraith models&apos; Harbinger of Evil special rule, will suffer a -2 penalty to their Courage Test rather than -1.</description>
+    </rule>
+    <rule id="5b7a-9eee-eddd-5d15" name="Screech of the Nazgûl" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>A friendly Ringwraith model can use this special rule at the start of their Activation. If they do, choose an enemy model within 12&quot; and Line of Sight of the Ringwraith. The chosen model is immediately subject to the Transfix Magical Power, which will count as being Cast on a 6 - they may take a Resist Test as normal. A Ringwraith model that uses this special rule cannot also Cast a Magical Power during their Activation. Only a single Ringwraith can use this special rule each turn, and each Ringwraith can only use this special rule once per game.</description>
+    </rule>
+    <rule id="4d85-574c-76ba-fc1a" name="The Will of Sauron" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Ringwraith models do not lose a Will Point for being Engaged in Combat as per the Will of Evil special rule.</description>
+    </rule>
+    <rule id="c51b-9972-b5d4-1b36" name="Hunt the Ringbearer" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the start of the Fight Phase, before any other Heroic Actions are declared, a single friendly Ringwraith may declare a Heroic Combat for free. This can only be done it, should the Heroic Combat be successful, the Ringwraith could Charge the Ringbearer. If the Heroic Combat is successful, the Ringwraith must Charge the Ringbearer, though any other models involved in the Heroic Combat may act as normal.
+
+If both players declare a Heroic Combat in the Fight Phase in which this special rule is used, this player will automatically win the roll-off to see which Heroic Combat goes first; however, this Heroic Combat declared by this special rule must be the one chosen to go first.</description>
+    </rule>
+  </rules>
+</catalogue>

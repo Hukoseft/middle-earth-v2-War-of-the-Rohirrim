@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="96e3-133a-a151-e3e8" name="Harad" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="1256-78e9-3775-6fd8" name="War Leader&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4c33-c377-3cbe-e449" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ebe4-38e0-0241-5fad" name="Mûmak War Leader" hidden="false" collective="false" import="true" targetId="f0c8-cf8a-d98f-9e88" type="selectionEntry"/>
+        <entryLink id="7095-7275-bd59-0bc0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="1b37-b0bf-8bb4-c26d" name="War Mûmak&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="42d0-e764-46ec-baf9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9f17-71d8-61a4-f175" name="War Mûmak of Harad" hidden="false" collective="false" import="true" targetId="5ed9-a83f-ad98-678f" type="selectionEntry"/>
+        <entryLink id="7b02-c958-60ba-e745" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c735-082b-94bd-98de" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fc2e-7b0b-2d21-6bd8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="635f-06d5-8450-4cc2" name="Haradrim Chieftain" hidden="false" collective="false" import="true" targetId="7b92-0e7b-2637-a09d" type="selectionEntry"/>
+        <entryLink id="af2a-9f13-0459-7c13" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="1977-1ef3-5d08-4273" name="War Beasts from the South" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Mûmak models gain the Harbinger of Evil (12&quot;) special rule.</description>
+    </rule>
+    <rule id="23b2-b627-2522-d458" name="The Scorpion&apos;s Sting" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models with the Poisoned Attacks (bow) special rule exchange it for Poisoned Attacks on all of their weapons.</description>
+    </rule>
+    <rule id="28e7-8ee0-62d3-18ea" name="Monstrous Rampage" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Each Hero that is commanding a Mûmak can, once per game, declare a Heroic Combat for free whilst atop a Mûmak. When they do, the Mûmak will be affected as if they had been the one to declare the Heroic Combat, though they may not pivot before they Trample as part of a Heroic Combat.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="277b-b2f9-d709-4af2" name="Cirith Ungol" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5f7d-2d41-c9bd-7090" name="Shagrat&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4d41-1eb9-ab96-f901" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6177-579b-ebb6-f047" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="ee6e-f6cb-6fbe-0942" name="Uruk-hai" hidden="false" targetId="b418-cc56-8f23-7008" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b29f-c6e4-6420-846c" name="Shagrat, Captain of Cirith Ungol" hidden="false" collective="false" import="true" targetId="3d9e-7f2e-6416-db84" type="selectionEntry"/>
+        <entryLink id="440a-661f-e938-f0a0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf7a-8bb9-e53c-650e" name="Gorbag&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d5c7-1267-b24f-756d" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="0a38-d4d2-a745-7789" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="7bad-3af7-b9ca-5a55" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7d95-1ce6-6e19-79a0" name="Gorbag, Orc Captain" hidden="false" collective="false" import="true" targetId="1907-e49c-5267-8ab1" type="selectionEntry"/>
+        <entryLink id="7e3e-4a23-ba79-39cf" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc6f-66d6-ee79-3ef7" name="Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2f17-5930-7d80-4f31" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="7bd8-a326-5942-8615" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8e17-08c8-ab52-f164" name="Mordor Orc Captain" hidden="false" collective="false" import="true" targetId="8d65-4f5b-0377-030e" type="selectionEntry"/>
+        <entryLink id="d967-6482-2260-dfe9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d59-4557-4510-bd8b" name="Uruk-Hai Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a587-1fcf-2c07-e757" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="b493-9e38-6782-11d2" name="Uruk-hai" hidden="false" targetId="b418-cc56-8f23-7008" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ef4e-da2c-06b3-c347" name="Mordor Uruk-hai Captain" hidden="false" collective="false" import="true" targetId="08c2-af3a-6bd0-c275" type="selectionEntry"/>
+        <entryLink id="096a-94df-e321-6cdf" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f7c-95b3-21d2-b9be" name="Taskmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="626b-4bc4-fb47-d18e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="10db-7b34-683e-485c" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="489e-30ed-c0b7-ea11" name="Mordor Orc Taskmaster" hidden="false" collective="false" import="true" targetId="e062-6d95-9bca-cfed" type="selectionEntry"/>
+        <entryLink id="74c4-7ed6-0133-b309" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="a885-7629-2f5a-27b9" name="Mordor Orc Drummer" hidden="false" collective="false" import="true" targetId="3761-bc72-e9e0-a232" type="selectionEntry"/>
+    <entryLink id="106a-d373-4e5b-bc07" name="Shelob" hidden="false" collective="false" import="true" targetId="4ed1-6df7-90da-1468" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="893c-ab1e-175d-61ed" name="Rivals for Power" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Keep track of how many models Gorbag and Shagrat have each killed. If at any point either of them has fewer kills than the other, that model may re-roll a single D6 during a Duel Roll.</description>
+    </rule>
+    <rule id="58df-1cbd-b4ce-f468" name="Swift Hunter" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>During the Declare Heroic Actions step of the Move Phase, Shelob can choose to kill a friendly model within 1&quot; of her - remove the chosen model as a casualty. If she does, Shelob may declare a Heroic Move for free, though she may not shout With Me as part of this Heroic Move.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="fa23-7184-7f35-5770" name="Animosity" hidden="false" targetId="1b59-1aeb-afed-4119" type="rule"/>
+  </infoLinks>
+</catalogue>

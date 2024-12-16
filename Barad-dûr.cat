@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="3ead-47ab-f886-0aab" name="Barad-dûr" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="edba-2dfa-7255-5055" name="Sauron&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="58ba-de09-a391-2ff9" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c97d-0a29-d60b-093d" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="91dc-a480-48f6-eb20" name="Sauron" hidden="false" targetId="de16-1cd8-b7ef-f365" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="58cb-2d84-48b8-fb17" name="The Dark Lord Sauron" hidden="false" collective="false" import="true" targetId="acac-0c04-bd51-18fb" type="selectionEntry"/>
+        <entryLink id="35f6-6544-962e-d383" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cfbd-b0c7-3653-e3f4" name="Witch-king&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9f51-b563-49e0-6a9e" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="189a-1455-4704-acc2" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="620b-e853-b78b-d371" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8b15-e9bc-9f72-8897" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ea9c-fb59-1c77-6a41" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c414-19e9-74ca-caf3" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="80e6-4e8e-e66e-e3be" name="Mordor Troll Chieftain" hidden="false" collective="false" import="true" targetId="a25e-d316-a85a-235f" type="selectionEntry"/>
+        <entryLink id="ff35-cb01-23bd-427b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="67db-961a-be11-2dad" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fa15-136d-d490-5407" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ca8a-97e0-82f4-b386" name="Mordor Orc Captain" hidden="false" collective="false" import="true" targetId="8d65-4f5b-0377-030e" type="selectionEntry"/>
+        <entryLink id="580d-e3b6-842e-be3e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="97f7-34f4-adad-84a7" name="Ringwraith&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="28f1-ff74-d163-a53b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bd95-223c-59b5-9ebf" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d3ee-d00e-3ac8-af28" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="94ca-4e92-480b-1f23" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="1a5d-8f43-347c-fc9c" name="Mordor Orc Drummer" hidden="false" collective="false" import="true" targetId="3761-bc72-e9e0-a232" type="selectionEntry"/>
+    <entryLink id="1ce0-1b55-73de-e037" name="Mordor War Catapult" hidden="false" collective="false" import="true" targetId="207d-1974-4adb-f1cc" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cfbd-b0c7-3653-e3f4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="67db-961a-be11-2dad" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edba-2dfa-7255-5055" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97f7-34f4-adad-84a7" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="f9c3-2f0c-aaa8-d2f9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ea9c-fb59-1c77-6a41" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="9276-3e7e-4700-8048" name="&quot;The power of the Ring could not be undone&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>So long as Sauron has at least 3 Wounds remaining, a Barad-dûr Army can never count as being Broken. Should Sauron have 2 or fewer Wounds reamaining, a Barad-dûr Army will Break as normal. However, should Sauron ever be removed as a casualty, a Barad-dûr Army will immediately count as being Broken.</description>
+    </rule>
+    <rule id="96f9-fb45-133b-1114" name="Teeming with Orcs" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Sauron&apos;s Warband may include 24 models rather than the usual 18 for a Hero of Legend.</description>
+    </rule>
+    <rule id="650d-0b39-f302-3453" name="Victory is at hand" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>So long as Sauron is alive and on the battlefield, friendly Orc models gain +1 bonus to any Courage Tests they are required to take.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="6e1c-2334-df06-f60c" name="Rangers of Mirkwood" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="d8cb-bb0f-be39-551d" name="Legolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d391-f114-5b9e-3373" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7672-e7ba-adb5-c932" name="Legolas Greenleaf, Prince of Mirkwood" hidden="false" collective="false" import="true" targetId="5eb3-48a0-6a31-e47c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="74b5-b69e-d656-6329" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e368-38cd-4f0d-4edc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2b24-65c4-25e5-3c47" name="Tauriel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a62d-b5f2-af98-0802" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4e16-ac7e-27a7-efb7" name="Tauriel, Ranger of Mirkwood" hidden="false" collective="false" import="true" targetId="d618-4dd2-674f-d37f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b13f-370b-37cd-6756" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="056f-b159-4d8b-0201" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b17-62c5-2123-f511" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6027-0233-4bfc-e7ce" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0686-1a81-751c-09ef" name="Mirkwood Ranger Captain" hidden="false" collective="false" import="true" targetId="3862-ed2e-6305-4bed" type="selectionEntry"/>
+        <entryLink id="2f21-622e-ef47-8371" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="cf99-1c3c-5e4f-f0bc" name="Balin the Dwarf" hidden="false" collective="false" import="true" targetId="3898-546c-5de3-691e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0b4b-b17c-5cf9-feb9" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="746f-dec4-f9cd-102f" name="Bifur the Dwarf" hidden="false" collective="false" import="true" targetId="88ea-9896-7f7b-0252" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0ac8-1bfe-745a-5198" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="cc64-5c18-310d-0df5" name="Bofur the Dwarf" hidden="false" collective="false" import="true" targetId="a460-a103-a447-171d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3595-070c-a502-98f0" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f519-0a71-dc83-b6fa" name="Bombur the Dwarf" hidden="false" collective="false" import="true" targetId="264a-e545-b92c-66f4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="317f-c7d2-f139-2067" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9b99-f86a-130e-80bf" name="Dori the Dwarf" hidden="false" collective="false" import="true" targetId="08de-8141-e2dc-f7ac" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b7a0-130b-802a-07de" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="11bd-c0ca-adfa-3283" name="Dwalin the Dwarf" hidden="false" collective="false" import="true" targetId="b7a5-b7a6-a431-877a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7c6c-1252-f9cd-57e6" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4f44-3f4e-0c79-5989" name="Fíli the Dwarf" hidden="false" collective="false" import="true" targetId="75ac-b4ef-662c-2e01" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fe10-5ce2-26f8-37f6" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="d081-e3f3-f547-804c" name="Glóin the Dwarf" hidden="false" collective="false" import="true" targetId="6652-78b7-72c5-57a7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9b3c-d446-a4b4-de03" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="08a4-42aa-a1a8-57f9" name="Kíli the Dwarf" hidden="false" collective="false" import="true" targetId="6d9b-23d8-a189-5fc3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c435-b666-130e-4267" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2b83-684d-556f-a898" name="Óin the Dwarf" hidden="false" collective="false" import="true" targetId="09b1-5d2e-26c9-e744" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0e58-1bae-836c-9b84" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="6cda-d536-8d8b-bfb6" name="Ori the Dwarf" hidden="false" collective="false" import="true" targetId="4269-a9dd-589c-6810" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ca3e-cc8b-b1ae-1e84" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1a14-5dae-b565-d7f7" name="Nori the Dwarf" hidden="false" collective="false" import="true" targetId="348c-f0ea-61e1-3084" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8c53-d8c8-a68a-1345" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7f5c-3ae4-1ffe-6c5c" name="Thorin Oakenshield" hidden="false" collective="false" import="true" targetId="4dbc-542c-5350-6d1e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="03cb-f9b6-aecb-183d" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="f805-08b3-59f6-c6f2" name="Knife Mastery" publicationId="a40a-1ac4-b5c2-a481" page="103" hidden="false">
+      <description>Friendly Elf models may re-roll To Wound Rolls of a natural 1 when making Strikes. Additionally, freindly Elf models may use the Shielding special rule, however, they cannot use their Knife Fighters or Blade Mistress special rules in a turn in which they elect to Shield.</description>
+    </rule>
+    <rule id="eba1-8569-6560-a4e3" name="The Prince of Mirkwood" publicationId="a40a-1ac4-b5c2-a481" page="103" hidden="false">
+      <description>Legolas gains the Knife Fighters special rule (see page 69).</description>
+    </rule>
+    <rule id="c44b-e058-1800-6398" name="Dwarven Resilience" publicationId="a40a-1ac4-b5c2-a481" page="103" hidden="false">
+      <description>Friendly Dwarf models may re-roll failed Fate Rolls.</description>
+    </rule>
+    <rule id="5958-04f0-09a4-641e" name="Clear the Nests" publicationId="a40a-1ac4-b5c2-a481" page="103" hidden="false">
+      <description>Friendly models gain the Hatred (Spider) special rule.</description>
+    </rule>
+    <rule id="0a73-ef31-8aa4-3472" name="&quot;If you think I&apos;m giving you a weapon Dwarf, you are sorely mistaken&quot;" publicationId="a40a-1ac4-b5c2-a481" page="103" hidden="false">
+      <description>Friendly Dwarf models cannot benefit from the Heroic Actions or Stand Fast of friendly Elf models and friendly Elf models cannot benefit from the Heroic Actions or Stand Fast of friendly Dwarf models. Additionally, Tauriel&apos;s Vengeful Fury special rule does not appy in this Army List.</description>
+    </rule>
+  </rules>
+</catalogue>

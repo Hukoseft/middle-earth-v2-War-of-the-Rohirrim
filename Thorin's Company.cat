@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="28c1-3796-09c3-2567" name="Thorin&apos;s Company" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="38b3-05c5-441f-35a2" name="Thorin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="07f0-a68d-1031-a209" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="31e0-f096-894e-f7ad" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="1ddc-2545-9900-cbce" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9fea-39b1-ad0c-9fbb" name="Thorin Oakenshield" hidden="false" collective="false" import="true" targetId="4dbc-542c-5350-6d1e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a6f5-e8c0-bac8-2853" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8aea-7df5-48c5-20f2" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="68fb-8dcc-ce6d-bff2" name="Gwaihir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="83c9-e210-c99c-0ae3" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e227-3700-2b82-965a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="83c9-e210-c99c-0ae3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="11be-3e0c-f97c-7339" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="959f-7859-48b6-65fa" name="Gwaihir" hidden="false" collective="false" import="true" targetId="f2a4-f867-4270-6422" type="selectionEntry"/>
+        <entryLink id="c719-349b-441d-a20f" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a4f1-0013-f905-b1c3" name="Radagast&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9bf5-1be4-b323-cd57" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="81d4-a3d5-2a53-cae4" name="Radagast the Brown" hidden="false" collective="false" import="true" targetId="fd8e-6891-7a44-af52" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="336b-f1ac-d740-8f7d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="1a06-e35a-fd96-bc60" name="March to the Lonely Mountain" publicationId="a40a-1ac4-b5c2-a481" page="83" hidden="false">
+      <description>If your Army contains only Thorin&apos;s Company models, then friendly Dwarf models may spend their Will Points to declare a Heroic March instead of using Might Points, even if they do not normally have the ability to declare a Heroic March.</description>
+    </rule>
+    <rule id="a8b8-67b1-00c6-b03d" name="&quot;We&apos;re making a long-term deposit&quot;" publicationId="a40a-1ac4-b5c2-a481" page="83" hidden="false">
+      <description>At the beginning of the game, choose one Objective Marker on the board. Friendly Dwarf models within range of the chosen Objective Marker gain the Dominant (2) special rule.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="01e1-e95a-d155-468b" name="Family Ties" hidden="false" targetId="6516-2ea4-a7b6-b346" type="rule"/>
+  </infoLinks>
+</catalogue>

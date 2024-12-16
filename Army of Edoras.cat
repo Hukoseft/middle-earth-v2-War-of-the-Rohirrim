@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="6747-9399-da7e-4fae" name="Army of Edoras" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5221-a8d7-50f8-9ecf" name="Helm&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e06b-6ad1-151b-511d" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="8083-40fd-26d1-f26d" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d5dd-6589-4ba4-546b" name="Helm Hammerhand, King of Rohan" hidden="false" collective="false" import="true" targetId="7753-b360-8274-8e4a" type="selectionEntry"/>
+        <entryLink id="bb20-6703-7c11-5eb9" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b260-d8cc-da1f-80cb" name="Haleth&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c4dd-8b25-bb9a-c3c3" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9673-11d7-14bd-0ef5" name="Haleth, Prince of Rohan" hidden="false" collective="false" import="true" targetId="2a4f-06ee-0613-f9ae" type="selectionEntry"/>
+        <entryLink id="0080-0a3b-7436-b7ea" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="410a-9bb1-4a80-f3a9" name="Háma&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2e41-0e39-efdc-0f34" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b09c-1027-2c9c-bd09" name="Háma, Prince of Rohan" hidden="false" collective="false" import="true" targetId="f247-9572-7139-6718" type="selectionEntry"/>
+        <entryLink id="0ebd-43ed-ec41-e24e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d6e-142a-137d-a75b" name="Fréaláf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ffab-f41c-54e8-e473" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9a67-bdb8-985e-f92f" name="Fréaláf, First Marshal of the Riddermark" hidden="false" collective="false" import="true" targetId="5cce-64d2-04da-7aa0" type="selectionEntry"/>
+        <entryLink id="8cd9-9065-961f-7fec" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b848-151c-6a69-bcda" name="Héra&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7f45-e753-6fd8-2def" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9d66-1755-6f7b-70c1" name="Héra, Daughter of Helm" hidden="false" collective="false" import="true" targetId="76e3-4272-f752-dd48" type="selectionEntry"/>
+        <entryLink id="22fc-4d35-5462-78cc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5f3f-0b90-df58-8ee3" name="Olwyn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6e4f-4574-73bc-bec7" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d8c3-563c-f551-c191" name="Olwyn, Shieldmaiden of Rohan" hidden="false" collective="false" import="true" targetId="c703-53b3-aa43-ffa8" type="selectionEntry"/>
+        <entryLink id="9c9c-5fbf-8634-fa54" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0697-ed5f-34bf-5201" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b50c-17d2-a271-a3cc" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d323-efed-73f9-7ac3" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="ea84-de8a-0078-d6cd" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="510a-bfe4-987a-0f91" name="Lief&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="cfee-eec4-b81f-c08b" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="714e-731f-b396-b27c" name="Lief, Page of Helm" hidden="false" collective="false" import="true" targetId="045f-c1bf-dfda-9ca8" type="selectionEntry"/>
+        <entryLink id="3fc2-e4db-5340-47bf" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="759d-7f1c-c2ec-cd4e" name="&quot;Forth Eorlingas!&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Once per game, at the start of any Fight Phase, your General can use this special rule if they Charged in the preceding Mone Phase. If they do, then until the end of the turn friendly Rohan models within 12&quot; of your General must re-roll all failed To Wound Rolls when making Strikes.</description>
+    </rule>
+    <rule id="3ea9-3f2a-08e4-76ed" name="Protect the King" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>When a friendly Rohan Hero Charges, until the end of the turn friendly Rohan Warrior models within 6&quot; of them will automatically pass all Courage Tests they are required to take for Charging an enemy with the Terror special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

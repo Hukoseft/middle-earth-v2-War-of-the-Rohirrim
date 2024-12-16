@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="f54e-7cad-1b7c-a99e" name="Men of the West" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="99c6-9438-4a4a-6c6f" name="Aragorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12e5-d2d5-3dae-55a0" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b221-bb83-f8dd-615f" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2d76-1941-85d1-6e01" name="Aragorn, King Elessar" hidden="false" collective="false" import="true" targetId="57de-7ccc-c3b1-45f9" type="selectionEntry"/>
+        <entryLink id="ad7e-63a5-de7d-ee41" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4772-6864-20d4-ff57" name="Gandalf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7b1e-28de-2a20-1dbf" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="caeb-6702-9c46-c3dc" name="Gandalf the White" hidden="false" collective="false" import="true" targetId="c15a-7bab-4d4a-c016" type="selectionEntry"/>
+        <entryLink id="11f8-5d90-2fb4-3eea" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ee64-3123-87e2-ab59" name="Gwaihir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5f58-57e1-2d0b-f9a4" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a91-843d-fe10-2d70" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5f58-57e1-2d0b-f9a4" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="20ca-4a06-15b0-2de1" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="f867-7aee-6c26-8e24" name="Eagle" hidden="false" targetId="8781-645f-4b0c-639e" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f977-0ac2-5928-b665" name="Gwaihir" hidden="false" collective="false" import="true" targetId="f2a4-f867-4270-6422" type="selectionEntry"/>
+        <entryLink id="014a-7458-a958-23fe" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ed1e-261a-2a87-5bbc" name="Éomer&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7baa-65e3-3763-4956" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5eac-9497-07de-e931" name="Éomer, Marshal of the Riddermark" hidden="false" collective="false" import="true" targetId="16a7-271a-69c0-6b85" type="selectionEntry"/>
+        <entryLink id="d127-5580-381b-90dc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e56-78bb-3265-c057" name="Legolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="060e-ce65-5916-0f01" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2932-3cfb-20f2-f233" name="Legolas Greenleaf" hidden="false" collective="false" import="true" targetId="0f6a-50ca-f061-004e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5940-7ce7-0231-1213" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="1bf6-bf00-96d3-b4c5" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f605-dc62-1a2e-7895" name="Gimli&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7409-8869-a9f7-dbde" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9432-8dfc-4207-a66d" name="Gimli, Son of Glóin" hidden="false" collective="false" import="true" targetId="4072-d158-632b-17b9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="84ca-7ccc-38cc-a77a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4ed4-5688-8b79-bf6a" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f262-ec91-098d-b2f1" name="Captain of Minas Tirith&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ecda-3268-05c2-fb40" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b63c-6f96-95a0-507d" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+        <entryLink id="15b1-426e-9539-2f6f" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ed0a-e3b0-b0d1-af4a" name="Captain of Rohan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="670d-47a8-2a67-504f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fc65-a23b-97e7-bcb0" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="ee1b-8659-acb3-d29c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="6566-b5ff-f925-4f78" name="Meriadoc Brandybuck, Esquire of Rohan" hidden="false" collective="false" import="true" targetId="9f66-dee7-5c1d-dd4f" type="selectionEntry"/>
+    <entryLink id="907f-6995-1033-c1d7" name="Peregrin Took, Guard of the Citadel" hidden="false" collective="false" import="true" targetId="fd3f-fa33-cf62-b4f0" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="a80b-049a-d695-c892" name="&quot;For Frodo&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Once per game, at the start of any Fight Phase, Aragorn can use this special rule so long as he is alive and on the battlefield. If he does, then friendly non-Eagle models within 6&quot; of Aragorn gain a bonus of +1 Fight Value and may re-roll To Wound rolls of a natural 1 when making Strikes until the end of the turn. This is treated as an Active ability belonging to Aragorn.</description>
+    </rule>
+    <rule id="15de-6375-1ce2-a08a" name="The White Wizard" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Gandalf may re-roll a single D6 in any Casting Rolls he makes.</description>
+    </rule>
+    <rule id="d7fa-b376-a323-ed5c" name="&quot;This day we fight!&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>So long as Aragorn is alive and on the battlefield, friendly models automatically pass any Courage Tests they are required to take.</description>
+    </rule>
+    <rule id="3c77-d745-98b3-7277" name="The Final Stand" publicationId="a40a-1ac4-b5c2-a481" hidden="false">
+      <description>Friendly Infantry models within 3&quot; of a friendly Hero model gain the Dominant (2) special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="639c-fc01-848c-be18" name="Road to Helm&apos;s Deep" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="3cf2-8493-c530-ea91" name="Théoden&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="73e7-eaaa-13c4-fc2b" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d44b-520a-9fdb-0e10" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="8b00-b355-b6ae-673c" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a0c4-8144-c155-c02a" name="Théoden, King of Rohan" hidden="false" collective="false" import="true" targetId="f1c7-d9e9-1b15-254b" type="selectionEntry"/>
+        <entryLink id="7cc2-0d43-92ea-8283" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0062-3eca-a1da-7783" name="Aragorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3f58-2208-0ae5-a509" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1ef6-53d4-9490-77b7" name="Aragorn (Strider)" hidden="false" collective="false" import="true" targetId="a615-398c-c397-a883" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c605-333f-d875-4113" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0e76-9b0a-c49d-5881" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8c54-f05a-8573-43c8" name="Legolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ddae-5961-b7d2-ae16" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b30c-80b1-9bdf-6ba2" name="Legolas Greenleaf" hidden="false" collective="false" import="true" targetId="0f6a-50ca-f061-004e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="17b1-dff1-72d7-0cc4" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3277-3b72-ee9f-65ee" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70ee-fd35-7af8-2676" name="Gimli&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9219-92d3-a509-a1c8" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6135-f029-4968-ed8d" name="Gimli, Son of Glóin" hidden="false" collective="false" import="true" targetId="4072-d158-632b-17b9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a56a-dd14-690f-caaf" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c138-cd5e-27eb-c8f7" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7a42-6a43-1b50-d0db" name="Gamling&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2554-121f-d6d2-1b95" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="fc2e-cb3e-f509-6aa6" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0e00-1578-b9e4-c21a" name="Gamling, Captain of Rohan" hidden="false" collective="false" import="true" targetId="47ca-767f-a729-9f24" type="selectionEntry"/>
+        <entryLink id="57e0-8e5c-313b-9de1" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="26f9-56cc-e69b-596e" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="26e8-ef27-f765-0340" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0be6-ef2f-b0d5-40b6" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="8f46-674e-53da-b692" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="105c-a9af-f04c-1429" name="Háma&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="29d0-cb4b-91b1-f1a2" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="608f-4c19-3e58-1868" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="107c-7956-29b3-505b" name="Háma, Captain of Rohan" hidden="false" collective="false" import="true" targetId="4754-9300-aee3-f022" type="selectionEntry"/>
+        <entryLink id="2e3a-5b95-437f-74b6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="5c9b-4bee-7f85-4e67" name="Legolas &amp; Gimli" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>If your Army contains both Legolas and Gimli, then Gimli will start the game as a Passenger on Legolas&apos; horse and will use the rule for Passgeners. Whilst Gimli is mounted on Legolas&apos; horse, Legolas increases his Attacks to 3 and may use Gimli&apos;s Might, Will, Fate as if it was his own, though he cannot use Gimli&apos;s Might to improve To Hit, To Wound, or In The Way Tests when making a shooting attack, Additionally, if Gimli dismounts from Legolas&apos; horse during Legolas&apos; Move, then after Legolas&apos; Activation has finished, Gimli may Activate as normale even though the rules for Passengers would not normally allow him to.</description>
+    </rule>
+    <rule id="2709-3f73-50df-b9ab" name="Back on your horses" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the end of a friendly Infantry Hero model&apos;s Move (with the exception of Gimli), if they are in base contact with a friendly Cavalry Warrior model who is not Engaged in Combat, then the Warrior may give the Hero their horse. Replace the Warrior model with a suitable dismount, and replace the Hero with the mounted version of them. The Warrior will be placed in the same place as the Hero was, and vice versa. If the Hero would normally have a named horse (such as Snowmane or Brego) then they will only count as riding a standard horse after using this rule.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="443f-deb9-c558-8c8a" name="&quot;Ride for ruin and the world&apos;s ending&quot;" hidden="false" targetId="39a8-55c7-92ef-83f5" type="rule"/>
+  </infoLinks>
+</catalogue>

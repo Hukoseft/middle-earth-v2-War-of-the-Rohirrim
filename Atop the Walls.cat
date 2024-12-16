@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="08e1-50c4-c398-5e15" name="Atop the Walls" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="9bc9-1749-0630-e850" name="Gandalf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d00d-f1f6-3c96-c5f4" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8888-d254-a4a8-820e" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d131-a940-c642-3dee" name="Gandalf the Whte" hidden="false" collective="false" import="true" targetId="c15a-7bab-4d4a-c016" type="selectionEntry"/>
+        <entryLink id="d850-2ca0-919a-87c5" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1d9a-c0c5-654e-7e46" name="Irolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ea71-ecf7-4760-7251" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="04d8-a193-e577-ab54" name="Citadel Guard" hidden="false" targetId="6c3c-5224-1f9a-60d8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8740-11e0-3841-e38d" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="d7bd-60d5-c611-5723" name="Irolas, Captain of the Guard" hidden="false" collective="false" import="true" targetId="ded0-93b3-d645-2379" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5f69-b9a6-20e9-da72" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d9e6-14f2-720b-10c6" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ae44-1791-0bb0-f0d8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="63ee-5695-0e22-1081" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="880b-1c0f-2b85-4ffd" name="Peregrin Took, Guard of the Citadel" hidden="false" collective="false" import="true" targetId="fd3f-fa33-cf62-b4f0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b2af-423f-d9cf-0ced" name="Independant Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dc98-92e1-7e5c-23cb" name="Gondor Battlecry Trebuchet" hidden="false" collective="false" import="true" targetId="7276-9a27-52dc-a7fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bc9-1749-0630-e850" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5f69-b9a6-20e9-da72" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1d9a-c0c5-654e-7e46" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="2660-b167-e261-838d" name="&quot;Fight to the last Man&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Gondor models within 12&quot; of Gandalf the White automatically pass any Courage Tests they have to take.</description>
+    </rule>
+    <rule id="5862-2257-bab1-3b74" name="&quot;Return to your posts&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Gondor model within range of an Objective Marker may re-roll To Wound  rolls of a natural 1 when making shooting attacks of making Strikes.</description>
+    </rule>
+    <rule id="c697-d956-4c91-914c" name="&quot;Send these foul creatures into the abyss&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Gondor models within 12&quot; of Gandalf the White gain the Hatred (Mordor) special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

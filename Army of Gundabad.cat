@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="1a67-4cf2-f30e-48bc" name="Army of Gundabad" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="b4b0-f694-88cb-3783" name="Azog&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="58a4-8659-b1f7-65f8" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="456d-a5f0-db97-05bb" name="Azog the Defiler" hidden="false" collective="false" import="true" targetId="7353-27ba-4958-f106" type="selectionEntry"/>
+        <entryLink id="a7ed-f031-69fd-9a9e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="f90e-48ed-f7e0-2000" name="Bolg&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0947-3f2b-8f83-d7e0" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="eba2-08ec-2a27-28f9" name="Bolg, Spawn of Azog" hidden="false" collective="false" import="true" targetId="968d-45b8-7364-5eae" type="selectionEntry"/>
+        <entryLink id="527a-0752-7631-84a3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ec3b-0d75-b531-6802" name="Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b7de-c0ed-6a4b-bc80" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a7dd-2e3e-e049-f165" name="Gundabad Orc Captain" hidden="false" collective="false" import="true" targetId="f4b2-5e1b-c505-dd49" type="selectionEntry"/>
+        <entryLink id="2eba-7bc1-55b8-a95b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4aeb-710f-0176-1f68" name="Goblin Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="04a8-18fc-851c-3c4c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="96f8-f1e6-181d-b977" name="Goblin Mercenary Captain" hidden="false" collective="false" import="true" targetId="ac3c-4fef-058c-2565" type="selectionEntry"/>
+        <entryLink id="fc6c-b70a-6aed-31de" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="d14f-f7c0-742e-16c8" name="Troll Brute" hidden="false" collective="false" import="true" targetId="7911-63c9-83d8-07b1" type="selectionEntry"/>
+    <entryLink id="9c25-f0a1-ec70-18c6" name="Gundabad Catapult Troll" hidden="false" collective="false" import="true" targetId="140d-5d2a-c2d5-9938" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="f64b-7da1-0305-75c3" name="Commander of Legions" publicationId="a40a-1ac4-b5c2-a481" page="147" hidden="false">
+      <description>If your General is either Azog or Bolg, then your General gains the Master of Battle (5+) special rule.</description>
+    </rule>
+    <rule id="868e-183b-f21f-68e4" name="&quot;Here ends your filthy bloodline!&quot;" publicationId="a40a-1ac4-b5c2-a481" page="147" hidden="false">
+      <description>Azog may re-roll any failed To Wound Rolls when making Strikes against Erebor models.</description>
+    </rule>
+    <rule id="eb41-fab2-3d75-990f" name="The Horn of Gorgoroth" publicationId="a40a-1ac4-b5c2-a481" page="147" hidden="false">
+      <description>Once per game, after Priority has been determined, as long as your General is alive and on the battliefiield they can order the Horn of Gorgoroth to be blown. Until the End of the turn, all friendly Gundabad models gain a bonus of +2 to any Courage Tests they are required to take. Additionally, until the end of the turn, all enemy models on the battlefield suffer a -2 penalty to any Courage Tests they are required to take. Note that this is not cumulative with other rules that confer similar penalties.</description>
+    </rule>
+    <rule id="7a57-43a8-1773-ac28" name="Raise the Banners" publicationId="a40a-1ac4-b5c2-a481" page="147" hidden="false">
+      <description>During the Priority Phase, after Priority has been determined, as long as your General is alive and on the battlefield they may command one of the banners on the signal tower to be raised. If they dom choose one of the banners below and apply its effects until the End Phase of the turn. You may not raise the same banner as the previous turn.
+
+•The Banner of Dol Guldur - All friendly Gundabad models on the battlefield count themselves as being in range of a banner.
+
+•The Banner of Gundabad - All friendly Gundabad Hero models on the battlefield may declare a Heroic March for free.
+
+•The Banner of Anmar - Whenever a friendly Gundabad model suffers a Wound, roll a D6. On the roll of a natural 6, the Wound is ignored. Gundabad Berserkers will instead pass their Oblivious to Pain roll on a natural 5+ instead of a natural 6.</description>
+    </rule>
+  </rules>
+</catalogue>

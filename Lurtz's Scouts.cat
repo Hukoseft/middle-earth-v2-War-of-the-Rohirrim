@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="fb57-6d02-8db0-4565" name="Lurtz&apos;s Scouts" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5dfa-58f9-dfa7-6f5a" name="Lurtz&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7d74-475e-aae6-85b6" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6ec3-9d5d-dad5-3c7a" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="811a-217d-154c-b3cd" name="Lurtz, Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="62e1-6b2b-5e21-0142" type="selectionEntry"/>
+        <entryLink id="b50c-8f93-6db7-af73" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="04aa-6738-3ef1-fc1c" name="Uglúk&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="bf84-cf0e-a9ef-ea6a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a6d5-8e56-c422-67c3" name="Uglúk, Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="6639-dc82-2442-33fc" type="selectionEntry"/>
+        <entryLink id="53ef-b9bf-207a-84e9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4cd4-90c5-a2ce-6c4d" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="92f1-deb7-0e49-0505" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="29d7-79f6-a857-d0fb" name="Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="57ce-308a-abe6-b341" type="selectionEntry"/>
+        <entryLink id="f1e6-6a40-8c29-ad0a" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="d96a-9740-c529-ebed" name="Uruk-hai Drummer" hidden="false" collective="false" import="true" targetId="4234-6502-2ed4-8658" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="d327-1be2-d228-155d" name="&quot;Kill the others&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Lurtz gains the General Hunter special rul and may declare a Heroic Combat each turn for free.</description>
+    </rule>
+    <rule id="37f2-786a-208b-a9dd" name="Relentless March" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models increase their Move Value to 8&quot;. Additionally, friendly models gain the Woodland Creature special rule.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="f875-ba1e-9fb8-3ec9" name="&quot;You do not know pain, you do not know fear&quot;" hidden="false" targetId="6acf-10ef-e014-9f9f" type="rule"/>
+  </infoLinks>
+</catalogue>

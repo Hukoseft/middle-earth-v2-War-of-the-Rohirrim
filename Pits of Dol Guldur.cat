@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="4a21-071d-7acb-a4b1" name="Pits of Dol Guldur" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="d20f-0f66-3ad2-7d80" name="Azog&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3845-98ba-53ae-f80b" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="29a7-7e92-0aa4-90d6" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="03ea-136b-a219-2599" name="Azog the Defiler" hidden="false" collective="false" import="true" targetId="7353-27ba-4958-f106" type="selectionEntry"/>
+        <entryLink id="b359-7b07-bd3d-6b9b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4323-e88b-a0af-f1ce" name="The Keeper&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ad73-af26-f479-f001" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0293-e0e1-0373-710f" name="The Keeper of the Dungeons" hidden="false" collective="false" import="true" targetId="f93a-ba40-d1a1-1970" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3059-3e2e-9fa0-ac3b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7a7c-cfbb-1398-7c94" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="0f76-ab21-6734-4aee" name="Hunter Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0616-a230-dada-7fc2" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="56f2-2747-a072-6564" name="Hunter Orc Captain" hidden="false" collective="false" import="true" targetId="97a4-6881-02ff-c245" type="selectionEntry"/>
+        <entryLink id="e1b8-0edb-ec95-95cf" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="559e-9f9b-0ba9-5cf1" name="Gundabad Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="68ef-98ef-38c3-e405" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6d4f-2d5d-0ffd-47b3" name="Gundabad Orc Captain" hidden="false" collective="false" import="true" targetId="f4b2-5e1b-c505-dd49" type="selectionEntry"/>
+        <entryLink id="b2dc-8ff0-ba6c-7673" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="ce73-ddf3-d182-83e9" name="Thráin the Broken" hidden="false" collective="false" import="true" targetId="6da0-f67b-4644-6073" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="b71d-24c7-a0ad-65d1" name="Surprise Attack" publicationId="a40a-1ac4-b5c2-a481" page="149" hidden="false">
+      <description>Once per game, at the beginning of the Priority Phase, Azog can use this special rule if he is alive and on the battlefield. If he does, Azog&apos;s controlling player will automatically count as having won the roll to choose who has Priority for that turn, though must choose to have Priority. If both sides have a special rule allowing them to do this and both wish to use it in the same turn, players roll off as normal and both special rules count as being used. Enemy models cannot declare Heroic Moves in the turn in which this special rule is used.</description>
+    </rule>
+    <rule id="4831-4743-cbd8-3f4e" name="Magical Void" publicationId="8e2e-f1ed-1aa8-11ca" page="149" hidden="false">
+      <description>Friendly model gain the Resistant to Magic special rule.</description>
+    </rule>
+    <rule id="7b16-8a0f-4b0c-162d" name="Thráin&apos;s Imprisonment" publicationId="a40a-1ac4-b5c2-a481" page="149" hidden="false">
+      <description>Thráin the Broken is an Evil model in this Army. Additionally, if Thráin fails his Intellidence Test for his Shattered Spirit special rule whilst within 6&quot; of Keeper of the Dungeons, then he will count as passing the test instead, though will not count as rolling a double.</description>
+    </rule>
+    <rule id="dcb5-fc28-7852-0cd0" name="Wizard Hunters" publicationId="a40a-1ac4-b5c2-a481" page="149" hidden="false">
+      <description>Friendly Orc Warrior models gain a bonus of +1 To Wound when making Strikes against enemy models that can Caxt Magical Powers.</description>
+    </rule>
+  </rules>
+</catalogue>

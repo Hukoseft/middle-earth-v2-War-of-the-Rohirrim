@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="4320-67e9-1db8-2038" name="Army of Thrór" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="cf6e-7473-76fa-baea" name="Thrór&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="618b-7a13-d4e2-fe9d" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="a62c-11ff-5b8f-2216" name="Thrór" hidden="false" targetId="961e-6497-c1b3-e107" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5d7a-eb85-da24-6ac8" name="Thrór, King Under the Mountain" hidden="false" collective="false" import="true" targetId="06e7-896d-d1f5-3d05" type="selectionEntry"/>
+        <entryLink id="d761-567b-7b7e-57f6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c2d3-6789-410a-665d" name="Grim Hammer Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0530-f912-dc39-c762" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="196e-13b6-ade7-3535" name="Grim Hammer Captain" hidden="false" collective="false" import="true" targetId="aec6-b8c0-530b-d8f7" type="selectionEntry"/>
+        <entryLink id="e815-f0db-dabb-04f8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b28e-4af9-e46c-ac16" name="Erebor Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="74fd-ceeb-02aa-ad14" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="96d1-3504-1927-a7af" name="Erebor Dwarf Captain" hidden="false" collective="false" import="true" targetId="1329-d058-2d61-4eda" type="selectionEntry"/>
+        <entryLink id="6ba5-d36e-729d-7c85" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b678-94c5-fd9d-2e92" name="Dwalin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5ec8-a083-293f-c88a" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8680-76cc-5e49-6594" name="Young Dwalin the Dwarf" hidden="false" collective="false" import="true" targetId="e6d6-acf7-de38-e9b9" type="selectionEntry"/>
+        <entryLink id="0bf3-90a4-5404-989c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b11-2591-d471-2ca8" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d88f-3d12-edc6-fd5b" name="Erebor" hidden="false" targetId="1e48-8a8f-0bb6-174b" primary="false"/>
+        <categoryLink id="7c65-0ce2-8224-3ab2" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="60f9-8367-5885-108e" name="Dwarf King" hidden="false" collective="false" import="true" targetId="1b24-f559-d9ce-bf16" type="selectionEntry"/>
+        <entryLink id="451e-ec32-4cdc-ed80" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1ac2-10b8-36f3-4532" name="Balin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="be19-2cd2-8389-b066" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0ba7-00a2-364d-b7c4" name="Young Balin the Dwarf" hidden="false" collective="false" import="true" targetId="095d-4fa5-d3c4-09e5" type="selectionEntry"/>
+        <entryLink id="c52a-825a-b273-79cc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fca7-17cb-9879-b0fb" name="Thorin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2b67-e2e5-e05f-32d0" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fc69-6aa6-cb35-d1b8" name="Young Thorin Oakenshield" hidden="false" collective="false" import="true" targetId="c7ff-da69-5a9c-939f" type="selectionEntry"/>
+        <entryLink id="b109-d2ae-d424-2c02" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6ce8-4749-6747-f87c" name="Thráin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1900-6c91-ab15-6b38" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4dec-7b5f-8d1a-6975" name="Thráin, Son of Thrór" hidden="false" collective="false" import="true" targetId="b625-1878-17dc-a70e" type="selectionEntry"/>
+        <entryLink id="55ec-8b63-dacb-6dcb" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="8d47-fea5-2668-c1f5" name="&quot;Thrór ruled with utter surety, never doubting his house would endure&quot;" publicationId="a40a-1ac4-b5c2-a481" page="85" hidden="false">
+      <description>Friendly Erebor models treat Thrór as a banner with a range of 6&quot;.</description>
+    </rule>
+    <rule id="6392-8a48-8050-c344" name="Erebor Treasure Hoard" publicationId="a40a-1ac4-b5c2-a481" page="85" hidden="false">
+      <description>Friendly Erebor models gain a bonus of +1 To Wound when making Strikes against an enemy model that is in possession of an Objective Marker. Additionally, Friendly Erebor models that are within their deployment zone may re-roll To Wound Rolls of a natural 1 when making Strikes.</description>
+    </rule>
+  </rules>
+</catalogue>

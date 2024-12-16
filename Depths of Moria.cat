@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d30b-4eff-973a-a098" name="Depths of Moria" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="59eb-1f13-743c-c974" name="Balrog&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d00d-0fb7-4da1-15d0" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="225f-f678-45b5-03e0" name="The Balrog" hidden="false" collective="false" import="true" targetId="dd7d-493e-24ce-7861" type="selectionEntry"/>
+        <entryLink id="77fe-7d21-3c3a-d600" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7244-494a-de70-efd7" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3d85-3f54-c5cd-f660" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="50cd-374f-b604-d79b" name="Moria Goblin Captain" hidden="false" collective="false" import="true" targetId="be58-9759-de81-8d67" type="selectionEntry"/>
+        <entryLink id="b202-7367-1169-9b6a" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="effd-3d7e-ffe3-1a81" name="The Watcher in the Water" hidden="false" collective="false" import="true" targetId="7943-ab4e-a479-3c6d" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="e5e2-a761-55c5-b99c" name="Drums in the Deep" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Enemy models suffer a -1 penalty to any Courage Tests they are required to take, whilst friendly Moria Goblin models gain a bonus of +1 to any Courage Tests they are required to take. Additionally, friendly Moria Goblin models always count as being in range of a banner.</description>
+    </rule>
+    <rule id="da4e-e992-ad57-a0b4" name="Dominion of the Balrog" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Moria Goblin models within 6&quot; of the Bolrog gain a bonus of +1 to their Fight Value. Additionally, so long as the Balrog has at least 6 Wounds remaining, a Depths of Moria Army can never count as being Broken. Should the Balrog have 5 or fewer Wounds remaining, a Depths of Moria Army will Break as normal. However, should the Balrog ever be removed as a casualty, a Depths of Moria Army will immediately count as being Broken.</description>
+    </rule>
+    <rule id="b0a9-57c1-4b16-4dc4" name="Shadow..." publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Shooting attacks that target the Balrog will only ever hit on the roll of a 5+.</description>
+    </rule>
+    <rule id="920a-3ce4-e455-a336" name="...and Flame" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Once per game, at the start of any Shoot Phase, the Balrog may select a single enemy model within 3&quot; of it and roll a D6. On a 2+, the model is immediately Set Ablaze. This is an Active ability belonging to the Balrog, and after it has used this ability, the Balrog no longer benefits from the &apos;Shadow...&apos; special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

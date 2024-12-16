@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="98e0-c832-f13c-88cf" name="Army of the White Hand" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="964d-28c7-187c-6334" name="Saruman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0683-d949-585b-ad5d" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="3234-e039-e167-64fd" name="Saruman" hidden="false" targetId="9bbd-1ec2-e986-8a68" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="957f-97c4-c39a-02dc" name="Saruman" hidden="false" collective="false" import="true" targetId="66fb-d715-309c-6ab0" type="selectionEntry"/>
+        <entryLink id="82d9-1ec7-5fc1-040a" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b73d-1c52-84c2-69cc" name="Oathmaker&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4d36-a735-a967-decb" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7eb2-4f85-2495-ff66" name="Wild Man Oathmaker" hidden="false" collective="false" import="true" targetId="4060-c555-24e8-c23b" type="selectionEntry"/>
+        <entryLink id="5e2b-1696-87f5-75af" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d3e-7be1-5332-ed99" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="27f8-6120-afb6-137f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7305-b5bd-072e-5a9d" name="Wild Man Chieftain" hidden="false" collective="false" import="true" targetId="3f56-1fed-6716-7d19" type="selectionEntry"/>
+        <entryLink id="b636-b595-9a9e-1e59" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3a7f-fa9d-7803-2dda" name="Scout Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e5bf-b561-ed50-3044" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5ac3-639e-4be6-4bff" name="Scout Captain&apos;s Warband" hidden="false" collective="false" import="true" targetId="57ce-308a-abe6-b341" type="selectionEntry"/>
+        <entryLink id="dabf-e5b5-b0e0-10c3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0577-048a-e7a5-5fc4" name="Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="24d8-ff81-45a4-aa89" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="11e7-db84-8b88-474a" name="Isengard Orc Captain" hidden="false" collective="false" import="true" targetId="f0cf-6669-2e6b-a37c" type="selectionEntry"/>
+        <entryLink id="e9ec-4103-ea5f-e40a" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="367c-8ed5-91c2-92a1" name="Gríma Wormtongue" hidden="false" collective="false" import="true" targetId="d374-043a-163a-9ce6" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2c1c-cc1e-eea8-9df0" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="d5ec-6d72-85ea-df75" name="Serve the White Wizard" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Other friendly models that can draw Line of Sight to Saruman gain a bonus of +1 to any Courage Tests they are required to take.</description>
+    </rule>
+    <rule id="921b-55da-793e-c351" name="The Voice of Saruman" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>During his Activation, Saruman can use one of the following abilities instead of Casting a Magical Power. Each of these abilities can only be used once per game.
+
+•Conjure Lightning - Choose a point of the battlefield at least 12&quot; away from any friendly models (with the exception of Gríma Wormtongue). Each model within 2&quot; of the chosen point suffers a Strength 6 hit. If a Cavalry model is affected, both the rider and Mount will suffer a Strength 6 hit.
+•Summon Gale - Until the end of the turn, enemy models halve their Move Value.
+•Call Thunder - Until the end of the turn, enemy models have the Fearful special rule.</description>
+    </rule>
+    <rule id="5108-a8e6-0bd3-7e8e" name="Spies of Saruman" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Saruman can draw Line of Sight from any friendly Crebain models on the battlefield.</description>
+    </rule>
+  </rules>
+</catalogue>

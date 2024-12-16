@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="597b-5f95-e2db-d811" name="Defenders of the Hornburg" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="f7f6-9f28-8a51-dd63" name="Héra&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f764-d9b2-b797-fab0" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="16c6-d486-3baf-8fdd" name="Héra, the Bride of Death" hidden="false" collective="false" import="true" targetId="6c93-d16d-e81a-bb4b" type="selectionEntry"/>
+        <entryLink id="8c2c-cd03-2533-0a81" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="54d7-4c09-71cd-8281" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="32af-6636-e030-475f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9395-5f65-6179-ce7c" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="b5e7-5b2a-bdfb-1472" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d4e6-ee89-0bb1-6fc8" name="Olwyn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6c70-c01b-61bc-22d3" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9099-daa9-f619-6910" name="Olwyn, Shieldmaiden of Rohan" hidden="false" collective="false" import="true" targetId="c703-53b3-aa43-ffa8" type="selectionEntry"/>
+        <entryLink id="cc11-11c4-6d49-ec3a" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47dc-78dd-f089-91f9" name="Lief&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="45c9-88f7-a1a2-f72c" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9585-393b-180c-ccaf" name="Lief, Page of Helm" hidden="false" collective="false" import="true" targetId="045f-c1bf-dfda-9ca8" type="selectionEntry"/>
+        <entryLink id="1d83-07d1-7ef1-59bb" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="3f4e-0afb-7787-0df7" name="Helm Hammerhand, Wraith of the Hornburg" hidden="false" collective="false" import="true" targetId="030a-a0d5-39be-6360" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="f232-272e-9ba8-f329" name="Defend the Hornburg" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Rohan Infantry gain the Dominant (2) special rule.</description>
+    </rule>
+    <rule id="4b6c-27f7-0dc1-5c2e" name="A Desperate Defence" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Rohan Infantry Warrior models must re-roll To Wound Rolls of a natural 1 when making Strikes.</description>
+    </rule>
+    <rule id="0818-74e1-9076-8b15" name="Frenzy of the King" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the start of the End Phase of a turn in which Helm Hammerhand kills an enemy Hero or Monster, enemy models within 3&quot; of Helm must take a Courage Test in an order chosen by Helm&apos;s controlling player. If the test is failed, the model must Move up to its Move Value directly away from Helm.</description>
+    </rule>
+  </rules>
+</catalogue>

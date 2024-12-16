@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="fd9b-0f1d-9904-39e1" name="Goblin-Town" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="d546-ed67-41e7-f5fe" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4f62-4d4c-60a0-9dfe" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f373-9bb3-829a-33b0" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="52b7-eaa8-e5d0-f7d9" name="The Goblin King" hidden="false" collective="false" import="true" targetId="2b0e-de67-49fc-27ed" type="selectionEntry"/>
+        <entryLink id="2e9d-71bd-8f18-fa97" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b038-ea5d-2ddb-876d" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f080-dec7-9b01-f6f9" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="277d-2ac4-7cae-0cfb" name="Goblin Captain" hidden="false" collective="false" import="true" targetId="a8c2-391a-9831-ef6a" type="selectionEntry"/>
+        <entryLink id="de99-663e-072c-38a6" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f3f-26a5-1097-35a1" name="Grinnah&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="df75-6c05-cd61-93ee" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d71b-12b3-6fb1-f5e6" name="Grinnah, Goblin Jailer" hidden="false" collective="false" import="true" targetId="d2ca-4b4d-91e0-ed5f" type="selectionEntry"/>
+        <entryLink id="ad16-cb12-2103-1601" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c96e-3ff4-cb9a-ac56" name="Scribe&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0e64-752e-72df-5457" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e0c7-3268-b6fd-9e2a" name="The Goblin Scribe" hidden="false" collective="false" import="true" targetId="dc7b-75d6-22d4-b993" type="selectionEntry"/>
+        <entryLink id="074b-0b0f-f47d-0313" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="0e8e-fe54-bf71-b33c" name="Gollum" hidden="false" collective="false" import="true" targetId="b063-d5b4-9c3f-c844" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1e9b-c0d6-825d-2657" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="31ae-2862-284c-a844" name="&quot;I Feel A Song Coming On&quot;" publicationId="a40a-1ac4-b5c2-a481" page="155" hidden="false">
+      <description>During the Priority Phase, after Priority has been determined, the Goblin King may choose to sing one of his songs. If he does, choose one of the songs below and apply its effects until the end of the turn. The Goblin King may not sing the same song as he sung the previous turn.
+
+•&quot;Batter and beat, make them stammer and squeak!&quot;
+Other friendly Goblin models treat the Goblin King as a banner with a range of 6&quot;.
+
+•&quot;You can yammer and yelp but there ain&apos;t no help!&quot;
+Other friendly Goblin models within 6&quot; of the Goblin King cause Terror.
+
+•&quot;Abominations, mutations, deviations&quot;
+Whenever another friendly Goblin model within 6&quot; of the Goblin King suffers a Wound, roll a D6. On the roll of a natural 6, the Wound is ignored.
+
+•&quot;Bones will be shattered, necks will be wrung&quot;
+Other friendly Goblin models within 6&quot; of the Goblin King may re-roll To Wound Rolls of a natural 1 when making Strikes.</description>
+    </rule>
+    <rule id="772d-5347-e68d-50fd" name="Strength in Numbers" publicationId="a40a-1ac4-b5c2-a481" page="155" hidden="false">
+      <description>Whilst your Army is not Broken, friendly Goblin models receive a bonus of +1 to any Courage Tests they take for Charging an enemy with the Terror special rule.</description>
+    </rule>
+    <rule id="57ef-44b8-ffbe-5806" name="&quot;If they won&apos;t talk, we&apos;ll make them squawk!&quot;" publicationId="a40a-1ac4-b5c2-a481" page="155" hidden="false">
+      <description>If the Goblin King or Grinnah would kill an enemy non-Monster Hero model in Combat, they can choose to take them prisoner instead. The Hero model will still be removed as a casualty, including for the purpose of any objectives or special rules. The Goblin King and Grinnah may only ever have a single prisoner each at any one time; if they would subsequently be able to take another prisoner whilst they already have on, they must choose which one counts as their prisoner. If the Goblin King or Grinnah are still alive at the end of the game, their controlling player will gain an additional 1 Victory Point for each enemy Hero that is a prisoner, so long as the model that took them prisoner is still alive. This can never take this Army&apos;s total number of Victory Points above 20.</description>
+    </rule>
+    <rule id="7ef8-a1bb-8eff-b2a1" name="&quot;Down down down in Goblin-town&quot;" publicationId="a40a-1ac4-b5c2-a481" page="155" hidden="false">
+      <description>Each Goblin Hero model may increase their maximum Warband size by six models.</description>
+    </rule>
+  </rules>
+</catalogue>

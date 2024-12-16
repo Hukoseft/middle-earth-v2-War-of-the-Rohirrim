@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="dade-d5e9-f01f-ae2a" name="Road to Rivendell" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="2390-53f6-82bd-79e1" name="Aragorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6963-9d71-e529-06b8" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="358a-e527-466b-2ce5" name="Aragorn (Strider)" hidden="false" collective="false" import="true" targetId="a615-398c-c397-a883" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0c6a-c92c-70b3-f378" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4b42-0c65-5922-ab5e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7a2e-c277-c855-8885" name="Samwise&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="15f4-777e-68b4-e6b0" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="a45c-abbf-17be-a33a" name="Samwise" hidden="false" targetId="6fb2-0a2e-c869-01c8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2bb3-d58d-fd45-a385" name="Samwise Gamgee" hidden="false" collective="false" import="true" targetId="6b10-092a-ef5a-4f1c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5532-44b5-5de9-700e" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="82cc-d6cc-62ac-f8f7" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2bed-0b2c-9d32-3442" name="Frodo&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="523d-d4c1-e4a0-019c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="fd9a-3cc5-ed3d-95b5" name="Frodo" hidden="false" targetId="263b-3910-d2af-beaf" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a61b-8d5b-f447-c13c" name="Frodo Baggins" hidden="false" collective="false" import="true" targetId="45ac-cd57-e718-c76a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a236-2895-62e8-2985" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="570d-9a2b-0134-a5d1" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="92da-97a7-f453-1925" name="Arwen&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e61c-01d8-19fe-7b2b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="109e-3da5-d9ab-ff0c" name="Arwen" hidden="false" targetId="933b-5ca5-0da6-ea53" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6dfb-1599-051f-1ac6" name="Arwen Undómiel" hidden="false" collective="false" import="true" targetId="8873-c5c2-9834-54b2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5e70-c56d-4ff4-c684" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="9db1-6b58-8458-9f7a" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="caa4-145c-f23a-ffbb" name="Barliman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fd22-71eb-4e1d-2196" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="7d65-48d5-1146-518a" name="Barliman" hidden="false" targetId="5d04-6f6c-a87a-3a15" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df32-bea7-c6f8-c15d" name="Barliman Butterbur" hidden="false" collective="false" import="true" targetId="01e8-fe46-89cd-bd1f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e638-d7e1-870f-3b19" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="343b-4bd7-6d0e-d170" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="5b2d-7cb7-015c-241a" name="Meriadoc Brandybuck" hidden="false" collective="false" import="true" targetId="f4f2-ed76-cf8c-26d3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d400-23f2-10e1-3664" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="af80-3c42-0242-9d90" name="Peregrim Took" hidden="false" collective="false" import="true" targetId="65a3-4b63-4f33-837b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8dcc-da67-2e7c-21b6" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0b20-772a-178c-e740" name="Bill the Pony" hidden="false" collective="false" import="true" targetId="86b5-8ab9-cfd9-fff1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0e78-f3ad-c256-505e" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2f6e-f73e-8709-e170" name="The Gatekeeper of Bree" hidden="false" collective="false" import="true" targetId="0745-a33c-358a-5554" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="fd8e-199d-f766-a4a6" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="2315-e8b4-72d1-530f" name="&quot;We do not stop &apos;til nightfall&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Aragorn may declare a Heroic March each turn for free. Additionally, friendly models that begin their Activation within 6&quot; of Aragorn gain the Woodland Creature special rule until the end of the turn.</description>
+    </rule>
+    <rule id="8e42-d488-95f5-df16" name="&quot;I&apos;m the faster rider. I&apos;ll take him&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>If your Army includes both Frodo and Arwn, then Frodo may begin the game as a Passenger upon Asfaloth. Whilst Frodo is mounted on Asfaloth, Arwen gains the Resistant to Magic special rule, increase her Attacks characteristic to 3, and can spend Frodo&apos;s Might, Will and Fate Points as if they were on her own. Frodo cannot put on the One Ring whilst he is a Passenger.</description>
+    </rule>
+    <rule id="0d75-7428-9d6c-7aeb" name="&quot;If you want him, come and claim him&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Whilst she is within 6&quot; of Frodo (including is he is a Passenger on Asfaloth), Arwen gains the Fearless special rule and may re-roll any dice when making a Casting Roll.</description>
+    </rule>
+    <rule id="69a7-3dee-296d-ae26" name="The Cover of Night" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the start of each game using this Army List, you may choose for the Scenario to take place at night if you wish. If you do, then at the start of each Move Phase you may choose whether or not the Gatekeeper of Bree&apos;s A Light in the Dark special rule is in effect or not.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="921a-2666-3e51-3310" name="The Shire" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="1535-f02c-0b0d-961e" name="Gandalf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c633-d9fb-e9f2-a239" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4eac-9bd3-771d-edf4" name="Gandalf the Grey" hidden="false" collective="false" import="true" targetId="e227-3700-2b82-965a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c21a-9707-5278-7719" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="c579-8f69-caad-4829" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f39a-6363-3b0f-5139" name="Bilbo&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b352-1917-2b92-8351" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b226-c184-0903-c31c" name="Bilbo Baggins, Ageing Hobbit" hidden="false" collective="false" import="true" targetId="f148-6e5e-61be-f059" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d36a-ee18-9e50-3b44" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="fe9a-f339-c8ff-c9ff" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1da-3869-917f-08f1" name="Frodo&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="55b8-755a-4f32-3a77" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df08-0372-c293-967c" name="Frodo Baggins" hidden="false" collective="false" import="true" targetId="45ac-cd57-e718-c76a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="81d1-11c8-8fab-e9cd" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f464-4268-66ed-a27d" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4fae-29dd-aca8-11b5" name="Samwise&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="63a1-4afb-4ebd-7d10" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2171-10d0-dcf5-893e" name="Samwise Gamgee" hidden="false" collective="false" import="true" targetId="6b10-092a-ef5a-4f1c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fa9a-3ccc-affb-7285" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a9fa-2b09-e31c-9bcc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07dc-999b-a2cb-14ad" name="Maggot&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5ad6-ed09-2798-1522" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="ddcd-803c-fd1c-78a0" name="Maggot" hidden="false" targetId="37ce-f0ea-f37c-c534" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a380-1e08-824f-edca" name="Farmer Maggot" hidden="false" collective="false" import="true" targetId="fc51-56a8-9f10-2df2" type="selectionEntry"/>
+        <entryLink id="0c68-a5d6-db71-838c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07eb-1d9f-7dce-a0a2" name="Hamfast&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ec41-9760-12f4-4c8d" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="12e0-518f-a6d2-481a" name="Hamfast &apos;Gaffer&apos; Gamgee" hidden="false" collective="false" import="true" targetId="30ae-3521-cc19-8d20" type="selectionEntry"/>
+        <entryLink id="792d-7d3e-5076-beca" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="a218-39f8-a2c7-a2d3" name="Meriadoc Brandybuck" hidden="false" collective="false" import="true" targetId="f4f2-ed76-cf8c-26d3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a74f-7dad-7f6e-a901" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e98f-9a9d-b01e-1cdd" name="Peregrin Took" hidden="false" collective="false" import="true" targetId="65a3-4b63-4f33-837b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b118-dd52-619f-539b" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="008c-fb25-1dd3-2b1a" name="Rosie Cotton" hidden="false" collective="false" import="true" targetId="2608-65f6-64ea-1fd9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="9994-687a-1eee-a770" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="f57c-c729-3b37-c899" name="Lobelia Sackville-Baggins" hidden="false" collective="false" import="true" targetId="c6c3-3058-3e95-e8a7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8f83-70e1-0424-687a" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="ab5a-460d-3197-b4a6" name="Bilbo&apos;s Magic Ring" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>In this Army List, Bilbo carries the One Ring instead of Frodo.</description>
+    </rule>
+    <rule id="e247-5bcd-41a7-676f" name="&quot;This&apos;ll be a night to remember&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models may re-roll failed Courage Tests. Additionally, friendly models cannot have their Courage Tests reduced by the special rules or Magical Powers of enemy models.</description>
+    </rule>
+    <rule id="1c2a-c641-6366-2292" name="The Grey Wizard" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models may benefit from Gandalf&apos;s Stand Fast. Additionally, Gandalf may use two fireworks each Shoot Phase rather than one, though they must be different fireworks and must different models.</description>
+    </rule>
+    <rule id="cc6e-ca1c-c56d-2f1f" name="A Long-expected Party" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models will pass a Fate Roll on a 3+ rather than a 4+. Additionally, friendly models may re-roll failed Fate Rolls.</description>
+    </rule>
+  </rules>
+</catalogue>

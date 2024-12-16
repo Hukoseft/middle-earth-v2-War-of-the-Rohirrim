@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="0aaf-4656-2f35-8feb" name="The Iron Hills" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="64b3-e316-b577-d8ac" name="Dáin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="095a-ee91-272e-3935" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="5450-2978-c008-eaaf" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5efb-78ae-1324-1e2b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="eff7-44de-5700-4c66" name="Dáin Ironfoot, Lord of the Iron Hills" hidden="false" collective="false" import="true" targetId="0fd2-46ee-e7f4-d5f0" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dca5-65fb-9ed7-c04d" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d2f6-537e-76da-ca83" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aea6-65dc-d103-a0e2" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="bcec-502b-2ab3-82ee" name="Dwarf King" hidden="false" collective="false" import="true" targetId="1b24-f559-d9ce-bf16" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9cdf-2b4e-845c-736b" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="379b-fa9d-1918-059a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f7ba-26fb-a5b4-1f0e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="25b7-3458-0fa0-8dd5" name="Iron Hills Captain" hidden="false" collective="false" import="true" targetId="4ada-6ebf-3529-9dad" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="865a-77ed-8d42-fa11" name="Iron Hills Ballista" hidden="false" collective="false" import="true" targetId="3d27-1ac1-47c7-3ce3" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="180a-f41f-2b40-1a3a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dca5-65fb-9ed7-c04d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="180a-f41f-2b40-1a3a" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9cdf-2b4e-845c-736b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="180a-f41f-2b40-1a3a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="64b3-e316-b577-d8ac" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="a6a5-be14-bb5e-e8d4" name="&quot;Ironfoot has come!&quot;" publicationId="a40a-1ac4-b5c2-a481" page="57" hidden="false">
+      <description>In Scenarios where you roll for Warbands to arrive, or ones where you roll to see which part of the board you deploy a Warband in (though not when rolling to choose deployment zones), you may modify the roll for Warbands from this Army by +1 or -1.</description>
+    </rule>
+    <rule id="a5e1-2feb-8d15-87e9" name="Yanâd Durinul" publicationId="a40a-1ac4-b5c2-a481" page="57" hidden="false">
+      <description>Friendly Infantry models may re-roll To Wound Rolls of a natural 1 when making Strikes, so long as they are in base contact with 2 or more friendly Infantry models.</description>
+    </rule>
+    <rule id="4e62-4f72-9241-de5a" name="Long March from the Iron Hills" publicationId="a40a-1ac4-b5c2-a481" page="57" hidden="false">
+      <description>Friendly models gain the Mountain Dweller special rule.</description>
+    </rule>
+    <rule id="8042-2c14-9a92-5f37" name="&quot;I&apos;ve always found Thorin the more reasonable of the two..&quot;" publicationId="a40a-1ac4-b5c2-a481" page="57" hidden="false">
+      <description>Dáin gains the Master of Battle (5+) special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

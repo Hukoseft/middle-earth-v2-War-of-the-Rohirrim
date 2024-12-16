@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="fbec-2072-2dfb-5f96" name="The Eagles" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="924e-3703-1bdd-ff80" name="Gwaihir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2c63-e785-77f3-e544" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b475-f947-cdc2-82ac" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="957f-9436-22d3-90b6" name="Gwaihir" hidden="false" collective="false" import="true" targetId="f2a4-f867-4270-6422" type="selectionEntry"/>
+        <entryLink id="ea18-8813-7ae6-5c60" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="3130-f643-5da4-be09" name="Piercing Cry" hidden="false">
+      <description>Once per game, at the start of any Move Phase, Gwaihir can use this special rule so long as he is alive and on the battlefield. If he does, then enemy models within 6&quot; of Gwaihir cannot Move during that turn, but may otherwise act normally.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="4d68-513d-1f4e-811d" name="&quot;The Eagles are coming!&quot;" hidden="false" targetId="1f28-5551-a9c8-582c" type="rule"/>
+  </infoLinks>
+</catalogue>

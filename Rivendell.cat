@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="0a14-85c6-3e84-b516" name="Rivendell" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="188f-e4f4-e484-338c" name="Elrond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3843-68c6-4e01-98fa" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6c03-c440-d6cb-44ab" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="c5c2-6b50-fa06-fea8" name="Elrond, Master of Rivendell" hidden="false" collective="false" import="true" targetId="5126-1b1a-3e92-b853" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6492-f11d-3c8f-edfa" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="eee7-df48-5520-9836" name="Arwen&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fa39-e088-1ee7-ea1f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cb83-206c-939f-c666" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="329e-2745-e45d-bacc" name="Arwen Undómiel" hidden="false" collective="false" import="true" targetId="8873-c5c2-9834-54b2" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a1b0-5ddb-45e9-1bac" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6814-6ca1-a8e9-da3b" name="Lindir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="343d-03c0-b623-d228" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="20af-9659-be9c-7a06" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="2cf9-a484-508e-c93b" name="Lindir of Rivendell" hidden="false" collective="false" import="true" targetId="0972-6f8f-06e7-bc6a" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="13f3-fc74-5250-c8c2" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c9f3-0b74-2ad6-d4cf" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a26e-17f8-e99d-dd15" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="9a1a-7ab9-284f-53b6" name="Rivendell Captain" hidden="false" collective="false" import="true" targetId="0d9e-0553-2909-729c" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="7667-1702-2c71-3954" name="Bilbo Baggins, Ageing Hobbit" hidden="false" collective="false" import="true" targetId="f148-6e5e-61be-f059" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b7f8-2dce-ae76-1d15" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="690c-a587-bb48-2df8" name="invoke the Bruinen" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Once per game, so long as either Elrond or Arwen are alive and on the battlefield, you may use this special rule at the start of any Move Phase in which your Army is Broken. Place a 25mm Marker anywhere within 12&quot; and Line of Sight of Elrond or Arwen, and then roll a D6 for each enemy model within 3&quot; of that Marker. If the roll is equal to or over the Strength of the model, or is a natural 6, then the model immediately suffers a Strength 4 hit and, if it survives, will be knocked Prone. Remove the Marker after every affected enemy model has been rolled for.</description>
+    </rule>
+    <rule id="9c5c-cbf4-7b66-03d1" name="Protection of Imladris" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models gain a bonus of +1 to any Courage Tests they are required to take.</description>
+    </rule>
+    <rule id="07fa-39e1-27a6-b7b4" name="Defensive Stance" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Elf Warrior models may re-roll To Wound rolls of a natural 1 when making Strikes so long as they have not Moved during the preceding Move Phase.</description>
+    </rule>
+  </rules>
+</catalogue>

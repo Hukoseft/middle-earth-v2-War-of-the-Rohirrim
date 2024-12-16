@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="58f8-3b28-438f-5c34" name="Fangorn" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5f7d-d6e7-56ec-87fc" name="Treebeard&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="affb-7fcc-ed33-5418" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cbee-0269-f3d3-435a" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fcbd-5820-4fd1-904d" name="Treebeard" hidden="false" collective="false" import="true" targetId="bd15-f864-3e73-ab41" type="selectionEntry"/>
+        <entryLink id="0a06-82ca-63c5-a900" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8daf-8116-e96e-ee5f" name="Birchseed&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d34b-41e4-698c-70f9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b281-ecc5-b893-05f0" name="Birchseed" hidden="false" collective="false" import="true" targetId="e50b-f871-f5a0-2d24" type="selectionEntry"/>
+        <entryLink id="325e-859c-fb73-82d4" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2ae9-859b-fbc6-4178" name="Beechbone&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="aee4-f4a9-6745-b7bc" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0abf-18ab-2de7-939e" name="Beechbone" hidden="false" collective="false" import="true" targetId="7bed-0ea7-4a3a-fec9" type="selectionEntry"/>
+        <entryLink id="7608-0e2f-b1f1-88c6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="c408-f469-5815-96e2" name="&quot;Don&apos;t be Hasty&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Ent models are completely unaffected by and Magical Powers that would attempt to Move them, or prevent them from Activating or Moving.</description>
+    </rule>
+    <rule id="d7ad-29a0-342c-515d" name="One with the Forest" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Ent models are completely unaffected by the Call Winds, Nature&apos;s Wrath, Wrath of Bruinen and Writhing Vines Magical Powers.</description>
+    </rule>
+    <rule id="9815-3d7b-a8e5-2a85" name="&quot;Beech. Oak. Chestnut. Ash. Many have come&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Whenever you include an Ent Warrior in your Army, you may assign one of the four types of Ent to it, as listed below. You must split the types of Ent as evenly as possible. So, if you want to have a second of one type of Ent, you must first have one of each ot the types. If you want to have a third of one type of Ent, you must first have 2 of each of the types, and so on.
+
+Beech - The Ent may re-roll To Wound rolls of a natural 1 when making Strikes.
+
+Oak - The Ent improves its Wounds characteristic to 4.
+
+Chestnut - The Ent gains the Mighty Blow special rule.
+
+Ash - The Ent improves their Shoot Value to 3+ and can still use its Throw Stones special rule even if it has Moved that turn (though not if it has Moved over hald its Move Value).</description>
+    </rule>
+  </rules>
+</catalogue>

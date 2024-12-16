@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="24a6-3259-2d77-5b47" name="Muster of Isengard" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="4972-d131-498a-506e" name="Saruman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2c59-ff91-95b1-d18a" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f407-96d2-2934-353a" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="6561-9e60-9718-273f" name="Saruman" hidden="false" targetId="9bbd-1ec2-e986-8a68" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1eb5-fcbe-d6ba-3776" name="Saruman" hidden="false" collective="false" import="true" targetId="66fb-d715-309c-6ab0" type="selectionEntry"/>
+        <entryLink id="a86b-3c1b-fd63-c648" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7256-44fb-a14e-1c2f" name="Uruk-hai Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8922-b6ca-e1ab-4ce5" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="113d-3136-053c-c618" name="Uruk-hai Captain" hidden="false" collective="false" import="true" targetId="af8a-ad6f-1ab0-6c75" type="selectionEntry"/>
+        <entryLink id="1e80-28ce-5a6d-9d8c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cf68-66f7-1012-5866" name="Scout Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f605-100e-762e-93b1" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ef07-f0eb-db45-465f" name="Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="57ce-308a-abe6-b341" type="selectionEntry"/>
+        <entryLink id="007b-bc03-9bb6-77d2" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="7ce1-d871-801b-21ad" name="Gríma Wormtongue" hidden="false" collective="false" import="true" targetId="d374-043a-163a-9ce6" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="ae8a-8f3e-ed2b-2f82" name="&quot;There will be no dawn for Men&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Uruk-hai models gain the Hatred (Man) special rule.</description>
+    </rule>
+    <rule id="fa06-7cdd-559e-b96c" name="Isengard Unleased" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>During the first turn of the game, each friendly Uruk-hai Hero may declare a Heroic March for free. Additionally, Uruk-hai Captains gain Heroic Strike.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="f4de-c6de-7544-7819" name="&quot;You do not know pain, you do not know fear&quot;" hidden="false" targetId="6acf-10ef-e014-9f9f" type="rule"/>
+  </infoLinks>
+</catalogue>

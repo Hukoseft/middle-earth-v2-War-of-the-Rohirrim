@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d2b2-6cfb-5db6-3e89" name="Halls of Thranduil" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="ad16-975b-719e-60bd" name="Thranduil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7fac-3c02-1a0a-c1a4" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="d965-88ae-0674-ea37" name="Palace Guard" hidden="false" targetId="8366-90a6-453b-f47a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0070-3eed-7174-b385" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="329f-d42c-5933-be82" name="Thranduil, King of the Woodland Realm" hidden="false" collective="false" import="true" targetId="5a79-8cdd-897c-d3e6" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7800-d6ab-1469-47fa" name="Ranger Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="505a-679d-b38a-f018" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f1f8-ce7b-87a5-f37b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="650c-2713-85c0-d417" name="Mirkwood Ranger Captain" hidden="false" collective="false" import="true" targetId="3862-ed2e-6305-4bed" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1426-83cd-381f-39d8" name="Tauriel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4ea2-0d19-5ee1-018a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="50c3-03ca-8e6a-70c8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="6a8e-9a9c-1623-3935" name="Tauriel, Ranger of Mirkwood" hidden="false" collective="false" import="true" targetId="d618-4dd2-674f-d37f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2c9c-b7b3-eb0c-19cf" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7a57-a04c-b57f-6ce5" name="Legolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="61a3-b0e5-c7f3-9ed3" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="14b2-6f25-52dd-985f" name="Palace Guard" hidden="false" targetId="8366-90a6-453b-f47a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8302-009f-e745-71c0" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="725f-2a23-45c7-7892" name="Legolas Greenleaf, Prince of Mirkwood" hidden="false" collective="false" import="true" targetId="5eb3-48a0-6a31-e47c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="be68-60df-a931-94d9" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="663e-385f-293f-3338" name="Mirkwood Elf Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="cc17-1695-4209-7d4a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7aa4-8b1e-a78a-8d0e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="fbe2-2e1b-c15e-ead5" name="Mirkwood Elf Captain" hidden="false" collective="false" import="true" targetId="8e66-6b76-0aba-be2e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="863c-e220-311e-b920" name="Palace Guard Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="54d3-5bd0-18db-1593" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="7808-c9e1-6aa9-4add" name="Palace Guard" hidden="false" targetId="8366-90a6-453b-f47a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bb3b-e94b-6a96-4978" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="4ec9-b62a-863d-a38c" name="Palace Guard Captain" hidden="false" collective="false" import="true" targetId="5d9e-63ec-de72-76a2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="f9e6-f78d-8b68-fb7f" name="&quot;The Elves of Mirkwood are not like their kin. They are less wise, and more dangerous&quot;" publicationId="a40a-1ac4-b5c2-a481" page="101" hidden="false">
+      <description>Friendly Mirkwood Warrior models within 3&quot; of Thranduil gain a bonus of +1 To Wound when making Strikes.</description>
+    </rule>
+    <rule id="168c-a81c-1ee5-f869" name="Stoic Command" publicationId="a40a-1ac4-b5c2-a481" page="101" hidden="false">
+      <description>Friendly Warrior models treat yout General as a banner.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="15e5-05fa-36db-4e74" name="Assault on Ravenhill" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="b9fb-f2fe-66c3-4d5e" name="Thorin Oakenshield, King Under the Mountain" hidden="false" collective="false" import="true" targetId="b167-b8d6-2e12-214b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5710-c3ec-13ef-233e" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6504-3c52-4605-e355" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7aef-1c1e-761b-9b4e" name="Bilbo Baggins, Master Burglar" hidden="false" collective="false" import="true" targetId="af7c-8cee-0377-b8fd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e253-bf38-7cf6-ca70" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="c94d-ac5d-82e7-d953" name="Tauriel, Ranger of Mirkwood" hidden="false" collective="false" import="true" targetId="d618-4dd2-674f-d37f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="819b-079f-e619-8bc9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ab18-23b1-2f09-c6f4" name="Kíli the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="13c1-27ef-3699-6e1c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d771-39f0-4ab6-2ee0" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="9050-4bf6-adc8-540a" name="Fíli the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="951d-b102-7772-d1fa" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b24c-112c-22a8-3f70" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5b18-b823-2da2-4606" name="Dwalin the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="e3bf-efd2-280d-da3c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b968-ba5e-3774-42a1" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="2071-5746-6dba-79b0" name="Legolas Greenleaf, Prince of Mirkwood" hidden="false" collective="false" import="true" targetId="5eb3-48a0-6a31-e47c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0075-f1dc-11e4-4bf1" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="07dd-339b-7b4a-576d" name="The Line of Durin" publicationId="a40a-1ac4-b5c2-a481" page="107" hidden="false">
+      <description>Friendly models treat Thorin as a banner with a range of 6&quot;. So long as he is still alive, Thorin will count as a banner for the purpose of Victory Points in Scenarios that award Victory Points for having a banner left alive.
+
+Additionally, Kíli and Fíli increase their Attacks to 3 in this Army List.</description>
+    </rule>
+    <rule id="bee0-baee-f081-c636" name="The King&apos;s Protector" publicationId="a40a-1ac4-b5c2-a481" page="107" hidden="false">
+      <description>If Thorin is Engaged in Combat within 6&quot; of Dwalin, then Dwalin may declare a Heroic Combat for free. If the Heroic Combat is successful then Dwalin must use the following Move to join Thorin&apos;s combat. If this is not possible then Dwalin must Move as close as possible to Thorin.</description>
+    </rule>
+    <rule id="6d88-d1fd-95d0-ccd1" name="Orcrist" publicationId="a40a-1ac4-b5c2-a481" page="107" hidden="false">
+      <description>Legolas begins the game with Orcrist - no points are paid for Orcrist, it is free. Additionally, at the start of any Fight Phase, if Legolas is within 6&quot; of Thorin and Thorin is Engaged in combat, then Legolas can throw Orcrist to Thorin. From that point on, Thorin carries Orcrist instead of Legolas.</description>
+    </rule>
+    <rule id="9d05-984c-c354-c44c" name="Throwing Stones" publicationId="a40a-1ac4-b5c2-a481" page="107" hidden="false">
+      <description>Instead of using his Throw Stones special rule as normal, Bilbo may use stones in the same way as a Throwing Weapon. These have a Strength of 1 and a range of 8&quot;, and Bilbo may re-roll any failed To Wound Rolls when using stones as a Throwing Weapon.</description>
+    </rule>
+    <rule id="1fdf-46d1-fc54-4466" name="Heroes of Mirkwood" publicationId="a40a-1ac4-b5c2-a481" page="107" hidden="false">
+      <description>Legolas increases his Fight Value to 7 and his Attacks to 3. Additionally, Tauriel must re-roll all failed To Wound Rolls when making Strikes.</description>
+    </rule>
+  </rules>
+</catalogue>

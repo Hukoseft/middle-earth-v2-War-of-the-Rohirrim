@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="cb11-6c3a-3824-280e" name="Radagast&apos;s Alliance" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="ba9a-7328-ed5c-8b03" name="Radgast&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dcfa-e5d9-b6cb-6f7f" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1d38-f3df-371c-ae90" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="87e8-79d8-ebe6-486f" name="Radagast the Brown" hidden="false" collective="false" import="true" targetId="fd8e-6891-7a44-af52" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7d40-ea42-e0fe-f155" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="35cf-14f6-a4f1-bc4e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5c3f-8ccc-a965-3130" name="Beorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="38b8-8ce0-ada1-0583" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4dcd-ee15-d3c1-d875" name="Beorn" hidden="false" collective="false" import="true" targetId="6ed6-e341-55ad-6389" type="selectionEntry"/>
+        <entryLink id="73d3-07d5-3c88-9139" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f3e1-13cc-4f00-d7f5" name="Gwaihir" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a228-4c83-7e49-6540" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="86d1-53e3-319e-cef3" name="Gwaihir" hidden="false" collective="false" import="true" targetId="f2a4-f867-4270-6422" type="selectionEntry"/>
+        <entryLink id="5172-a2e9-98c3-021b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="3234-a607-2172-250a" name="Beorn&apos;s Fury" publicationId="a40a-1ac4-b5c2-a481" page="109" hidden="false">
+      <description>If Beorn is involved in a Combat and kills every model he was Engaged in Combat with, then in the following turn he may declare a Heroic Move for free.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="3c29-156e-82de-4173" name="&quot;The Eagles are coming!&quot;" hidden="false" targetId="1f28-5551-a9c8-582c" type="rule"/>
+  </infoLinks>
+</catalogue>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="5075-6976-f01e-622c" name="Wolves of Isengard" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="1496-95f3-27d1-da3d" name="Sharku&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d33f-a94f-adde-8152" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b16b-f04a-364c-5b87" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cc4e-35a2-8677-152f" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="f2bc-b8af-92c6-ad0e" name="Sharku, Warg Rider Captain" hidden="false" collective="false" import="true" targetId="3515-0b07-9615-30c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbc0-aa86-adb3-ac47" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4b26-68dd-7a5f-a659" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5b7b-cafb-9740-c116" name="Isengard Orc Captain" hidden="false" collective="false" import="true" targetId="f0cf-6669-2e6b-a37c" type="selectionEntry"/>
+        <entryLink id="a147-1aa4-6475-fb46" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="a1c6-df90-3ba0-7150" name="Leader of the Pack" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Sharku may declare a Heroic Combat each turn for free.</description>
+    </rule>
+    <rule id="0d4d-0cea-b622-cbba" name="Savage Charge" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Cavalry models still gain the Extra Attack bonus even when they Charge a Cavalry model, and will retain it even if they are subsequently Charged by a Cavalry model.</description>
+    </rule>
+    <rule id="8378-23e9-0eb4-e739" name="Warg Scouts" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the start of the game, after both sides have deployed but before the first Priority has been rolled, you may select up to D6 friendly Warrior models. The selected models may immediately Move as if it were the Move Phase, and then make a shooting attack as if it were the Shoot Phase. During this Move, friendly models may not Move within 1&quot; of an enemy model and therefore may not Charge. In Scenatios where models enter th board, the selected models will Move onto the board before the first turn of the game, treating any roll to enter the board as a 6. Each model is treated as a separate Warband in this instance.</description>
+    </rule>
+    <rule id="006c-b92f-e9ea-f854" name="Ambush" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>In Scenarios that use the Maelstrom of Battle special rule, a Wolves of Isengard Army will automatically win the roll to choose who has Priority on the first turn. If both Armies have rules that allow them to do this, roll for Priority as normal. Additionally, models from this Army may Charge on the turn they enter the board, even though they may not normally be allowed to do so. Models Charging in this manner do not need to take a Courage Test to Charge an enemy with the Terror special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

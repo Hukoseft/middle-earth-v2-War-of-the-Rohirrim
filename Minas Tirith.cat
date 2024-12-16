@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d9c9-1ecb-df78-95c7" name="Minas Tirith" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="b92b-ec03-a564-e58c" name="Denethor&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0e10-d5c3-121a-2625" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="9db4-47d3-3d22-4b5e" name="Citadel Guard" hidden="false" targetId="6c3c-5224-1f9a-60d8" primary="false"/>
+        <categoryLink id="6104-a461-cda7-8754" name="Guard of the Fountain Court" hidden="false" targetId="b271-79ae-ca11-593c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="44fc-5a3c-a5ea-a2bf" name="Denethor, Steward of Gondor" hidden="false" collective="false" import="true" targetId="67e7-4a5b-5693-c118" type="selectionEntry"/>
+        <entryLink id="a13f-d2b9-5bdf-a1b9" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a7f-df18-06fa-af01" name="Boromir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4045-42f6-b2f7-980b" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="c29b-e01d-1b61-352a" name="Citadel Guard" hidden="false" targetId="6c3c-5224-1f9a-60d8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dba3-37ce-9c19-ddd8" name="Boromir, Captain of the White Tower" hidden="false" collective="false" import="true" targetId="46a8-a519-79ce-4343" type="selectionEntry"/>
+        <entryLink id="0c09-f889-87bd-6113" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec84-2d37-ca7c-7bbc" name="Faramir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0df6-e22e-27dc-a673" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="d6fe-1eb0-e57c-a9d9" name="Citadel Guard" hidden="false" targetId="6c3c-5224-1f9a-60d8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ccad-61be-d736-8f95" name="Faramir, Captain of Gondor" hidden="false" collective="false" import="true" targetId="b729-0f18-3646-42ba" type="selectionEntry"/>
+        <entryLink id="8dcb-c123-192a-aadc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a63-00a2-66d8-724c" name="Irolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="318c-2be7-d5e6-7ab9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="57d6-83b0-c606-1330" name="Citadel Guard" hidden="false" targetId="6c3c-5224-1f9a-60d8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ae1d-29db-33d8-f006" name="Irolas, Captain of the Guard" hidden="false" collective="false" import="true" targetId="ded0-93b3-d645-2379" type="selectionEntry"/>
+        <entryLink id="cbeb-b7ca-2417-6f8e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7a16-1d66-e51a-cdb6" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b49d-9ebd-4ba1-9b05" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="28b7-e734-0d9a-b98e" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+        <entryLink id="4621-f52c-ed79-b891" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

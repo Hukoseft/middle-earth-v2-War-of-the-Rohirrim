@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="005b-0eb5-3112-ce82" name="Wraiths on Wings" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="6580-64cb-c366-1a02" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="02ad-67f7-a463-a042" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8cd8-c019-5ef3-baa3" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6d93-8f69-9f23-cc95" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="deca-4453-9c4d-289f" name="Full Force Charge" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>The first time a friendly Monster model Charges during its Activation, it may choose to use this special rule. If it does, each model it has Charged suffers a single Strength 5 hit. Cavalry models suffer these hits on both the Mount and the rider. If after these hits have been resolved the Monster is no longer Engaged in Combat, it may continue its Activation and may even Charge again if it wishes; though if it does, any subsequent Charges will not confer this effect.</description>
+    </rule>
+    <rule id="3cdf-e536-fb77-3038" name="Strafing Attack" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the end of a friendly Monster model&apos;s Move, if it is not Engaged in Combat, you may choose a single enemy model, that is not Engaged in Combat, that lies in the direct path between where the Monster began its Move, and where it finished its Move - the path is the same width and the Monster model&apos;s base. The chosen model suffers a Strength 5 hit and, if it survives, will be knocked Prone. Cavalry models suffer these hits on both the Mount and the rider.</description>
+    </rule>
+  </rules>
+</catalogue>

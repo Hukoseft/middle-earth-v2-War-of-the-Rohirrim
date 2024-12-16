@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="eb6b-bfe0-6695-3bd6" name="Reclamation of Osgiliath" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="8466-a34b-21df-e066" name="Boromir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8c63-d45b-2fb6-abe5" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7b37-574b-b582-ac07" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="40e9-0d8e-1877-da04" name="Boromir, Captain of the White Tower" hidden="false" collective="false" import="true" targetId="46a8-a519-79ce-4343" type="selectionEntry"/>
+        <entryLink id="a4aa-40cc-0aed-45fc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="3983-74c0-9b26-36fd" name="Faramir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6dfd-9cb7-feaf-a57f" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3f52-6b66-fc4e-79f8" name="Faramir, Captain of Gondor" hidden="false" collective="false" import="true" targetId="b729-0f18-3646-42ba" type="selectionEntry"/>
+        <entryLink id="32f0-6032-99ed-f08f" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ff03-9969-b86e-07a6" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a661-7058-d4d6-49a4" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e752-5e8a-8f46-8a43" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+        <entryLink id="7a4a-bc6e-4391-894d" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2742-c30e-1e69-b198" name="Madril&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e9c1-54e7-d18b-a0ec" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ac1a-d94c-c815-5e11" name="Madril, Captain of Ithilien" hidden="false" collective="false" import="true" targetId="4726-8a9b-c0e3-8765" type="selectionEntry"/>
+        <entryLink id="df04-35b1-1747-8971" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="db8d-9976-d1a1-a1c6" name="&quot;Remember today, little brother&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>While Boromir and Faramir are within 3&quot; of each other, they may spend each other&apos;s Might, Will and Fate Points as if they were their own.</description>
+    </rule>
+    <rule id="5051-01f9-f377-80d2" name="&quot;This city was once the jewel of our kingdom&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models gain the Mountain Dweller special rule.</description>
+    </rule>
+    <rule id="641a-311e-e947-08f1" name="&quot;For Gondor!&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Once per game, at the start of any Fight Phase, Boromir can use this special rule so long as he is alive and on the battlefield. If he does, then friendly Gondor Warrior models within 6&quot; of Boromir gain a bonus of +1 To Wound when making Strikes until the end of the turn. This is treated as an Active ability belonging to Boromir.</description>
+    </rule>
+  </rules>
+</catalogue>

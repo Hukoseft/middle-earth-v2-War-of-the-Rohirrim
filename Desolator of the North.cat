@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="63bb-1ae0-548a-ee19" name="Desolator of the North" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="b680-b023-5f12-ff45" name="Smaug" hidden="false" collective="false" import="true" targetId="1bab-f26a-2102-7ead" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="bdf9-9f08-85ea-e15e" name="Sheer Dominance" publicationId="a40a-1ac4-b5c2-a481" page="159" hidden="false">
+      <description>Whilst Smaug is in range of an Objective Marker, he is automatically considered to be holding it and the opposition are considered to have no models within range of the Objective Marker. If models from both sides have a special rule that confers this effect, then this special rule will override the opposing one, regardless of what the opposing special rule states.</description>
+    </rule>
+    <rule id="3bb7-fcdf-170e-fedc" name="Lust for Gold" publicationId="a40a-1ac4-b5c2-a481" page="159" hidden="false">
+      <description>In Scenarios where models can carry Objective Markers, then when Smaug Moves, he must always Charge an enemy model carrying an Objective Marker if possible. If there are multiple enemy models carrying an Objective Marker that he can Charge, Smaug may choose which one he Charges.</description>
+    </rule>
+    <rule id="fb87-2676-f89d-8269" name="&quot;I will not part with a single coin!&quot;" publicationId="a40a-1ac4-b5c2-a481" page="159" hidden="false">
+      <description>At the start of each game, after both sides have been deployed, Smaug&apos;s opposing player must select three of their models to each be given a stash of gold - these must be different models. These models are given a Gold Marker, which is a Light Object that can never be passed to another model, and are treated as Objective Markers for the purpose of the Lust for Gold special rule. If Smaug kills an enemy model with a Gold Marker in Combat, then he immediately regains the Gold Maker and it is removed from the game. If a model holding a Gold Marker is slain in any other manner, the Gold Marker drops like any other Light Object and may be picked up by another model; if this is Smaug, it will be removed from play. At the end of the game, if Smaug had reclaimed all three Gold Markers then he will score an additional 2 Victory Points. However, if any Gold Markers are in the possession of an enemy model, then Smaug&apos;s opposing playing will score an additional 2 Victory Points. In either instance, this can never take an Army&apos;s total number of Victory Points above 20.</description>
+    </rule>
+  </rules>
+</catalogue>

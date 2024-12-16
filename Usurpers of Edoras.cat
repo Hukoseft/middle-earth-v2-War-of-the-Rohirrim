@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="543b-cfc8-c759-2308" name="Usurpers of Edoras" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="8184-8839-955f-02cb" name="Freca&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ad70-8edb-c521-d49f" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="74f6-5ba3-24a5-08a2" name="Freca, Lord of the Westmarch" hidden="false" collective="false" import="true" targetId="a167-7e3e-8327-7910" type="selectionEntry"/>
+        <entryLink id="02df-229e-f527-32c3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a5a2-2ac6-6d7f-ebc8" name="Wulf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="bb57-366a-9451-6412" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a696-87bb-b026-4462" name="Wulf, High Lord of the Hill Tribes" hidden="false" collective="false" import="true" targetId="86c2-2306-87db-1375" type="selectionEntry"/>
+        <entryLink id="8be8-c562-5917-3b8e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c155-090d-919e-9167" name="Targg&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3204-d3d7-4ce0-d7db" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="baed-df7a-68d4-2ab8" name="General Targg" hidden="false" collective="false" import="true" targetId="4848-8de9-bb38-b77e" type="selectionEntry"/>
+        <entryLink id="79dc-230a-aa5b-ce76" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a90-8e9c-692b-5ae3" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="602b-0e73-fdb2-89a0" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="300c-1fcf-725c-223f" name="Hill Tribes Chieftain" hidden="false" collective="false" import="true" targetId="31c1-b539-8fc3-c85f" type="selectionEntry"/>
+        <entryLink id="9393-1bd7-ef3f-0d35" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c8c6-ae51-bff1-3f81" name="Throne&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2b5a-ad3d-6014-27ac" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="9cb4-1560-3dcb-0165" name="Traitors" hidden="false" targetId="1063-e2b7-bcc0-ddb1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="96ce-d671-e361-1032" name="Lord Thorne of the Wold" hidden="false" collective="false" import="true" targetId="c700-24b2-213c-b8e5" type="selectionEntry"/>
+        <entryLink id="5595-e5d5-783d-2e5e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="5d9a-6eb3-b87e-1b3b" name="Whipped into a frenzy" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Whenever a Hill Tribesman or Hill Tribes Chieftain suffers a Wound, roll a D6. On a natural 6, the Wound is ignored.</description>
+    </rule>
+    <rule id="51e5-18e6-3564-63c4" name="Barbarous Killers" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Dunland models gain a bonus of +1 To Wound when making Strikes against enemy Hero models.</description>
+    </rule>
+  </rules>
+</catalogue>

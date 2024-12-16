@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="5b74-f3ae-eb55-13b4" name="The Fellowship" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="100a-8c1d-3101-3168" name="Samwise Gamgee" hidden="false" collective="false" import="true" targetId="6b10-092a-ef5a-4f1c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="de56-75d5-6588-3781" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="3a89-f389-8db6-5605" name="Bill the Pony" hidden="false" collective="false" import="true" targetId="86b5-8ab9-cfd9-fff1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="759c-16ce-f770-9271" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="30a8-d2c7-9daf-fd68" name="Peregrin Took" hidden="false" collective="false" import="true" targetId="65a3-4b63-4f33-837b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4acc-cb98-7841-4cbb" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a76a-86b4-3fa1-0a9e" name="Meriadoc Brandybuck" hidden="false" collective="false" import="true" targetId="f4f2-ed76-cf8c-26d3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c3a4-8b5f-fe35-c5f3" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b6be-7136-51f8-bfbd" name="Legolas Greenleaf" hidden="false" collective="false" import="true" targetId="0f6a-50ca-f061-004e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="6533-58ae-6c79-39b1" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b9c2-25d5-b7de-0d94" name="Gimli, Son of Glóin" hidden="false" collective="false" import="true" targetId="4072-d158-632b-17b9" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="7682-a2d7-aa83-f3ee" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1ea5-ef69-a1f1-0457" name="Boromir of Gondor" hidden="false" collective="false" import="true" targetId="27ca-4997-4f8e-93ee" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ad0c-6f15-9274-3743" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7a91-44bc-d171-875f" name="Frodo Baggins" hidden="false" collective="false" import="true" targetId="45ac-cd57-e718-c76a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c62e-ab47-059e-608e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5fd7-8ef2-0fdb-4df2" name="Gandalf the Grey" hidden="false" collective="false" import="true" targetId="e227-3700-2b82-965a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ce1d-034f-eb09-a9d9" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="74e7-c6c8-62a6-2954" name="Aragorn (Strider)" hidden="false" collective="false" import="true" targetId="a615-398c-c397-a883" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2371-f89a-6469-fed4" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="c820-29ed-6b5b-9570" name="The Fellowship" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>The Fellowship is always deployed as a single Warband.</description>
+    </rule>
+    <rule id="1e6c-d1b7-b2f4-fd2a" name="The Bond of Fellowship" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly models within 3&quot; of another friendly Fellowship model may re-roll a single failed To Wound roll when making Strikes.</description>
+    </rule>
+    <rule id="e48f-e412-415f-6843" name="Traverse the Wilderness" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>Friendly Fellowship models gain the Woodland Creature and Mountain Dweller.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="f9e4-7c08-29ac-8cc0" name="&quot;You have my sword&quot;" hidden="false" targetId="90a7-581e-c925-cff6" type="rule"/>
+  </infoLinks>
+</catalogue>

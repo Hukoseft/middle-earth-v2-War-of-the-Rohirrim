@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="95ca-07ae-578c-ffbd" name="The White Council" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="8157-d922-a954-313e" name="Saruman the White" hidden="false" collective="false" import="true" targetId="8a55-bedf-a30a-966d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="a66a-0ae3-e4d3-79eb" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4509-4301-6700-cd19" name="Gandalf the Grey" hidden="false" collective="false" import="true" targetId="e227-3700-2b82-965a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="aa6c-062f-1ffa-b9b4" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="1fd3-380a-78a2-0522" name="Galadriel, Lady of Light" hidden="false" collective="false" import="true" targetId="c336-25a2-d666-0a6f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="115b-ec2e-0bdf-5ed5" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="fc34-bbc5-afd7-e21b" name="Elrond, Master of Rivendell" hidden="false" collective="false" import="true" targetId="5126-1b1a-3e92-b853" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="aa25-b6d3-f4f0-c948" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0a80-4194-17e3-057e" name="Radagast the Brown" hidden="false" collective="false" import="true" targetId="fd8e-6891-7a44-af52" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="09ee-7496-aa31-9ed6" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="dd53-6ecb-87b3-ff31" name="Thráin the Broken" hidden="false" collective="false" import="true" targetId="6da0-f67b-4644-6073" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4504-255c-94df-9ac2" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="336f-23bb-3da0-706a" name="Masters of Magic" publicationId="a40a-1ac4-b5c2-a481" page="111" hidden="false">
+      <description>Friendly White Council models may still be Activated whilst Engaged in Combat (though they still may not Move), and therefore may attempt to Cast Magical Powers whilst Engaged in Combat, with the exception of the following Magical Powers; Nature&apos;s Wrath, Sorcerous Blast, Wrath of Bruinen.</description>
+    </rule>
+    <rule id="1fdd-5e9a-d0dd-16e4" name="&quot;Are you in need of assistance?&quot;" publicationId="a40a-1ac4-b5c2-a481" page="111" hidden="false">
+      <description>Friendly White Council models gain a bonus of +1 to any Resist Tests whilst within 6&quot; of another friendly White Council model.</description>
+    </rule>
+    <rule id="7e34-e928-aacf-9b5e" name="Last Stand of the Council" publicationId="a40a-1ac4-b5c2-a481" page="111" hidden="false">
+      <description>Friendly White Council models gain the Dominant (3) special rule.</description>
+    </rule>
+    <rule id="3015-c8df-7543-c597" name="Council of the Wise" publicationId="a40a-1ac4-b5c2-a481" page="111" hidden="false">
+      <description>Each friendly White Council model gains the special rule associated with them as listed below:
+
+• Saruman - Friendly White Council models within 3&quot; of Saruman may re-roll any 1s in their rolls to Cast a Magical Power.
+
+• Gandalf - Friendly White Council models within 3&quot; of Gandalf may re-roll To Wound Rolls of a natural 1 when making Strikes.
+
+• Radagast  - Friendly White Council models that begin their activation within 3&quot; of Radagast may Move through difficult terrain without penalty.
+
+• Elrond - Friendly White Council models treat Elrond as a banner.
+
+• Galadriel - Friendly White Council models within 3&quot; of Galadriel gain the Resistant to Magic special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

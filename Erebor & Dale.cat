@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="3483-71cc-8cd3-40c6" name="Erebor &amp; Dale" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="9f58-aad5-71fa-49ab" name="Thrór&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="9d20-f644-e438-6f9e" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9d20-f644-e438-6f9e" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e705-8649-81d8-a353" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="d72a-f25c-67d3-e7d1" name="Thrór" hidden="false" targetId="961e-6497-c1b3-e107" primary="false"/>
+        <categoryLink id="ca65-6ca7-04e0-a741" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c5ec-7e99-262c-6197" name="Thrór, King Under the Mountain" hidden="false" collective="false" import="true" targetId="06e7-896d-d1f5-3d05" type="selectionEntry"/>
+        <entryLink id="ac22-2a52-cdfd-18c8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="87ee-c89e-7475-a5ea" name="Thorin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="4b83-cf68-8344-ce1d" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b83-cf68-8344-ce1d" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="21a8-ba47-c636-9153" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="8569-589c-084c-4043" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="05d1-5569-708c-b62a" name="Young Thorin Oakenshield" hidden="false" collective="false" import="true" targetId="c7ff-da69-5a9c-939f" type="selectionEntry"/>
+        <entryLink id="c378-c5b4-1431-903c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d03c-2d45-c9dd-6e4c" name="Balin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="ec79-d0f7-9937-d691" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ec79-d0f7-9937-d691" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e24c-8a37-9287-fd20" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="7f5b-1ee8-b69c-d534" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5d8b-efb0-1cf9-fbfc" name="Young Balin the Dwarf" hidden="false" collective="false" import="true" targetId="095d-4fa5-d3c4-09e5" type="selectionEntry"/>
+        <entryLink id="a635-0049-5873-d4e4" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac4a-10c2-4d63-bf27" name="Erebor Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7b38-0297-b0a9-90ef" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="6eda-b039-bb44-4bd5" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="66af-1cac-b94b-0270" name="Erebor Dwarf Captain" hidden="false" collective="false" import="true" targetId="1329-d058-2d61-4eda" type="selectionEntry"/>
+        <entryLink id="0afa-60dc-233b-a0d5" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b3c-a59d-d06b-ba7d" name="Grim Hammer Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0598-5d12-1af1-3339" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="7cf8-6d22-b10a-be8f" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e28c-f92c-46d1-08f3" name="Grim Hammer Captain" hidden="false" collective="false" import="true" targetId="aec6-b8c0-530b-d8f7" type="selectionEntry"/>
+        <entryLink id="4ca1-fa00-4e10-0a1a" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d13-8ded-484e-2ebf" name="Dale Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1d4c-1895-64e7-47fd" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="fc8a-ce67-dbfe-3efb" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="376e-105a-5407-9c40" name="Captain of Dale" hidden="false" collective="false" import="true" targetId="2ec6-5dca-c177-7f37" type="selectionEntry"/>
+        <entryLink id="2bb8-572e-e127-ddff" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7e3-6784-2605-3832" name="Dwalin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="dc45-fa71-ec7c-7761" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dc45-fa71-ec7c-7761" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7ea7-81f3-de8e-e034" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="e9bb-0102-48b4-3275" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2009-d154-4731-44fc" name="Young Dwalin the Dwarf" hidden="false" collective="false" import="true" targetId="e6d6-acf7-de38-e9b9" type="selectionEntry"/>
+        <entryLink id="3194-b021-9ef4-9c15" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ac0-866f-a1e6-9fb4" name="Girion&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="686b-795a-8090-7646" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="873e-c4d1-0521-6da9" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="73a0-4caa-4165-ae10" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8c89-1f0c-9c94-2c43" name="Girion, Lord of Dale" hidden="false" collective="false" import="true" targetId="0329-12d9-62e6-2956" type="selectionEntry"/>
+        <entryLink id="1b57-61b9-5dde-fee0" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1ec9-6d28-b1f0-be19" name="Thráin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="6b62-5ec7-33b9-7967" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="and">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6b62-5ec7-33b9-7967" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4d11-2292-2a5e-83a1" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="61c8-4adb-441a-cd86" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0d06-26c7-ed92-dbaf" name="Thráin, Son of Thrór" hidden="false" collective="false" import="true" targetId="b625-1878-17dc-a70e" type="selectionEntry"/>
+        <entryLink id="bea5-e549-386b-1b49" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="706f-683e-8d96-d5e3" name="Lords of the Kingdoms" publicationId="a40a-1ac4-b5c2-a481" page="97" hidden="false">
+      <description>Friendly Dale models treat Girion as a banner. Friendly Erebor models treat Thrór as a banner.</description>
+    </rule>
+    <rule id="7e60-a578-5218-cdae" name="Great Prosperity" publicationId="a40a-1ac4-b5c2-a481" page="97" hidden="false">
+      <description>Whenever a friendly Hero model spends a Might Point, roll a D6. On a natural 6, the Might Point was free and does not reduce the Hero model&apos;s store of Might.</description>
+    </rule>
+    <rule id="a4f3-d405-39c6-ea12" name="Alliance of Men and Dwarves" publicationId="a40a-1ac4-b5c2-a481" page="97" hidden="false">
+      <description>Friendly Dale models may re-roll To Wound Rolls of a natural 1 when making Strikes if there is a friendly Erebor model Engaged in the same Combat. Friendly Erebor models may re-roll To Wound Rolls of a natural 1 when making Strikes if there is a friendly Dale model Engaged in the same Combat.</description>
+    </rule>
+  </rules>
+</catalogue>

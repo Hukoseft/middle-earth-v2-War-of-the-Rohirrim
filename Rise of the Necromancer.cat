@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d3a6-275d-bd0e-ed92" name="Rise of the Necromancer" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="7104-0848-2c58-0be3" name="Sauron&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d235-e957-ed63-c719" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="c60a-4405-92cf-8e0c" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c251-b23a-0d45-4fba" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="21fc-13c0-7cd7-1d4b" name="Sauron, the Necromancer" hidden="false" collective="false" import="true" targetId="4bec-c300-3843-c361" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="30d5-eebf-ec37-b746" name="Nazgúl&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9eab-1ba3-d581-249c" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="28fd-ac3b-a631-230b" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="05c1-cec4-02e2-f0c6" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="050d-acc1-8348-334b" name="Nazgúl of Dol Guldur" hidden="false" collective="false" import="true" targetId="b0fb-c242-0585-9ec8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2203-638e-78dd-19b6" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d671-742f-ae6b-88c9" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0035-bea2-1ffc-68dd" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="79ad-1ed4-6845-74e9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="5041-23ee-66dc-0d45" name="Hunter Orc Captain" hidden="false" collective="false" import="true" targetId="97a4-6881-02ff-c245" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f9eb-cd20-cf4b-bfbf" name="The Keeper&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6d72-275e-8830-b8a8" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="5687-1ee8-885f-f439" name="Keeper" hidden="false" targetId="d25a-6268-4797-ecaa" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3aa1-b551-db5b-ecfa" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="1c33-c277-3592-1d28" name="The Keeper of the Dungeons" hidden="false" collective="false" import="true" targetId="f93a-ba40-d1a1-1970" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4057-2d0f-d58c-1385" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="6dc8-a5c6-8957-c7c8" name="Power of the Necromancer" publicationId="a40a-1ac4-b5c2-a481" page="153" hidden="false">
+      <description>Friendly models gain the Resistant to Magic special rule. Additionally, the Necromancer can attempt to Cast two Magical Powers when he Activates rather than one; however, he may not attempt to Cast the same Magical Power twice, or target the same enemy model twice.</description>
+    </rule>
+    <rule id="f445-607b-3d6a-7a4a" name="&quot;His spirit has lost none of its potency&quot;" publicationId="a40a-1ac4-b5c2-a481" page="153" hidden="false">
+      <description>Each time the Necromancer attempts to Cast a Magical Power by expending one or more Will Points, he automatically adds an additional free Will Point to the Casting Test.</description>
+    </rule>
+    <rule id="caaf-13a7-4bef-6c2b" name="Warband Rules" publicationId="a40a-1ac4-b5c2-a481" page="153" hidden="false">
+      <description>When writing a Ride of the Necromancer Army List that contains only Hero models (with the exception of Hunter Orc Captains, a player can either have all models in a single Warband or as multiple smaller warbands as normal.</description>
+    </rule>
+  </rules>
+</catalogue>

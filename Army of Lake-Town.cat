@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e4cd-89cd-502b-ba34" name="Army of Lake-Town" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="f4cd-c2f4-4fd3-b507" name="Alfrid&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b547-e004-0df2-5470" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="360d-1592-fa39-945e" name="Alfrid the Councillor" hidden="false" collective="false" import="true" targetId="6225-4a57-38ac-33e1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2c5b-6cf1-56bd-fc7c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="d3cb-6ab3-26bf-1497" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a090-6c89-fa23-083b" name="Bard&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f111-b319-f7fb-e1b8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="ad05-f7e8-5c83-3d29" name="Bard" hidden="false" targetId="99c0-a359-9254-ffd1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="43e8-af06-56c0-6401" name="Bard the Bowman" hidden="false" collective="false" import="true" targetId="c45a-9a3f-8528-28fd" type="selectionEntry"/>
+        <entryLink id="089a-bc18-5f78-b7c6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9d37-1268-784e-6889" name="Braga&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6f01-1d0e-4b80-558e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="22f9-2d1f-fd1c-f765" name="Braga, Captain of the Guard" hidden="false" collective="false" import="true" targetId="f86a-5565-af38-d9b5" type="selectionEntry"/>
+        <entryLink id="aac3-5060-1535-9946" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e512-e9ca-a107-43e8" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ecdc-1869-6c7d-2a10" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3a6f-6445-b2ad-744b" name="New SelectionEntry" hidden="false" collective="false" import="true" targetId="64b6-a4f5-3561-43d3" type="selectionEntry"/>
+        <entryLink id="cb0c-0a65-5f95-8ce4" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6197-6580-dbcb-3620" name="Master&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="baf2-ba41-4464-267b" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0595-50d5-11f2-f850" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="b38c-8bd6-39d5-7727" name="The Master of Lake-town" hidden="false" collective="false" import="true" targetId="e840-29f6-b730-7635" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a2e4-32db-3910-bc3b" name="Tauriel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c8e5-9f0c-afd8-d0cc" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="59f0-6d54-6604-d8fb" name="Tauriel" hidden="false" targetId="2d9d-3284-ef05-6df1" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="da32-e6f8-fd78-56c1" name="Tauriel, Ranger of Mirkwood" hidden="false" collective="false" import="true" targetId="d618-4dd2-674f-d37f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="df0c-8763-14c6-3f4a" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8bd9-a5c5-e4cc-e258" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="d923-f611-af58-8934" name="Bofur the Dwarf" hidden="false" collective="false" import="true" targetId="a460-a103-a447-171d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="c244-322d-6e05-410c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7652-b3b7-8f6f-b76a" name="Kíli the Dwarf" hidden="false" collective="false" import="true" targetId="6d9b-23d8-a189-5fc3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="17ec-8d1a-1f24-fac9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="237d-e63b-75d8-918c" name="Fíli the Dwarf" hidden="false" collective="false" import="true" targetId="75ac-b4ef-662c-2e01" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4a47-0448-2154-ae0b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b264-417e-fca8-360e" name="Óin the Dwarf" hidden="false" collective="false" import="true" targetId="09b1-5d2e-26c9-e744" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="4ac6-cee8-b6c8-00d4" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="191b-ad8a-c0ae-b7c2" name="&quot;I Shall Protect You&quot;" publicationId="a40a-1ac4-b5c2-a481" page="91" hidden="false">
+      <description>Tauriel may include Kíli, Fíli, Bofur and Óin in her Warband. Additionally, if Tauriel is within 3&quot; of a friendly Dwarf model who is Engaged in Combat, she gains a bonus of +1 To Wound when making Strikes.</description>
+    </rule>
+    <rule id="88fd-f530-182a-aa62" name="Air of Self-importance" publicationId="a40a-1ac4-b5c2-a481" page="91" hidden="false">
+      <description>The Master of Lake-town, Alfrid and Braga may not take part in any Heroic Action declared by Bard or a member of Bard&apos;s Family.</description>
+    </rule>
+    <rule id="5bf4-7ec1-bb72-161e" name="Stubborn to a Fault" publicationId="a40a-1ac4-b5c2-a481" page="91" hidden="false">
+      <description>Friendly Dwarf models may re-rolll failed To Wound Rolls either when making a shooting attack or when makine Strikes.</description>
+    </rule>
+    <rule id="3661-dbdd-6acc-7a8a" name="The Master&apos;s Coin" publicationId="a40a-1ac4-b5c2-a481" page="91" hidden="false">
+      <description>At the end of his Activation if he is within 3&quot; of Braga, the Master of Lake-town may spend a Will Point. If he does, Braga immediately regais a Will Point.</description>
+    </rule>
+  </rules>
+</catalogue>
