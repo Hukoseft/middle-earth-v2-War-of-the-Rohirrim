@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="4" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="5" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
@@ -6702,13 +6702,13 @@ Khazad-dûm - This model gains throwing weapons.</description>
                   <description>If the Captain dismounts from the Iron Hills Chariot, do not remove the Chariot from play. The Chariot will remain in play as a standard Iron Hills Chariot with the same number of Wounds remaining as it had before the Iron Hills Captain dismounted.</description>
                 </rule>
               </rules>
+              <infoLinks>
+                <infoLink id="4583-a002-baa8-66e5" name="Iron Hills Chariot" hidden="false" targetId="3c90-82f7-83c6-6ff8" type="infoGroup"/>
+              </infoLinks>
               <categoryLinks>
                 <categoryLink id="b24d-0b2f-8e78-363a" name="170mm oval" hidden="false" targetId="441b-05ca-7658-551a" primary="false"/>
                 <categoryLink id="10c2-0a52-be67-0243" name="Chariot" hidden="false" targetId="2a48-6300-9adc-059a" primary="false"/>
               </categoryLinks>
-              <entryLinks>
-                <entryLink id="964b-f5bc-23d7-3d97" name="Iron Hills Chariot" hidden="false" collective="false" import="true" targetId="0e14-99e1-0a83-d1ad" type="selectionEntryGroup"/>
-              </entryLinks>
               <costs>
                 <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="170.0"/>
                 <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -8451,9 +8451,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d26-8806-eae8-edff" type="max"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="405b-7ca3-1735-2d16" name="Troll Brute" hidden="false" collective="false" import="true" targetId="39fa-68fc-1b3d-bd66" type="selectionEntryGroup"/>
-              </entryLinks>
+              <infoLinks>
+                <infoLink id="634b-62e4-994f-c142" name="Troll Brute" hidden="false" targetId="531e-7e81-0930-77cd" type="infoGroup"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink id="958d-4eb4-9132-09eb" name="80mm" hidden="false" targetId="9e1d-367a-d307-bd3e" primary="false"/>
+                <categoryLink id="2cbc-aea4-fbcf-8c37" name="Gundabad" hidden="false" targetId="cdb2-b4e9-8674-c7be" primary="false"/>
+                <categoryLink id="0a81-d8d7-86b4-455e" name="Troll" hidden="false" targetId="6742-f38c-c9b5-ba17" primary="false"/>
+                <categoryLink id="a0b6-1faf-f757-d6d5" name="War Beast" hidden="false" targetId="a4ed-b1b0-808d-6479" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="100.0"/>
                 <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -16212,19 +16218,40 @@ When the game ends, any Markers on the board are removed and the models associat
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7911-63c9-83d8-07b1" name="Troll Brute" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="7911-63c9-83d8-07b1" name="Troll Brute" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3b06-3972-8f3a-abb8" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="bf68-9c23-09da-8d1c" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="8819-8a4b-689a-d79a" name="Orc Commander" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="4de1-524c-6b3c-7396" name="Troll Brute" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a8c9-9c38-3ed5-c5ce" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="06c9-d064-3f7b-5e48" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="291d-4cdd-50cf-127b" name="Troll Brute" hidden="false" targetId="531e-7e81-0930-77cd" type="infoGroup"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink id="14eb-a383-6449-baf1" name="80mm" hidden="false" targetId="9e1d-367a-d307-bd3e" primary="false"/>
+            <categoryLink id="6650-672c-124b-6b5c" name="War Beast" hidden="false" targetId="a4ed-b1b0-808d-6479" primary="false"/>
+            <categoryLink id="31a7-a03d-63d2-8371" name="Troll" hidden="false" targetId="6742-f38c-c9b5-ba17" primary="false"/>
+            <categoryLink id="36d9-f0c6-9de9-cf1e" name="Gundabad" hidden="false" targetId="cdb2-b4e9-8674-c7be" primary="false"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry id="b31f-8939-e2b6-583a" name="Orc Commander" hidden="false" collective="false" import="true" type="model">
           <infoGroups>
-            <infoGroup id="be34-554e-fb7c-3a4f" name="Special Rules" hidden="false">
+            <infoGroup id="d182-2acd-ec6b-013b" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="24b6-5a0a-3fe1-c0c7" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+                <infoLink id="b9fd-b075-810c-1f7b" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="c25b-d9a7-05e9-6e20" name="Special Rules" hidden="false">
               <profiles>
-                <profile id="0e4c-a9f9-5b71-15db" name="Orc Commander" publicationId="a40a-1ac4-b5c2-a481" page="125" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+                <profile id="2d22-9010-d77a-20e7" name="Orc Commander" publicationId="a40a-1ac4-b5c2-a481" page="125" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
                   <characteristics>
                     <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
                     <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
@@ -16248,12 +16275,12 @@ When the game ends, any Markers on the board are removed and the models associat
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="db95-5130-4bbb-50c8" name="Ancient Enemies (X) [Active]" hidden="false" targetId="9216-869c-6d42-3cd5" type="rule">
+                <infoLink id="d9ab-e3bf-3eaf-e159" name="Ancient Enemies (X) [Active]" hidden="false" targetId="9216-869c-6d42-3cd5" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Ancient Enemies (Dwarf) [Active]"/>
                   </modifiers>
                 </infoLink>
-                <infoLink id="9a4e-7ac4-5b85-7839" name="Ancient Enemies (X) [Active]" hidden="false" targetId="9216-869c-6d42-3cd5" type="rule">
+                <infoLink id="22eb-eaac-6ba7-df23" name="Ancient Enemies (X) [Active]" hidden="false" targetId="9216-869c-6d42-3cd5" type="rule">
                   <modifiers>
                     <modifier type="set" field="name" value="Ancient Enemies (Elf) [Active]"/>
                   </modifiers>
@@ -16262,26 +16289,15 @@ When the game ends, any Markers on the board are removed and the models associat
             </infoGroup>
           </infoGroups>
           <categoryLinks>
-            <categoryLink id="f255-183d-7bb5-c98a" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
-            <categoryLink id="3637-2f12-0f12-8b14" name="Gundabad" hidden="false" targetId="cdb2-b4e9-8674-c7be" primary="false"/>
-            <categoryLink id="b9ef-4e44-3e8a-e8fd" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
-            <categoryLink id="5efa-1e25-fb3c-b2df" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="false"/>
-            <categoryLink id="c34d-4e20-fa76-f8a8" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
-            <categoryLink id="b4cd-e15d-f070-8c05" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+            <categoryLink id="9791-456a-0167-a7fb" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+            <categoryLink id="138e-11a2-3a5f-aa6c" name="Gundabad" hidden="false" targetId="cdb2-b4e9-8674-c7be" primary="false"/>
+            <categoryLink id="a88c-1ed3-7513-03b0" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+            <categoryLink id="d0c0-cf48-3bba-9f53" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+            <categoryLink id="25f6-af8f-aeaf-3684" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+            <categoryLink id="a22e-b3d1-7c8f-b50c" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="false"/>
           </categoryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="ccc2-7140-d816-c5de" name="Wargear" hidden="false" collective="false" import="true">
-              <infoLinks>
-                <infoLink id="23e8-69ad-d408-f2f7" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
-                <infoLink id="3246-ba1b-4958-a89f" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
-              </infoLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="45da-7d23-3712-1b93" name="Troll Brute" hidden="false" collective="false" import="true" targetId="39fa-68fc-1b3d-bd66" type="selectionEntryGroup"/>
-      </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
@@ -22965,7 +22981,7 @@ The Rider may be either Aragorn or Théodred.</description>
             </infoGroup>
           </infoGroups>
           <selectionEntries>
-            <selectionEntry id="0c19-ff10-c36c-56c8" name="Eagle" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="0c19-ff10-c36c-56c8" name="Eagles" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="increment" field="cdcc-a80e-6f08-93a3" value="1.0">
                   <repeats>
@@ -22975,6 +22991,11 @@ The Rider may be either Aragorn or Théodred.</description>
                 <modifier type="increment" field="cdcc-a80e-6f08-93a3" value="1.0">
                   <conditions>
                     <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7459-aeeb-ea6e-a089" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="name" value="1x Eagle">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0c19-ff10-c36c-56c8" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -23119,7 +23140,14 @@ The Rider may be either Aragorn or Théodred.</description>
             </infoGroup>
           </infoGroups>
           <selectionEntries>
-            <selectionEntry id="4740-3636-5bd6-6035" name="Eagle" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="4740-3636-5bd6-6035" name="Eagles" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Eagle">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4740-3636-5bd6-6035" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <modifiers>
@@ -23212,6 +23240,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="b44c-4188-25a7-d680" name="Rangers" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Ranger">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b44c-4188-25a7-d680" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -23326,6 +23361,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="91c6-36b3-969d-e38d" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91c6-36b3-969d-e38d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -23512,6 +23554,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="089a-8911-ec52-453c" name="Guards" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Guard">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="089a-8911-ec52-453c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -23705,6 +23754,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="f9e0-f96f-fd9d-2014" name="Knights" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Knight">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f9e0-f96f-fd9d-2014" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -23817,6 +23873,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="c9ae-7d39-af85-52c0" name="Militia" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Militia">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c9ae-7d39-af85-52c0" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -23999,6 +24062,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="4d8d-8254-b734-b7c0" name="Guards" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Guard">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4d8d-8254-b734-b7c0" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -24196,6 +24266,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="7033-ceca-7ab9-12db" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7033-ceca-7ab9-12db" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -24431,6 +24508,7 @@ The Rider may be either Aragorn or Théodred.</description>
               <infoLinks>
                 <infoLink id="80b7-4600-5109-a198" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
                 <infoLink id="cc45-b6f9-20a7-4d5d" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+                <infoLink id="913a-e93b-b5ca-ba94" name="War Goat" hidden="false" targetId="79d3-5cd1-17cd-bc12" type="infoGroup"/>
               </infoLinks>
             </infoGroup>
           </infoGroups>
@@ -24443,6 +24521,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="c32e-aa14-0093-a864" name="Riders" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Rider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c32e-aa14-0093-a864" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -24518,9 +24603,6 @@ The Rider may be either Aragorn or Théodred.</description>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
-              <entryLinks>
-                <entryLink id="5ebf-b123-f6d6-614f" name="War Goat" hidden="false" collective="false" import="true" targetId="596e-e4f5-5e3b-155e" type="selectionEntryGroup"/>
-              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <costs>
@@ -24607,6 +24689,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="991b-1ef4-bbef-ff13" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="991b-1ef4-bbef-ff13" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -24763,6 +24852,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="db8b-53c9-c3b2-f6e8" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db8b-53c9-c3b2-f6e8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -24989,6 +25085,13 @@ The Rider may be either Aragorn or Théodred.</description>
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="3379-3082-693e-91d7" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3379-3082-693e-91d7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -25171,11 +25274,18 @@ The Rider may be either Aragorn or Théodred.</description>
               </conditions>
             </modifier>
           </modifiers>
-          <infoGroups>
-            <infoGroup id="37b3-3849-e8a3-b9b0" name="Wargear" hidden="false"/>
-          </infoGroups>
+          <infoLinks>
+            <infoLink id="2119-0444-fbd2-c1c2" name="Iron Hills Chariot" hidden="false" targetId="3c90-82f7-83c6-6ff8" type="infoGroup"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="6f84-e5c2-d61a-3af4" name="Chariots" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Chariot">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6f84-e5c2-d61a-3af4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -25222,9 +25332,6 @@ The Rider may be either Aragorn or Théodred.</description>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="ca03-04d3-b407-9cce" name="Iron Hills Chariot" hidden="false" collective="false" import="true" targetId="0e14-99e1-0a83-d1ad" type="selectionEntryGroup"/>
-          </entryLinks>
           <costs>
             <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
             <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
@@ -25511,6 +25618,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="1b22-72f6-e9a0-00df" name="Ents" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Ent">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1b22-72f6-e9a0-00df" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -25751,6 +25865,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="a646-379d-bfdd-f19f" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a646-379d-bfdd-f19f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -25984,6 +26105,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="6df5-3b3e-4796-f8fc" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6df5-3b3e-4796-f8fc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -26309,6 +26437,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="196b-e506-f63e-940c" name="Veterans" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Veteran">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="196b-e506-f63e-940c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -26514,6 +26649,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="f789-b802-377d-e1ff" name="Rangers" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Ranger">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f789-b802-377d-e1ff" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -26666,6 +26808,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="803d-0dbc-4e2a-5a95" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -26801,6 +26950,33 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
               </infoLinks>
             </infoGroup>
             <infoGroup id="9f46-7bfe-b20e-379a" name="Wargear" hidden="false">
+              <infoGroups>
+                <infoGroup id="c949-b29a-694c-ab19" name="Spectral Steed" hidden="false">
+                  <profiles>
+                    <profile id="2251-5b81-0f84-1162" name="Spectral Steed" publicationId="5d2d-eaa5-64b5-2f28" page="67" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                      <characteristics>
+                        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">12&quot;</characteristic>
+                        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
+                        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+                        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+                        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">6</characteristic>
+                        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">0</characteristic>
+                        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                        <characteristic name="Courage" typeId="4945-957c-7d95-b50b">5+</characteristic>
+                        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                        <characteristic name="Race" typeId="ed84-84e4-720a-002f">Spirit</characteristic>
+                        <characteristic name="Faction" typeId="8539-1489-a955-726a">Dunharrow</characteristic>
+                        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
+                        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="76bd-0c01-6532-41c3" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+                    <infoLink id="edd9-8c89-5cb8-be00" name="Spectral Walk [Passive]" hidden="false" targetId="789e-ba72-c6d9-e1c2" type="rule"/>
+                  </infoLinks>
+                </infoGroup>
+              </infoGroups>
               <infoLinks>
                 <infoLink id="dc09-ef1d-f1be-4719" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
                 <infoLink id="a045-80dc-4760-6318" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
@@ -26810,6 +26986,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="06f5-96bc-507f-5d0f" name="Riders" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Rider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="06f5-96bc-507f-5d0f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -26856,46 +27039,6 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="fae7-f93a-3d14-4120" name="Wargear" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4aef-c1f1-14df-5a4d" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="55db-37f9-5e9d-21e6" name="Spectral Steed" hidden="false" collective="false" import="true">
-                  <profiles>
-                    <profile id="f073-3e7b-d8b1-2eb5" name="Spectral Steed" publicationId="5d2d-eaa5-64b5-2f28" page="67" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
-                      <characteristics>
-                        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">12&quot;</characteristic>
-                        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
-                        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
-                        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
-                        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">6</characteristic>
-                        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">0</characteristic>
-                        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
-                        <characteristic name="Courage" typeId="4945-957c-7d95-b50b">5+</characteristic>
-                        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
-                        <characteristic name="Race" typeId="ed84-84e4-720a-002f">Spirit</characteristic>
-                        <characteristic name="Faction" typeId="8539-1489-a955-726a">Dunharrow</characteristic>
-                        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
-                        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="3673-5bcb-c198-837b" name="Spectral Walk [Passive]" hidden="false" targetId="789e-ba72-c6d9-e1c2" type="rule"/>
-                    <infoLink id="7dba-6051-5ad9-e72c" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
-                  </infoLinks>
-                  <categoryLinks>
-                    <categoryLink id="7ea8-30d1-ec79-6f30" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
-                    <categoryLink id="1595-9784-4fc6-0136" name="Mount" hidden="false" targetId="3931-cee8-5928-149e" primary="false"/>
-                    <categoryLink id="eaff-5f04-22c4-6cba" name="Dunharrow" hidden="false" targetId="5b6e-8ce5-8852-e6f9" primary="false"/>
-                    <categoryLink id="9f81-dd2b-8fdd-8391" name="40mm" hidden="false" targetId="2fec-cef0-ffc5-25c5" primary="false"/>
-                  </categoryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
             <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
@@ -27007,6 +27150,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="2aa7-1295-9f37-1df2" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7f3d-cb6d-077e-6da3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -27271,6 +27421,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="7d42-4772-bf61-362b" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7d42-4772-bf61-362b" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -27473,6 +27630,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="9804-a3d6-0438-3e44" name="Guards" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Guard">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9804-a3d6-0438-3e44" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -27740,6 +27904,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="32de-ff12-ad02-3f53" name="Riders" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Rider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="32de-ff12-ad02-3f53" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -27922,6 +28093,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="82ca-5cc5-a945-58ba" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82ca-5cc5-a945-58ba" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -27979,7 +28157,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="2.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82ca-5cc5-a945-58ba" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28001,12 +28179,12 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82ca-5cc5-a945-58ba" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                     <modifier type="increment" field="5c04-22f1-fd0b-9279" value="1.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82ca-5cc5-a945-58ba" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28027,7 +28205,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="82ca-5cc5-a945-58ba" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28165,6 +28343,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="5219-fbe5-043e-1fe1" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5219-fbe5-043e-1fe1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -28222,7 +28407,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="26.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5219-fbe5-043e-1fe1" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28244,7 +28429,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5219-fbe5-043e-1fe1" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28265,7 +28450,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="2.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5219-fbe5-043e-1fe1" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28287,7 +28472,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5219-fbe5-043e-1fe1" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28308,12 +28493,12 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5219-fbe5-043e-1fe1" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                     <modifier type="increment" field="5c04-22f1-fd0b-9279" value="1.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5219-fbe5-043e-1fe1" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28458,6 +28643,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="727f-691a-2609-0baa" name="Knights" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Knight">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="727f-691a-2609-0baa" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -28514,7 +28706,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="727f-691a-2609-0baa" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -28583,6 +28775,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="1ec9-28d3-381e-f4f6" name="Guards" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Guard">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-28d3-381e-f4f6" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -28742,6 +28941,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="916c-6aed-c659-970d" name="Guards" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Guard">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="916c-6aed-c659-970d" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -28789,13 +28995,6 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="ab94-a650-6f4b-f641" name="Wargear" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8780-103a-2528-cd7e" type="max"/>
-              </constraints>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
           <costs>
             <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
             <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
@@ -29719,6 +29918,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="3ab2-bf20-9097-5095" name="Warrior" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ab2-bf20-9097-5095" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -29880,6 +30086,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="91b5-916f-91a0-0679" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="91b5-916f-91a0-0679" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -30080,6 +30293,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="9236-3782-cc14-fc25" name="Berserkers" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Berserker">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9236-3782-cc14-fc25" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -30204,6 +30424,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="56f0-c691-2144-b709" name="Mercenaries" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Mercenary">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="56f0-c691-2144-b709" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -30322,6 +30549,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="f0bc-b808-1283-c242" name="Trolls" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Troll">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f0bc-b808-1283-c242" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -30491,6 +30725,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="782f-047e-458a-e7bf" name="Ogres" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Ogre">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="782f-047e-458a-e7bf" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -30598,6 +30839,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </categoryLinks>
           <selectionEntries>
             <selectionEntry id="62cf-34cb-5f1a-35a0" name="Bats" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Bat">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="62cf-34cb-5f1a-35a0" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -30724,6 +30972,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="b55b-34a7-9977-9985" name="Spiders" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Spider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b55b-34a7-9977-9985" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -30859,6 +31114,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="0756-a7f1-4c53-2a8f" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0756-a7f1-4c53-2a8f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -31051,6 +31313,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="537c-e3fa-b90b-956b" name="Riders" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Rider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="537c-e3fa-b90b-956b" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -31234,6 +31503,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="9d3c-8a1c-b3c8-c0aa" name="Spiders" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Spider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9d3c-8a1c-b3c8-c0aa" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -31304,6 +31580,13 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
           </infoLinks>
           <selectionEntries>
             <selectionEntry id="bf2b-de47-2ec1-ca3c" name="Wargs" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warg">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bf2b-de47-2ec1-ca3c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -31523,7 +31806,14 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
             </infoGroup>
           </infoGroups>
           <selectionEntries>
-            <selectionEntry id="ddd7-a89b-6a53-00ef" name="Corsair" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="ddd7-a89b-6a53-00ef" name="Corsairs" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Corsair">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ddd7-a89b-6a53-00ef" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -31701,6 +31991,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="79e2-4427-9e89-86e1" name="Berserkers" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Berserker">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="79e2-4427-9e89-86e1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -31860,6 +32157,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Scout">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fdb7-6a3a-6b46-cab4" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <modifierGroups>
@@ -32051,6 +32353,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Man">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1cb-349a-85d8-607f" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <modifierGroups>
@@ -32399,6 +32706,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="53c7-568c-a529-dce5" name="Uruk-hai" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Uruk-hai">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="53c7-568c-a529-dce5" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -32550,6 +32864,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="c0b3-8c57-9314-9559" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="c0b3-8c57-9314-9559" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -32778,6 +33099,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b075-a273-8975-5217" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -32994,6 +33320,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="41d6-70a8-4314-d103" name="Wargs" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warg">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="41d6-70a8-4314-d103" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -33103,6 +33436,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Rider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="05de-73c8-0e66-e415" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <modifierGroups>
@@ -33336,6 +33674,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="38a3-22c2-c70c-d857" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <modifierGroups>
@@ -33573,6 +33916,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="0c17-1bf4-f648-4316" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0c17-1bf4-f648-4316" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -33774,6 +34124,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="d466-4b24-fe14-4a69" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d466-4b24-fe14-4a69" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -33967,6 +34324,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Rider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4010-51ae-67d6-739a" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <modifierGroups>
@@ -34191,6 +34553,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="442d-bbcf-b7b3-4529" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="442d-bbcf-b7b3-4529" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -34401,6 +34770,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="9b84-2711-e5f1-657f" name="Trolls" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Troll">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9b84-2711-e5f1-657f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -34568,6 +34944,13 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="a56e-6f35-d808-528f" name="Spectres" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Spectre">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a56e-6f35-d808-528f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -34684,6 +35067,13 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="17a7-4038-e32c-59e6" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="17a7-4038-e32c-59e6" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -34883,6 +35273,13 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="7775-5ce3-3fa0-dfb1" name="Traitors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Traitor">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7775-5ce3-3fa0-dfb1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -35119,6 +35516,13 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="26a6-04e8-beec-0490" name="Tribesmen" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Tribesman">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a6-04e8-beec-0490" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -35391,6 +35795,11 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="set" field="name" value="1x Troll">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="34e7-ade0-afc1-cb8e" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <modifierGroups>
                 <modifierGroup>
@@ -35538,6 +35947,11 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Crebain">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2150-1612-00f7-84be" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <modifierGroups>
@@ -35793,169 +36207,6 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
           </modifierGroups>
         </entryLink>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="596e-e4f5-5e3b-155e" name="War Goat" hidden="false" collective="false" import="true">
-      <profiles>
-        <profile id="bfb4-5ade-97f3-5fb5" name="War Goat" publicationId="a40a-1ac4-b5c2-a481" page="29" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
-          <characteristics>
-            <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">8&quot;</characteristic>
-            <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
-            <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
-            <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
-            <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
-            <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">0</characteristic>
-            <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
-            <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
-            <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
-            <characteristic name="Race" typeId="ed84-84e4-720a-002f">Goat</characteristic>
-            <characteristic name="Faction" typeId="8539-1489-a955-726a">Iron Hills</characteristic>
-            <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
-            <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-      <rules>
-        <rule id="210f-22fd-2cdb-8ad7" name="Devistating Charge [Active]" publicationId="a40a-1ac4-b5c2-a481" page="29" hidden="false">
-          <description>When this model Charges into Combat against one or more models on a 25mm base, roll a D6 for each. On a 5+, that model is immediately knocked Prone.</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="339b-02ce-7f85-9881" name="Mountain Dweller [Active]" hidden="false" targetId="a355-bf0e-93ad-5bf8" type="rule"/>
-        <infoLink id="185a-189e-6530-5044" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0aaf-4656-2f35-8feb" type="instanceOf"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <categoryLinks>
-        <categoryLink id="ce6e-3947-d9f6-680f" name="40mm" hidden="false" targetId="2fec-cef0-ffc5-25c5" primary="false"/>
-        <categoryLink id="2b49-df1c-4870-76a3" name="Goat" hidden="false" targetId="fbc6-df44-b7c7-abfd" primary="false"/>
-        <categoryLink id="00a9-988e-5a2f-e791" name="Mount" hidden="false" targetId="3931-cee8-5928-149e" primary="false"/>
-        <categoryLink id="fc75-0fd1-7e8b-754f" name="Iron Hills" hidden="false" targetId="588f-968a-8fc9-1db7" primary="false"/>
-      </categoryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="0e14-99e1-0a83-d1ad" name="Iron Hills Chariot" hidden="false" collective="false" import="true">
-      <infoGroups>
-        <infoGroup id="4ee4-218c-cc55-8dee" name="Special Rules" hidden="false">
-          <profiles>
-            <profile id="4f44-4094-2f64-c3f0" name="Iron Hills Chariot" publicationId="a40a-1ac4-b5c2-a481" page="31" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
-              <characteristics>
-                <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">8&quot;</characteristic>
-                <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
-                <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
-                <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
-                <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">8</characteristic>
-                <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">2</characteristic>
-                <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">4</characteristic>
-                <characteristic name="Courage" typeId="4945-957c-7d95-b50b">6+</characteristic>
-                <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">6+</characteristic>
-                <characteristic name="Race" typeId="ed84-84e4-720a-002f">Dwarf</characteristic>
-                <characteristic name="Faction" typeId="8539-1489-a955-726a">Iron Hills</characteristic>
-                <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Chariot</characteristic>
-                <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">170mm Oval</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <rules>
-            <rule id="1eac-84a9-a024-4a76" name="Chariot Charge [Active]" publicationId="a40a-1ac4-b5c2-a481" page="31" hidden="false">
-              <description>When an Iron Hills Chariot Moves via Chariot Charge, it will inflict 3 Strength 6 Impact Hits.</description>
-            </rule>
-            <rule id="8cc7-10c9-59ce-1b76" name="Dwarven Crew [Active]" publicationId="a40a-1ac4-b5c2-a481" page="31" hidden="false">
-              <description>Any Iron Hills Warrior that ends their Activation in base contact with an Iron Hills Chariot may join its crew. If it does, remove the Iron Hills Warrior from the board as a Casualty. The Iron Hills Chariot then immediately regains a single Wound lost earlier in the Battle.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="7a3a-56b3-420e-fbbc" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Dominant (4) [Passive]"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="f567-1ece-ef66-783e" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
-              <modifiers>
-                <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0aaf-4656-2f35-8feb" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </infoGroup>
-        <infoGroup id="1afb-81c1-ba8b-b326" name="Wargear" hidden="false">
-          <profiles>
-            <profile id="bb9d-6df7-cc76-bd33" name="Rapid-Fire Crossbow" publicationId="1133-b502-84bf-3366" page="31" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
-              <characteristics>
-                <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a crossbow that fires D6 shots per turn rather than just one. A Rapid-fire Bolt Thrower only has a limited field of fire of 45º to its left or right, which can be measured by placing the Chariot Pivot Template with the X over the bolt thrower and the dotted line running down the wooden shaft connecting the goats - the is the Chariot&apos;s field of fire.
-
-An Iron Hills Chariot may still Shoot even it it has Moved that turn, and never suffers the -1 penalty for Moving and Shooting.
-
-An Iron Hills Chariot may still Shoot even if it is Engaged in Combat, and does not need to take In The Way Tests for models it is in Combat with.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="5381-4f45-95ff-1132" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
-            <infoLink id="bc3c-5e59-c6c4-aa6b" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
-            <infoLink id="0f7e-f5d4-268e-c9ac" name="Crossbow" hidden="false" targetId="d0c0-77a5-ebb5-5e63" type="profile"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="39fa-68fc-1b3d-bd66" name="Troll Brute" hidden="false" collective="false" import="true">
-      <infoGroups>
-        <infoGroup id="a036-c74b-c302-d238" name="Special Rules" publicationId="a40a-1ac4-b5c2-a481" page="125" hidden="false">
-          <profiles>
-            <profile id="65af-628d-e0b7-89e3" name="Troll Brute" publicationId="a40a-1ac4-b5c2-a481" page="125" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
-              <characteristics>
-                <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
-                <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">5</characteristic>
-                <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
-                <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">7</characteristic>
-                <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">6</characteristic>
-                <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">3</characteristic>
-                <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">4</characteristic>
-                <characteristic name="Courage" typeId="4945-957c-7d95-b50b">6+</characteristic>
-                <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">9+</characteristic>
-                <characteristic name="Race" typeId="ed84-84e4-720a-002f">Troll</characteristic>
-                <characteristic name="Faction" typeId="8539-1489-a955-726a">Gundabad</characteristic>
-                <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">War Beast</characteristic>
-                <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">80mm</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="3bbc-e579-6fca-781f" name="Fearless [Passive]" hidden="false" targetId="5aa2-c4d8-3f66-ddf1" type="rule"/>
-            <infoLink id="a213-2557-9487-097a" name="Large Target [Passive]" hidden="false" targetId="5c62-7261-4476-2783" type="rule"/>
-            <infoLink id="29d2-6f81-f38d-cb8d" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
-              <modifiers>
-                <modifier type="set" field="name" value="Dominant (5) [Passive]"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="45b7-ae02-6f07-3af9" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
-          </infoLinks>
-        </infoGroup>
-      </infoGroups>
-      <categoryLinks>
-        <categoryLink id="1d05-8f42-44a3-004e" name="80mm" hidden="false" targetId="9e1d-367a-d307-bd3e" primary="false"/>
-        <categoryLink id="315f-2d6e-5f00-c5c3" name="Gundabad" hidden="false" targetId="cdb2-b4e9-8674-c7be" primary="false"/>
-        <categoryLink id="328f-15a4-04ca-9239" name="Troll" hidden="false" targetId="6742-f38c-c9b5-ba17" primary="false"/>
-        <categoryLink id="19ee-5130-6815-59d2" name="War Beast" hidden="false" targetId="a4ed-b1b0-808d-6479" primary="false"/>
-      </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="f3da-4f5b-800c-dae3" name="Wargear" hidden="false" collective="false" import="true">
-          <infoLinks>
-            <infoLink id="f1f7-4087-7381-aef2" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile">
-              <modifiers>
-                <modifier type="set" field="name" value="Hand Weapons"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -37214,6 +37465,146 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <infoGroup id="c8fb-3d47-a4b5-55be" name="Wargear" hidden="false">
           <infoLinks>
             <infoLink id="9e4d-1797-2229-2683" name="Claws &amp; Teeth (Hand Weapon)" hidden="false" targetId="96b7-802c-9454-3a7b" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </infoGroup>
+    <infoGroup id="3c90-82f7-83c6-6ff8" name="Iron Hills Chariot" hidden="false">
+      <infoGroups>
+        <infoGroup id="827e-609b-087b-53e7" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="2104-27e7-99a8-15eb" name="Iron Hills Chariot" publicationId="a40a-1ac4-b5c2-a481" page="31" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+              <characteristics>
+                <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">8&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
+                <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
+                <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
+                <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">8</characteristic>
+                <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">2</characteristic>
+                <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">4</characteristic>
+                <characteristic name="Courage" typeId="4945-957c-7d95-b50b">6+</characteristic>
+                <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">6+</characteristic>
+                <characteristic name="Race" typeId="ed84-84e4-720a-002f">Dwarf</characteristic>
+                <characteristic name="Faction" typeId="8539-1489-a955-726a">Iron Hills</characteristic>
+                <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Chariot</characteristic>
+                <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">170mm Oval</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="3497-6e5e-65d5-8624" name="Chariot Charge [Active]" publicationId="a40a-1ac4-b5c2-a481" page="31" hidden="false">
+              <description>When an Iron Hills Chariot Moves via Chariot Charge, it will inflict 3 Strength 6 Impact Hits.</description>
+            </rule>
+            <rule id="12be-a863-cf51-41ff" name="Dwarven Crew [Active]" publicationId="a40a-1ac4-b5c2-a481" page="31" hidden="false">
+              <description>Any Iron Hills Warrior that ends their Activation in base contact with an Iron Hills Chariot may join its crew. If it does, remove the Iron Hills Warrior from the board as a Casualty. The Iron Hills Chariot then immediately regains a single Wound lost earlier in the Battle.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="1fa2-42e3-c4c8-195f" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Dominant (4) [Passive]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="1218-dbf8-fa86-890a" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0aaf-4656-2f35-8feb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="6f9d-564f-0479-e3ff" name="Wargear" hidden="false">
+          <profiles>
+            <profile id="faa7-58e6-f406-ce14" name="Rapid-Fire Crossbow" publicationId="1133-b502-84bf-3366" page="31" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+              <characteristics>
+                <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a crossbow that fires D6 shots per turn rather than just one. A Rapid-fire Bolt Thrower only has a limited field of fire of 45º to its left or right, which can be measured by placing the Chariot Pivot Template with the X over the bolt thrower and the dotted line running down the wooden shaft connecting the goats - the is the Chariot&apos;s field of fire.
+
+An Iron Hills Chariot may still Shoot even it it has Moved that turn, and never suffers the -1 penalty for Moving and Shooting.
+
+An Iron Hills Chariot may still Shoot even if it is Engaged in Combat, and does not need to take In The Way Tests for models it is in Combat with.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c271-22c6-40dd-0397" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+            <infoLink id="564e-dd76-6c4a-6220" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="8ddf-cabc-0454-c240" name="Crossbow" hidden="false" targetId="d0c0-77a5-ebb5-5e63" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </infoGroup>
+    <infoGroup id="79d3-5cd1-17cd-bc12" name="War Goat" hidden="false">
+      <profiles>
+        <profile id="1089-f2f3-d517-9661" name="War Goat" publicationId="a40a-1ac4-b5c2-a481" page="29" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+          <characteristics>
+            <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">8&quot;</characteristic>
+            <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
+            <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+            <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
+            <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
+            <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">0</characteristic>
+            <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+            <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
+            <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+            <characteristic name="Race" typeId="ed84-84e4-720a-002f">Goat</characteristic>
+            <characteristic name="Faction" typeId="8539-1489-a955-726a">Iron Hills</characteristic>
+            <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
+            <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4b3f-4cd2-d74f-cee0" name="Devistating Charge [Active]" publicationId="a40a-1ac4-b5c2-a481" page="29" hidden="false">
+          <description>When this model Charges into Combat against one or more models on a 25mm base, roll a D6 for each. On a 5+, that model is immediately knocked Prone.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4d0e-1058-c8e7-ebc6" name="Mountain Dweller [Active]" hidden="false" targetId="a355-bf0e-93ad-5bf8" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="531e-7e81-0930-77cd" name="Troll Brute" hidden="false">
+      <infoGroups>
+        <infoGroup id="d27f-d3b6-74cc-403d" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="440f-5f3f-9643-f9ea" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Hand Weapons"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="ebbf-b84e-646d-8ae2" name="Special Rules" publicationId="a40a-1ac4-b5c2-a481" page="125" hidden="false">
+          <profiles>
+            <profile id="3b15-f4b3-6495-3fac" name="Troll Brute" publicationId="a40a-1ac4-b5c2-a481" page="125" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+              <characteristics>
+                <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">5</characteristic>
+                <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+                <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">7</characteristic>
+                <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">6</characteristic>
+                <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">3</characteristic>
+                <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">4</characteristic>
+                <characteristic name="Courage" typeId="4945-957c-7d95-b50b">6+</characteristic>
+                <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">9+</characteristic>
+                <characteristic name="Race" typeId="ed84-84e4-720a-002f">Troll</characteristic>
+                <characteristic name="Faction" typeId="8539-1489-a955-726a">Gundabad</characteristic>
+                <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">War Beast</characteristic>
+                <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">80mm</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="9154-76cb-514b-2910" name="Fearless [Passive]" hidden="false" targetId="5aa2-c4d8-3f66-ddf1" type="rule"/>
+            <infoLink id="d206-e60e-d73c-7ed2" name="Large Target [Passive]" hidden="false" targetId="5c62-7261-4476-2783" type="rule"/>
+            <infoLink id="80d2-ca42-94a8-2133" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Dominant (5) [Passive]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="51a9-7063-920b-e062" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
