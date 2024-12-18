@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="c8b4-cd9a-8a47-131d" name="Arathorn&apos;s Stand" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="c076-0db7-8691-2939" name="Arathorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c98f-3126-fc5b-7cf7" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="daef-070c-936d-92fb" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a237-fc28-2d15-6878" name="Arathorn, Chieftain of the Dúnedain" hidden="false" collective="false" import="true" targetId="5a38-fdeb-da2b-9931" type="selectionEntry"/>
+        <entryLink id="0000-a053-2e69-e5e6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="234e-e32d-2852-9609" name="Halbarad&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4017-997d-2fec-1f4b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="abbb-4bf1-80bf-adea" name="Halbarad" hidden="false" collective="false" import="true" targetId="4431-2a2c-a316-01b8" type="selectionEntry"/>
+        <entryLink id="f0cd-0ce2-b0ce-744a" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="d599-a5e9-9057-1f3e" name="Ranger of the North" hidden="false" collective="false" import="true" targetId="314b-1db4-c42a-fa4f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="b5ee-5554-45be-c4ee" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="ab2a-b942-2eb3-b194" name="“They’re dangerous folk, wandering the wilds”" publicationId="33e0-ead5-55a8-d8f4" page="12" hidden="false">
+      <description>Rangers of the North increase their Attacks value to 2.</description>
+    </rule>
+    <rule id="8a60-5e04-82b3-863b" name="Heir of Isildur" publicationId="33e0-ead5-55a8-d8f4" page="12" hidden="false">
+      <description>Whenever Arathorn spends a Might Point, roll a D6. On a 4+ the point of Might is free and does not reduce Arathorn’s store of Might.</description>
+    </rule>
+    <rule id="2a44-f96d-9cd6-ee19" name="Silent Ambush" publicationId="33e0-ead5-55a8-d8f4" page="12" hidden="false">
+      <description>In Scenarios where you roll for Warbands to arrive, or ones where you roll to see which part of the board you deploy a Warband in (though not when rolling to choose deployment zones), you may modify the roll for Warbands from this Army by +1 or -1.</description>
+    </rule>
+  </rules>
+</catalogue>

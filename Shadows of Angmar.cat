@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="1108-7d85-e40e-ee4d" name="Shadows of Angmar" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="e5f9-2c2d-63d1-4b64" name="Gûlavhar&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="76be-9f68-b566-fe8a" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="747a-79b8-8170-1362" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="de5a-d177-8e43-f16f" name="Gûlavhar, the Terror of Arnor" hidden="false" collective="false" import="true" targetId="d054-3493-4286-8b03" type="selectionEntry"/>
+        <entryLink id="c72f-adc0-cbdb-6d75" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="629f-0b51-e6fa-0816" name="The Shadow&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f4e9-ee61-35d5-0114" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dc39-5022-d195-e66b" name="The Shadow of Rhudaur" hidden="false" collective="false" import="true" targetId="f5a7-018e-2178-dc31" type="selectionEntry"/>
+        <entryLink id="e400-1233-737b-d127" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5442-9943-9e24-943c" name="Shade&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="bc93-d5a0-848d-94cc" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="997a-3199-ff96-0018" name="Shade" hidden="false" collective="false" import="true" targetId="ea13-d655-d26b-ce53" type="selectionEntry"/>
+        <entryLink id="30b1-7a12-6121-fa9e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b204-ba13-0ca3-f07f" name="Barrow-wight&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b663-95f6-ab12-952b" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a0c6-2a69-4403-3ac5" name="Barrow-wight�" hidden="false" collective="false" import="true" targetId="b7a7-bb6e-0ccc-0eb9" type="selectionEntry"/>
+        <entryLink id="e2e3-acdf-f6c6-8790" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5a62-40b2-9bae-acab" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f2a6-23c7-28bc-d336" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="71ed-74bb-35d3-af5e" name="Angmar Orc Shaman" hidden="false" collective="false" import="true" targetId="421a-ea19-4ea5-7ff2" type="selectionEntry"/>
+        <entryLink id="af25-43e5-c3f1-99f3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f82-cb25-a320-2291" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f7b9-cf6c-0e06-da79" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2da7-83b8-702a-cc0b" name="Wild Warg Chieftain" hidden="false" collective="false" import="true" targetId="4089-8c6f-7c6d-3c2e" type="selectionEntry"/>
+        <entryLink id="bde5-373c-f00e-a713" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="85e7-c780-85fa-1e3f" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0b65-6860-f774-8ea3" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="73e1-248f-e952-bebb" name="Angmar Orc Captain" hidden="false" collective="false" import="true" targetId="e4b3-677c-6935-10a8" type="selectionEntry"/>
+        <entryLink id="c639-9f35-f02e-9c12" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="03c3-0633-810d-8a2a" name="Nazthák&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="32f3-97a4-55c2-d769" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="099a-8e1b-7a74-b889" name="Nazthák, Orc Captain" hidden="false" collective="false" import="true" targetId="7d61-972e-8e89-9258" type="selectionEntry"/>
+        <entryLink id="1260-7a8a-4799-27b8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="66b9-e282-0672-cd96" name="The Shadows of Angmar" publicationId="33e0-ead5-55a8-d8f4" page="23" hidden="false">
+      <description>Friendly Spirit models gain the Stalk Unseen special rule.</description>
+    </rule>
+    <rule id="fe1d-9281-a939-be8f" name="Sense of Hopelessness" publicationId="33e0-ead5-55a8-d8f4" page="23" hidden="false">
+      <description>If an enemy Hero model is slain in Combat, then for the duration of the following turn, all enemy models suffer a -1 penalty to any Courage Tests they are required to take.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="d5de-3340-1b09-bc8b" name="“If that fell Kingdom should rise again, Rivendell, Lórien, theShire, even Gondor itself shall fall.”" hidden="false" targetId="b9e9-c22a-0241-bddd" type="rule"/>
+  </infoLinks>
+</catalogue>
