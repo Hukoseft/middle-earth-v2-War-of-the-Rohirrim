@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="7a49-b9a0-3ee3-7c71" name="Army of Carn Dûm" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="a196-08e4-9dd7-b5b7" name="Aldrac&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1434-0f3d-5303-0444" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8d59-6c36-c776-08b6" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ab00-4ae1-bfef-9096" name="Aldrac, Warlord of Carn Dûm" hidden="false" collective="false" import="true" targetId="9859-65db-35ff-21a0" type="selectionEntry"/>
+        <entryLink id="4ef2-822f-6e02-6d87" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="178a-a22b-46e6-d5e1" name="Fráecht&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b264-5233-1c52-2a68" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="21a1-8b16-b423-51d2" name="Fráecht, Vassal of the Witch-king" hidden="false" collective="false" import="true" targetId="92db-221b-da89-1486" type="selectionEntry"/>
+        <entryLink id="1d9e-ca7d-b0b2-3c58" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9b2c-ded4-5fe6-9891" name="Captain of Carn Dûm&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7354-b377-cc68-6ba0" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="66d3-f0ca-fb3a-56ff" name="Captain of Carn Dûm" hidden="false" collective="false" import="true" targetId="015a-4706-3104-d7b1" type="selectionEntry"/>
+        <entryLink id="bfb8-f7ee-531f-b3c7" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="145c-092a-c674-bc43" name="Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="85f2-c867-6a98-35f5" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df64-c9f4-a0cf-1f51" name="Angmar Orc Captain" hidden="false" collective="false" import="true" targetId="e4b3-677c-6935-10a8" type="selectionEntry"/>
+        <entryLink id="beb7-2dc1-888b-b91b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="a29d-2966-b600-24a1" name="Show of Strength" publicationId="33e0-ead5-55a8-d8f4" page="26" hidden="false">
+      <description>If a Carn Dûm Hero slays one or more enemy models in Combat, then for the duration of the following turn they gain a bonus of +1 to their Fight Value.</description>
+    </rule>
+    <rule id="2cd0-44a1-9d81-439b" name="Banners of Carn Dûm" publicationId="33e0-ead5-55a8-d8f4" page="26" hidden="false">
+      <description>Friendly banners have a range of 6&quot; rather than 3&quot;.</description>
+    </rule>
+    <rule id="10f8-c31b-bd58-3f06" name="Fierce Charge" publicationId="33e0-ead5-55a8-d8f4" page="26" hidden="false">
+      <description>Friendly Warrior models gain a bonus of +1 to their Fight Value in a turn in which they Charge.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b0f2-1eee-0210-963a" name="Buhrdûr&apos;s Horde" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="039c-886a-3402-ee03" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="851a-1521-122b-a4c6" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d4e1-750c-5596-7161" name="Angmar Orc Shaman" hidden="false" collective="false" import="true" targetId="421a-ea19-4ea5-7ff2" type="selectionEntry"/>
+        <entryLink id="6518-9343-73cc-4d4b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="426b-7922-e451-8171" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8997-c04f-ee88-b5ab" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c3d5-306d-2a09-8d8a" name="Angmar Orc Captain" hidden="false" collective="false" import="true" targetId="e4b3-677c-6935-10a8" type="selectionEntry"/>
+        <entryLink id="3d54-d051-9082-9461" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7033-5bb8-f787-2efe" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ae9e-b578-df89-f8e1" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3158-65d2-87f6-3ca4" name="Wild Warg Chieftain" hidden="false" collective="false" import="true" targetId="4089-8c6f-7c6d-3c2e" type="selectionEntry"/>
+        <entryLink id="0b41-4606-045e-a3c8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ac6a-26be-af13-d41a" name="Buhrdûr&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="acbd-925c-adc2-ba53" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e89f-cc00-76e6-ec3f" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8b21-c7f0-ec71-3d63" name="Buhrdûr, Hill Troll Chieftain" hidden="false" collective="false" import="true" targetId="20fb-ade8-9337-3cef" type="selectionEntry"/>
+        <entryLink id="3fde-0ce5-b7aa-2187" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="aacc-8011-9f4b-fc53" name="Ambush!" publicationId="33e0-ead5-55a8-d8f4" page="24" hidden="false">
+      <description>At the start of the game, before either side has deployed, you may choose to have Buhrdûr’s Warband ambushing and not arrive as normal (if your General must deploy at the start of the game, you cannot use this ability). Instead, at the end of the Move Phase on the third turn (after both sides have moved all their models), the ambushing Warband must choose one of the following:
+
+• Move onto the board from any board edge via the rules for Reinforcements.
+• Deploy in, or within 1&quot; of, a wood, building, rocky outcrop or other similar piece of terrain that the models could hide in. A degree of common sense is required when deciding which pieces of terrain the Warband can hide in – they shouldn’t be leaping out of a river or from behind a single rock! You should always agree with your opponent at the beginning of
+the game which terrain pieces are eligible to ambush from. Models deployed in this way cannot be placed in base contact
+with, or within the Control Zones of, enemy models. Models that enter the board this way do not Activate as part of the Move Phase, and will count as having Moved half their Move Value for the purposes of shooting.</description>
+    </rule>
+    <rule id="f7d4-97c4-0418-de94" name="Masters of Terrain" publicationId="33e0-ead5-55a8-d8f4" page="24" hidden="false">
+      <description>Friendly models gain the Woodland Creature and Mountain Dweller special rules.</description>
+    </rule>
+    <rule id="d354-2050-376d-aaf2" name="A Fearsome Foe" publicationId="33e0-ead5-55a8-d8f4" page="24" hidden="false">
+      <description>If Buhrdûr kills an enemy Hero in Combat, he gains the Fearless special rule for the remainder of the game.</description>
+    </rule>
+  </rules>
+</catalogue>

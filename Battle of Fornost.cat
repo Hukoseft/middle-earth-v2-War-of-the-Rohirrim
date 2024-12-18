@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="7e8e-770f-2814-6df9" name="Battle of Fornost" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="9a08-ef50-ac66-031a" name="Glorfindel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4249-9ab9-ce14-a8f7" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b2fe-f169-c4fd-fe0d" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="327b-47a5-3235-9231" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7934-8a1d-3614-d139" name="Glorfindel, Lord of the West" hidden="false" collective="false" import="true" targetId="20e9-e8bd-c470-7158" type="selectionEntry"/>
+        <entryLink id="da7c-de62-d9e1-b91c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="68fb-5aa4-5962-c73f" name="Círdan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3989-973d-83d2-7693" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="fcc5-c530-150a-cd5a" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d467-3056-cd0d-675c" name="Círdan of the Grey Havens" hidden="false" collective="false" import="true" targetId="ebe2-9b3a-818f-8c88" type="selectionEntry"/>
+        <entryLink id="9521-a127-635e-3754" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f238-23ba-b98f-9818" name="Aranarth&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1c91-f71e-bdb7-6965" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="d9d6-1a2b-b96f-13b9" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
+        <categoryLink id="c51d-0461-5f1a-93d5" name="Aranarth" hidden="false" targetId="3d1c-2909-4fa5-e796" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6d8b-9fef-f8e3-8819" name="Aranarth, First Chieftain of the Dúnedain" hidden="false" collective="false" import="true" targetId="0cfa-a8c9-972a-291b" type="selectionEntry"/>
+        <entryLink id="28b3-970e-2224-41a8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="37f5-1bd3-2bf7-24d9" name="Ranger&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e650-6862-7bef-d532" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="03d2-4500-9b28-2db5" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="35b7-a025-4a21-c037" name="Ranger of the North" hidden="false" collective="false" import="true" targetId="314b-1db4-c42a-fa4f" type="selectionEntry"/>
+        <entryLink id="fc73-8bdf-a841-3a04" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9657-335b-a8dc-e2c4" name="Eärnur&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1aa2-0087-5814-f2d1" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7ef0-d417-ac76-9007" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="a053-3c55-7e30-e7c5" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5b33-e39f-57e2-51f3" name="Eärnur, Last King of Gondor" hidden="false" collective="false" import="true" targetId="aec3-e48f-d9a0-9b8f" type="selectionEntry"/>
+        <entryLink id="b897-efbf-0e2b-71d7" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="254b-aa87-cb55-cb7f" name="Rivendell Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0128-f461-ba8d-9e42" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="bfab-06d5-47da-e789" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5da1-07a9-9511-0e80" name="Rivendell Captain" hidden="false" collective="false" import="true" targetId="0d9e-0553-2909-729c" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink id="dec8-c276-2c60-9963" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+          </categoryLinks>
+        </entryLink>
+        <entryLink id="6410-cb7f-81fd-2b99" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f0a-efc7-4c8c-2502" name="Captain of Minas Tirith&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0ee1-7a32-2bda-0712" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="6b0b-cb9e-fbaa-77f8" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8cd3-149b-cee6-e69e" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+        <entryLink id="7961-be72-8fb8-8fec" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="2d7c-a133-c111-2be0" name="The Charge of Gondor" publicationId="33e0-ead5-55a8-d8f4" page="11" hidden="false">
+      <description>Friendly Gondor Cavalry models gain a bonus of +1 to their Fight Value on a turn in which they Charge.</description>
+    </rule>
+    <rule id="73f1-8257-1482-778a" name="Power of the Elves" publicationId="33e0-ead5-55a8-d8f4" page="11" hidden="false">
+      <description>Friendly models gain the Resistant to Magic special rule.</description>
+    </rule>
+    <rule id="e5e7-7c05-cbda-4755" name="Eärnur’s Defiance" publicationId="33e0-ead5-55a8-d8f4" page="11" hidden="false">
+      <description>Eärnur cannot have his Courage reduced by enemy special rules or Magical Powers.</description>
+    </rule>
+  </rules>
+</catalogue>

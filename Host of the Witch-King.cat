@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="d8cc-3c9b-27ad-1f0f" name="Host of the Witch-King" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="3912-e029-e50a-bf59" name="Witch-king&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fc51-d5ba-a13b-5693" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="07fe-21b4-8e2f-0315" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="97bb-ccab-80b8-7d49" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry"/>
+        <entryLink id="34b8-4ddf-f0a2-1f4e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="41c1-56c7-aee1-cca8" name="Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e373-4cfe-28ff-94e8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f880-4fb2-d1b8-bfaa" name="Angmar Orc Captain" hidden="false" collective="false" import="true" targetId="e4b3-677c-6935-10a8" type="selectionEntry"/>
+        <entryLink id="2874-def2-f7ca-5704" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59fd-5ffe-1b35-0fd2" name="The Shadow&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0263-e8a0-2e6c-2dff" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fa7d-b27e-ee37-fbeb" name="The Shadow of Rhudaur" hidden="false" collective="false" import="true" targetId="f5a7-018e-2178-dc31" type="selectionEntry"/>
+        <entryLink id="4c67-639a-e71e-c947" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="97ae-b99f-34ab-dc23" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1805-e28a-8e4e-8735" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6c74-db2b-45f9-9af9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="93c8-603e-04e9-555c" name="Angmar Orc Shaman" hidden="false" collective="false" import="true" targetId="421a-ea19-4ea5-7ff2" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6406-7a52-345c-8a01" name="Barrow-wight&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8af3-185a-1678-5ae6" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ff83-f820-6fb3-8e16" name="Barrow-wight�" hidden="false" collective="false" import="true" targetId="b7a7-bb6e-0ccc-0eb9" type="selectionEntry"/>
+        <entryLink id="f2fd-b239-2fb3-8445" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1ca-cc30-2598-e041" name="Aldrac&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f9d9-84cf-19ba-dc4b" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3675-440b-6310-7219" name="Aldrac, Warlord of Carn Dûm" hidden="false" collective="false" import="true" targetId="9859-65db-35ff-21a0" type="selectionEntry"/>
+        <entryLink id="2156-7bf4-be01-64f4" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="770b-c7d8-b883-9b60" name="Shade&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d1d8-8983-6202-bc45" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8e0c-933b-51ce-44ae" name="Shade" hidden="false" collective="false" import="true" targetId="ea13-d655-d26b-ce53" type="selectionEntry"/>
+        <entryLink id="f118-02ba-070f-ac21" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b8b-9485-d96a-d24e" name="Captain of Carn Dûm&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ed46-1f7d-f706-c8fd" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bfcf-a13c-6c86-4d06" name="Captain of Carn Dûm" hidden="false" collective="false" import="true" targetId="015a-4706-3104-d7b1" type="selectionEntry"/>
+        <entryLink id="bd1a-03ad-8c8c-71c3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="36d1-a8bf-8e91-e4e1" name="Fráecht&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d857-8e7c-8ede-6cce" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="efb1-b73f-200d-f6b1" name="Fráecht, Vassal of the Witch-king" hidden="false" collective="false" import="true" targetId="92db-221b-da89-1486" type="selectionEntry"/>
+        <entryLink id="de41-84bd-5357-520c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="855f-1c0d-ccfd-fc23" name="Nazthák&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e349-5265-06df-842a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b630-50a0-01c4-c788" name="Nazthák, Orc Captain" hidden="false" collective="false" import="true" targetId="7d61-972e-8e89-9258" type="selectionEntry"/>
+        <entryLink id="b425-34e1-1f8c-bb37" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="53ee-cac8-9f0a-10bd" name="Lord of the Nazgûl" publicationId="33e0-ead5-55a8-d8f4" page="22" hidden="false">
+      <description>The Witch-king only loses a Will Point for having been in a Combat if he loses a Combat during the Fight phase (for example, if he doesn’t win the Duel Roll to see which side may make Strikes).</description>
+    </rule>
+    <rule id="42fc-9a66-ec2b-fd31" name="“No Man can kill me!”" publicationId="33e0-ead5-55a8-d8f4" page="22" hidden="false">
+      <description>Whilst Engaged in Combat with an enemy Man model, the Witch-king gains a bonus of +1 to his Fight Value.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="3bd9-985e-086a-6de1" name="“If that fell Kingdom should rise again, Rivendell, Lórien, theShire, even Gondor itself shall fall.”" hidden="false" targetId="b9e9-c22a-0241-bddd" type="rule"/>
+  </infoLinks>
+</catalogue>

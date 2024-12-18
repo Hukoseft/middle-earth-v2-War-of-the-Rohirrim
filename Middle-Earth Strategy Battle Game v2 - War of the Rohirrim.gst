@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="5" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="6" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
     <publication id="5d2d-eaa5-64b5-2f28" name="Armies of the Lord of the Rings" publicationDate="14/12/2024"/>
     <publication id="a40a-1ac4-b5c2-a481" name="Armies of the Hobbit" publicationDate="14/12/2024"/>
     <publication id="8e2e-f1ed-1aa8-11ca" name="Armies of Middle-Earth"/>
-    <publication id="33e0-ead5-55a8-d8f4" name="Legacies PDF"/>
+    <publication id="33e0-ead5-55a8-d8f4" name="Armies of Arnor and Angmar PDF"/>
+    <publication id="20bd-1974-51da-b8f7" name="Armies of Legacy PDF"/>
   </publications>
   <costTypes>
     <costType id="39c8-4238-d8ca-bac5" name=" Points" defaultCostLimit="-1.0" hidden="false"/>
@@ -242,6 +243,27 @@
     <categoryEntry id="37ce-f0ea-f37c-c534" name="Maggot" hidden="false"/>
     <categoryEntry id="d5c2-887e-b03c-eaeb" name="Bird" hidden="false"/>
     <categoryEntry id="8b9a-fad5-92bb-f677" name="Horse" hidden="false"/>
+    <categoryEntry id="3d1c-2909-4fa5-e796" name="Aranarth" hidden="false"/>
+    <categoryEntry id="7f2c-8024-349f-ca65" name="Carn Dûm" hidden="false">
+      <modifiers>
+        <modifier type="increment" field="d1a5-f35d-3a80-9e97" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ce44-1ebc-e56e-b6b1" repeats="1" roundUp="false"/>
+          </repeats>
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d1a5-f35d-3a80-9e97" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="notInstanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d1a5-f35d-3a80-9e97" type="max"/>
+      </constraints>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2012-37c0-ee3b-be74" name="Strategy Battle Game" hidden="false">
@@ -569,9 +591,6 @@
             </profile>
           </profiles>
           <rules>
-            <rule id="2424-0768-784e-3fca" name="Foresight of the Eldar [Passive]" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
-              <description>At the start of the game, before either side deploys, roll a D6 and make a note of the result - this is the number of Foresight Points that Elrond has for the battle. During the roll for Priority, so long as he is alive and on the battlefield, Elrond can spend these Foresight Points to increase the roll on his controlling player&apos;s roll for Priority, for each Foresight Point spent, increase the dice roll by 1, to a maximum of 6.</description>
-            </rule>
             <rule id="7946-cf67-3576-c00e" name="Council of the Wise - E" publicationId="a40a-1ac4-b5c2-a481" page="111" hidden="false">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
@@ -597,6 +616,7 @@
                 </modifier>
               </modifiers>
             </infoLink>
+            <infoLink id="0414-fc91-bb69-133a" name="Foresight of the Eldar [Passive]" hidden="false" targetId="b2eb-8ede-31ba-a9a6" type="rule"/>
           </infoLinks>
         </infoGroup>
         <infoGroup id="23e0-d87d-5c7c-cacb" name="Magical Powers" hidden="false">
@@ -1126,6 +1146,15 @@
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb6b-bfe0-6695-3bd6" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="c0c9-4220-c8cf-d59d" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1786,6 +1815,15 @@
           <infoLinks>
             <infoLink id="16ad-b703-41ed-3cb7" name="Expert Rider" hidden="false" targetId="1c3a-ce22-8e32-65d1" type="rule"/>
             <infoLink id="7264-6a5f-b891-b06a" name="Woodland Creature" hidden="false" targetId="2cd8-d1b0-0bfe-3861" type="rule"/>
+            <infoLink id="983d-aff1-17b9-2876" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
           </infoLinks>
         </infoGroup>
         <infoGroup id="1896-4c50-794a-3c21" name="Wargear" hidden="false">
@@ -6127,7 +6165,7 @@ If Boromir is part of the same Army, then Denethor will automatically pass this 
             </infoLink>
             <infoLink id="7b11-988d-4ecd-a951" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile">
               <modifiers>
-                <modifier type="set" field="name" value="Elven hand weapons077777777777777777777777777777777777777777777777777700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+                <modifier type="set" field="name" value="Elven Hand Weapons"/>
               </modifiers>
             </infoLink>
             <infoLink id="8f48-23ca-2687-4f3c" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
@@ -11444,7 +11482,7 @@ When the game ends, any Markers on the board are removed and the models associat
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c7f1-a1b7-9395-7624" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="c7f1-a1b7-9395-7624" name="The Witch-king of Angmar" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d6e4-0447-cea9-1e8c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b6aa-f30c-dac6-832a" type="max"/>
@@ -11681,6 +11719,7 @@ When the game ends, any Markers on the board are removed and the models associat
                       <conditions>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -11718,6 +11757,7 @@ When the game ends, any Markers on the board are removed and the models associat
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -11767,6 +11807,7 @@ When the game ends, any Markers on the board are removed and the models associat
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -11801,6 +11842,7 @@ When the game ends, any Markers on the board are removed and the models associat
                       <conditions>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -11828,6 +11870,7 @@ When the game ends, any Markers on the board are removed and the models associat
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -11865,6 +11908,7 @@ When the game ends, any Markers on the board are removed and the models associat
                       <conditions>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -16240,6 +16284,12 @@ When the game ends, any Markers on the board are removed and the models associat
             <categoryLink id="31a7-a03d-63d2-8371" name="Troll" hidden="false" targetId="6742-f38c-c9b5-ba17" primary="false"/>
             <categoryLink id="36d9-f0c6-9de9-cf1e" name="Gundabad" hidden="false" targetId="cdb2-b4e9-8674-c7be" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b31f-8939-e2b6-583a" name="Orc Commander" hidden="false" collective="false" import="true" type="model">
           <infoGroups>
@@ -16296,6 +16346,12 @@ When the game ends, any Markers on the board are removed and the models associat
             <categoryLink id="25f6-af8f-aeaf-3684" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
             <categoryLink id="a22e-b3d1-7c8f-b50c" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="false"/>
           </categoryLinks>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -19459,27 +19515,81 @@ These restrictions immediately end if Saruman is slain, it Gríma Charges an ene
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b26d-af15-d5ab-06fb" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="b26d-af15-d5ab-06fb" name="Arvedui, Last King of Arnor" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="061a-f483-06f1-929a" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="71e4-2fa5-6f8c-b4cc" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="87c5-1e05-eceb-8efb" type="min"/>
       </constraints>
       <infoGroups>
-        <infoGroup id="e1c4-078e-5986-5f52" name="Wargear" hidden="false"/>
-        <infoGroup id="4a92-7e21-141e-4799" name="Special Rules" hidden="false"/>
-        <infoGroup id="fb1d-dd19-5f99-d370" name="Magical Powers" hidden="false"/>
+        <infoGroup id="e1c4-078e-5986-5f52" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="c768-5fb5-add8-4f40" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+            <infoLink id="3719-a9d9-ce3b-ed30" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="4a92-7e21-141e-4799" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="e2f8-8fe5-35de-a8e1" name="Arvedui, Last King of Arnor" publicationId="33e0-ead5-55a8-d8f4" page="2" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">6</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">5+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">5+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Arnor</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Defence, Strength, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Legend</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4ee8-9b7e-0d84-ed3e" name="The King in the North [Active]" publicationId="33e0-ead5-55a8-d8f4" page="2" hidden="false">
+              <description>The range of Arvedui&apos;s Stand Fast is 12&quot; rather than 6&quot;.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="f853-39a9-2c75-e008" name="Hatred (X) [Active]" hidden="false" targetId="681e-bdd0-b5c4-5ff9" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Angmar) [Active]"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="0d12-121d-2e53-6729" name="Wargear" hidden="false" collective="false" import="true"/>
-      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink id="3c46-aed6-c886-0345" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="47b3-5954-2eec-b841" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+        <categoryLink id="36e2-4fc6-9e26-eb47" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="bebf-0661-1e3d-567b" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="false"/>
+        <categoryLink id="f90c-26dc-7553-cfe1" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="926d-efef-9b29-ea60" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+      </categoryLinks>
       <entryLinks>
-        <entryLink id="d7de-e811-c52c-c912" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="d7de-e811-c52c-c912" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="7064-8496-0342-4657" value="1.0">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d9b-3a56-e1db-3cd5" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -19757,27 +19867,81 @@ The Watcher is then removed from the battlefield and its controlling player must
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0cfa-a8c9-972a-291b" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0cfa-a8c9-972a-291b" name="Aranarth, First Chieftain of the Dúnedain" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12f0-9981-c7d0-5ee4" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b09b-f353-73d2-5aa6" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7d1a-faaf-ccce-a344" type="min"/>
       </constraints>
       <infoGroups>
-        <infoGroup id="3b1c-5de6-ee35-b8c0" name="Wargear" hidden="false"/>
-        <infoGroup id="60a0-aea8-a9c1-3a53" name="Special Rules" hidden="false"/>
-        <infoGroup id="10a5-db9d-f56d-7b6f" name="Magical Powers" hidden="false"/>
+        <infoGroup id="3b1c-5de6-ee35-b8c0" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="ec36-4699-badf-c680" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="b0ab-30d0-b965-5aae" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="824e-ab24-e13e-0514" name="Bow" hidden="false" targetId="5b42-7696-1860-9a01" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="60a0-aea8-a9c1-3a53" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="d05a-0517-bd7f-40be" name="Aranarth, First Chieftain of the Dúnedain" publicationId="33e0-ead5-55a8-d8f4" page="2" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">3+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">5+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">5+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">2</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Arnor, Dúnedain</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Accurracy, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="6eb9-ff45-ba66-07d2" name="Expert Shot [Active]" hidden="false" targetId="c82a-e300-4eb1-7e0e" type="rule"/>
+            <infoLink id="fb62-8ddf-875f-b99e" name="Sharpshooter [Active]" hidden="false" targetId="b66f-dcb7-7879-7b34" type="rule"/>
+            <infoLink id="af56-91a7-b2e8-8251" name="Hatred (X) [Active]" hidden="false" targetId="681e-bdd0-b5c4-5ff9" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Angmar) [Active]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="d21d-a421-1e84-980d" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="cbe4-1049-5948-3cf9" name="Wargear" hidden="false" collective="false" import="true"/>
-      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink id="a071-3ad3-f4e9-15a7" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="7aed-d692-4508-0124" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
+        <categoryLink id="d2c5-9f77-090b-510b" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+        <categoryLink id="97f5-e663-ba4b-60b7" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="eb69-7c13-d44b-3b23" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="6087-3418-9799-54f7" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="4535-a80d-d2e9-0f57" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="1041-da58-2c08-fa30" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -20081,19 +20245,109 @@ The Watcher is then removed from the battlefield and its controlling player must
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="314b-1db4-c42a-fa4f" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="005a-2bf6-f2a0-da67" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cb15-30f2-9c90-1a87" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e93a-f70e-95c6-157f" type="min"/>
-      </constraints>
+    <selectionEntry id="314b-1db4-c42a-fa4f" name="Ranger of the North" hidden="false" collective="false" import="true" type="model">
       <infoGroups>
-        <infoGroup id="aa75-ae9c-631b-6d72" name="Wargear" hidden="false"/>
-        <infoGroup id="1561-61f1-089a-29cf" name="Special Rules" hidden="false"/>
-        <infoGroup id="02f5-bf5d-6c37-51aa" name="Magical Powers" hidden="false"/>
+        <infoGroup id="aa75-ae9c-631b-6d72" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="87ab-dea6-718f-8190" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="9abd-d7bd-86bb-cce4" name="Bow" hidden="false" targetId="5b42-7696-1860-9a01" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="1561-61f1-089a-29cf" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="34b8-fa76-f962-097a" name="Ranger of the North" publicationId="33e0-ead5-55a8-d8f4" page="9" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <modifiers>
+                <modifier type="set" field="4aeb-aa62-2c02-1f87" value="1">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2d32-6baa-9138-05b4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="d418-dab1-da1e-8beb" value="2">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c8b4-cd9a-8a47-131d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0cb6-ae3e-dec7-20b9" value="Minor Hero">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0cb6-ae3e-dec7-20b9" value="Independent Hero">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="13f2-59a9-5a73-a03f" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2c52-d571-e855-1691" value="Dúnedain, Arnor">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d9b-3a56-e1db-3cd5" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">4</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">3+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">4</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">1</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">1</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">1</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">1</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Dúnedain</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Accuracy</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="320f-4c5d-bfee-906a" name="Woodland Creature [Active]" hidden="false" targetId="2cd8-d1b0-0bfe-3861" type="rule"/>
+            <infoLink id="7668-a5f4-bc91-038c" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
+      <categoryLinks>
+        <categoryLink id="03a5-b209-dd8c-044d" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="4df7-ccee-fed3-cd3d" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="9cbd-9b38-1d08-ad46" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
+        <categoryLink id="467d-f856-5ad4-a85c" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="4f4c-f4f3-e41c-8239" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="85f2-3671-914b-d8b1" name="Wargear" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="85f2-3671-914b-d8b1" name="Wargear" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="f2d7-70dd-8bcc-d91e" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4d3b-1ccb-67a6-0264" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="031a-113f-4f7b-d5ad" name="Spear" hidden="false" targetId="a266-690d-5aee-eb91" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="c17d-f97c-4e2c-f6bd" name="Armour" hidden="false" collective="false" import="true" targetId="2d32-6baa-9138-05b4" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1706-5c3e-03b8-9be5" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
@@ -20105,19 +20359,89 @@ The Watcher is then removed from the battlefield and its controlling player must
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4431-2a2c-a316-01b8" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="4431-2a2c-a316-01b8" name="Halbarad" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4ab7-3e26-4fbd-232c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d8bb-6653-3870-2fce" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="64d0-a784-2869-b86c" type="min"/>
       </constraints>
       <infoGroups>
-        <infoGroup id="e8e1-9959-f6f0-5b6e" name="Wargear" hidden="false"/>
-        <infoGroup id="104c-7f0d-5b57-ccc4" name="Special Rules" hidden="false"/>
-        <infoGroup id="ea3f-5d19-eee8-b21a" name="Magical Powers" hidden="false"/>
+        <infoGroup id="e8e1-9959-f6f0-5b6e" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="48df-e758-671a-18c6" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="3660-dff5-ec39-9764" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="ed5c-9dde-62e7-d4aa" name="Bow" hidden="false" targetId="5b42-7696-1860-9a01" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="104c-7f0d-5b57-ccc4" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="f5cf-84b0-8aaa-e4e0" name="Halbarad" publicationId="33e0-ead5-55a8-d8f4" page="9" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">3+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">4+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">4+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Dúnedain</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Accuracy, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="eb3d-912d-bfca-8bbf" name="Woodland Creature [Active]" hidden="false" targetId="2cd8-d1b0-0bfe-3861" type="rule"/>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
+      <categoryLinks>
+        <categoryLink id="600f-a362-6e75-ff18" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="d55d-373f-2381-3062" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="623c-d617-2876-ce0e" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="3427-4cdb-105a-b5c0" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
+        <categoryLink id="4724-7840-ec0e-974f" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="5ff6-d230-4a4a-34dd" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2e83-7399-19cb-4d4a" name="Wargear" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="2e83-7399-19cb-4d4a" name="Wargear" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="7cff-56d2-9756-2a8e" name="Banner of Arwen Evenstar" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="04ce-08d7-8984-cb7c" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e533-304f-c079-e4cb" name="Banner of Arwen Evenstar [Passive]" publicationId="33e0-ead5-55a8-d8f4" page="9" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+                  <characteristics>
+                    <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique banner with a range of 6&quot; rather than 3&quot;, and Halbarad never suffers the -1 penalty to his Duel Rolls for carrying a banner. Additionally, friendly models within 6&quot; and Line of Sight of the Banner of Arwen Evenstar automatically pass any Courage Tests they are required to take.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <categoryLinks>
+                <categoryLink id="8ad4-35e4-37e8-4550" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="fc6e-4856-3589-c7a5" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+                <categoryLink id="369b-a570-7989-16b8" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
+                <categoryLink id="35bf-fcae-155a-187e" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+                <categoryLink id="9e5b-4204-eeda-b18c" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+                <categoryLink id="9617-56d8-1692-d328" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="40.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="feef-d128-54e5-6a42" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
@@ -20125,79 +20449,281 @@ The Watcher is then removed from the battlefield and its controlling player must
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="70.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="907d-0a80-60f9-a622" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="907d-0a80-60f9-a622" name="Malbeth the Seer" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="370e-c646-6784-8a37" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3c31-8b13-03f6-721c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a656-bd2f-d04e-0feb" type="min"/>
       </constraints>
       <infoGroups>
-        <infoGroup id="78ae-b308-9f1c-1732" name="Wargear" hidden="false"/>
-        <infoGroup id="f70a-484a-328f-1686" name="Special Rules" hidden="false"/>
-        <infoGroup id="7a7e-00f0-2501-73ae" name="Magical Powers" hidden="false"/>
+        <infoGroup id="78ae-b308-9f1c-1732" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="9bab-9f96-2fdf-08ba" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="f70a-484a-328f-1686" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="153b-084d-eb7a-d701" name="Malbeth the Seer" publicationId="33e0-ead5-55a8-d8f4" page="3" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">3</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">3</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">4</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">1</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">4+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">1</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Arnor</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Resolve</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="a0fa-66f3-a30b-e8b6" name="Gift of Foresight [Active]" publicationId="33e0-ead5-55a8-d8f4" page="3" hidden="false">
+              <description>Whenever a friendly Arnor model within 6&quot; and Line of Sight of Malbeth suffers a Wound, roll a D6. On a 5+, the Wound has been prevented and is ignored. Note that if this roll is failed, a Hero model may still use Fate Points as normal.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="8472-ff53-1c24-05af" name="Foresight of the Eldar [Passive]" hidden="false" targetId="b2eb-8ede-31ba-a9a6" type="rule"/>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="658d-14e1-475b-6e21" name="Wargear" hidden="false" collective="false" import="true"/>
-      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink id="6774-a9e0-a880-8a00" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="4e2b-2956-fa55-2b97" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+        <categoryLink id="c8b1-793f-fd98-ddbf" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="c711-9b83-fb59-cfe7" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="ad5b-2d16-e98f-9f1d" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="f2e7-d8ee-15fb-c79c" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="afb6-2b17-e542-cabe" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5a38-fdeb-da2b-9931" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="5a38-fdeb-da2b-9931" name="Arathorn, Chieftain of the Dúnedain" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5976-0a66-e5c8-52be" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="296e-0f9b-35d4-4a60" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="56ea-da1d-2742-2291" type="min"/>
       </constraints>
       <infoGroups>
-        <infoGroup id="dbf4-5034-15b5-4cf3" name="Wargear" hidden="false"/>
-        <infoGroup id="c3fb-2e87-f5fc-beb6" name="Special Rules" hidden="false"/>
-        <infoGroup id="43fc-77ca-fb62-38ee" name="Magical Powers" hidden="false"/>
+        <infoGroup id="dbf4-5034-15b5-4cf3" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="52a8-7096-7ceb-9e05" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="abcb-9c47-947a-6708" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="420c-e201-3f82-16bc" name="Bow" hidden="false" targetId="5b42-7696-1860-9a01" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="c3fb-2e87-f5fc-beb6" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="04c4-0782-6068-e975" name="Arathorn, Chieftain of the Dúnedain" publicationId="33e0-ead5-55a8-d8f4" page="8" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">3+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">5+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">5+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Dúnedain</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Accuracy, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Valour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="e370-c9a7-8596-b728" name="Chieftain of the Dúnedain [Active]" publicationId="33e0-ead5-55a8-d8f4" page="8" hidden="false">
+              <description>Friendly Dúnedain Hero models may benefit from Arathorn’s Stand Fast.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="ed4a-5298-1ef5-bfd2" name="Woodland Creature [Active]" hidden="false" targetId="2cd8-d1b0-0bfe-3861" type="rule"/>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5441-6dfa-b855-320a" name="Wargear" hidden="false" collective="false" import="true"/>
-      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink id="8e7d-d167-351e-0290" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="2c74-f81d-ce7c-6b50" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="de89-ddbd-e4c8-986b" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
+        <categoryLink id="8b97-cfa6-3034-c126" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="bee7-3f18-80e3-183a" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="false"/>
+        <categoryLink id="a18d-9892-fadb-e163" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
       <entryLinks>
         <entryLink id="0d8a-7e09-dd2f-7393" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="20e9-e8bd-c470-7158" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="20e9-e8bd-c470-7158" name="Glorfindel, Lord of the West" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="3a91-843d-fe10-2d70">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a724-f0a1-af66-ca26" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="69ec-404e-f610-ae28">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a724-f0a1-af66-ca26" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eb09-0a1d-7e56-c406" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f6a3-e5be-a6eb-c425" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7936-5e44-65a8-330b" type="min"/>
       </constraints>
       <infoGroups>
-        <infoGroup id="0eca-1b14-ecb1-1063" name="Wargear" hidden="false"/>
-        <infoGroup id="f7cc-4dce-53f6-0445" name="Special Rules" hidden="false"/>
-        <infoGroup id="8554-12c5-f23f-31f4" name="Magical Powers" hidden="false"/>
+        <infoGroup id="0eca-1b14-ecb1-1063" name="Wargear" hidden="false">
+          <profiles>
+            <profile id="de05-b4cc-b353-4d4d" name="Armour of Gondolin [Active]" publicationId="33e0-ead5-55a8-d8f4" page="7" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+              <characteristics>
+                <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is Unique heavy armour. Additionally, whilst Glorfindel is wearing the Armour of Gondolin, enemy Monster models Engaged in Combat with him cannot use Brutal Power Attacks.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="83c0-7de7-ac82-b88c" name="Hand-and-a-half Weapon" hidden="false" targetId="f473-f7c9-e866-caaa" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="Elven Hand-and-a-half"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="dbf5-ff0f-f9e9-ebba" name="Elven" hidden="false" targetId="146b-b4a8-46b0-2447" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="f7cc-4dce-53f6-0445" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="c850-7505-4258-d7f4" name="Glorfindel, Lord of the West" publicationId="33e0-ead5-55a8-d8f4" page="7" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <modifiers>
+                <modifier type="set" field="ac32-60b4-0b88-5372" value="Hero, Cavalry, Unique">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a724-f0a1-af66-ca26" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">8</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">3+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">3+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">3+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">3</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">3</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Elf</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Rivendell</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Challenge, Resolve, Strength, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Legend</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="baa1-1e37-78a0-4442" name="Hero of the Elves [Active]" publicationId="33e0-ead5-55a8-d8f4" page="7" hidden="false">
+              <description>Glorfindel gains a bonus of +1 To Wound when making Strikes against Monster models.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="f3ce-1459-b0b9-a575" name="Expert Rider [Active]" hidden="false" targetId="1c3a-ce22-8e32-65d1" type="rule"/>
+            <infoLink id="f47a-e7e9-2563-456f" name="Horse Lord [Passive]" hidden="false" targetId="aa8d-5b63-c76a-3dc1" type="rule"/>
+            <infoLink id="325d-5a89-e4b6-e178" name="Resistant to Magic [Passive]" hidden="false" targetId="48fb-9eea-f6c7-e577" type="rule"/>
+            <infoLink id="465a-2f9f-32d6-ecc7" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+            <infoLink id="c8f9-a639-80d8-7706" name="Woodland Creature [Active]" hidden="false" targetId="2cd8-d1b0-0bfe-3861" type="rule"/>
+            <infoLink id="1b2f-6b1c-de10-38e2" name="Lord of the West [Active]" hidden="false" targetId="071c-9935-1e12-6b5c" type="rule"/>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
+      <categoryLinks>
+        <categoryLink id="fced-a3cd-c4cf-fd43" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="70f5-03f1-b773-1005" name="Elf" hidden="false" targetId="2f21-68f2-eb43-5167" primary="false"/>
+        <categoryLink id="5122-3616-5224-1e02" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="d04c-b10a-6c15-f8ce" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="7941-df1b-3b6a-0a5c" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7e82-2967-4faf-5669" name="Wargear" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="7e82-2967-4faf-5669" name="Wargear" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1a3b-7976-660d-b518" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ce59-a8e6-76c0-7904" name="Asfaloth" hidden="false" collective="false" import="true" targetId="a724-f0a1-af66-ca26" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="13f8-6dfe-c79d-f261" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8873-c5c2-9834-54b2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink id="0fe9-f6a9-9a48-c79c" name="Horse" hidden="false" collective="false" import="true" targetId="9204-a637-e38e-57b6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="cb41-ed59-72dd-fa23" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="cb41-ed59-72dd-fa23" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="160.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -20624,27 +21150,129 @@ The Watcher is then removed from the battlefield and its controlling player must
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aec3-e48f-d9a0-9b8f" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="aec3-e48f-d9a0-9b8f" name="Eärnur, Last King of Gondor" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="3a91-843d-fe10-2d70">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="385d-a398-a750-b1c2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="69ec-404e-f610-ae28">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="385d-a398-a750-b1c2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="45da-ceac-05b1-6f28" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f735-f269-d724-2686" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a0e0-13b3-5e7d-bfd2" type="min"/>
       </constraints>
       <infoGroups>
-        <infoGroup id="53d7-d8a5-bbb5-8181" name="Wargear" hidden="false"/>
-        <infoGroup id="3102-0def-c210-4eef" name="Special Rules" hidden="false"/>
-        <infoGroup id="f8fc-deb8-a185-33fb" name="Magical Powers" hidden="false"/>
+        <infoGroup id="53d7-d8a5-bbb5-8181" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="1410-bec3-c831-3a14" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+            <infoLink id="8293-d6c9-8d75-bdea" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+            <infoLink id="a0d2-4722-ca47-fa1b" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="3102-0def-c210-4eef" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="0f90-9d1f-1712-35ee" name="Eärnur, Last King of Gondor" publicationId="33e0-ead5-55a8-d8f4" page="6" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <modifiers>
+                <modifier type="set" field="ac32-60b4-0b88-5372" value="Hero, Cavalry, Unique">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="385d-a398-a750-b1c2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">6</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">4+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">3</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Gondor</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Challenge, Resolve, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Legend</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="3c14-85ce-7728-83c0" name="A Fool&apos;s Challenge [Active]" publicationId="33e0-ead5-55a8-d8f4" page="6" hidden="false">
+              <description>If Eärnur is ever the target of a Heroic Challenge, he may never choose to decline under any circumstances. Additionally, when Eärnur Activates, if he is able to Charge an enemy Hero model then he must do so.</description>
+            </rule>
+            <rule id="109c-ca56-7426-bc55" name="Master Duellist [Active]" publicationId="33e0-ead5-55a8-d8f4" page="6" hidden="false">
+              <description>At the start of a Combat involving Eärnur, before any Heroic Strikes are resolved, Eärnur may increase his Fight Value to match that of a single enemy model he is Engaged in Combat with. Additionally, Eärnur can never have his Fight Value modified by enemy special rules or Magical Powers.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="8826-9924-0200-22f1" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
+      <categoryLinks>
+        <categoryLink id="7c72-011f-e19c-7872" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="24eb-4cc4-36b0-7b15" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="9fee-24fb-5ce5-8123" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+        <categoryLink id="66ef-5d18-d590-6323" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="false"/>
+        <categoryLink id="7952-23d4-ff04-7898" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="e800-b43c-a7c5-0978" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6c0b-0661-5513-374a" name="Wargear" hidden="false" collective="false" import="true"/>
+        <selectionEntryGroup id="6c0b-0661-5513-374a" name="Wargear" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="385d-a398-a750-b1c2" name="Armoured Horse &amp; Lance" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8d46-6cc5-e981-1504" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4737-1f17-71bc-23f9" name="Armoured Horse" hidden="false" targetId="f912-aa27-e3d4-52ce" type="profile"/>
+                <infoLink id="fd94-8d7d-ab81-01eb" name="Lance" hidden="false" targetId="12a0-64c2-e169-b848" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="30.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="7a01-438b-2f0f-e592" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="7a01-438b-2f0f-e592" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="7064-8496-0342-4657" value="1.0">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="110.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -22219,6 +22847,1337 @@ The Rider may be either Aragorn or Théodred.</description>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3409-0d60-d5f5-697a" name="Captain of Arnor" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b061-76c1-f9cd-650b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ce18-ae77-110c-14b2" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="8505-f81f-23df-2b97" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="1edc-ae4d-c0bf-adbc" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+            <infoLink id="bbd1-32bf-7ab3-8000" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+            <infoLink id="7f1f-5fa8-df3b-24d9" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="d12e-5320-50c7-dc49" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="cb41-f2a7-bc88-7073" name="Captain of Arnor" publicationId="33e0-ead5-55a8-d8f4" page="4" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">7+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">1</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Arnor</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">March</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="bc9b-a265-71bf-4c75" name="Hatred (X) [Active]" hidden="false" targetId="681e-bdd0-b5c4-5ff9" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Angmar) [Active]"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="3713-f963-8772-7b73" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="593e-a83a-70e8-9834" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="e324-39f6-b442-2628" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="39da-395d-098d-ed98" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="fc03-7ee3-cb4b-49a1" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="45ba-3520-706e-cd32" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6bc7-a744-8e2f-7936" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="60.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1149-5e9a-20fd-5915" name="Argadir, Captain of Arnor" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e265-d981-3a94-0560" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b7ac-666f-146a-9a69" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f319-28d3-2df1-ead6" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="82c3-3a87-007e-2a96" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="dee4-0c27-b244-82db" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+            <infoLink id="79be-d666-56be-37cc" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+            <infoLink id="58c5-b000-001d-d08e" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="3319-d8ff-17b5-2faf" name="War Spear" hidden="false" targetId="c1c8-7382-6daf-517a" type="profile"/>
+            <infoLink id="4495-f771-48dd-d5c6" name="Horse" hidden="false" targetId="26c1-b9e1-45d2-d0eb" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="8ed8-97d2-afc4-784c" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="de92-541f-eef4-0183" name="Argadir, Captain of Arnor" publicationId="33e0-ead5-55a8-d8f4" page="3" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Arnor</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Cavalry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Defence, March</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d373-3fa4-46c7-ad84" name="Expert Rider [Active]" hidden="false" targetId="1c3a-ce22-8e32-65d1" type="rule"/>
+            <infoLink id="1562-aa50-b23c-267d" name="Master of Battle (X+) [Active]" hidden="false" targetId="b61c-303f-3eea-720b" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Master of Battle (5+) [Active]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="7052-d10a-8e24-3b71" name="Hatred (X) [Active]" hidden="false" targetId="681e-bdd0-b5c4-5ff9" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Hatred (Angmar) [Active]"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="a67f-40d2-0e24-9b4b" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="ff9c-100c-febe-9866" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="0533-8d15-8f16-a6cd" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+        <categoryLink id="e458-46fa-6163-2ba5" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="14f1-2f2a-bd12-bccc" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="055f-632e-d45a-f340" name="Cavalry" hidden="false" targetId="3a91-843d-fe10-2d70" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ad6c-a3c8-92e6-e752" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="85.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4089-8c6f-7c6d-3c2e" name="Wild Warg Chieftain" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e4c-8ff5-7047-8013" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="58b5-4bdc-82fd-1797" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="fc6f-96be-e986-83a7" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="ef15-eb1b-8dd2-fa35" name="Claws &amp; Teeth (Hand Weapon)" hidden="false" targetId="96b7-802c-9454-3a7b" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="2a48-d2c5-62a3-6d90" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="df92-2212-83f8-ddfc" name="Wild Warg Chieftain" publicationId="33e0-ead5-55a8-d8f4" page="21" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">10&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">6</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">7+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Warg</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Beast</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">40mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">March, Strength</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ef6f-26ab-e7d2-d29f" name="Packlord [Active]" publicationId="33e0-ead5-55a8-d8f4" page="21" hidden="false">
+              <description>Friendly models may not benefit from the Heroic Actions or Stand Fast of this model unless they have the Warg keyword.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="686f-e541-227d-97df" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+            <infoLink id="80b0-52cb-1aba-de28" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="5248-996c-5ac9-0868" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink id="d19b-69f9-a700-5584" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="015a-4706-3104-d7b1" name="Captain of Carn Dûm" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8c6a-deaf-59f1-2510" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ee17-0543-ffac-de79" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="5fc3-d5f1-66c6-fca4" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="43f6-abe3-3476-0534" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="49e2-2e4c-f164-7fb8" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+            <infoLink id="38b6-e438-bd73-c822" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="dc87-a68f-ee79-4b95" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="4704-f6c9-dcdd-310c" name="Captain of Carn Dûm" publicationId="33e0-ead5-55a8-d8f4" page="20" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">4</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">6</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">1</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar, Carn Dûm</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">March</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="2ccf-c8df-eb87-f240" name="Glory Seekers [Active]" hidden="false" targetId="430a-3ee6-0ecc-bb46" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="7e05-3e47-ef93-b8f6" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="056c-e6cb-d34a-1a51" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="6ca0-b4c2-4208-4719" name="Carn Dûm" hidden="false" targetId="7f2c-8024-349f-ca65" primary="false"/>
+        <categoryLink id="fb57-304f-e5f0-aacc" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="bd92-7344-a076-7c7b" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="6f96-d566-f2bd-7420" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="99c4-0fef-52e1-6e46" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f1bc-f707-c2a9-885d" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="55.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="92db-221b-da89-1486" name="Fráecht, Vassal of the Witch-king" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a0a8-a0b8-3013-3f3b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8fd3-4802-7c31-c3eb" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="74a8-946e-2b2a-0d31" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="f3d8-f879-ee13-d38b" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="44bf-2e5a-9e24-babe" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="e94b-38a7-8b26-bb90" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="4c4b-c69a-4a84-c89d" name="Hand-and-a-half Weapon" hidden="false" targetId="f473-f7c9-e866-caaa" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="9386-e033-006b-061a" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="6ad4-9557-450b-c74e" name="Fráecht, Vassal of the Witch-king" publicationId="33e0-ead5-55a8-d8f4" page="19" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">4</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">1</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">5+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">1</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">4</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar, Carn Dûm</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Resolve</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="5e88-2b39-960f-7f07" name="Incantations of Power [Active]" publicationId="33e0-ead5-55a8-d8f4" page="19" hidden="false">
+              <description>During each Priority Phase, after Priority has been determined, Fráecht can spend a Will Point to use an incantation. If he does so, choose one of the incantations below – the effects last until the End Phase of the turn.
+
+• Incantation of Strength – Friendly Carn Dûm models within 6&quot; of Fráecht must re-roll To Wound Rolls of a natural 1 when making Strikes.
+• Incantation of Endurance – Whenever a friendly Carn Dûm model within 6&quot; of Fráecht suffers a Wound, roll a D6. On a 5+ the Wound is ignored.
+• Incantation of Swiftness – Friendly Carn Dûm models that start their Move within 6&quot; of Fráecht will not be slowed by Difficult Terrain (with the exception of water features).</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="bf8d-a4c7-30b3-c9cd" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="8aa1-5661-daa7-a2de" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="7c2d-bf4a-7d01-71fa" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="1b2d-f6c4-4a74-f87b" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="0f67-757d-f6af-ef18" name="Carn Dûm" hidden="false" targetId="7f2c-8024-349f-ca65" primary="false"/>
+        <categoryLink id="eea8-c1c8-7a15-f834" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0708-51b7-4fc7-ec2a" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="65.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9859-65db-35ff-21a0" name="Aldrac, Warlord of Carn Dûm" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6632-378c-1027-b9a1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b0b0-9328-0e8b-b081" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b0b1-43bf-0ecb-abc7" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="d401-fa9d-4f5d-5b16" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="46f2-c47b-1459-32f3" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="0ae0-642a-aeec-4c94" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+            <infoLink id="ff22-ef10-8c96-44a6" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="4443-b2e2-7462-eec4" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="5d45-dd62-c320-9000" name="Aldrac, Warlord of Carn Dûm" publicationId="33e0-ead5-55a8-d8f4" page="19" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">6</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">5</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">6</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">5+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">3</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar, Carn Dûm</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Challenge, Strength, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Valour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="f062-a3fe-cf51-8a1b" name="Warlord of Carn Dûm [Passive]" publicationId="33e0-ead5-55a8-d8f4" page="19" hidden="false">
+              <description>Friendly Carn Dûm models within 6&quot; of Aldrac must re-roll failed Courage Tests.</description>
+            </rule>
+            <rule id="351c-1202-f4cf-0306" name="Battle Frenzy" publicationId="33e0-ead5-55a8-d8f4" page="19" hidden="false">
+              <description>If Aldrac slays an enemy model that he was Engaged in Combat with, then in the following turn Aldrac may declare a Heroic Combat for free.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="dca9-dea8-e9b4-d215" name="Mighty Blow [Active]" hidden="false" targetId="1b2c-ba6a-2d1a-0a79" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="1ca6-b874-2f5a-1c13" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="51f7-404e-c1b6-58fd" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="2d88-ad57-0000-1d32" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="18d8-5d21-9ae8-62b3" name="Carn Dûm" hidden="false" targetId="7f2c-8024-349f-ca65" primary="false"/>
+        <categoryLink id="6d22-57ca-5da3-1994" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="d060-1f75-ee76-945c" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="false"/>
+        <categoryLink id="3af9-625e-a9f8-0ef1" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5a54-2127-f411-8ce3" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="7064-8496-0342-4657" value="1.0">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7a49-b9a0-3ee3-7c71" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="120.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e4b3-677c-6935-10a8" name="Angmar Orc Captain" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3e65-65bc-844e-3a62" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="56ab-5cef-649b-00a4" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="3095-83af-f344-72e9" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="bf7d-7927-b93c-3ed2" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="66b4-1779-2793-b6fb" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+            <infoLink id="75bf-bb26-0efa-4b50" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="b593-3edf-bd64-9d80" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="2316-84a6-ab97-2c65" name="Angmar Orc Captain" publicationId="33e0-ead5-55a8-d8f4" page="17" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">4</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">5+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">6</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">7+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">7+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">1</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Orc</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">24mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">March</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="0490-103f-d1f8-40e5" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="51a5-f26e-803b-b2f3" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="c744-4608-2208-1daf" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="0e54-4155-e19d-a6fb" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+        <categoryLink id="50fa-acdb-8b7f-6ff7" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="f43f-09fe-4542-26ae" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="970b-dc60-9421-b480" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="4f2b-79d6-71b7-53c5" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8132-a6a0-4c11-c765" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="45.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b7a7-bb6e-0ccc-0eb9" name="Barrow-wight" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ae07-c6ee-b5be-c178" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7cce-e090-b488-d02d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa76-e06a-9797-619c" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="f745-b288-507f-9730" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="f9a9-f088-bd65-adf4" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="0876-7f38-4fe4-a06f" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="7228-58c7-4f73-5f08" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="4761-0e17-ba1f-5e1e" name="Barrow-wight" publicationId="33e0-ead5-55a8-d8f4" page="17" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">3</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">5+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">3</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">1</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">4+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">0</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">5</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">0</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Spirit</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">-</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Minor Hero</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c04a-08be-2da6-1de4" name="Blades of the Dead [Active]" hidden="false" targetId="0f23-9731-5736-4ab9" type="rule"/>
+            <infoLink id="5531-1087-5ad2-79f2" name="Spectral Walk [Passive]" hidden="false" targetId="789e-ba72-c6d9-e1c2" type="rule"/>
+            <infoLink id="7ba2-0fed-b4cc-000c" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+            <infoLink id="0b5f-2400-4439-ad9a" name="Stalk Unseen [Passive]" hidden="true" targetId="0b43-1fba-fbd5-33dd" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="ddfa-d764-8ee4-140c" name="Magical Powers" hidden="false">
+          <infoLinks>
+            <infoLink id="e2c4-1f4d-2de3-4939" name="Paralyse" hidden="false" targetId="7c77-317d-ec17-6ec9" type="profile">
+              <modifiers>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="6&quot;"/>
+                <modifier type="set" field="362b-8822-a065-da22" value="3+"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="d98c-3238-37b7-4409" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="a257-588e-3833-12f0" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
+        <categoryLink id="05a7-7202-74c4-29c6" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="f87c-9686-8d5c-a054" name="Minor Hero" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="false"/>
+        <categoryLink id="2334-ba6f-6659-ad9c" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="62da-a918-e00b-44b8" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b9c0-ef02-7200-6499" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="50.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ea13-d655-d26b-ce53" name="Shade" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5823-f89a-1038-dc23" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bad1-c5cd-9243-e11f" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="ebeb-50f5-caf0-e8c8" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="78e2-b140-8524-c958" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile">
+              <modifiers>
+                <modifier type="set" field="name" value="An amalgamation of grasping spectral hands (hand weapons)."/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="d91e-5365-f9bf-1d2d" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="cceb-5724-bbef-74f5" name="Shade" publicationId="33e0-ead5-55a8-d8f4" page="16" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">1</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">6+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">1</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">8</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">5+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">8+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">0</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">4</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Spirit</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">30mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">-</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="a7e2-510f-d19b-e828" name="Conduit of Angmar [Passive]" publicationId="33e0-ead5-55a8-d8f4" page="16" hidden="false">
+              <description>If a Ringwraith model is within 6&quot; of a friendly Shade, they may use the Shade to determine range and Line of Sight for a Magical Power. Additionally, after making a Casting Roll within 6&quot; of a friendly Shade, a Ringwraith can choose to deal a single Wound to the Shade to add 1 to the Casting Roll.</description>
+            </rule>
+            <rule id="8a20-1304-9f43-6465" name="Swirling Mists [Active]" publicationId="33e0-ead5-55a8-d8f4" page="16" hidden="false">
+              <description>At the start of the Shoot Phase, before the Declare Heroic Actions step, a Shade may spend a Will Point to use this ability. If it does, then for the remainder of the turn, enemy models will suffer a -1 penalty To Hit when making a shooting attack that targets a friendly model within 6&quot; of the Shade. If the enemy model making the shooting attack is also within 12&quot; of the Shade, they will suffer a -2 penalty To Hit instead.</description>
+            </rule>
+            <rule id="fd1d-fbca-5dc6-60d9" name="Ghostly Resolve [Passive]" publicationId="33e0-ead5-55a8-d8f4" page="16" hidden="false">
+              <description>Friendly Angmar Orc models within 12&quot; of one or more models with this special rule gain a bonus of +1 to any Courage Tests they are required to take.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="9c3a-cca0-04ca-ab63" name="Blades of the Dead [Active]" hidden="false" targetId="0f23-9731-5736-4ab9" type="rule"/>
+            <infoLink id="2930-975b-6ab3-a03a" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Dominant (3) [Passive]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="a229-623c-02dd-a0bb" name="Spectral Walk [Passive]" hidden="false" targetId="789e-ba72-c6d9-e1c2" type="rule"/>
+            <infoLink id="f956-d750-75fe-0d53" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+            <infoLink id="b7b6-75a6-1d2b-06d3" name="Stalk Unseen [Passive]" hidden="true" targetId="0b43-1fba-fbd5-33dd" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="bae8-bcd2-cff4-0fd4" name="40mm" hidden="false" targetId="2fec-cef0-ffc5-25c5" primary="false"/>
+        <categoryLink id="b4ad-db4a-8676-50c7" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="cdc1-cc8c-5940-50ce" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="e801-9054-41e8-50e5" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
+        <categoryLink id="51eb-b96d-0670-d2be" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="e8ae-f334-3c84-7b31" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c716-ddd7-4b8c-29a2" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="75.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d61-972e-8e89-9258" name="Nazthák, Orc Captain" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7da3-b8aa-fb27-f65d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="57ac-666f-68bc-a5d8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d157-f47c-de5d-7b70" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="1414-d8b1-0fa6-ac45" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="94d6-f7d2-63ae-5c00" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="d1b5-f10e-8f2a-8707" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="0c67-09f4-f054-6721" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="8c17-84ff-d8c4-8bbd" name="Nazthák, Orc Captain" publicationId="33e0-ead5-55a8-d8f4" page="16" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">4</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">5+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">7+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">1</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">2</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Orc</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Defence</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="4c06-2557-e28a-6606" name="Scavange [Active]" publicationId="33e0-ead5-55a8-d8f4" page="16" hidden="false">
+              <description>Whenever Nazthák slays an enemy model in Combat (with the exception of Monster models), he may choose to scavenge a single piece of wargear carried by that model, with the exception of a Mount, another type of armour, living creatures, the One Ring, or items of wargear that are integral to the model (such as claws and teeth). This will happen before any effects that allow the slain model to pass on that piece of wargear. Add the scavenged item to Nazthák’s list of wargear. Nazthák will benefit from the scavenged wargear as if he was the original model. Nazthák may choose to discard any piece of scavenged wargear at any time, though if he does so then he cannot reclaim it – it is lost.</description>
+            </rule>
+          </rules>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="e932-f373-09d5-106e" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="dcf5-53d4-7489-bb73" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+        <categoryLink id="b615-a74f-ed69-61e2" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="2545-84ad-c98b-597c" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="false"/>
+        <categoryLink id="19c0-1c83-8f44-fe39" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="9d2a-334f-48c7-4629" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5ff9-3556-c108-0c45" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="50.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f5a7-018e-2178-dc31" name="The Shadow of Rhudaur" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4ac1-450d-3d49-27ce" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="abc7-517f-55fa-1851" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e937-2855-5a72-55d7" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="ea3c-3666-2d38-33f9" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="542d-b9de-7db7-89f7" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+            <infoLink id="d942-145b-7399-7925" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="bf2c-0d6e-2390-ed45" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="28e4-6bbd-bc5f-be70" name="The Shadow of Rhudaur" publicationId="33e0-ead5-55a8-d8f4" page="15" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">3</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">4+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">5+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">5</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">2</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Spirit</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Challenge</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Valour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ec7b-0a05-5848-b34b" name="Herald of Doom [Passive]" publicationId="33e0-ead5-55a8-d8f4" page="15" hidden="false">
+              <description>At the beginning of the game, after both sides have been deployed, choose one Hero model in your opponent’s Army. Whilst the Shadow of Rhudaur is within 6&quot; of the chosen Hero, that Hero suffers a -1 penalty to their Fate Rolls and a -1 penalty to any Courage Tests they are required to take.</description>
+            </rule>
+            <rule id="35b5-1660-6426-88e0" name="Power of Angmar [Active]" publicationId="33e0-ead5-55a8-d8f4" page="15" hidden="false">
+              <description>If the Shadow of Rhudaur rolls a natural 6 when making a Casting Roll, then the target model cannot spend Will Points to attempt to Resist the Magical Power.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="4b1a-469c-85a0-4b08" name="Blades of the Dead [Active]" hidden="false" targetId="0f23-9731-5736-4ab9" type="rule"/>
+            <infoLink id="a023-6e6a-b6f7-65f5" name="Spectral Walk [Passive]" hidden="false" targetId="789e-ba72-c6d9-e1c2" type="rule"/>
+            <infoLink id="e9d1-a2fa-3412-8aea" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+            <infoLink id="b415-71c5-bde7-9358" name="Stalk Unseen [Passive]" hidden="true" targetId="0b43-1fba-fbd5-33dd" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="779b-ac85-7ef1-3f7b" name="Magical Powers" hidden="false">
+          <infoLinks>
+            <infoLink id="7563-fb80-f000-a985" name="Drain Courage" hidden="false" targetId="da51-38b7-1ce5-355f" type="profile">
+              <modifiers>
+                <modifier type="set" field="362b-8822-a065-da22" value="3+"/>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="6&quot;"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="9597-214a-1069-785e" name="Fog of Disarray" hidden="false" targetId="af5a-f740-e2e5-9cf2" type="profile">
+              <modifiers>
+                <modifier type="set" field="362b-8822-a065-da22" value="3+"/>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="Self"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="df91-ed0c-b6fe-14d6" name="Curse" hidden="false" targetId="4307-b5b0-2c71-ab29" type="profile">
+              <modifiers>
+                <modifier type="set" field="362b-8822-a065-da22" value="4+"/>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="6&quot;"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="f850-2e33-5311-562c" name="Wither" hidden="false" targetId="a9df-cb36-4897-08f5" type="profile">
+              <modifiers>
+                <modifier type="set" field="362b-8822-a065-da22" value="6+"/>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="6&quot;"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="e0ba-ea26-bea9-a50f" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="833e-370a-3cab-da57" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
+        <categoryLink id="ec38-e7e5-84ce-26fe" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="ef19-524c-0945-d516" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="9ce5-8508-400d-46e8" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="false"/>
+        <categoryLink id="0762-830c-4e2d-3d91" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e77e-5964-3854-9805" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="20fb-ade8-9337-3cef" name="Buhrdûr, Hill Troll Chieftain" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5f32-515e-c224-7100" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9e91-5594-3fd8-1b6d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2c4b-0e90-a1ee-eafb" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="b507-b3fd-4c7d-bb86" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="9b3a-10a0-82a3-7804" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="b295-a368-32b9-3418" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="09d1-1f02-14af-655b" name="Buhrdûr, Hill Troll Chieftain" publicationId="33e0-ead5-55a8-d8f4" page="14" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">7</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">7</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">5+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">3</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Troll</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Monster, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">50mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Challenge, Strength, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Valour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="ed8a-b076-58a9-4c1c" name="Lead by Example [Active]" publicationId="33e0-ead5-55a8-d8f4" page="14" hidden="false">
+              <description>If Buhrdûr slays an enemy Hero or Monster in Combat, then for the rest of the game other friendly Orc or Troll models treat Buhrdûr as a banner. If Buhrdûr has slain 3 or more enemy Hero or Monster models, then for the rest of the game other friendly Orc or Troll models treat Buhrdûr as a banner with a range of 6&quot; instead.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="8883-ff39-c3a3-d3df" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Dominant (4) [Passive]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="6bd4-b7de-cda0-378f" name="General Hunter [Active]" hidden="false" targetId="642b-15a7-cfa1-ded0" type="rule"/>
+            <infoLink id="0de3-4055-8242-8f6f" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+            <infoLink id="0fd6-e69a-7cf6-42bb" name="Throw Stones (X,X) [Active]" hidden="false" targetId="a97b-a5a6-c8fb-5976" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Throw Stones (range 12&quot;, Strength 8) [Active]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="955a-e76f-e7d8-0fc6" name="Brutish Cunning [Active]" hidden="false" targetId="5009-3f01-f131-528e" type="rule"/>
+            <infoLink id="246b-71b0-d95a-971f" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="3377-5607-d424-1a61" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="cf38-564e-0e3d-f268" name="50mm" hidden="false" targetId="508f-c456-ccba-d20c" primary="false"/>
+        <categoryLink id="3ecf-3531-d4fc-24e4" name="Troll" hidden="false" targetId="6742-f38c-c9b5-ba17" primary="false"/>
+        <categoryLink id="1744-c19e-12f2-d45f" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="9ce0-7386-e5a9-429b" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="6ecd-acec-2ad0-06a9" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="false"/>
+        <categoryLink id="145b-93cd-f99c-e86b" name="Monster" hidden="false" targetId="7c38-3bac-7fae-a56c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6ed2-eaa1-f357-fb3c" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="130.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d054-3493-4286-8b03" name="Gûlavhar, the Terror of Arnor" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="049e-ddec-0641-5870" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="464f-bf2e-e181-5b8c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d1f8-cbc2-fe76-86cb" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="49ca-0997-6c71-52b4" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="e244-a2d9-1682-45be" name="Claws &amp; Teeth (Hand Weapon)" hidden="false" targetId="96b7-802c-9454-3a7b" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="6915-fa9e-fb50-a139" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="2237-50aa-2692-504d" name="Gûlavhar, the Terror of Arnor" publicationId="33e0-ead5-55a8-d8f4" page="13" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">7</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">5+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">8</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">*</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">4</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">4+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">3</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">0</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Spirit</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Monster, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">60mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Defence, Strength</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Legend</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="0664-937f-e01a-f74e" name="Strength of Body, Strength of Will [Passive]" publicationId="33e0-ead5-55a8-d8f4" page="13" hidden="false">
+              <description>Gûlavhar’s Attacks are always equal to its remaining Wounds. Additionally, for each Wound Gûlavhar has lost, worsen Gûlavhar’s Courage value by 1 (this will improve again should Gûlavhar regain a lost Wound via the Immortal Hunger special rule below).</description>
+            </rule>
+            <rule id="77d4-0d78-2c4a-9e3a" name="Immortal Hunger [Active]" publicationId="33e0-ead5-55a8-d8f4" page="13" hidden="false">
+              <description>Each time Gûlavhar slays a model in Combat, it regains a single Wound lost earlier in the battle. These Wounds are regained at the end of the Combat. Gûlavhar can only regain Wounds in this way by making Strikes, never by using a Brutal Power Attack.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="dd5c-916c-4f57-91c2" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Dominant (5) [Passive]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="6550-4557-2266-8ad2" name="Fly [Active]" hidden="false" targetId="e6dc-ab59-58db-797b" type="rule"/>
+            <infoLink id="41e9-f58a-d2a4-32cb" name="Harbinger of Evil (X) [Passive]" hidden="false" targetId="0850-62c4-a9ec-5919" type="rule">
+              <modifiers>
+                <modifier type="set" field="name" value="Harbinger of Evil (12&quot;) [Passive]"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="d756-1a64-7533-b2a3" name="Large Target [Passive]" hidden="false" targetId="5c62-7261-4476-2783" type="rule"/>
+            <infoLink id="d9fe-5efb-6d27-5d69" name="Monstrous Charge [Active]" hidden="false" targetId="e4f1-7344-c05f-d5ab" type="rule"/>
+            <infoLink id="0fec-f74f-0a30-e0a3" name="Resistant to Magic [Passive]" hidden="false" targetId="48fb-9eea-f6c7-e577" type="rule"/>
+            <infoLink id="a783-1dae-4754-7d68" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+            <infoLink id="42ad-f4ca-a3ec-19a3" name="Stalk Unseen [Passive]" hidden="true" targetId="0b43-1fba-fbd5-33dd" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="05a2-8f31-ad5d-afd5" name="60mm" hidden="false" targetId="5e73-283c-4396-34b3" primary="false"/>
+        <categoryLink id="1a6f-f1f5-9b4b-b2bd" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
+        <categoryLink id="4fbf-fece-5fa9-4eec" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="2b12-fab5-05ce-9744" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="080a-13b6-336b-c64a" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="false"/>
+        <categoryLink id="9350-b1a0-9cce-0558" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="5999-c7e1-0479-7bcf" name="Monster" hidden="false" targetId="7c38-3bac-7fae-a56c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e7da-a799-765e-2484" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="7064-8496-0342-4657" value="1.0">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="200.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="421a-ea19-4ea5-7ff2" name="Angmar Orc Shaman" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="3a91-843d-fe10-2d70">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9fe9-a9ec-dbaf-ca46" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="69ec-404e-f610-ae28">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9fe9-a9ec-dbaf-ca46" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f957-b86d-3d44-e6e8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="951e-0c2f-57c0-42e0" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="73f0-263c-b1d7-ddbf" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="5afc-7046-9f5e-b969" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+            <infoLink id="0f18-09b4-1c24-b01f" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+            <infoLink id="5586-6f4c-d5b6-9321" name="Spear" hidden="false" targetId="a266-690d-5aee-eb91" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="3630-5e70-6960-240b" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="0882-5872-9484-7c96" name="Angmar Orc Shaman" publicationId="33e0-ead5-55a8-d8f4" page="17" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <modifiers>
+                <modifier type="set" field="ac32-60b4-0b88-5372" value="Hero, Cavalry">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9fe9-a9ec-dbaf-ca46" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">3</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">5+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">3</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">1</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">7+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">7+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">1</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">3</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">1</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Orc</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">Channelling</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Minor Hero</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="72db-be8c-272d-aa58" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="48f5-eeae-aedf-59cc" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="1125-02a8-e9ad-6e03" name="Magical Powers" hidden="false">
+          <infoLinks>
+            <infoLink id="01ea-355c-38d9-0f52" name="Instil Fear" hidden="false" targetId="d8c1-3eb9-18aa-b624" type="profile">
+              <modifiers>
+                <modifier type="set" field="362b-8822-a065-da22" value="3+"/>
+                <modifier type="set" field="name" value="Self"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="59e5-cb9b-01a4-9fda" name="Drain Courage" hidden="false" targetId="da51-38b7-1ce5-355f" type="profile">
+              <modifiers>
+                <modifier type="set" field="362b-8822-a065-da22" value="4+"/>
+                <modifier type="set" field="name" value="12&quot;"/>
+              </modifiers>
+            </infoLink>
+            <infoLink id="17cd-9027-266e-aba5" name="Wither" hidden="false" targetId="a9df-cb36-4897-08f5" type="profile">
+              <modifiers>
+                <modifier type="set" field="362b-8822-a065-da22" value="4+"/>
+                <modifier type="set" field="name" value="12&quot;"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="c999-f4e0-42e4-d461" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+        <categoryLink id="fda8-b6ab-e98a-4ef8" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="e6c3-b624-e41a-7ffc" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+        <categoryLink id="5585-7186-17db-3837" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="263d-8414-fae6-1066" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="5ba6-d8ea-db8c-15c7" name="Minor Hero" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="728b-f0c9-11ad-5a06" name="Wargear" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="2c34-9144-c0e8-ad3a" name="Warg" hidden="false" collective="false" import="true" targetId="9fe9-a9ec-dbaf-ca46" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="50.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dbd9-7d70-1dd1-e3bb" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="61c4-4ed6-5b1c-e190" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9b87-fa7e-0592-1dbc" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f115-bd72-8e93-35d9" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="cb5a-b498-41a7-5b14" name="Wargear" hidden="false"/>
+        <infoGroup id="1e1f-51f5-9b8f-4de5" name="Special Rules" hidden="false"/>
+        <infoGroup id="5e73-b73e-9777-0d13" name="Magical Powers" hidden="false"/>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8f4e-2e16-bc22-fb14" name="Wargear" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="38cb-96ac-dd7d-75ca" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a2a-863b-bdb1-3262" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eeb0-8966-28d2-e529" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b0c2-918b-90ca-9cd2" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a8da-a1dc-298f-ccf2" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="5dc6-dfa1-b92e-dde4" name="Wargear" hidden="false"/>
+        <infoGroup id="d50b-e2b9-b8fb-8bf1" name="Special Rules" hidden="false"/>
+        <infoGroup id="3bd7-969b-969d-c59d" name="Magical Powers" hidden="false"/>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9e5c-dad0-41d7-ad2b" name="Wargear" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bbce-f289-3851-03fb" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3ab-6fbd-b823-7bfd" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fd1a-bd74-0e2b-1be1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="05ca-809b-4b32-3a4d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d260-5d95-53ff-43d7" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="b265-147e-d9ee-fa51" name="Wargear" hidden="false"/>
+        <infoGroup id="cc04-8564-848b-9b21" name="Special Rules" hidden="false"/>
+        <infoGroup id="c3b9-da86-76a0-1996" name="Magical Powers" hidden="false"/>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3955-8796-7b00-9a0b" name="Wargear" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e895-dbb1-f499-9f33" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a06a-cf41-2b2a-ec7a" name="New SelectionEntry" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b43-60cf-8f95-4b66" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="63f5-02a8-019c-f60b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d955-393d-39b5-fb04" type="min"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="2da6-e576-0e74-1761" name="Wargear" hidden="false"/>
+        <infoGroup id="6164-c13f-025f-1d74" name="Special Rules" hidden="false"/>
+        <infoGroup id="3ad1-256a-1691-6c68" name="Magical Powers" hidden="false"/>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b742-4129-5576-601d" name="Wargear" hidden="false" collective="false" import="true"/>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d876-daad-8856-23a4" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8168-6b3a-807d-e638" name="Wild Warg Chieftain General" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="63eb-05f6-a268-fe53" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="75e5-c46b-758b-d775" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c7cb-d252-7c6e-e473" type="max"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup id="877d-5c05-d272-d7dd" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="5c3c-a60c-2666-f9e0" name="Claws &amp; Teeth (Hand Weapon)" hidden="false" targetId="96b7-802c-9454-3a7b" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="725a-9fb4-e5f6-74bb" name="Special Rules" hidden="false">
+          <profiles>
+            <profile id="7702-d845-d8f8-6d53" name="Wild Warg Chieftain General" publicationId="33e0-ead5-55a8-d8f4" page="21" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <characteristics>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">10&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">6</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">5</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">7+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">3</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">2</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Warg</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Angmar</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Beast</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">40mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">March, Strength</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Valour</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="6b50-b696-cb2b-d94c" name="Packlord [Active]" publicationId="33e0-ead5-55a8-d8f4" page="21" hidden="false">
+              <description>Friendly models may not benefit from the Heroic Actions or Stand Fast of this model unless they have the Warg keyword.</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink id="371d-9999-e2e1-778e" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <categoryLinks>
+        <categoryLink id="abd7-ed56-e75c-4206" name="40mm" hidden="false" targetId="2fec-cef0-ffc5-25c5" primary="false"/>
+        <categoryLink id="5dd7-c4e5-882c-35dd" name="Warg" hidden="false" targetId="228c-fe0e-1325-1a19" primary="false"/>
+        <categoryLink id="ee87-5872-268a-ed82" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+        <categoryLink id="a985-b1d6-8f4b-b1ee" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+        <categoryLink id="6eaf-1b2d-63a6-bfea" name="Beast" hidden="false" targetId="185c-07da-d0a7-1849" primary="false"/>
+        <categoryLink id="78e9-9688-2b77-9215" name="Hero" hidden="false" targetId="3666-ed50-5218-26f6" primary="false"/>
+        <categoryLink id="0989-6e48-af4a-5c3e" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="afbf-f33b-e778-98c7" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="7064-8496-0342-4657" value="1.0">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46b-ebda-5318-01f9" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="f88d-1ecb-eb54-b9eb" name="Followers" hidden="false" collective="false" import="true">
@@ -22497,6 +24456,12 @@ The Rider may be either Aragorn or Théodred.</description>
                         <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eec7-0c18-5168-1229" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eec7-0c18-5168-1229" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
                   </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
@@ -22559,6 +24524,15 @@ The Rider may be either Aragorn or Théodred.</description>
               </profiles>
               <infoLinks>
                 <infoLink id="6f5a-144c-66f0-c2d4" name="Woodland Creature" hidden="false" targetId="2cd8-d1b0-0bfe-3861" type="rule"/>
+                <infoLink id="e74d-a01f-546f-bdbe" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
             </infoGroup>
           </infoGroups>
@@ -23334,7 +25308,7 @@ The Rider may be either Aragorn or Théodred.</description>
                     <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
                     <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">5</characteristic>
                     <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">3+</characteristic>
-                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
                     <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
                     <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
                     <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
@@ -23716,7 +25690,7 @@ The Rider may be either Aragorn or Théodred.</description>
           <infoGroups>
             <infoGroup id="626a-d929-781d-9ac5" name="Special Rules" hidden="false">
               <profiles>
-                <profile id="21e5-8c66-a13c-1b77" name="Special Rules" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                <profile id="21e5-8c66-a13c-1b77" name="Mirkwood Elf Knight" publicationId="a40a-1ac4-b5c2-a481" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
                   <characteristics>
                     <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
                     <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">5</characteristic>
@@ -23792,6 +25766,13 @@ The Rider may be either Aragorn or Théodred.</description>
                 <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="10e6-c707-0205-f825" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0988-9d95-c4d1-588b" type="min"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink id="72c5-579b-34cf-a8b3" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="a4d4-396d-ca56-ac77" name="Elf" hidden="false" targetId="2f21-68f2-eb43-5167" primary="false"/>
+                <categoryLink id="0daf-9950-5f0d-d291" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="9098-920c-7ec9-bbf0" name="Mirkwood" hidden="false" targetId="3899-38ec-3426-7d4d" primary="false"/>
+                <categoryLink id="00ce-76ce-9a2a-a692" name="Cavalry" hidden="false" targetId="3a91-843d-fe10-2d70" primary="false"/>
+              </categoryLinks>
               <costs>
                 <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
                 <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="16.0"/>
@@ -28255,34 +30236,32 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8781-645f-4b0c-639e" type="notInstanceOf"/>
                       </conditions>
                     </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b665-e970-845c-4926" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c854-3568-9192-d195" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b665-e970-845c-4926" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c854-3568-9192-d195" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
-                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -28328,6 +30307,15 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb6b-bfe0-6695-3bd6" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="28bd-c6a7-2814-75c9" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -28542,34 +30530,32 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="263b-3910-d2af-beaf" type="notInstanceOf"/>
                       </conditions>
                     </conditionGroup>
-                  </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b665-e970-845c-4926" type="instanceOf"/>
-                  </conditions>
-                  <conditionGroups>
-                    <conditionGroup type="or">
+                    <conditionGroup type="and">
                       <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c854-3568-9192-d195" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b665-e970-845c-4926" type="instanceOf"/>
+                      </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c854-3568-9192-d195" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
-                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b4ea-7715-d55b-7e78" type="instanceOf"/>
-                  </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -28609,6 +30595,15 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                     <modifier type="set" field="hidden" value="false">
                       <conditions>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="eb6b-bfe0-6695-3bd6" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="788d-e2af-b57c-002b" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -29095,6 +31090,628 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                 <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
                 <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
                 <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2cc5-514f-1e1f-2d9f" name="Hobbit Archer" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f16a-7b75-3d75-fd19" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="1951-d50b-389e-2c52" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="f162-e346-ee48-7566" name="Hobbit Archer" publicationId="33e0-ead5-55a8-d8f4" page="8" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">4&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">3+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">2</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">3</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Hobbit</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Shire</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d1bb-e1c1-8aad-f7eb" name="Resistant to Magic [Passive]" hidden="false" targetId="48fb-9eea-f6c7-e577" type="rule"/>
+                <infoLink id="b565-0af5-025a-0193" name="Throw Stones (X,X) [Active]" hidden="false" targetId="a97b-a5a6-c8fb-5976" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Throw Stones (range 8&quot;, Stregnth 1) [Active]"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="9175-21fd-4bbb-40c3" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="5e3c-6b28-bfdd-fc9c" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+                <infoLink id="4a0b-4604-6fb1-7b9f" name="Short Bow" hidden="false" targetId="2673-7f83-ced4-1151" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="af3f-eab1-48cc-f7dc" name="Hobbit" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Hobbit">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="af3f-eab1-48cc-f7dc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="c42f-043d-c0f5-f5d6" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="c42f-043d-c0f5-f5d6" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="c42f-043d-c0f5-f5d6" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="c42f-043d-c0f5-f5d6" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7565-e61c-1312-d77c" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c42f-043d-c0f5-f5d6" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="85aa-26ae-5985-b848" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="e5cb-fb84-add2-507a" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="62e9-dec2-4afc-b04e" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="9354-caf2-21a6-82d9" name="Hobbit" hidden="false" targetId="77b6-9c8a-1084-c3b6" primary="false"/>
+                <categoryLink id="ebf4-462c-4df1-516e" name="Shire" hidden="false" targetId="0d0d-4bd3-cb8b-974e" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="5.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c203-054d-ecb3-0eff" name="Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1389-aee5-ef35-52cf" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="5a8e-f2e8-b1ba-a929" name="War Horn" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="af3f-eab1-48cc-f7dc" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b01c-ce40-0f35-2e46" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5399-8329-dad5-717b" name="War Horn" hidden="false" targetId="0148-1ad8-4e0a-aa9c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2887-1d75-b79f-94a6" name="Ranger of Arnor" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d9b-3a56-e1db-3cd5" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3129-e59e-a52e-02a8" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="7803-ed60-77a4-4ed2" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="9fee-24ff-5429-52f5" name="Ranger of Arnor" publicationId="33e0-ead5-55a8-d8f4" page="5" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">3+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">4</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Man</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Arnor</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="5920-e794-c639-aa2b" name="Hatred (X) [Active]" hidden="false" targetId="681e-bdd0-b5c4-5ff9" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hatred (Angmar) [Active]"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="7e21-ac57-c2a5-5a1e" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="235c-cacb-b425-6b41" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+                <infoLink id="3906-940b-229f-07d3" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+                <infoLink id="e730-af66-bb6b-16dd" name="Bow" hidden="false" targetId="5b42-7696-1860-9a01" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="3ce7-64b6-72ff-a48f" name="Ranger" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Ranger">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ce7-64b6-72ff-a48f" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="ded0-2ab2-3cd4-955c" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="ded0-2ab2-3cd4-955c" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="ded0-2ab2-3cd4-955c" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="ded0-2ab2-3cd4-955c" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="938a-1f08-d40b-2c33" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ded0-2ab2-3cd4-955c" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="1484-9bb4-fadf-9fcb" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="d7a8-5704-3d12-cdcc" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="c249-b92e-3bab-1827" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="5f1e-6b37-dcc8-1b76" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+                <categoryLink id="7c18-b52a-b526-ffc6" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="8.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c046-030b-2c78-f310" name="Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e262-f33d-9f02-757f" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="d467-3749-236c-e840" name="Banner" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ce7-64b6-72ff-a48f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7282-e51d-8027-5887" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9a9c-994d-f43d-9b6d" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="542d-e754-71b5-393e" name="War Horn" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ce7-64b6-72ff-a48f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="af4f-688d-9cb3-f353" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="d81e-5ba9-ad5d-5f3e" name="War Horn" hidden="false" targetId="0148-1ad8-4e0a-aa9c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2cea-ab48-aafd-ec95" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3ce7-64b6-72ff-a48f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf35-6df0-eaa7-0e4e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="1f0f-fa41-46b8-9dca" name="Spear" hidden="false" targetId="a266-690d-5aee-eb91" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="72b4-65e3-3602-3a35" name="Warrior of Arnor" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d9b-3a56-e1db-3cd5" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3129-e59e-a52e-02a8" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="b73a-2a8c-5606-16aa" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="cfb5-3a1e-3478-91fd" name="Warrior of Arnor" publicationId="33e0-ead5-55a8-d8f4" page="4" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <modifiers>
+                    <modifier type="decrement" field="8a4a-f7d8-59f4-eac3" value="1">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8dc4-0e70-f28f-4c5f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">6</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Man</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Arnor</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="5d46-751a-7435-2333" name="Hatred (X) [Active]" hidden="false" targetId="681e-bdd0-b5c4-5ff9" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hatred (Angmar) [Active]"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="8b81-9f8b-2733-fe47" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="89d0-4984-ae9a-9cc1" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+                <infoLink id="17c3-2c5d-ffe6-a465" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+                <infoLink id="6470-3e80-4161-57c4" name="Spear" hidden="false" targetId="a266-690d-5aee-eb91" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8dc4-0e70-f28f-4c5f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="8837-3caa-2a7e-d063" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8dc4-0e70-f28f-4c5f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="ae3f-6e1a-3e13-80c7" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae3f-6e1a-3e13-80c7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="c5ba-6bf4-9173-c0ed" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="c5ba-6bf4-9173-c0ed" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="c5ba-6bf4-9173-c0ed" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="c5ba-6bf4-9173-c0ed" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c872-fdb4-ea87-7d7c" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c5ba-6bf4-9173-c0ed" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="6a0e-662c-187b-d913" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="d334-f318-d322-d4f6" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="85c3-4f6d-ea36-f36d" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="6e2d-3011-2a59-7726" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+                <categoryLink id="2a4c-69cb-8be1-a526" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="8.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="8ed6-045b-94a8-938c" name="Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="343a-cb90-649b-a05d" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="8dc4-0e70-f28f-4c5f" name="Swap Shield and Spear for Banner" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ae3f-6e1a-3e13-80c7" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1a93-5fc8-42f5-0b50" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c6ab-7ff6-37db-305b" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fe0c-14a7-14bf-9177" name="Knight of Arnor" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d9b-3a56-e1db-3cd5" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3129-e59e-a52e-02a8" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="78db-8c96-91d9-29d2" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="7c7d-0f32-98ee-d7b2" name="Knight of Arnor" publicationId="33e0-ead5-55a8-d8f4" page="5" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">2</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Man</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Arnor</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Cavalry</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="2fcb-e1e7-1263-369c" name="Hatred (X) [Active]" hidden="false" targetId="681e-bdd0-b5c4-5ff9" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Hatred (Angmar) [Active]"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="d9b3-bf9b-8aff-8ff2" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="6cca-0ff8-44b1-0193" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+                <infoLink id="32af-bf19-f2a5-759a" name="War Spear" hidden="false" targetId="c1c8-7382-6daf-517a" type="profile"/>
+                <infoLink id="7f03-636e-9c16-afd1" name="Horse" hidden="false" targetId="26c1-b9e1-45d2-d0eb" type="profile"/>
+                <infoLink id="b4cb-7156-b7ec-980e" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+                <infoLink id="4505-1adc-c41f-fd09" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="9e95-b16a-7313-f08c" name="Knights" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Knight">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9e95-b16a-7313-f08c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="2cd7-17ce-9c08-d670" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="2cd7-17ce-9c08-d670" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="2cd7-17ce-9c08-d670" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="2cd7-17ce-9c08-d670" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3d72-e920-cb36-7f21" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2cd7-17ce-9c08-d670" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="e144-58ad-4bba-b372" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="9102-d549-a07f-4673" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="8daa-f3b8-7e50-76f2" name="Cavalry" hidden="false" targetId="3a91-843d-fe10-2d70" primary="false"/>
+                <categoryLink id="cd79-93e3-21c8-506a" name="Arnor" hidden="false" targetId="3129-e59e-a52e-02a8" primary="false"/>
+                <categoryLink id="5db9-8c82-1b58-436d" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="15.0"/>
                 <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -29697,6 +32314,63 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0813-e57f-67e2-33c3" name="Dwalin the Dwarf" hidden="true" collective="false" import="true" targetId="b7a5-b7a6-a431-877a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28c1-3796-09c3-2567" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dea2-ccbd-18a3-848f" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="c1f0-de2f-5c87-6a0c" name="Balin the Dwarf" hidden="true" collective="false" import="true" targetId="3898-546c-5de3-691e" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28c1-3796-09c3-2567" type="instanceOf"/>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="dea2-ccbd-18a3-848f" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="126d-0ea8-3ad1-0919" name="Ranger of the North" hidden="true" collective="false" import="true" targetId="314b-1db4-c42a-fa4f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d9b-3a56-e1db-3cd5" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c8b4-cd9a-8a47-131d" type="instanceOf"/>
+                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d1c-2909-4fa5-e796" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3129-e59e-a52e-02a8" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="13f2-59a9-5a73-a03f"/>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -31568,6 +34242,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="85da-8b76-4e50-f671" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3a6-275d-bd0e-ed92" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4a21-071d-7acb-a4b1" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46b-ebda-5318-01f9" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
@@ -32581,6 +35256,13 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           </infoGroups>
           <selectionEntries>
             <selectionEntry id="31f7-c2f1-13b9-2b21" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
                   <comment>Warband sizes</comment>
@@ -34894,6 +37576,8 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -34933,6 +37617,15 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                 <infoLink id="4d3f-656b-4b62-a0d2" name="Blades of the Dead [Active]" hidden="false" targetId="0f23-9731-5736-4ab9" type="rule"/>
                 <infoLink id="c763-a35d-8791-0899" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
                 <infoLink id="c456-4978-e2c8-72e3" name="Spectral Walk [Passive]" hidden="false" targetId="789e-ba72-c6d9-e1c2" type="rule"/>
+                <infoLink id="002d-f24b-479c-9aaa" name="Stalk Unseen [Passive]" hidden="true" targetId="0b43-1fba-fbd5-33dd" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
             </infoGroup>
             <infoGroup id="73a0-a6c9-004d-b500" name="Wargear" hidden="false">
@@ -35473,8 +38166,15 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c3f-99c9-c68b-9aec" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="543b-cfc8-c759-2308" type="instanceOf"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="543b-cfc8-c759-2308" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1063-e2b7-bcc0-ddb1" type="notInstanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -35889,9 +38589,16 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9c3f-99c9-c68b-9aec" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="543b-cfc8-c759-2308" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="98e0-c832-f13c-88cf" type="instanceOf"/>
                   </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="543b-cfc8-c759-2308" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1063-e2b7-bcc0-ddb1" type="notInstanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
@@ -35997,6 +38704,1064 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                 <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
                 <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
                 <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="20.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bd60-b1b1-dd2d-36e8" name="Warrior of Carn Dûm" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="4290-4f8b-93b8-0d11" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="4f93-3164-9458-b334" name="Warrior of Carn Dûm" publicationId="5d2d-eaa5-64b5-2f28" page="200" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">3</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Man</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Angmar, Carn Dûm</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="71d7-8a69-671d-7e51" name="Glory Seekers [Active]" hidden="false" targetId="430a-3ee6-0ecc-bb46" type="rule"/>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="ac4e-30a2-7bfa-e3d9" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="bd7d-c03e-3c1c-5b52" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+                <infoLink id="dcc4-6eee-bdef-a516" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+                <infoLink id="e571-ef23-6588-7e2c" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="b465-6069-1fdf-7ad7" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b465-6069-1fdf-7ad7" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="a64d-2cd0-5dc6-44ef" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="a64d-2cd0-5dc6-44ef" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="a64d-2cd0-5dc6-44ef" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="a64d-2cd0-5dc6-44ef" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c7ea-575c-9f02-0c9b" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a64d-2cd0-5dc6-44ef" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="3816-be29-0970-3e11" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="bb25-4f6a-237b-f677" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="bacf-0dd6-e3b9-e8df" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="7e22-ac1d-d82c-d9e5" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+                <categoryLink id="54a1-6d56-ba2f-809b" name="Carn Dûm" hidden="false" targetId="7f2c-8024-349f-ca65" primary="false"/>
+                <categoryLink id="97ab-c4a1-1577-ce5f" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="9.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="76bc-e5bf-0461-11f0" name="Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bc13-d2c9-1092-d8b8" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="01bd-bd2e-6490-05fe" name="Banner" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b465-6069-1fdf-7ad7" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3cfe-d404-4bce-5a23" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0499-1c94-497d-c41e" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2d9c-75c2-a35d-3427" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b465-6069-1fdf-7ad7" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="422c-4221-7c61-e6ae" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b687-41cc-d084-089c" name="Spear" hidden="false" targetId="a266-690d-5aee-eb91" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8527-81a0-2e5f-5038" name="Angmar Orc Warrior" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="da94-88c4-fd76-c730" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="a2ff-5293-9588-5cb6" name="Angmar Orc Warrior" publicationId="33e0-ead5-55a8-d8f4" page="18" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <modifiers>
+                    <modifier type="increment" field="8a4a-f7d8-59f4-eac3" value="1">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1bdf-fdbf-1a8c-0544" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">3</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">5+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">4</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">8+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Orc</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Angmar</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="d1ce-a06a-dc04-ba57" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="83a9-47ee-fd0c-31eb" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="b1a1-5acc-5983-7f98" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="37ff-b5bf-c958-7b54" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+                <infoLink id="16bc-20a2-dd02-68c1" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="2516-7371-4358-c9d4" name="Warriors" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="8a2a-f03a-1e0e-3fcd" value="6.0">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de16-1cd8-b7ef-f365" type="notInstanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Warrior">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2516-7371-4358-c9d4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="8a2a-f03a-1e0e-3fcd" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="8a2a-f03a-1e0e-3fcd" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="8a2a-f03a-1e0e-3fcd" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="8a2a-f03a-1e0e-3fcd" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f953-dc4b-bf3e-c18d" type="min"/>
+                <constraint field="selections" scope="parent" value="24.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8a2a-f03a-1e0e-3fcd" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="cab9-40dc-2731-0357" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="5208-d0af-43fd-25f3" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="bd35-0db9-f4ec-f19d" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="1765-9f25-efa0-adaf" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+                <categoryLink id="0260-bed2-f05f-da0f" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="5.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="37e7-0dfa-b17e-567f" name="Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="28e2-373a-9139-48be" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d301-1047-0561-6c16" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="79ff-fd1e-395d-cbd4" name="Banner" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2516-7371-4358-c9d4" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="195f-2df1-1129-cbbd" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c06c-8ae8-389c-f172" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="83ab-5d63-43df-a6c4" name="Orc Bow" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2516-7371-4358-c9d4" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" field="5c04-22f1-fd0b-9279" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2516-7371-4358-c9d4" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bebe-2034-0259-aab0" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c1e9-fa58-f00a-270f" name="Orc Bow" hidden="false" targetId="baca-0ab6-d7dc-9476" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="34c0-3a0d-0b21-1ddc" name="Two-handed Weapon" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2516-7371-4358-c9d4" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="76aa-2676-a868-b1fc" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="fbc5-3549-21d1-7f66" name="Two-handed Weapon" hidden="false" targetId="6e3c-7919-5d9a-5c0d" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1bdf-fdbf-1a8c-0544" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2516-7371-4358-c9d4" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6fbf-9332-4c71-04be" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="c104-8dfe-5f07-9087" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b0fd-4940-a98a-7679" name="Spear" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2516-7371-4358-c9d4" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="acf0-6dba-3b18-3d9f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="08f0-060b-5f1a-6a7c" name="Spear" hidden="false" targetId="a266-690d-5aee-eb91" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="59f8-52ab-a8c1-2a8a" name="Angmar Warg Rider" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="93df-2a25-6c26-9b00" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="46a0-af63-2210-771c" name="Angmar Warg Rider" publicationId="33e0-ead5-55a8-d8f4" page="18" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <modifiers>
+                    <modifier type="increment" field="8a4a-f7d8-59f4-eac3" value="1">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="37a2-84e8-dae5-c7de" type="equalTo"/>
+                            <condition field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a19-58af-227a-8579" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">3</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">5+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">4</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">8+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Orc</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Angmar</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Cavalry</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="fe69-bec7-0dca-1227" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="5f69-526e-cfeb-5bb2" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="1183-0594-c558-3e3e" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="133e-7a23-6eed-d107" name="Armour" hidden="false" targetId="f5e6-5069-1cf8-be73" type="profile"/>
+                <infoLink id="7915-257d-4fea-f9a1" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+                <infoLink id="7355-faaa-9d8f-e69d" name="Warg" hidden="false" targetId="fd84-0d61-8d4e-fec3" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="1249-574e-cc7b-8dc0" name="Riders" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="4abd-0fdb-a524-8bf8" value="6.0">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de16-1cd8-b7ef-f365" type="notInstanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="name" value="1x Rider">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="4abd-0fdb-a524-8bf8" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="4abd-0fdb-a524-8bf8" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="4abd-0fdb-a524-8bf8" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="4abd-0fdb-a524-8bf8" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4a16-00d4-d706-fbcf" type="min"/>
+                <constraint field="selections" scope="parent" value="24.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4abd-0fdb-a524-8bf8" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="cdcd-1e63-3eed-03e1" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="2bb4-b8a2-fe6c-fc28" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="50e5-811d-fd2e-9f25" name="Orc" hidden="false" targetId="5fc7-dee0-a596-75aa" primary="false"/>
+                <categoryLink id="4efb-e8f1-3c0f-0017" name="Cavalry" hidden="false" targetId="3a91-843d-fe10-2d70" primary="false"/>
+                <categoryLink id="b49f-94d4-a7f9-89ec" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="11.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="75e0-ba0d-83c8-2283" name="Wargear" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0689-3321-38f2-1a5f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f184-2fda-e551-1316" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="9a19-58af-227a-8579" name="Shield &amp; Throwing Spears" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="59c3-8846-5912-9f3b" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="2.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a61c-b63e-654b-cb6f" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="6e27-8b7a-630e-2c22" name="Throwing Spears" hidden="false" targetId="302b-0beb-8199-6dba" type="profile"/>
+                    <infoLink id="0bce-a409-7d4f-7d29" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3b01-52d2-22e9-38c0" name="Orc Bow" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" field="5c04-22f1-fd0b-9279" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3a2d-8ab4-c9b2-33a8" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="145e-257a-4123-ae55" name="Orc Bow" hidden="false" targetId="baca-0ab6-d7dc-9476" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="37a2-84e8-dae5-c7de" name="Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7a76-044e-bf72-c4d2" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="33ae-07c1-ba6a-c404" name="Shield" hidden="false" targetId="58b4-081e-3519-88da" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="62d9-0607-a083-6ec1" name="Throwing Spears" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                    <modifier type="increment" field="59c3-8846-5912-9f3b" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1249-574e-cc7b-8dc0" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1a3f-74e6-f087-b3ef" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0947-99de-852f-65a0" name="Throwing Spears" hidden="false" targetId="302b-0beb-8199-6dba" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="434a-8402-e8f3-b96e" name="Hill Troll" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="dac8-f1e8-253b-1356" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="035b-3c18-ba60-2736" name="Hill Troll" publicationId="33e0-ead5-55a8-d8f4" page="14" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">6</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">6</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">6</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">3</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">3</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Troll</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Angmar</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry, Monster</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">50mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8d7a-6ad0-6820-94d2" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+                <infoLink id="4891-ba08-f270-e10d" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Dominant (3) [Passive]"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="bc6e-ec1f-897f-e66d" name="Throw Stones (X,X) [Active]" hidden="false" targetId="a97b-a5a6-c8fb-5976" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Throw Stones (range 12&quot;, Strength 8) [Active]"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="f267-da50-dd8d-fdc4" name="Brutish Cunning [Active]" hidden="false" targetId="5009-3f01-f131-528e" type="rule"/>
+                <infoLink id="c314-ab30-7e0e-480a" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="f368-f341-255c-f721" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="0e0a-c61d-2739-f33c" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="27f6-b189-83fa-df2f" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="b2c6-634b-3077-69a9" name="Trolls" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Troll">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b2c6-634b-3077-69a9" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="0ba2-7c96-2a1f-4e01" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="0ba2-7c96-2a1f-4e01" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="0ba2-7c96-2a1f-4e01" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="0ba2-7c96-2a1f-4e01" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="345f-ce75-ef84-3cd7" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0ba2-7c96-2a1f-4e01" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="2687-ef51-1926-96cb" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="8be9-8fb5-56a3-a26e" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="137e-7a61-9a8e-70f1" name="Monster" hidden="false" targetId="7c38-3bac-7fae-a56c" primary="false"/>
+                <categoryLink id="6d5a-1c08-febd-b3ec" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+                <categoryLink id="a6b6-25b0-53a3-27c1" name="Troll" hidden="false" targetId="6742-f38c-c9b5-ba17" primary="false"/>
+                <categoryLink id="7d40-effa-4734-556b" name="50mm" hidden="false" targetId="508f-c456-ccba-d20c" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="75.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f960-91aa-12b1-7321" name="Wild Warg" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46b-ebda-5318-01f9" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="c2a6-ed2c-c70c-b5f6" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="a515-0670-45e1-41ee" name="Wild Warg" publicationId="33e0-ead5-55a8-d8f4" page="21" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">10&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">3</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">4</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">8+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Warg</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Angmar</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry, Beast</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a4aa-801f-8266-105f" name="Woodland Creature [Active]" hidden="true" targetId="2cd8-d1b0-0bfe-3861" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="acef-91bc-0490-328a" name="Mountain Dweller [Active]" hidden="true" targetId="a355-bf0e-93ad-5bf8" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b0f2-1eee-0210-963a" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="ffb5-9fbb-64c8-9070" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="b5fe-b687-3910-0953" name="Claws &amp; Teeth (Hand Weapon)" hidden="false" targetId="96b7-802c-9454-3a7b" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="6e1e-dea9-ee60-7373" name="Wargs" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Warg">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6e1e-dea9-ee60-7373" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="7df1-9ca4-97b8-7796" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="7df1-9ca4-97b8-7796" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="7df1-9ca4-97b8-7796" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="7df1-9ca4-97b8-7796" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="80e9-a96f-580a-8a8f" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7df1-9ca4-97b8-7796" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="e966-a32b-eece-0af6" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
+                <categoryLink id="4920-6762-cb54-033c" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="0f7a-d89e-e68a-8ed6" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="91ba-e20f-3e0a-37bd" name="Warg" hidden="false" targetId="228c-fe0e-1325-1a19" primary="false"/>
+                <categoryLink id="7e6a-7d24-ad55-4c50" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+                <categoryLink id="3fb3-85cb-dac1-8992" name="Beast" hidden="false" targetId="185c-07da-d0a7-1849" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="7.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5610-28d3-7abe-9883" name="Werewolf" hidden="true" collective="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46b-ebda-5318-01f9" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <infoGroups>
+            <infoGroup id="020f-7ee2-d4ad-051f" name="Special Rules" hidden="false">
+              <profiles>
+                <profile id="e326-c778-5173-75e3" name="Werewolf" publicationId="33e0-ead5-55a8-d8f4" page="21" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                  <characteristics>
+                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">10&quot;</characteristic>
+                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">5</characteristic>
+                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">5</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">2</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">2</characteristic>
+                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">5+</characteristic>
+                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">8+</characteristic>
+                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Spirit</characteristic>
+                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Angmar</characteristic>
+                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry, Beast</characteristic>
+                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">50mm</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="4184-60c9-cd10-f844" name="Feral Charge [Active]" publicationId="33e0-ead5-55a8-d8f4" page="21" hidden="false">
+                  <description>When a Werewolf Charges an enemy Infantry model, they gain the Knock to the Ground bonus as if they were Cavalry. This bonus is lost if they are subsequently charged by an enemy Cavalry model.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="ce9d-1bd0-f10d-808b" name="Fell Sight [Passive]" hidden="false" targetId="d420-f71d-f036-56c6" type="rule"/>
+                <infoLink id="57d8-d39a-ca3b-4980" name="Terror [Passive]" hidden="false" targetId="f8cc-ed32-634f-9b90" type="rule"/>
+                <infoLink id="919d-8f9e-7797-2355" name="Stalk Unseen [Passive]" hidden="true" targetId="0b43-1fba-fbd5-33dd" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1108-7d85-e40e-ee4d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </infoGroup>
+            <infoGroup id="f7df-6595-27f6-12f9" name="Wargear" hidden="false">
+              <infoLinks>
+                <infoLink id="279e-9c92-3d4f-ca55" name="Claws &amp; Teeth (Hand Weapon)" hidden="false" targetId="96b7-802c-9454-3a7b" type="profile"/>
+              </infoLinks>
+            </infoGroup>
+          </infoGroups>
+          <selectionEntries>
+            <selectionEntry id="4ef5-d440-c94d-585c" name="Werewolves" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="set" field="name" value="1x Werewolf">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4ef5-d440-c94d-585c" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <modifierGroups>
+                <modifierGroup>
+                  <comment>Warband sizes</comment>
+                  <modifiers>
+                    <modifier type="decrement" field="aa04-de64-a8e7-fa20" value="6.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="aa04-de64-a8e7-fa20" value="3.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="aa04-de64-a8e7-fa20" value="12.0">
+                      <conditions>
+                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="aa04-de64-a8e7-fa20" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6361-4438-8110-50ac" type="min"/>
+                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa04-de64-a8e7-fa20" type="max"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink id="acd7-de82-2936-3f00" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
+                <categoryLink id="d7f5-48c8-6cc8-4853" name="Warrior" hidden="false" targetId="db62-064c-861f-a340" primary="false"/>
+                <categoryLink id="8880-e9bf-d5d2-2161" name="Spirit" hidden="false" targetId="c831-b1f3-df54-c99f" primary="false"/>
+                <categoryLink id="bf77-65f0-f326-82e1" name="Beast" hidden="false" targetId="185c-07da-d0a7-1849" primary="false"/>
+                <categoryLink id="d4ba-b7bd-8b29-d350" name="Angmar" hidden="false" targetId="ce44-1ebc-e56e-b6b1" primary="false"/>
+                <categoryLink id="9a60-df12-52bf-277d" name="50mm" hidden="false" targetId="508f-c456-ccba-d20c" primary="false"/>
+              </categoryLinks>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="25.0"/>
                 <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -36575,6 +40340,18 @@ Models placed on the board in this manner cannot be placed in the ControlZones o
     <rule id="fa84-d460-4051-b77f" name="Loot the Bodies [Active]" publicationId="5d2d-eaa5-64b5-2f28" page="182" hidden="false">
       <description>Whenever Shank or Wrot slays a model in Combat, they may roll a D6, On a natural 6, they have found a trinket of note and pocketed it. Keep a track of how many trinkets they have found collectively during the course of the game. At the end of the game, so long as at least one of Shank &amp; Wrot, their controlling player gains an additional Victory Point for each trinket they have found, up to a maximum of 5 Victory Points. This can never take Shank&apos;s &amp; Wrot&apos;s controlling player&apos;s total number of Victory Points above 20.</description>
     </rule>
+    <rule id="b9e9-c22a-0241-bddd" name="“If that fell Kingdom should rise again, Rivendell, Lórien, theShire, even Gondor itself shall fall.”" publicationId="33e0-ead5-55a8-d8f4" page="22" hidden="false">
+      <description>Friendly Angmar Orc models within 3&quot; of a friendly Spirit Hero model gain the Terror special rule.</description>
+    </rule>
+    <rule id="430a-3ee6-0ecc-bb46" name="Glory Seekers [Active]" publicationId="33e0-ead5-55a8-d8f4" page="20" hidden="false">
+      <description>If this model is Engaged in Combat with an enemy Hero, then this model gains a bonus of +1 To Wound that Hero when making Strikes.</description>
+    </rule>
+    <rule id="b2eb-8ede-31ba-a9a6" name="Foresight of the Eldar [Passive]" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
+      <description>At the start of the game, before either side deploys, roll a D6 and make a note of the result – this is the number of Foresight Points that a model with this rule has for the battle. During the roll for Priority, so long as he is alive and on the battlefield, This model can spend these Foresight Points to increase the roll on his controlling player’s roll for Priority. For each Foresight Point spent, increase the dice roll by 1, to a maximum of 6.</description>
+    </rule>
+    <rule id="5009-3f01-f131-528e" name="Brutish Cunning [Active]" publicationId="33e0-ead5-55a8-d8f4" page="14" hidden="false">
+      <description>This model may re-roll a single D6 in a Duel Roll when fighting solely against Infantry models (but not Monster models).</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="a2e7-e35a-d6fe-2123" name="Aura of Command" publicationId="1133-b502-84bf-3366" page="116" hidden="false" typeId="bc55-18c0-32d2-2beb" typeName="Magical Power">
@@ -36924,19 +40701,19 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
     </profile>
     <profile id="26c1-b9e1-45d2-d0eb" name="Horse" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
       <characteristics>
-        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3"/>
-        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066"/>
-        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48"/>
-        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537"/>
-        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3"/>
-        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb"/>
-        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7"/>
-        <characteristic name="Courage" typeId="4945-957c-7d95-b50b"/>
-        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025"/>
-        <characteristic name="Race" typeId="ed84-84e4-720a-002f"/>
-        <characteristic name="Faction" typeId="8539-1489-a955-726a"/>
-        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9"/>
-        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7"/>
+        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">10&quot;</characteristic>
+        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
+        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">4</characteristic>
+        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">0</characteristic>
+        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+        <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
+        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+        <characteristic name="Race" typeId="ed84-84e4-720a-002f">Horse</characteristic>
+        <characteristic name="Faction" typeId="8539-1489-a955-726a">See Rider</characteristic>
+        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
+        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
       </characteristics>
     </profile>
     <profile id="13a9-b366-66ed-2708" name="Elf Bow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
@@ -37175,19 +40952,19 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
     </profile>
     <profile id="f912-aa27-e3d4-52ce" name="Armoured Horse" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
       <characteristics>
-        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3"/>
-        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066"/>
-        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48"/>
-        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537"/>
-        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3"/>
-        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb"/>
-        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7"/>
-        <characteristic name="Courage" typeId="4945-957c-7d95-b50b"/>
-        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025"/>
-        <characteristic name="Race" typeId="ed84-84e4-720a-002f"/>
-        <characteristic name="Faction" typeId="8539-1489-a955-726a"/>
-        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9"/>
-        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7"/>
+        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">10&quot;</characteristic>
+        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
+        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
+        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">0</characteristic>
+        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+        <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
+        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+        <characteristic name="Race" typeId="ed84-84e4-720a-002f">Horse</characteristic>
+        <characteristic name="Faction" typeId="8539-1489-a955-726a">See Rider</characteristic>
+        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
+        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
       </characteristics>
     </profile>
     <profile id="3bdb-2697-c6b3-6646" name="Horn of Gondor [Active]" publicationId="5d2d-eaa5-64b5-2f28" page="16" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -37258,19 +41035,19 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
     </profile>
     <profile id="fd84-0d61-8d4e-fec3" name="Warg" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
       <characteristics>
-        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3"/>
-        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066"/>
-        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48"/>
-        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537"/>
-        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3"/>
-        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb"/>
-        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7"/>
-        <characteristic name="Courage" typeId="4945-957c-7d95-b50b"/>
-        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025"/>
-        <characteristic name="Race" typeId="ed84-84e4-720a-002f"/>
-        <characteristic name="Faction" typeId="8539-1489-a955-726a"/>
-        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9"/>
-        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7"/>
+        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">10&quot;</characteristic>
+        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">3</characteristic>
+        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
+        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">4</characteristic>
+        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+        <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
+        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">8+</characteristic>
+        <characteristic name="Race" typeId="ed84-84e4-720a-002f">Warg</characteristic>
+        <characteristic name="Faction" typeId="8539-1489-a955-726a">See Rider</characteristic>
+        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
+        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
       </characteristics>
     </profile>
     <profile id="07ed-6465-15eb-db3e" name="Uruk-hai Bow" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
@@ -37369,6 +41146,30 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
     <profile id="1ab5-ae77-d962-5d27" name="Light of Eärendil" publicationId="a40a-1ac4-b5c2-a481" page="71" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique piece of Wargear. At any point during their Activation, Galadriel or Frodo can use the Light of Eärendil to roll a D6. On a 3+, this model counts as having Cast the Blinding Light Magical Power. This does not prevent Galadriel from attempting to Cast another Magical Power during her Activation.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2673-7f83-ced4-1151" name="Short Bow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+      </characteristics>
+    </profile>
+    <profile id="ffe4-01ed-1982-5831" name="Pony" publicationId="1133-b502-84bf-3366" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+      <characteristics>
+        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">8&quot;</characteristic>
+        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">1</characteristic>
+        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
+        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
+        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">3</characteristic>
+        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">0</characteristic>
+        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+        <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
+        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+        <characteristic name="Race" typeId="ed84-84e4-720a-002f">Horse</characteristic>
+        <characteristic name="Faction" typeId="8539-1489-a955-726a">See Rider</characteristic>
+        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
+        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
