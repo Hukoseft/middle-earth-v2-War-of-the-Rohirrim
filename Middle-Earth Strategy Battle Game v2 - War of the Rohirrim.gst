@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="6" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="7" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
@@ -20355,7 +20355,7 @@ The Watcher is then removed from the battlefield and its controlling player must
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="25.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -23995,7 +23995,7 @@ The Rider may be either Aragorn or Théodred.</description>
         <categoryLink id="5ba6-d8ea-db8c-15c7" name="Minor Hero" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="false"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="728b-f0c9-11ad-5a06" name="Wargear" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="728b-f0c9-11ad-5a06" name="Wargear" hidden="true" collective="false" import="true">
           <entryLinks>
             <entryLink id="2c34-9144-c0e8-ad3a" name="Warg" hidden="false" collective="false" import="true" targetId="9fe9-a9ec-dbaf-ca46" type="selectionEntry"/>
           </entryLinks>
@@ -32358,12 +32358,6 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                       <conditions>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
                         <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3d1c-2909-4fa5-e796" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                    <conditionGroup type="and">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8c74-cce2-6e2e-723e" type="instanceOf"/>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3129-e59e-a52e-02a8" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
