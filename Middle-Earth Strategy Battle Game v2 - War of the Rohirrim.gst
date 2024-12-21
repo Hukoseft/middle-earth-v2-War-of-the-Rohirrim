@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="7" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="8" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
@@ -6350,12 +6350,7 @@ Strength</characteristic>
               </modifiers>
             </infoLink>
             <infoLink id="93f2-c2f8-4858-21f0" name="Heavy Dwarf Armour" hidden="false" targetId="a97a-9b94-d6d0-1d13" type="profile"/>
-            <infoLink id="2a31-86db-159d-1c17" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile">
-              <modifiers>
-                <modifier type="set" field="name" value="Hand-and-a-half Weapon"/>
-              </modifiers>
-            </infoLink>
-            <infoLink id="880a-317e-c94d-15a5" name="Hand-and-a-half" hidden="false" targetId="67f3-fe1f-db94-c69a" type="rule"/>
+            <infoLink id="880a-317e-c94d-15a5" name="Hand-and-a-half Weapon" hidden="false" targetId="f473-f7c9-e866-caaa" type="profile"/>
           </infoLinks>
         </infoGroup>
         <infoGroup id="185a-30bf-12fb-ac12" name="Special Rules" hidden="false">
@@ -13784,7 +13779,6 @@ When the game ends, any Markers on the board are removed and the models associat
         </modifierGroup>
       </modifierGroups>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a8de-d433-ec66-5ebc" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="733d-9896-15e5-1a29" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c73a-8db6-cc29-a1e5" type="min"/>
       </constraints>
@@ -18342,7 +18336,6 @@ So long as at least one of Merry and Pippin remains on Treebeard, Treebeard has 
           </modifiers>
         </infoLink>
         <infoLink id="d55b-2760-a79f-2cc0" name="Elven" hidden="false" targetId="146b-b4a8-46b0-2447" type="rule"/>
-        <infoLink id="c375-d589-fecd-4857" name="Hand-and-a-half" hidden="false" targetId="67f3-fe1f-db94-c69a" type="rule"/>
         <infoLink id="f6a2-fd01-d450-9ae5" name="Orcrist [Active]" hidden="false" targetId="fa90-56f1-740d-6718" type="profile"/>
       </infoLinks>
       <costs>
@@ -23349,7 +23342,6 @@ The Rider may be either Aragorn or Théodred.</description>
     </selectionEntry>
     <selectionEntry id="b7a7-bb6e-0ccc-0eb9" name="Barrow-wight" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ae07-c6ee-b5be-c178" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7cce-e090-b488-d02d" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa76-e06a-9797-619c" type="min"/>
       </constraints>
@@ -24265,7 +24257,6 @@ The Rider may be either Aragorn or Théodred.</description>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f54e-7cad-1b7c-a99e" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a31e-11b5-5c65-f6c4" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="58f8-3b28-438f-5c34" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="639c-fc01-848c-be18" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1a10-56ea-e57f-3084" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b665-e970-845c-4926" type="instanceOf"/>
@@ -24433,6 +24424,19 @@ The Rider may be either Aragorn or Théodred.</description>
             </modifier>
           </modifiers>
         </modifierGroup>
+        <modifierGroup>
+          <comment>Rangers of Mirkwood</comment>
+          <modifiers>
+            <modifier type="increment" field="4efa-fc75-48c0-6281" value="1.0">
+              <repeats>
+                <repeat field="5141-e5a1-1d1f-e715" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
       </modifierGroups>
       <constraints>
         <constraint field="5141-e5a1-1d1f-e715" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dd1c-34d3-2514-1d61" type="max"/>
@@ -24472,7 +24476,6 @@ The Rider may be either Aragorn or Théodred.</description>
               <infoLinks>
                 <infoLink id="ee04-9342-7a56-49d0" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
                 <infoLink id="f964-fc23-440d-bed6" name="Elven" hidden="false" targetId="146b-b4a8-46b0-2447" type="rule"/>
-                <infoLink id="ddc8-4b6c-42bd-d6dc" name="Hand-and-a-half" hidden="false" targetId="67f3-fe1f-db94-c69a" type="rule"/>
                 <infoLink id="d712-8439-faab-13f2" name="Hand-and-a-half Weapon" hidden="false" targetId="f473-f7c9-e866-caaa" type="profile">
                   <modifiers>
                     <modifier type="set" field="name" value="Elven hand-and-a-half Hand Weapon"/>
@@ -24734,8 +24737,7 @@ The Rider may be either Aragorn or Théodred.</description>
                 </infoLink>
                 <infoLink id="7500-ba7c-c798-20a5" name="Horse" hidden="false" targetId="26c1-b9e1-45d2-d0eb" type="profile"/>
                 <infoLink id="0257-2a90-57ab-6232" name="Elven" hidden="false" targetId="146b-b4a8-46b0-2447" type="rule"/>
-                <infoLink id="c7b7-59ec-251d-a922" name="Hand-and-a-half" hidden="false" targetId="67f3-fe1f-db94-c69a" type="rule"/>
-                <infoLink id="7b84-0ef8-ddcc-8d37" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile">
+                <infoLink id="7b84-0ef8-ddcc-8d37" name="Hand-and-a-half Weapon" hidden="false" targetId="f473-f7c9-e866-caaa" type="profile">
                   <modifiers>
                     <modifier type="set" field="name" value="Elven hand-and-a-half Hand Weapon"/>
                   </modifiers>
@@ -25173,17 +25175,19 @@ The Rider may be either Aragorn or Théodred.</description>
             <modifierGroup>
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b2-6cfb-5db6-3e89" type="instanceOf"/>
-                  </conditions>
-                </modifier>
-                <modifier type="set" field="hidden" value="false">
                   <conditionGroups>
-                    <conditionGroup type="and">
+                    <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
-                        <condition field="selections" scope="primary-category" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3899-38ec-3426-7d4d" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d2b2-6cfb-5db6-3e89" type="instanceOf"/>
                       </conditions>
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+                            <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3899-38ec-3426-7d4d" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
@@ -25296,7 +25300,7 @@ The Rider may be either Aragorn or Théodred.</description>
           <infoGroups>
             <infoGroup id="99a5-d9e3-978c-d116" name="Special Rules" hidden="false">
               <profiles>
-                <profile id="b1e5-b944-d8b4-a529" name="Wirkwood Elf Warrior" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                <profile id="b1e5-b944-d8b4-a529" name="Mirkwood Elf Warrior" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
                   <modifiers>
                     <modifier type="increment" field="8a4a-f7d8-59f4-eac3" value="1">
                       <conditions>
@@ -25388,14 +25392,13 @@ The Rider may be either Aragorn or Théodred.</description>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f1eb-fbcd-82b0-2896" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="b91c-e0f6-bcad-85f0" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile">
+                <infoLink id="b91c-e0f6-bcad-85f0" name="Hand-and-a-half Weapon" hidden="false" targetId="f473-f7c9-e866-caaa" type="profile">
                   <modifiers>
                     <modifier type="set" field="name" value="Elven hand-and-a-half weapon"/>
                   </modifiers>
                 </infoLink>
                 <infoLink id="b975-1bc9-e2ea-e91a" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
                 <infoLink id="b0c1-3ff6-84e3-635c" name="Elven" hidden="false" targetId="146b-b4a8-46b0-2447" type="rule"/>
-                <infoLink id="b180-1d18-2cd7-fcd9" name="Hand-and-a-half" hidden="false" targetId="67f3-fe1f-db94-c69a" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="2ada-2ff0-288a-3c2f" name="Elf Bow" hidden="false" collective="false" import="true" type="upgrade">
@@ -39983,7 +39986,6 @@ Models that are Prone or have the Cavalry keyword cannot benefit from, or provid
 Additionally, a model with this special rule that is carrying both a bow and a shield will still get the +1 bonus to their Defence for having a shield whilst they remain mounted.</description>
     </rule>
     <rule id="146b-b4a8-46b0-2447" name="Elven" hidden="false"/>
-    <rule id="67f3-fe1f-db94-c69a" name="Hand-and-a-half" publicationId="1133-b502-84bf-3366" hidden="false"/>
     <rule id="48fb-9eea-f6c7-e577" name="Resistant to Magic [Passive]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>Every time this model is targeted by a Magical Power, they gain an additional free dice when making a Resist Test, even if they have no Will Points remaining or decide not to use any Will Points. This is cumulative with other rules that confer a similar effect.</description>
     </rule>
@@ -40178,7 +40180,9 @@ Additionally, this model ignores the Invisible special rule and, if it was invol
 
 Bard cannot use this special rule whilst he is in the same Combat as either Sigrid or Tilda, unless the other one of Sigrid or Tilda is in a different Combat within 6&quot;.</description>
     </rule>
-    <rule id="0e27-1892-b12c-3747" name="Unarmed" hidden="false"/>
+    <rule id="0e27-1892-b12c-3747" name="Unarmed" publicationId="1133-b502-84bf-3366" page="103" hidden="false">
+      <description>Some models don&apos;t carry any weapons at all; such model are said to be Unarmed. A nidek us only ever considered to be Unarmed if their profile explicitly states so, or if they started the game with some form of weapon and those weapons have been lost or destroyed during the course of the game. An Unarmed model suffers a -1 penalty to any Duel Roll they make, and also suffers a -1 penalty to any To Wound Rolls they make when making Strikes.</description>
+    </rule>
     <rule id="cbe0-c35f-5e50-8585" name="Windlance Trained [Passive]" publicationId="a40a-1ac4-b5c2-a481" page="53" hidden="false">
       <description>If Girion is upgraded to take a Windlance, then he counts as the only crew for the Siege Engine. However, unlike normal Siege Engine crew, Girion may Move further than 6&quot; away from the Winlance at any point and may rotate it without suffering the -1 penalty to his rolls To Hit. Additionally, when making a shooting attack with the Windlance that targets a Monster model, Girion gains a bonus of +1 to any rolls on the Scatter Table.</description>
     </rule>
@@ -40656,9 +40660,9 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="f467-033a-3f66-efee" name="Hand Weapon" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="f467-033a-3f66-efee" name="Hand Weapon" publicationId="1133-b502-84bf-3366" page="103" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">These are the standard kind of weapon a model may carry, and is anything wielded in a single hand, such as a sword, an axe, a mace or all manner of other weapons. The exact kind of weapon being carried doesn&apos;t matter; all hand weapons function the same. A hand weapon has no specific rules attached to it.</characteristic>
       </characteristics>
     </profile>
     <profile id="58b4-081e-3519-88da" name="Shield" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40666,9 +40670,19 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="a266-690d-5aee-eb91" name="Spear" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="a266-690d-5aee-eb91" name="Spear" publicationId="1133-b502-84bf-3366" page="104" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">An Infantry model armed with a spear may assist a friendly model during a Combat, so long as their ally has the same base size or smaller - this is called Supporting.
+
+If a spear-armed model is not Engaged in Combat, then it can Support a friendly model in base contact. When they do, they contribute a single dice to the Duel Roll of the Combat the model they are Supporting is part of. This dice uses the Supporting model&apos;s own Fight Value, and if they win they will make a single Strike using their own Strength. In a Multiple Combat, a Supporting model doesn&apos;t have to Strike the same model as the model it is Supporting.
+
+Models that are Supporting do not count as being involved in the Combat they are Supporting. As a result, they cannot be targeted by Strikes, will not be knocked Prone by a Charging Cavalry model, cannot benefit from a Heroic Combat, and never count as being part of the Combat for the purpose of special rules or determining how many models are taking part on each side.
+
+A spear-armed model can only Support a single Combat during each Fight Phase. A spear-armed model cannot Support a Combat after already being Engaged in Combat. The only exception to this is that a spear-armed model that is involved in a successful Heroic Combat, and therefore gets to Move, may Move to Support a Combat, provided it hasn&apos;t Supported another Combat that Fight Phase.
+
+A model with a spear can use it as a hand weapon when they are Engaged in Combat. A model can&apos;t Support if it is Prone, rendered unable to Activate or has made a Shooting Attack during the same turn.
+
+A Hero that is Supporting may use Might Points to improve a Duel Roll or To Wound Rolls as normal. However, a Hero that has declared a Heroic Action in the Fight Phase cannot support during that Fight Phase.</characteristic>
       </characteristics>
     </profile>
     <profile id="e51e-de39-5e66-988c" name="Banner" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40676,9 +40690,9 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="0148-1ad8-4e0a-aa9c" name="War Horn" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="0148-1ad8-4e0a-aa9c" name="War Horn" publicationId="1133-b502-84bf-3366" page="109" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">Models within 24&quot; of a friendly model with a war horn gain a bonus of +1 to any Courage Tests they take. Additionally, a model with a war horn gains the Dominant (2) special rule and can use it once per game to increase the range of a friendly Hero model&apos;s Stand Fast by 3&quot;, so long as the model with the war horn is in range of the Hero model&apos;s Stand Fast before this increase. If a Hero model has a war horn themselves, they may use it to increase the range of their own Stand Fast by 3&quot; instead. A war horn is treated as an Active ability (see page 123).</characteristic>
       </characteristics>
     </profile>
     <profile id="5b42-7696-1860-9a01" name="Bow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
@@ -40742,9 +40756,11 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="6e3c-7919-5d9a-5c0d" name="Two-handed Weapon" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="6e3c-7919-5d9a-5c0d" name="Two-handed Weapon" publicationId="1133-b502-84bf-3366" page="103" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A two-handed weapon is the kind that requires two hands to wield; as a result, a model wielding a two-handed weapon cannot use any other wargear that would also require the use of a hand (such as a shield) in the same Combat in which they use a two-handed weapon. If the only Melee Weapon a model carries is a two-handed weapon, then they must use it in a Combat - they cannot choose not to.
+
+When a model fights with a two-handed weapon in a Combat, they suffer a -1 penalty to their Duel Roll. However, if the model rolls a natural 6 for their Duel Roll, they do not suffer this penalty. When a model with a two-handed weapon makes a Strike against an enemy model, they apply a +1 modifier to their To Wound Roll - so a 3 would become a 4, a 4 would become a 5, and so on. In the case of when two rolls are required (such as needing a 6+/4+),  this will affect both rolls.</characteristic>
       </characteristics>
     </profile>
     <profile id="3f28-0a87-b6e0-b6e4" name="Whip" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
@@ -40764,9 +40780,9 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="2e96-e920-efe5-099b" name="Elven Cloak" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="2e96-e920-efe5-099b" name="Elven Cloak" publicationId="1133-b502-84bf-3366" page="109" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model wearing an Elven Cloak has the Stalk Unseen special rule. Additionally, models targeting an Infantry model wearing an Elven Cloak with a Shooting Attack suffer a -1 penalty when rolling To Hit.</characteristic>
       </characteristics>
     </profile>
     <profile id="7916-0f4b-95bb-a0c5" name="Elven Glaive [Active]" publicationId="a40a-1ac4-b5c2-a481" page="66" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40820,9 +40836,9 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="f473-f7c9-e866-caaa" name="Hand-and-a-half Weapon" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="f473-f7c9-e866-caaa" name="Hand-and-a-half Weapon" publicationId="1133-b502-84bf-3366" page="103" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model armed with a hand-and-a-half weapon can choose to fight with it as either a hand weapon or a two-handed weapon. When a model with a hand-and-a-half weapon takes part in a Combat, they must decide if they are using their weapon as a hand weapon or a two-handed weapon before they make their Duel Roll.</characteristic>
       </characteristics>
     </profile>
     <profile id="1184-3d54-897d-cd15" name="The Oakenshield [Active]" publicationId="a40a-1ac4-b5c2-a481" page="22" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -41051,9 +41067,15 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
       </characteristics>
     </profile>
-    <profile id="5c89-1a66-8e59-6b0e" name="War Drum" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="5c89-1a66-8e59-6b0e" name="War Drum (X)" publicationId="1133-b502-84bf-3366" page="109" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model with a war drum may use it during the Declare Heroic Actions step of each Move Phase to declare a Heroic March for free, without spending a Might Point, even if they are not a Hero. This free Heroic March has the following exceptions:
+
+• A model with a war drum that declares a Heroic March must always shout At the Double.
+• The range of this At the Double is 12&quot; rather than 6&quot;. Additionally, friendly models must finish their Activation within 12&quot; rather than 6&quot;.
+• The Heroic March declared when a model uses a war drum will only affect friendly models with the same keywords as the ones showen in brackets after the war drum. So if a model has a war drum (Mordor) then it will only affect models with the Mordor keyword.
+
+As a war drum allows a model to declare a free Heroic March, models cannot be affected by both a war drum and a normal Heroic March in the same turn.</characteristic>
       </characteristics>
     </profile>
     <profile id="86e2-c271-bcb6-cb7c" name="Fell Beast" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
@@ -41127,9 +41149,17 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="ad1c-f883-1bcb-ad93" name="Pike" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="ad1c-f883-1bcb-ad93" name="Pike" publicationId="1133-b502-84bf-3366" page="104" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">Pikes function in much the same way as spears, and allow models to Support in exactly the same way as those armed with a spear.
+
+Additionally, a model armed with a pike can Support another friendly model armed with a pike that is Supporting a friendly model Engaged in Combat - essentially giving two Supports to the same model.
+
+A pike requires two hands to use, and so a model armed with a pike will suffer a -1 penalty to their Duel Rolls if they are armed with a shield or a Missile Weapon.
+
+As models arrmed with pikes can effectively Support at three models deep (one Engaged in Combat and two Supporting), it can be very easy to cause your own models to be Trapped, as only one model may Back Away not two. This is the risk of Supporting in such depth.
+
+Additionally, if a Cavalry model Charges a model armed with a pike, then the model with a pike will gain a bonus of +1 To Wound when making Strikes againt the Mount in the ensuing Combat.</characteristic>
       </characteristics>
     </profile>
     <profile id="9999-29a1-ccfc-d2fe" name="Strong, Strangling Fingers" publicationId="a40a-1ac4-b5c2-a481" page="136" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">

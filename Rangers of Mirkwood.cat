@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6e1c-2334-df06-f60c" name="Rangers of Mirkwood" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6e1c-2334-df06-f60c" name="Rangers of Mirkwood" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="d8cb-bb0f-be39-551d" name="Legolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="d391-f114-5b9e-3373" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="50f6-6b30-a59c-e1ce" name="Mirkwood" hidden="false" targetId="3899-38ec-3426-7d4d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="7672-e7ba-adb5-c932" name="Legolas Greenleaf, Prince of Mirkwood" hidden="false" collective="false" import="true" targetId="5eb3-48a0-6a31-e47c" type="selectionEntry">
@@ -23,6 +24,7 @@
     <selectionEntry id="2b24-65c4-25e5-3c47" name="Tauriel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="a62d-b5f2-af98-0802" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="b49c-b9fa-9886-ab6b" name="Mirkwood" hidden="false" targetId="3899-38ec-3426-7d4d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="4e16-ac7e-27a7-efb7" name="Tauriel, Ranger of Mirkwood" hidden="false" collective="false" import="true" targetId="d618-4dd2-674f-d37f" type="selectionEntry">
