@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="801f-52ae-3745-1dba" name="Legions of Mordor" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="801f-52ae-3745-1dba" name="Legions of Mordor" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="8a52-f4ff-d92b-1556" name="Witch-king&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -7,7 +7,7 @@
         <categoryLink id="1c89-00ec-107a-9a40" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="ca92-d90a-8668-559c" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
+        <entryLink id="ca92-d90a-8668-559c" name="The Witch-king of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="93f9-3ff9-8abd-7e95" type="min"/>
           </constraints>
@@ -157,7 +157,8 @@
       <entryLinks>
         <entryLink id="ed02-02b7-009f-7a00" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1b6d-ae51-f126-805d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1b6d-ae51-f126-805d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="41ad-d2e3-c4ed-76ce" type="min"/>
           </constraints>
         </entryLink>
         <entryLink id="41ab-cb05-b6b4-37eb" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>

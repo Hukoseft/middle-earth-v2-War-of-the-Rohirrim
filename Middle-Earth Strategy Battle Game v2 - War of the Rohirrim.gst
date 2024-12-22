@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="8" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="9" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
@@ -83,6 +83,7 @@
         <characteristicType id="bf95-59ee-3d1d-fb1f" name="Range"/>
         <characteristicType id="b890-2a90-96a3-0317" name="Strength"/>
         <characteristicType id="7858-05e8-4199-8989" name="Movement Restriction"/>
+        <characteristicType id="76b8-c850-e626-7ec9" name="Additional Rules"/>
       </characteristicTypes>
     </profileType>
     <profileType id="b983-eeb5-c431-2211" name="Model Counts">
@@ -11478,6 +11479,81 @@ When the game ends, any Markers on the board are removed and the models associat
       </costs>
     </selectionEntry>
     <selectionEntry id="c7f1-a1b7-9395-7624" name="The Witch-king of Angmar" hidden="false" collective="false" import="true" type="model">
+      <modifiers>
+        <modifier type="add" field="category" value="3a91-843d-fe10-2d70">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edd1-b725-dd90-8065" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb05-a72b-03d7-3cce" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="69ec-404e-f610-ae28">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edd1-b725-dd90-8065" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb05-a72b-03d7-3cce" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="39c8-4238-d8ca-bac5" value="150.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="39c8-4238-d8ca-bac5" value="120.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <comment>Set Heroic Tier Category</comment>
+          <modifiers>
+            <modifier type="add" field="category" value="f17d-8301-f19c-f80d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="add" field="category" value="6483-b676-c7e7-0831">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d6e4-0447-cea9-1e8c" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b6aa-f30c-dac6-832a" type="max"/>
@@ -11496,79 +11572,80 @@ When the game ends, any Markers on the board are removed and the models associat
         <infoGroup id="87f2-e73d-db32-303b" name="Special Rules" hidden="false">
           <profiles>
             <profile id="aaa6-e5d8-8f8a-6fb2" name="The Witch-King of Angmar" publicationId="5d2d-eaa5-64b5-2f28" page="140" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <modifiers>
+                <modifier type="set" field="ac32-60b4-0b88-5372" value="Hero, Cavalry, Unique">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edd1-b725-dd90-8065" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb05-a72b-03d7-3cce" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
-                  <comment>1 Attack, 1 Might, 10 Will, 1 Fate</comment>
-                  <modifiers>
-                    <modifier type="set" field="8f23-2898-dff0-997c" value="1">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3aea-2f01-583f-1d41" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="f44b-292c-0e5a-1219" value="1">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3aea-2f01-583f-1d41" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="2f75-56dc-366a-646c" value="10">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3aea-2f01-583f-1d41" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="d418-dab1-da1e-8beb" value="1">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3aea-2f01-583f-1d41" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-                <modifierGroup>
                   <comment>2 Attacks, 2 Might, 14 Will, 2 Fate</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <modifiers>
-                    <modifier type="set" field="d418-dab1-da1e-8beb" value="2">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="28e0-534a-1076-26b2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="f44b-292c-0e5a-1219" value="2">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="28e0-534a-1076-26b2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="2f75-56dc-366a-646c" value="14">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="28e0-534a-1076-26b2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="8f23-2898-dff0-997c" value="2">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="28e0-534a-1076-26b2" type="equalTo"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="set" field="d418-dab1-da1e-8beb" value="2"/>
+                    <modifier type="set" field="f44b-292c-0e5a-1219" value="2"/>
+                    <modifier type="set" field="2f75-56dc-366a-646c" value="14"/>
+                    <modifier type="set" field="8f23-2898-dff0-997c" value="2"/>
                   </modifiers>
                 </modifierGroup>
                 <modifierGroup>
                   <comment>3 Attacks, 3 Might, 18 Will, 3 Fate</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <modifiers>
-                    <modifier type="set" field="f44b-292c-0e5a-1219" value="3">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dc3e-33e0-cdd8-10e7" type="equalTo"/>
-                      </conditions>
+                    <modifier type="set" field="8f23-2898-dff0-997c" value="3"/>
+                    <modifier type="set" field="d418-dab1-da1e-8beb" value="3"/>
+                    <modifier type="set" field="2f75-56dc-366a-646c" value="18"/>
+                    <modifier type="set" field="f44b-292c-0e5a-1219" value="3"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup>
+                  <comment>Set Heroic Tier</comment>
+                  <modifiers>
+                    <modifier type="set" field="0cb6-ae3e-dec7-20b9" value="Hero of Legend">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
-                    <modifier type="set" field="2f75-56dc-366a-646c" value="18">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dc3e-33e0-cdd8-10e7" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="8f23-2898-dff0-997c" value="3">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dc3e-33e0-cdd8-10e7" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="d418-dab1-da1e-8beb" value="3">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="dc3e-33e0-cdd8-10e7" type="equalTo"/>
-                      </conditions>
+                    <modifier type="set" field="0cb6-ae3e-dec7-20b9" value="Hero of Valour">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
@@ -11584,8 +11661,8 @@ When the game ends, any Markers on the board are removed and the models associat
                 <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">4+</characteristic>
                 <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">4+</characteristic>
                 <characteristic name="Might" typeId="8f23-2898-dff0-997c"/>
-                <characteristic name="Will" typeId="2f75-56dc-366a-646c"/>
-                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219"/>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c"></characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219"></characteristic>
                 <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Spirit, Ringwraith</characteristic>
                 <characteristic name="Faction" typeId="2c52-d571-e855-1691">Mordor, Angmar</characteristic>
                 <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
@@ -11812,26 +11889,11 @@ When the game ends, any Markers on the board are removed and the models associat
             <entryLink id="1b22-2f80-7318-daa4" name="Morgul Blade" hidden="false" collective="false" import="true" targetId="8d74-a199-8323-4a3c" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="cd5c-4918-564f-0d6c" name="Options" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fb84-f4dc-2b01-b370" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="889a-9aef-e899-b611" type="min"/>
-          </constraints>
+        <selectionEntryGroup id="b89f-308d-59da-5129" name="Witch-king&apos;s Strength" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="dc3e-33e0-cdd8-10e7" name="3 Attacks, 3 Might, 18 Will, 3 Fate" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="4d45-c66c-a833-d403" name="MWF.A" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="0eb4-b918-4d80-3b6a" value="1.0">
+                <modifier type="set" field="name" value="3 Attacks, 3 Might, 18 Will, 3 Fate">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -11842,75 +11904,24 @@ When the game ends, any Markers on the board are removed and the models associat
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="923f-c269-72f3-d804" type="max"/>
-                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0eb4-b918-4d80-3b6a" type="min"/>
-              </constraints>
-              <costs>
-                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="150.0"/>
-                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
-                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="3aea-2f01-583f-1d41" name="1 Attack, 1 Might, 10 Will, 1 Fate" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="name" value="2 Attacks, 2 Might, 14 Will, 2 Fate">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
                         <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
                       </conditions>
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="704b-abe0-dc00-70b4" type="max"/>
-                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fb11-0652-9cfa-2c78" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a1b0-120d-4137-e475" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ac41-3b1e-3c07-a8bd" type="min"/>
               </constraints>
-              <costs>
-                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
-                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
-                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="28e0-534a-1076-26b2" name="2 Attacks, 2 Might, 14 Will, 2 Fate" hidden="false" collective="false" import="true" targetId="f4f0-068c-58ce-fdaf" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="ad11-729b-ad97-f5ee" value="1.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d8cc-3c9b-27ad-1f0f" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -11999,6 +12010,72 @@ When the game ends, any Markers on the board are removed and the models associat
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="add" field="category" value="f17d-8301-f19c-f80d">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="ef35-8c21-6b9c-cbb8">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b4-5ec5-6896-b88d" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="add" field="category" value="3a91-843d-fe10-2d70">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb05-a72b-03d7-3cce" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edd1-b725-dd90-8065" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="remove" field="category" value="69ec-404e-f610-ae28">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb05-a72b-03d7-3cce" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edd1-b725-dd90-8065" type="equalTo"/>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="39c8-4238-d8ca-bac5" value="120.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b4-5ec5-6896-b88d" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="39c8-4238-d8ca-bac5" value="90.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="69ce-ba0a-281a-c909" type="max"/>
@@ -12018,79 +12095,80 @@ When the game ends, any Markers on the board are removed and the models associat
         <infoGroup id="f565-47e8-77f3-b00e" name="Special Rules" hidden="false">
           <profiles>
             <profile id="edf6-f122-0b8b-26be" name="Ringwraith" publicationId="5d2d-eaa5-64b5-2f28" page="142" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <modifiers>
+                <modifier type="set" field="ac32-60b4-0b88-5372" value="Hero, Cavalry">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="eb05-a72b-03d7-3cce" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="edd1-b725-dd90-8065" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9204-a637-e38e-57b6" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
               <modifierGroups>
                 <modifierGroup>
-                  <comment>1 Attack, 0 Might, 7 Will, 0 Fate</comment>
-                  <modifiers>
-                    <modifier type="set" field="2f75-56dc-366a-646c" value="7">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b0e-70d4-ba67-a3f1" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="f44b-292c-0e5a-1219" value="0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b0e-70d4-ba67-a3f1" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="d418-dab1-da1e-8beb" value="1">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b0e-70d4-ba67-a3f1" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="8f23-2898-dff0-997c" value="0">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7b0e-70d4-ba67-a3f1" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-                <modifierGroup>
                   <comment>2 Attacks, 1 Might, 10 Will, 1 Fate</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <modifiers>
-                    <modifier type="set" field="8f23-2898-dff0-997c" value="1">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="779e-a922-321a-1808" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="2f75-56dc-366a-646c" value="10">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="779e-a922-321a-1808" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="d418-dab1-da1e-8beb" value="2">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="779e-a922-321a-1808" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="f44b-292c-0e5a-1219" value="1">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="779e-a922-321a-1808" type="equalTo"/>
-                      </conditions>
-                    </modifier>
+                    <modifier type="set" field="8f23-2898-dff0-997c" value="1"/>
+                    <modifier type="set" field="2f75-56dc-366a-646c" value="10"/>
+                    <modifier type="set" field="d418-dab1-da1e-8beb" value="2"/>
+                    <modifier type="set" field="f44b-292c-0e5a-1219" value="1"/>
                   </modifiers>
                 </modifierGroup>
                 <modifierGroup>
                   <comment>2 Attacks, 2 Might, 14 Will, 2 Fate</comment>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b4-5ec5-6896-b88d" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                   <modifiers>
-                    <modifier type="set" field="f44b-292c-0e5a-1219" value="2">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f4f0-068c-58ce-fdaf" type="equalTo"/>
-                      </conditions>
+                    <modifier type="set" field="f44b-292c-0e5a-1219" value="2"/>
+                    <modifier type="set" field="d418-dab1-da1e-8beb" value="2"/>
+                    <modifier type="set" field="8f23-2898-dff0-997c" value="2"/>
+                    <modifier type="set" field="2f75-56dc-366a-646c" value="14"/>
+                  </modifiers>
+                </modifierGroup>
+                <modifierGroup>
+                  <comment>Set Heroic Tier</comment>
+                  <modifiers>
+                    <modifier type="set" field="0cb6-ae3e-dec7-20b9" value="Hero of Valour">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
-                    <modifier type="set" field="d418-dab1-da1e-8beb" value="2">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f4f0-068c-58ce-fdaf" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="8f23-2898-dff0-997c" value="2">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f4f0-068c-58ce-fdaf" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="2f75-56dc-366a-646c" value="14">
-                      <conditions>
-                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f4f0-068c-58ce-fdaf" type="equalTo"/>
-                      </conditions>
+                    <modifier type="set" field="0cb6-ae3e-dec7-20b9" value="Hero of Fortitude">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b4-5ec5-6896-b88d" type="instanceOf"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
                     </modifier>
                   </modifiers>
                 </modifierGroup>
@@ -12265,42 +12343,11 @@ When the game ends, any Markers on the board are removed and the models associat
             <entryLink id="2dba-3ee7-6cd2-cc5c" name="Morgul Blade" hidden="false" collective="false" import="true" targetId="8d74-a199-8323-4a3c" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup id="f36a-2cc1-213f-0dfd" name="Options" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9e63-ed94-b5b6-ea27" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="44c2-f146-d98b-2499" type="min"/>
-          </constraints>
+        <selectionEntryGroup id="d0b7-29ca-fa68-99f8" name="Ringwraith&apos;s Strength" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="7b0e-70d4-ba67-a3f1" name="1 Attack, 0 Might, 7 Will, 0 Fate" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="74c4-d4ce-2171-ef74" name="MWF.A" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b4-5ec5-6896-b88d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8518-ec6e-7319-d64a" type="max"/>
-              </constraints>
-              <costs>
-                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
-                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="60.0"/>
-                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="779e-a922-321a-1808" name="2 Attacks, 1 Might, 10 Will, 1 Fate" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="96ac-b3da-c72b-89be" value="1.0">
+                <modifier type="set" field="name" value="2 Attacks, 1 Might, 10 Will, 1 Fate">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -12311,7 +12358,7 @@ When the game ends, any Markers on the board are removed and the models associat
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="name" value="2 Attacks, 2 Might, 14 Will, 2 Fate">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -12324,45 +12371,11 @@ When the game ends, any Markers on the board are removed and the models associat
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5ad7-0c69-7007-c0e0" type="max"/>
-                <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="96ac-b3da-c72b-89be" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="06b2-6d58-b513-fc76" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f27d-64d0-8432-882a" type="min"/>
               </constraints>
-              <costs>
-                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="90.0"/>
-                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
-                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
-              </costs>
             </selectionEntry>
           </selectionEntries>
-          <entryLinks>
-            <entryLink id="e8c5-1409-e092-38f8" name="2 Attacks, 2 Might, 14 Will, 2 Fate" hidden="false" collective="false" import="true" targetId="f4f0-068c-58ce-fdaf" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5ce8-ac7f-d0b2-d2c8" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-                <modifier type="set" field="ad11-729b-ad97-f5ee" value="1.0">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b4-5ec5-6896-b88d" type="instanceOf"/>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="005b-0eb5-3112-ce82" type="instanceOf"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -37442,6 +37455,7 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                     <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">3&quot;</characteristic>
                     <characteristic name="Strength" typeId="b890-2a90-96a3-0317">5</characteristic>
                     <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">None</characteristic>
+                    <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -39985,7 +39999,13 @@ Models that are Prone or have the Cavalry keyword cannot benefit from, or provid
 
 Additionally, a model with this special rule that is carrying both a bow and a shield will still get the +1 bonus to their Defence for having a shield whilst they remain mounted.</description>
     </rule>
-    <rule id="146b-b4a8-46b0-2447" name="Elven" hidden="false"/>
+    <rule id="146b-b4a8-46b0-2447" name="Elven" publicationId="1133-b502-84bf-3366" hidden="false">
+      <description>If a model fights with an Elven weapon in a Combat, they will be more likely to win the Duel Roll in the result of a Drawn Combat. In these instances, a Good model armed with an Elven Weapon will win the roll-off on a 3+, whilst an Evil model armed with an Elven weapon will win the roll-off on a 1-4. If both sides have an Elven weapon, neither side gains the benefit.
+
+Some Missile Weapons may also be classed as Elven weapons; however, the above bonus only applies to Melee Weapons as a model cannot choose to fight with a Missile Weapon in a Combat.
+
+Any weapon with the word &apos;Elf&apos; in its name is automatically considered to be an Elven weapon.</description>
+    </rule>
     <rule id="48fb-9eea-f6c7-e577" name="Resistant to Magic [Passive]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>Every time this model is targeted by a Magical Power, they gain an additional free dice when making a Resist Test, even if they have no Will Points remaining or decide not to use any Will Points. This is cumulative with other rules that confer a similar effect.</description>
     </rule>
@@ -40168,7 +40188,9 @@ Additionally, this model ignores the Invisible special rule and, if it was invol
     <rule id="d420-f71d-f036-56c6" name="Fell Sight [Passive]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>A model with this special rule does not need to have Line of Sight to be able to Charge an enemy model. Additionally, a model with this special rule can Charge or target an enemy model with the Stalk Unseen special rule with no penalty. If a mount has this special rule, the rider mayy benefit from it whilst they remain mounted.</description>
     </rule>
-    <rule id="0027-8f86-eeda-698d" name="Master-Forged" hidden="false"/>
+    <rule id="0027-8f86-eeda-698d" name="Master-Forged" publicationId="1133-b502-84bf-3366" hidden="false">
+      <description>Some weapons may be classed as Master-forged. A model using a Master-forged weapon doesn&apos;t suffer the -1 penalty to the Duel Roll for using it as a two-handed weapon.</description>
+    </rule>
     <rule id="fe81-ffa9-8dce-5bfd" name="Longbeard [Active]" publicationId="a40a-1ac4-b5c2-a481" page="23" hidden="false">
       <description>During the Priority Phase, after the roll for Priority has taken place, Balin can spend a Will Point to allow his controlling player to re-roll their roll for Priority.</description>
     </rule>
@@ -40538,9 +40560,9 @@ Models placed on the board in this manner cannot be placed in the ControlZones o
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique piece of Wargear. Gandalf may re-roll any failed Fate rolls.</characteristic>
       </characteristics>
     </profile>
-    <profile id="9f3b-4883-01bb-2b48" name="Staff of Power" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="9f3b-4883-01bb-2b48" name="Staff of Power" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A Staff of Power is a hand-and-a-half weapon. Additionally, the wielder of a Staff of Power gains a free Will Point at the start of each turn. If this free Will Point is not spent by the end of the turn, it is lost.</characteristic>
       </characteristics>
     </profile>
     <profile id="9d51-aa29-3f2d-f3b0" name="Transfix" publicationId="1133-b502-84bf-3366" page="119" hidden="false" typeId="bc55-18c0-32d2-2beb" typeName="Magical Power">
@@ -40655,9 +40677,11 @@ At the end of the End Phase of each turn, a Paralysed model may roll a D6. On a 
 If a Paralysed model is in a water feature at the end of the Move Phase, then it must take a Swim Test to see if it sinks.</characteristic>
       </characteristics>
     </profile>
-    <profile id="4ba8-c521-3901-27eb" name="Heavy Armour" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="4ba8-c521-3901-27eb" name="Heavy Armour" publicationId="1133-b502-84bf-3366" page="110" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model wearing heavy armour will add 2 to their Defence characteristic.
+
+Where a model is listed as having a type of armour in its profile, then the improvement in its Defence characteristic will already have been included in their profile. If a model has the opportunity to upgrade one type of armour to another, then they will replace one with the other - they will not get the Defence benefits of both.</characteristic>
       </characteristics>
     </profile>
     <profile id="f467-033a-3f66-efee" name="Hand Weapon" publicationId="1133-b502-84bf-3366" page="103" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40665,9 +40689,13 @@ If a Paralysed model is in a water feature at the end of the Move Phase, then it
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">These are the standard kind of weapon a model may carry, and is anything wielded in a single hand, such as a sword, an axe, a mace or all manner of other weapons. The exact kind of weapon being carried doesn&apos;t matter; all hand weapons function the same. A hand weapon has no specific rules attached to it.</characteristic>
       </characteristics>
     </profile>
-    <profile id="58b4-081e-3519-88da" name="Shield" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="58b4-081e-3519-88da" name="Shield" publicationId="1133-b502-84bf-3366" page="110" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model carrying a shield adds 1 to their Defence characteristic. Where a model is listed as carrying a shield in its profile, then the improvement in its Defence characteristic will already have been included in their profile.
+
+A shield is cumbersome, and so a model carrying a shield that wishes to use their hand-and-a-half weapon as a two-handed weapon during a Combat cannot gain the Defence bonus for carrying a shield during that Combat. Additionally, a model carrying a shield does not gain the Defence bonus if it also carries a type of bow, crossbow, two-handed weapon or pike.
+
+A model with a shield can also use the Shielding special rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="a266-690d-5aee-eb91" name="Spear" publicationId="1133-b502-84bf-3366" page="104" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40685,9 +40713,21 @@ A model with a spear can use it as a hand weapon when they are Engaged in Combat
 A Hero that is Supporting may use Might Points to improve a Duel Roll or To Wound Rolls as normal. However, a Hero that has declared a Heroic Action in the Fight Phase cannot support during that Fight Phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="e51e-de39-5e66-988c" name="Banner" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="e51e-de39-5e66-988c" name="Banner" publicationId="1133-b502-84bf-3366" page="108" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A banner has a 3&quot; area of effect that extends out from the model carrying the banner (although some special banners may have a larger range). If a friendly model is within the range of one or more friendly banners, can draw Line of Sight to that banner, and is either Engaged in Combat or Supporting a friendly model, then that Combat is affected by the banner. If a Combat is affected by a banner then a single friendly model in that Combat (including a Supporting model) can re-roll a single dice in the Duel Roll. If a Combat is affected by multiple friendly banners, then this will still only allow a single dice to be re-rolled as part of the Duel Roll, not one for each banner. A model cannot use a banner to re-roll a dice in a Duel Roll that the model is currently winning, in order to try to lose the Combat.
+
+A banner must be flying in order to inspire its followers. If a model carrying banner is Prone, then friendly models cannot benefit from it, or any special rules associated with the banner if applicable.
+
+If a Hero has a special rule that means that friendly models in a certain range treat them as a banner, then the Hero must be standed in order for the effect of the banner to be applicable.
+
+It is possible that one player will use their banner to re-roll a dice and then find themselves winning the Duel Roll, in which case their opponent may wish to use a banner of their own. This is perfectly fine, though each side may still only re-roll a single dice as the result of using a banner or a special rule that counts as a banner.
+
+If a banner states it only affects models with certain keywords, then those models must be in range of the banner themselves for the banner to affect that Combat, and only those models may re-roll a dice as a result of the banner.
+
+A model carrying a banner suffers a -1 penalty to their Duel Rolls.
+
+If a Warrior carrying a banner (not a Hero) is removed from the battlefield as a casualty for any reason (such as being slain or fleeing the board as the result of being part of a Broken Army), then they may pass their banner onto another friendly Warrior model in base contact. However, they cannot pass their banner onto a model that is Prone, Engaged in Combat or to a model that could not normally take a banner as part of their profile. Swap the models over if they are the same type of Warrior, or find a suitable model in your collection. When a model takes a banner in this manner, it will count as having the wargear its profile allows it to have when it is upgraded to caryy a banner as part of its profile, and will drop all others. So, if a Warrior of Minas Tirith with a spear and shield were to pick up a banner, it would have to drop its shield and spear as a Warrior of Minas Tirith that has a banner does not also have a spear and shield.</characteristic>
       </characteristics>
     </profile>
     <profile id="0148-1ad8-4e0a-aa9c" name="War Horn" publicationId="1133-b502-84bf-3366" page="109" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40695,16 +40735,19 @@ A Hero that is Supporting may use Might Points to improve a Duel Roll or To Woun
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">Models within 24&quot; of a friendly model with a war horn gain a bonus of +1 to any Courage Tests they take. Additionally, a model with a war horn gains the Dominant (2) special rule and can use it once per game to increase the range of a friendly Hero model&apos;s Stand Fast by 3&quot;, so long as the model with the war horn is in range of the Hero model&apos;s Stand Fast before this increase. If a Hero model has a war horn themselves, they may use it to increase the range of their own Stand Fast by 3&quot; instead. A war horn is treated as an Active ability (see page 123).</characteristic>
       </characteristics>
     </profile>
-    <profile id="5b42-7696-1860-9a01" name="Bow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="5b42-7696-1860-9a01" name="Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">2</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="12a0-64c2-e169-b848" name="Lance" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="12a0-64c2-e169-b848" name="Lance" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A Cavalry model using a lance applies a +1 modifier on any To Wound Rolls when making Strikes in a Combat in which it Charged. This modifier is not applied if the Cavalry model Charges whilst within Difficult Terrain.
+
+If a Cavalry model Dismounts or loses their Mount, then they must discard their lance.</characteristic>
       </characteristics>
     </profile>
     <profile id="26c1-b9e1-45d2-d0eb" name="Horse" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
@@ -40724,11 +40767,12 @@ A Hero that is Supporting may use Might Points to improve a Duel Roll or To Woun
         <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
       </characteristics>
     </profile>
-    <profile id="13a9-b366-66ed-2708" name="Elf Bow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="13a9-b366-66ed-2708" name="Elf Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="dfd7-a605-8ce3-5d3d" name="Hadhafang [Active]" publicationId="5d2d-eaa5-64b5-2f28" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40736,19 +40780,21 @@ A Hero that is Supporting may use Might Points to improve a Duel Roll or To Woun
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique Elven hand-and-a-half weapon. Additionally, a model wielding Hadhafang gains a bonus of +1 To Wound when making Strikes against a Spirit model.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f5e6-5069-1cf8-be73" name="Armour" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="f5e6-5069-1cf8-be73" name="Armour" publicationId="1133-b502-84bf-3366" page="110" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model wearing armour will add 1 to their Defence characteristic.
+
+Where a model is listed as having a type of armour in its profile, then the improvement in its Defence characteristic will already have been included in their profile. If a model has the opportunity to upgrade one type of armour to another, then they will replace one with the other - they will not get the Defence benefits of both.</characteristic>
       </characteristics>
     </profile>
-    <profile id="6a64-af88-56d8-fd46" name="Light Armour" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="6a64-af88-56d8-fd46" name="Light Armour" publicationId="1133-b502-84bf-3366" page="110" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model wearing light armour will add 1 to their Defence characteristic against Shooting Attacks. If a model is wearing light armour then the Defence improvement will not have been added onto their profile.</characteristic>
       </characteristics>
     </profile>
-    <profile id="dc35-c7c1-baf2-9099" name="Light Shield" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="dc35-c7c1-baf2-9099" name="Light Shield" publicationId="1133-b502-84bf-3366" page="110" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model with a light shield does not gain a bonus to its Defence. However, it may use the Shielding special rule.</characteristic>
       </characteristics>
     </profile>
     <profile id="f65a-5c82-ec77-2a1d" name="Claws and Beak (hand weapon)" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40765,9 +40811,10 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
     </profile>
     <profile id="3f28-0a87-b6e0-b6e4" name="Whip" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">2&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">1</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">None</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">This is also a hand weapon.</characteristic>
       </characteristics>
     </profile>
     <profile id="8997-7374-6ea0-8e76" name="The One Ring" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40795,35 +40842,40 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a two-handed weapon. Additionally, if a model wielding a Mattock wins a Duel Roll they may choose to try to knock down an enemy model instead of making Strikes. If they do, choose a single enemy model involved in the Combat. This model and the chosen model both roll a single D6 and add their Strength characteristic. If this model rolls equal to or higher than the chosen model, then the chosen model is immediately knocked Prone. This may be done before any other friendly models make their Strikes.</characteristic>
       </characteristics>
     </profile>
-    <profile id="d0c0-77a5-ebb5-5e63" name="Crossbow" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="d0c0-77a5-ebb5-5e63" name="Crossbow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">4</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Full Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="c1c8-7382-6daf-517a" name="War Spear" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="c1c8-7382-6daf-517a" name="War Spear" publicationId="1133-b502-84bf-3366" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A war spear follows the rules for a spear when wielded by an Infantry model, and follows the rules for a lance when wielded by a Cavalry model. The only exception is that a Cavalry model doesn&apos;t have to discard the war spear when they Dismount or lose their Mount.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f777-906c-0bb4-df05" name="Throwing Weapons" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="f777-906c-0bb4-df05" name="Throwing Weapon" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">6&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">None</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">May also be thrown when Charging an enemy model in the Move Phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2d70-3673-13bf-cac4" name="Esgaroth Bow" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="2d70-3673-13bf-cac4" name="Esgaroth Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="a97a-9b94-d6d0-1d13" name="Heavy Dwarf Armour" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="a97a-9b94-d6d0-1d13" name="Heavy Dwarf Armour" publicationId="1133-b502-84bf-3366" page="110" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model wearing heavy Dwarf armour will add 3 to their Defence characteristic.
+
+Where a model is listed as having a type of armour in its profile, then the improvement in its Defence characteristic will already have been included in their profile. If a model has the opportunity to upgrade one type of armour to another, then they will replace one with the other - they will not get the Defence benefits of both.</characteristic>
       </characteristics>
     </profile>
     <profile id="c98d-f252-e3ed-d268" name="The Ring of Durin" publicationId="a40a-1ac4-b5c2-a481" page="20" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40831,9 +40883,12 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique piece of wargear. Once per game during the Priority Phase, after the roll for Priority has taken place, the bearer of the Ring of Durin can re-roll their side&apos;s Priority Roll.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f425-841e-5518-67b1" name="Mithril Armour" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="f425-841e-5518-67b1" name="Mithril Armour" publicationId="1133-b502-84bf-3366" page="110" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
-        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
+        <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">A model wearing Mithril armour will add 3 to their Defence characteristic. Additionally, Monster models cannot use the Rend Brutal Power Attack against a model wearing Mithril armour.
+
+
+Where a model is listed as having a type of armour in its profile, then the improvement in its Defence characteristic will already have been included in their profile. If a model has the opportunity to upgrade one type of armour to another, then they will replace one with the other - they will not get the Defence benefits of both.</characteristic>
       </characteristics>
     </profile>
     <profile id="f473-f7c9-e866-caaa" name="Hand-and-a-half Weapon" publicationId="1133-b502-84bf-3366" page="103" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40851,11 +40906,12 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">These are Unique hand weapons. Additionally, a model gains a bonus of +1 to its Attack characteristic when using Grasper &amp; Keeper, and any To Wound Rolls of a natural 6 that are not prevented will deal 2 Wounds rather than 1.</characteristic>
       </characteristics>
     </profile>
-    <profile id="9b7b-ae98-80c3-b979" name="Great Bow" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="9b7b-ae98-80c3-b979" name="Great Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">4</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="e1b3-95ef-ebce-458f" name="Mithril Coat [Passive]" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40878,11 +40934,14 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique piece of Wargear. Galadriel may re-roll any Fate rolls.</characteristic>
       </characteristics>
     </profile>
-    <profile id="ce5a-475b-d27e-21af" name="Sling" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="ce5a-475b-d27e-21af" name="Sling" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">12&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">1</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Full/Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">If the model didn&apos;t Move, they may mkae two Shooting Attacks.
+
+If the model Moved up to half their Movement, they may make a single Shooting Attack.</characteristic>
       </characteristics>
     </profile>
     <profile id="a224-d93e-0118-ad85" name="Hearing Trumpet [Active]" publicationId="a40a-1ac4-b5c2-a481" page="40" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40890,11 +40949,12 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">Whenever an enemy Hero declares a Heroic Action within 6&quot; of Óin, you may roll a D6. On a 5+, Óin may immedieately declare the same Heroic Action for free. However, on a natural 1, Óin immediately loses a Will Point. If he cannot lose a Will Point in this manner, then Óin cannot Move during that turn as he tries to fix his Hearing Trumpet.</characteristic>
       </characteristics>
     </profile>
-    <profile id="792b-1d5c-f9c1-3e2b" name="Dwarf Bow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="792b-1d5c-f9c1-3e2b" name="Dwarf Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">18&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="fa90-56f1-740d-6718" name="Orcrist [Active]" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -40902,11 +40962,12 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique Elven hand-and-a-half weapon. Orcrist has the Orcbane, Goblinbane and Uruk-haibane special rules. Additionally, the wielder of Orcrist has the Terror (Orc), Terror (Goblin) and Terror (Uruk-hai) special rules.</characteristic>
       </characteristics>
     </profile>
-    <profile id="baca-0ab6-d7dc-9476" name="Orc Bow" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="baca-0ab6-d7dc-9476" name="Orc Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">18&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">2</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="8cc5-509a-001f-393e" name="Nazgúl of Dol Guldur" publicationId="a40a-1ac4-b5c2-a481" page="130" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
@@ -40936,18 +40997,20 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
     </profile>
-    <profile id="302b-0beb-8199-6dba" name="Throwing Spears" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="302b-0beb-8199-6dba" name="Throwing Spear" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">8&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">None</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">May also be thrown when Charging an enemy model in the Move Phase.</characteristic>
       </characteristics>
     </profile>
-    <profile id="c5d0-e3ff-c6de-c094" name="Longbow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="c5d0-e3ff-c6de-c094" name="Longbow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="bc82-42ec-e371-6cdd" name="Andúril, Flame of the West [Active]" publicationId="5d2d-eaa5-64b5-2f28" page="13" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -41060,11 +41123,12 @@ When a model fights with a two-handed weapon in a Combat, they suffer a -1 penal
         <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
       </characteristics>
     </profile>
-    <profile id="07ed-6465-15eb-db3e" name="Uruk-hai Bow" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="07ed-6465-15eb-db3e" name="Uruk-hai Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">18&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="5c89-1a66-8e59-6b0e" name="War Drum (X)" publicationId="1133-b502-84bf-3366" page="109" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
@@ -41144,7 +41208,7 @@ As a war drum allows a model to declare a free Heroic March, models cannot be af
         <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">-</characteristic>
       </characteristics>
     </profile>
-    <profile id="4fc3-ddd8-6c68-a9c0" name="Tusks and huge, stomping feet (Hand Weapons)" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
+    <profile id="4fc3-ddd8-6c68-a9c0" name="Tusks and huge, stomping feet (Hand Weapons)" publicationId="5d2d-eaa5-64b5-2f28" hidden="false" typeId="913a-634e-ae12-6892" typeName="Wargear">
       <characteristics>
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66"/>
       </characteristics>
@@ -41172,11 +41236,12 @@ Additionally, if a Cavalry model Charges a model armed with a pike, then the mod
         <characteristic name="Rules" typeId="3664-b29b-4a42-dd66">This is a Unique piece of Wargear. At any point during their Activation, Galadriel or Frodo can use the Light of Eärendil to roll a D6. On a 3+, this model counts as having Cast the Blinding Light Magical Power. This does not prevent Galadriel from attempting to Cast another Magical Power during her Activation.</characteristic>
       </characteristics>
     </profile>
-    <profile id="2673-7f83-ced4-1151" name="Short Bow" publicationId="1133-b502-84bf-3366" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+    <profile id="2673-7f83-ced4-1151" name="Short Bow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f"/>
-        <characteristic name="Strength" typeId="b890-2a90-96a3-0317"/>
-        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989"/>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">18&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">2</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="ffe4-01ed-1982-5831" name="Pony" publicationId="1133-b502-84bf-3366" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
@@ -41194,6 +41259,24 @@ Additionally, if a Cavalry model Charges a model armed with a pike, then the mod
         <characteristic name="Faction" typeId="8539-1489-a955-726a">See Rider</characteristic>
         <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Mount</characteristic>
         <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">40mm</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac9c-54c0-18a9-b967" name="Blowpipe" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">12&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">2</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">Blowpipes benefit from the Poisoned Weapons special rule.
+
+Blowpipes don&apos;t count towards bow limit.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3ce1-2a5e-262b-e1a3" name="Dwarf Longbow" publicationId="1133-b502-84bf-3366" page="101" hidden="false" typeId="cb57-9797-0033-6975" typeName="Ranged Weapon">
+      <characteristics>
+        <characteristic name="Range" typeId="bf95-59ee-3d1d-fb1f">24&quot;</characteristic>
+        <characteristic name="Strength" typeId="b890-2a90-96a3-0317">3</characteristic>
+        <characteristic name="Movement Restriction" typeId="7858-05e8-4199-8989">Half Movement</characteristic>
+        <characteristic name="Additional Rules" typeId="76b8-c850-e626-7ec9">-</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
