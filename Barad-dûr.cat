@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3ead-47ab-f886-0aab" name="Barad-dûr" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3ead-47ab-f886-0aab" name="Barad-dûr" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="edba-2dfa-7255-5055" name="Sauron&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -25,7 +25,7 @@
         <categoryLink id="9f51-b563-49e0-6a9e" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="189a-1455-4704-acc2" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
+        <entryLink id="189a-1455-4704-acc2" name="The Witch-king of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="620b-e853-b78b-d371" type="min"/>
           </constraints>
@@ -77,6 +77,7 @@
         <entryLink id="bd95-223c-59b5-9ebf" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d3ee-d00e-3ac8-af28" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9294-77d1-9aa8-d2d9" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="94ca-4e92-480b-1f23" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>

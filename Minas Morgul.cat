@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="083c-50d2-89a7-e73f" name="Minas Morgul" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="083c-50d2-89a7-e73f" name="Minas Morgul" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="58c1-2bd1-b9c4-92fe" name="Witch-king&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -9,7 +9,7 @@
         <categoryLink id="f2a3-c1b4-4f47-862e" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="6c4f-8159-a4e9-33bf" name="The Witch-King of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
+        <entryLink id="6c4f-8159-a4e9-33bf" name="The Witch-king of Angmar" hidden="false" collective="false" import="true" targetId="c7f1-a1b7-9395-7624" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f51a-1eeb-13c7-94a0" type="min"/>
           </constraints>
@@ -76,6 +76,7 @@
         <entryLink id="3ad7-f1c4-ebb0-69ab" name="Ringwraith" hidden="false" collective="false" import="true" targetId="1f70-d825-bf7c-79e1" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7b17-5302-483b-f9c3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9568-0e7f-7b4a-75a6" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="173c-4156-0585-d357" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>

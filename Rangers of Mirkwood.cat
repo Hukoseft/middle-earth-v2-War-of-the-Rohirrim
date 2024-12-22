@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6e1c-2334-df06-f60c" name="Rangers of Mirkwood" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6e1c-2334-df06-f60c" name="Rangers of Mirkwood" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="d8cb-bb0f-be39-551d" name="Legolas&apos; Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -44,6 +44,7 @@
     <selectionEntry id="5b17-62c5-2123-f511" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="6027-0233-4bfc-e7ce" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="6402-33b6-dda6-c9ed" name="Mirkwood" hidden="false" targetId="3899-38ec-3426-7d4d" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0686-1a81-751c-09ef" name="Mirkwood Ranger Captain" hidden="false" collective="false" import="true" targetId="3862-ed2e-6305-4bed" type="selectionEntry"/>
