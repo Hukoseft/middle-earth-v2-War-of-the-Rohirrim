@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8c74-cce2-6e2e-723e" name="Realms of Men" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="8c74-cce2-6e2e-723e" name="Realms of Men" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="a3c0-4e0a-6546-1a5f" name="King of Gondor&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -215,12 +215,192 @@
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="25b0-d7ec-8d1f-b069" name="Gondor Battlecry Trebuchet" hidden="false" collective="false" import="true" targetId="7276-9a27-52dc-a7fa" type="selectionEntry">
+      <modifiers>
+        <modifier type="decrement" field="9969-ffcf-3b2f-4bf9" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ed0b-ed64-e184-4050" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d5a8-9df0-b38d-085b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3c0-4e0a-6546-1a5f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9212-93a8-e58a-dd9b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3c0-4e0a-6546-1a5f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0d28-2ac4-8363-e5af" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3c0-4e0a-6546-1a5f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97ef-cb25-ae71-ec53" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3c0-4e0a-6546-1a5f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9fa8-5b5e-feb9-1085" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3c0-4e0a-6546-1a5f" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="08d2-88bb-b949-e208" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="9969-ffcf-3b2f-4bf9" value="0.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3c0-4e0a-6546-1a5f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b3a-c814-a424-3b72" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1f69-79b4-cc21-f62a" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ffba-eec3-a043-f2e8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+    <entryLink id="a4fb-3b4d-d982-396e" name="Windlance" hidden="false" collective="false" import="true" targetId="ed0b-ed64-e184-4050" type="selectionEntry">
+      <modifiers>
+        <modifier type="decrement" field="28da-e67b-b4f3-0a62" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7276-9a27-52dc-a7fa" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <modifierGroups>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d5a8-9df0-b38d-085b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="08d2-88bb-b949-e208" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9212-93a8-e58a-dd9b" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="08d2-88bb-b949-e208" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0d28-2ac4-8363-e5af" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="08d2-88bb-b949-e208" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97ef-cb25-ae71-ec53" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="08d2-88bb-b949-e208" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9fa8-5b5e-feb9-1085" repeats="1" roundUp="false"/>
+              </repeats>
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="08d2-88bb-b949-e208" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+        <modifierGroup>
+          <modifiers>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a3c0-4e0a-6546-1a5f" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="28da-e67b-b4f3-0a62" value="0.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="08d2-88bb-b949-e208" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4b3a-c814-a424-3b72" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1f69-79b4-cc21-f62a" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="28da-e67b-b4f3-0a62" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="ffba-eec3-a043-f2e8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </entryLink>
+  </entryLinks>
   <rules>
     <rule id="faa2-1d8a-5d57-65e3" name="-1" hidden="false">
       <modifiers>
         <modifier type="increment" field="name" value="1">
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b4ea-7715-d55b-7e78" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b4ea-7715-d55b-7e78" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="name" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0d28-2ac4-8363-e5af" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -233,6 +413,16 @@
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0d50-809e-7dc4-939a" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0d50-809e-7dc4-939a" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="name" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d5a8-9df0-b38d-085b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <description>This number of of Rohan models in the army.</description>
     </rule>
@@ -241,6 +431,16 @@
         <modifier type="increment" field="name" value="1">
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3129-e59e-a52e-02a8" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3129-e59e-a52e-02a8" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="name" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="97ef-cb25-ae71-ec53" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -253,6 +453,16 @@
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="093e-6dc6-cf63-5702" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="093e-6dc6-cf63-5702" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="name" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9fa8-5b5e-feb9-1085" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <description>This number of of Dale models in the army.</description>
     </rule>
@@ -263,8 +473,21 @@
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="734e-e20e-e60f-72ec" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="734e-e20e-e60f-72ec" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="name" value="1">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9212-93a8-e58a-dd9b" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <description>This number of of Númenor models in the army.</description>
+    </rule>
+    <rule id="f150-1b9e-8fd2-e36e" name="Army General" publicationId="5d2d-eaa5-64b5-2f28" page="134" hidden="false">
+      <description>Please select the King of Men with the same faction keyword as the most models with the same keyword.</description>
     </rule>
   </rules>
 </catalogue>

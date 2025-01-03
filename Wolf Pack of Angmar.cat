@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f46b-ebda-5318-01f9" name="Wolf Pack of Angmar" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f46b-ebda-5318-01f9" name="Wolf Pack of Angmar" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="f895-f196-367c-22ce" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -45,7 +45,7 @@
     <rule id="4f2f-171d-df2e-6f2c" name="Protect the Alpha" publicationId="33e0-ead5-55a8-d8f4" page="25" hidden="false">
       <description>If your General has suffered at least one Wound, then friendly models treat them as a banner with a range of 6&quot;.</description>
     </rule>
-    <rule id="54f1-4c74-0357-669f" name="New Rule" publicationId="33e0-ead5-55a8-d8f4" hidden="false">
+    <rule id="54f1-4c74-0357-669f" name="Howl of the Wolf Pack" publicationId="33e0-ead5-55a8-d8f4" page="25" hidden="false">
       <description>Once per game, at the start of any Fight Phase, your General can declare they are using this ability. Until the End Phase of the turn, friendly models gain a bonus of +1 to their Fight Value and may re-roll To Wound Rolls of a natural 1 when making Strikes.</description>
     </rule>
     <rule id="4b6b-d58e-36f1-9266" name="Additional Rules" publicationId="33e0-ead5-55a8-d8f4" page="25" hidden="false">
