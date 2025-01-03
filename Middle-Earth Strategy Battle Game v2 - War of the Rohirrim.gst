@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="9" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="12" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
@@ -1085,16 +1085,28 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
+            <modifier type="increment" field="39da-2bd8-9ace-a7f9" value="1">
+              <repeats>
+                <repeat field="59c3-8846-5912-9f3b" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="Total Models" typeId="c177-c848-d677-bae3">0</characteristic>
             <characteristic name="Break Point" typeId="6052-59fc-62b0-166a">0</characteristic>
             <characteristic name="Quartered" typeId="dd74-4dac-1208-f887">0</characteristic>
             <characteristic name="Bows" typeId="71fb-a205-afb1-6d47">0</characteristic>
-            <characteristic name="Throwing Weapon" typeId="39da-2bd8-9ace-a7f9"/>
+            <characteristic name="Throwing Weapon" typeId="39da-2bd8-9ace-a7f9">0</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="58d5-1c37-ff03-da86" name="Dominant (X) [Passive]" hidden="false" targetId="d019-d3e8-8d92-9491" type="rule">
+          <modifiers>
+            <modifier type="set" field="name" value="Dominant (3) [Passive]"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
@@ -11661,8 +11673,8 @@ When the game ends, any Markers on the board are removed and the models associat
                 <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">4+</characteristic>
                 <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">4+</characteristic>
                 <characteristic name="Might" typeId="8f23-2898-dff0-997c"/>
-                <characteristic name="Will" typeId="2f75-56dc-366a-646c"></characteristic>
-                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219"></characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c"/>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219"/>
                 <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Spirit, Ringwraith</characteristic>
                 <characteristic name="Faction" typeId="2c52-d571-e855-1691">Mordor, Angmar</characteristic>
                 <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
@@ -11920,6 +11932,12 @@ When the game ends, any Markers on the board are removed and the models associat
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a1b0-120d-4137-e475" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ac41-3b1e-3c07-a8bd" type="min"/>
               </constraints>
+              <costs>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -12374,6 +12392,12 @@ When the game ends, any Markers on the board are removed and the models associat
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="06b2-6d58-b513-fc76" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f27d-64d0-8432-882a" type="min"/>
               </constraints>
+              <costs>
+                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -12478,6 +12502,9 @@ When the game ends, any Markers on the board are removed and the models associat
         <selectionEntryGroup id="6030-5172-f012-9278" name="Wargear" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="4799-5f36-1c8b-ad51" name="Shield (No defence increase)" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="name" value="Shield"/>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="22f6-97d0-6cf0-67eb" type="max"/>
               </constraints>
@@ -20013,7 +20040,15 @@ The Watcher is then removed from the battlefield and its controlling player must
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5b82-222f-2579-4870" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="5b82-222f-2579-4870" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46b-ebda-5318-01f9" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -25165,7 +25200,6 @@ The Rider may be either Aragorn or Théodred.</description>
               </modifierGroups>
               <constraints>
                 <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5bd5-42a4-1670-8f47" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d8b-ecbc-ac87-4936" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="84ea-1ecd-008f-7c45" type="min"/>
               </constraints>
               <costs>
@@ -29238,7 +29272,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                 </selectionEntry>
                 <selectionEntry id="55f8-fe41-6aed-49d1" name="Banner" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
                       <repeats>
                         <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2aa7-1295-9f37-1df2" repeats="1" roundUp="false"/>
                       </repeats>
@@ -30327,11 +30361,11 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                     </modifier>
                   </modifiers>
                 </infoLink>
-                <infoLink id="28bd-c6a7-2814-75c9" name="Resistant to Magic [Passive]" hidden="true" targetId="48fb-9eea-f6c7-e577" type="rule">
+                <infoLink id="28bd-c6a7-2814-75c9" name="Resistant to Magic [Passive]" hidden="false" targetId="48fb-9eea-f6c7-e577" type="rule">
                   <modifiers>
-                    <modifier type="set" field="hidden" value="false">
+                    <modifier type="set" field="hidden" value="true">
                       <conditions>
-                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="notInstanceOf"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -32693,7 +32727,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1a67-4cf2-f30e-48bc" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d3a6-275d-bd0e-ed92" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4a21-071d-7acb-a4b1" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
