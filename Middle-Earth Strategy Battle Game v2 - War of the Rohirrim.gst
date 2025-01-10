@@ -2389,7 +2389,6 @@
     </selectionEntry>
     <selectionEntry id="27c2-b047-6942-4120" name="Captain of Númenor" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0931-6e68-310a-c523" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6bc6-5690-f5bf-42c5" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3146-a705-6be4-c817" type="min"/>
       </constraints>
@@ -6022,7 +6021,7 @@ If Boromir is part of the same Army, then Denethor will automatically pass this 
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="70.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="50.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
