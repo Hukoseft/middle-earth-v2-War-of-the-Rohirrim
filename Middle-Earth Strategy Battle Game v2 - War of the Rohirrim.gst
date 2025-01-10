@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="13" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="14" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
@@ -2389,7 +2389,6 @@
     </selectionEntry>
     <selectionEntry id="27c2-b047-6942-4120" name="Captain of Númenor" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0931-6e68-310a-c523" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6bc6-5690-f5bf-42c5" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3146-a705-6be4-c817" type="min"/>
       </constraints>
@@ -5677,7 +5676,15 @@ If Boromir is part of the same Army, then Denethor will automatically pass this 
         <categoryLink id="585f-a999-05d5-b203" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="8e65-2f7b-7c03-2f15" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="8e65-2f7b-7c03-2f15" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -6017,12 +6024,20 @@ If Boromir is part of the same Army, then Denethor will automatically pass this 
         <categoryLink id="d45d-f83c-3360-85f9" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="f4e5-2207-5091-a717" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="f4e5-2207-5091-a717" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="70.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="50.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -6590,7 +6605,15 @@ Khazad-dûm - This model gains throwing weapons.</description>
         <categoryLink id="0f45-c5c9-4555-66d6" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="2321-a64b-9465-9fac" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="2321-a64b-9465-9fac" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -6869,11 +6892,16 @@ Khazad-dûm - This model gains throwing weapons.</description>
         <categoryLink id="3ec5-b41f-1e63-16e7" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
         <categoryLink id="6b55-1589-6ab2-a850" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="5452-9301-e24b-2d0a" name="Wargear" hidden="false" collective="false" import="true"/>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="3e13-87bb-fab4-a087" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="3e13-87bb-fab4-a087" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -7692,7 +7720,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <categoryLink id="f397-1bcb-b432-5a9e" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c831-c7da-981c-f85d" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="c831-c7da-981c-f85d" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -7848,7 +7884,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <categoryLink id="0a25-3eb9-5c9b-528a" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="0624-73ca-e6ee-094c" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="0624-73ca-e6ee-094c" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -8071,7 +8115,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <selectionEntryGroup id="18e2-cead-7c6a-46c7" name="Wargear" hidden="false" collective="false" import="true"/>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="42e2-4bea-58c9-b750" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="42e2-4bea-58c9-b750" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -8145,7 +8197,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <categoryLink id="39e2-cadc-a96c-a67e" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5be2-0f80-1750-762b" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="5be2-0f80-1750-762b" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -8598,7 +8658,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <categoryLink id="956a-fc01-8c68-9f4a" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5685-bb47-97e4-6090" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="5685-bb47-97e4-6090" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -8820,9 +8888,14 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <entryLink id="cd0b-a16b-db31-ed19" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28c1-3796-09c3-2567" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28c1-3796-09c3-2567" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
@@ -9108,7 +9181,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <categoryLink id="2741-89d4-6942-db0e" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="e7ea-d695-208c-ea98" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="e7ea-d695-208c-ea98" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -9161,6 +9242,12 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
             <infoLink id="0052-0999-3169-ae8a" name="Steadfast [Passive]" hidden="false" targetId="912d-eef3-0fc7-e1d7" type="rule"/>
           </infoLinks>
         </infoGroup>
+        <infoGroup id="6ed7-70d1-f023-7a02" name="Wargear" hidden="false">
+          <infoLinks>
+            <infoLink id="93cb-d79f-1a8d-32c2" name="Mattock [Active]" hidden="false" targetId="14d0-533d-1ff4-21e7" type="profile"/>
+            <infoLink id="6054-9537-397b-9871" name="Light Armour" hidden="false" targetId="6a64-af88-56d8-fd46" type="profile"/>
+          </infoLinks>
+        </infoGroup>
       </infoGroups>
       <categoryLinks>
         <categoryLink id="88fa-190c-567c-c874" name="25mm" hidden="false" targetId="476d-0c93-4cbd-a781" primary="false"/>
@@ -9170,16 +9257,16 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <categoryLink id="86af-a29d-b365-14d1" name="Infantry" hidden="false" targetId="69ec-404e-f610-ae28" primary="false"/>
         <categoryLink id="65c0-f6c8-36c8-95c7" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="4063-608c-d350-a12b" name="Wargear" hidden="false" collective="false" import="true">
-          <infoLinks>
-            <infoLink id="8a4a-8481-32ec-e48e" name="Light Armour" hidden="false" targetId="6a64-af88-56d8-fd46" type="profile"/>
-            <infoLink id="ad1e-bc66-226c-dbd6" name="Mattock [Active]" hidden="false" targetId="14d0-533d-1ff4-21e7" type="profile"/>
-          </infoLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="bf9f-c233-0461-854c" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="bf9f-c233-0461-854c" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -9248,7 +9335,15 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <categoryLink id="c2d8-0488-19c3-8500" name="Thorin&apos;s Company" hidden="false" targetId="dea2-ccbd-18a3-848f" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="5488-0ab3-5f16-a1e4" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="5488-0ab3-5f16-a1e4" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -10560,7 +10655,15 @@ When the game ends, any Markers on the board are removed and the models associat
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="9a48-d3c1-1518-939c" name="Orcrist" hidden="false" collective="false" import="true" targetId="ddad-64c2-2611-a053" type="selectionEntry"/>
+            <entryLink id="9a48-d3c1-1518-939c" name="Orcrist" hidden="false" collective="false" import="true" targetId="ddad-64c2-2611-a053" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="6ad3-0c40-5eac-eba0" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -10570,6 +10673,11 @@ When the game ends, any Markers on the board are removed and the models associat
             <modifier type="set" field="7064-8496-0342-4657" value="1.0">
               <conditions>
                 <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28c1-3796-09c3-2567" type="instanceOf"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -14878,7 +14986,15 @@ When the game ends, any Markers on the board are removed and the models associat
         <categoryLink id="a5f1-0179-fd1b-3f3b" name="Mirkwood" hidden="false" targetId="3899-38ec-3426-7d4d" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="689d-8d30-7b97-805b" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry"/>
+        <entryLink id="689d-8d30-7b97-805b" name="Army General" hidden="false" collective="false" import="true" targetId="68b7-fc9b-6d13-64c3" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6e1c-2334-df06-f60c" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
