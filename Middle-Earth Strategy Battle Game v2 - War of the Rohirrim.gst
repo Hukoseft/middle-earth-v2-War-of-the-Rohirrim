@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="14" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
-  <readme>If using this to submit a list, change the settings for rules and profiles to minimum.</readme>
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="16" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+  <readme>If using this to submit a list, change the settings for rules and profiles to minimum.
+
+Please note, I will be moving to New Recruit in the future. For now though, while I get used to NR, the files will remain optimised for Battlescribe.</readme>
   <publications>
     <publication id="1133-b502-84bf-3366" name="Main Rules" publicationDate="14/12/2024"/>
     <publication id="5d2d-eaa5-64b5-2f28" name="Armies of the Lord of the Rings" publicationDate="14/12/2024"/>
@@ -7217,7 +7219,7 @@ Khazad-dûm - This model gains throwing weapons.</description>
             <infoLink id="7cba-193f-89af-d80d" name="Nature&apos;s Wrath" hidden="false" targetId="ab14-452c-6a48-f859" type="profile">
               <modifiers>
                 <modifier type="set" field="362b-8822-a065-da22" value="5+"/>
-                <modifier type="set" field="51ed-0de5-710e-bbf2" value="Self"/>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="3&quot;"/>
               </modifiers>
             </infoLink>
             <infoLink id="0d7e-32fc-cb53-fcf8" name="Writhing Vines" hidden="false" targetId="ab1c-9f14-1de4-78e7" type="profile">
@@ -7911,6 +7913,13 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
         <infoGroup id="517d-063c-5940-d4c3" name="Special Rules" hidden="false">
           <profiles>
             <profile id="acbe-9c08-38de-9ebc" name="Dáin Ironfoot, Lord of the Iron Hills" publicationId="a40a-1ac4-b5c2-a481" page="26" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
+              <modifiers>
+                <modifier type="set" field="0cb6-ae3e-dec7-20b9" value="Hero of Legend">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0aaf-4656-2f35-8feb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">5&quot;</characteristic>
                 <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">7</characteristic>
@@ -7918,7 +7927,7 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
                 <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">5</characteristic>
                 <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">8</characteristic>
                 <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">3</characteristic>
-                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">8</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">3</characteristic>
                 <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">3+</characteristic>
                 <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">5+</characteristic>
                 <characteristic name="Might" typeId="8f23-2898-dff0-997c">3</characteristic>
@@ -8024,7 +8033,7 @@ Additionally, if Radagast dismounts from the Great Eagle it will automatically p
                 <categoryLink id="9c3a-d402-a064-1189" name="Boar" hidden="false" targetId="f7a4-68eb-f827-3246" primary="false"/>
               </categoryLinks>
               <costs>
-                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="20.0"/>
+                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="25.0"/>
                 <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
                 <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
                 <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
@@ -34484,6 +34493,36 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
               </conditionGroups>
             </modifier>
           </modifiers>
+          <modifierGroups>
+            <modifierGroup>
+              <comment>Warband sizes</comment>
+              <modifiers>
+                <modifier type="decrement" field="317b-8664-e5b5-7277" value="6.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="317b-8664-e5b5-7277" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="317b-8664-e5b5-7277" value="12.0">
+                  <conditions>
+                    <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="317b-8664-e5b5-7277" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </modifierGroup>
+          </modifierGroups>
+          <constraints>
+            <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="317b-8664-e5b5-7277" type="max"/>
+          </constraints>
           <infoGroups>
             <infoGroup id="0106-9eb3-1060-c602" name="Special Rules" hidden="false">
               <profiles>
@@ -34513,86 +34552,69 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                 </rule>
               </rules>
             </infoGroup>
-            <infoGroup id="5253-f7f3-6b90-0001" name="Uruk-hai Engineer" hidden="false">
-              <profiles>
-                <profile id="4ae1-21f0-b195-f88c" name="Uruk-hai Engineer" publicationId="5d2d-eaa5-64b5-2f28" page="168" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
-                  <characteristics>
-                    <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
-                    <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
-                    <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
-                    <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
-                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
-                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
-                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
-                    <characteristic name="Courage" typeId="4945-957c-7d95-b50b">6+</characteristic>
-                    <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
-                    <characteristic name="Race" typeId="ed84-84e4-720a-002f">Uruk-hai</characteristic>
-                    <characteristic name="Faction" typeId="8539-1489-a955-726a">Isengard</characteristic>
-                    <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry</characteristic>
-                    <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink id="6d64-92dd-1fb0-f345" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
-                <infoLink id="8d1f-4b18-33bb-588f" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
-              </infoLinks>
-            </infoGroup>
-            <infoGroup id="800b-bab8-bf7f-6f24" name="Uruk-hai Berserker" hidden="false">
-              <infoLinks>
-                <infoLink id="2dda-9b36-f4f7-b913" name="Oblivious to Pain [Passive]" hidden="false" targetId="2da1-5686-303b-1a4d" type="rule"/>
-                <infoLink id="f6d5-b6dc-f3c0-001c" name="Berserker Blade [Active]" hidden="false" targetId="39b8-9a97-bb49-0421" type="profile"/>
-                <infoLink id="758f-c478-ab3f-aa1e" name="Light Armour" hidden="false" targetId="6a64-af88-56d8-fd46" type="profile"/>
-                <infoLink id="06de-405d-09d5-bd8b" name="Uruk-hai Berserker" hidden="false" targetId="1dd3-ba66-8fe3-8eda" type="profile"/>
-                <infoLink id="a941-6c15-0897-f0db" name="Flaming Brand" hidden="false" targetId="aedd-dda1-53fb-0e09" type="profile"/>
-              </infoLinks>
-            </infoGroup>
           </infoGroups>
           <selectionEntries>
-            <selectionEntry id="984e-72fc-a5a1-fd48" name="Teams" hidden="false" collective="false" import="true" type="model">
-              <modifierGroups>
-                <modifierGroup>
-                  <comment>Warband sizes</comment>
-                  <modifiers>
-                    <modifier type="decrement" field="a577-8343-c2d7-2c4d" value="6.0">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ef35-8c21-6b9c-cbb8" type="instanceOf"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="a577-8343-c2d7-2c4d" value="3.0">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f17d-8301-f19c-f80d" type="instanceOf"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="a577-8343-c2d7-2c4d" value="12.0">
-                      <conditions>
-                        <condition field="selections" scope="ancestor" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="69e9-a8ab-6276-49e0" type="instanceOf"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="a577-8343-c2d7-2c4d" value="1.0">
-                      <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="13f2-59a9-5a73-a03f" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
+            <selectionEntry id="0b06-192e-761b-10d0" name="Uruk-hai Engineer" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="961c-b57a-581c-8c5e" type="min"/>
-                <constraint field="selections" scope="parent" value="18.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a577-8343-c2d7-2c4d" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7480-fb78-2094-e5ef" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="89f0-e18a-9847-931b" type="min"/>
               </constraints>
+              <infoGroups>
+                <infoGroup id="e3b3-6a9a-e530-f354" name="Uruk-hai Engineer" hidden="false">
+                  <profiles>
+                    <profile id="8b91-ea0e-7ec6-7116" name="Uruk-hai Engineer" publicationId="5d2d-eaa5-64b5-2f28" page="168" hidden="false" typeId="3f47-0f2e-f3fa-1f37" typeName="Warrior">
+                      <characteristics>
+                        <characteristic name="Move Value" typeId="ef7d-8003-dde9-78a3">6&quot;</characteristic>
+                        <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
+                        <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
+                        <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">4</characteristic>
+                        <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">5</characteristic>
+                        <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                        <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
+                        <characteristic name="Courage" typeId="4945-957c-7d95-b50b">6+</characteristic>
+                        <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
+                        <characteristic name="Race" typeId="ed84-84e4-720a-002f">Uruk-hai</characteristic>
+                        <characteristic name="Faction" typeId="8539-1489-a955-726a">Isengard</characteristic>
+                        <characteristic name="Unit Type" typeId="91d3-fe51-640a-37b9">Warrior, Infantry</characteristic>
+                        <characteristic name="Base Size" typeId="21f8-02d6-8953-92e7">25mm</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="1d99-47c5-e86b-ba8e" name="Heavy Armour" hidden="false" targetId="4ba8-c521-3901-27eb" type="profile"/>
+                    <infoLink id="9d1b-6698-2e87-0b11" name="Hand Weapon" hidden="false" targetId="f467-033a-3f66-efee" type="profile"/>
+                  </infoLinks>
+                </infoGroup>
+              </infoGroups>
               <costs>
-                <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
-                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="3.0"/>
-                <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
-                <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c2c6-d2e7-355e-1828" name="Uruk-Hai Berserker" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="63b1-24ef-b2e8-e58f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7720-109a-dbc1-000a" type="min"/>
+              </constraints>
+              <infoGroups>
+                <infoGroup id="223b-597d-4b7f-bf92" name="Uruk-hai Berserker" hidden="false">
+                  <infoLinks>
+                    <infoLink id="c248-0d6e-f024-a794" name="Oblivious to Pain [Passive]" hidden="false" targetId="2da1-5686-303b-1a4d" type="rule"/>
+                    <infoLink id="e737-7532-d196-0d23" name="Berserker Blade [Active]" hidden="false" targetId="39b8-9a97-bb49-0421" type="profile"/>
+                    <infoLink id="8ddb-0122-670c-3017" name="Light Armour" hidden="false" targetId="6a64-af88-56d8-fd46" type="profile"/>
+                    <infoLink id="2b43-31f8-e76d-9a9e" name="Uruk-hai Berserker" hidden="false" targetId="1dd3-ba66-8fe3-8eda" type="profile"/>
+                    <infoLink id="856e-abdc-1d5b-23c4" name="Flaming Brand" hidden="false" targetId="aedd-dda1-53fb-0e09" type="profile"/>
+                  </infoLinks>
+                </infoGroup>
+              </infoGroups>
+              <costs>
+                <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
             <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="80.0"/>
             <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
           </costs>
         </selectionEntry>
@@ -34807,7 +34829,7 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
           <infoGroups>
             <infoGroup id="1923-7e70-59a0-b297" name="Special Rules" hidden="false">
               <infoLinks>
-                <infoLink id="fcfe-69d8-c5b4-660b" name="Berserker Blade [Active]" hidden="false" targetId="39b8-9a97-bb49-0421" type="profile"/>
+                <infoLink id="fcfe-69d8-c5b4-660b" name="Uruk-hai Berserker" hidden="false" targetId="1dd3-ba66-8fe3-8eda" type="profile"/>
                 <infoLink id="5c13-6ebe-683f-0ad4" name="Oblivious to Pain [Passive]" hidden="false" targetId="2da1-5686-303b-1a4d" type="rule"/>
                 <infoLink id="3fc3-2f48-bfab-e0be" name="Hatred (X) [Active]" hidden="true" targetId="681e-bdd0-b5c4-5ff9" type="rule">
                   <modifiers>
@@ -38057,7 +38079,7 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="1.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="803d-0dbc-4e2a-5a95" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="17a7-4038-e32c-59e6" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -40108,8 +40130,9 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb57-6d02-8db0-4565" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a6-3259-2d77-5b47" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="013b-7330-66c7-6e43" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb57-6d02-8db0-4565" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
