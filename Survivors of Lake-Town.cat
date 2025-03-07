@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7303-89de-8473-c1bd" name="Survivors of Lake-Town" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7303-89de-8473-c1bd" name="Survivors of Lake-Town" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="d1a2-e884-96cf-25aa" name="Bard&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -108,7 +108,7 @@
       <description>Friendly Warrior models within range of an  Objective may re-roll To Wound rolls of a natural 1 when making Strikes.</description>
     </rule>
     <rule id="7bd5-f2b8-c0d3-9b3d" name="Master Burglar" publicationId="a40a-1ac4-b5c2-a481" page="93" hidden="false">
-      <description>Whilst Bilbo is holding an Objective Marker in Scenarios where this is relevant, he increases his Attacks to 2. Additionally, whilst Bilbo is wearing the One Ring and is Invisible, if he Moves through an enemy model that is holding an Objective Marker in Scenarios where this is relevant, Bilbo may roll a D6; on a 2+, Bilbo immediately gains control of the Objective Marker. Bilbo cannot use this ability if he cannot carry the Objective Marker in question for whatever reason.</description>
+      <description>Additionally, whilst Bilbo is wearing the One Ring and is Invisible, if he Moves through an enemy model that is holding an Objective Marker in Scenarios where this is relevant, Bilbo may roll a D6; on a 2+, Bilbo immediately gains control of the Objective Marker. Bilbo cannot use this ability if he cannot carry the Objective Marker in question for whatever reason.</description>
     </rule>
   </rules>
 </catalogue>

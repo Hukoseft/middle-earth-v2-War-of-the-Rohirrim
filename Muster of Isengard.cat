@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="24a6-3259-2d77-5b47" name="Muster of Isengard" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="24a6-3259-2d77-5b47" name="Muster of Isengard" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="4972-d131-498a-506e" name="Saruman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -53,6 +53,7 @@
   </selectionEntries>
   <entryLinks>
     <entryLink id="7ce1-d871-801b-21ad" name="Gríma Wormtongue" hidden="false" collective="false" import="true" targetId="d374-043a-163a-9ce6" type="selectionEntry"/>
+    <entryLink id="7492-5643-9d16-4cee" name="Uruk-hai Drummer" hidden="false" collective="false" import="true" targetId="4234-6502-2ed4-8658" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="ae8a-8f3e-ed2b-2f82" name="&quot;There will be no dawn for Men&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
