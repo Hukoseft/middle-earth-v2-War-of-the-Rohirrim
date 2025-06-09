@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="96e3-133a-a151-e3e8" name="Harad" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="96e3-133a-a151-e3e8" name="Harad" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="1256-78e9-3775-6fd8" name="War Leader&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -9,6 +9,12 @@
         <entryLink id="ebe4-38e0-0241-5fad" name="Mûmak War Leader" hidden="false" collective="false" import="true" targetId="f0c8-cf8a-d98f-9e88" type="selectionEntry"/>
         <entryLink id="7095-7275-bd59-0bc0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1b37-b0bf-8bb4-c26d" name="War Mûmak&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -18,6 +24,12 @@
         <entryLink id="9f17-71d8-61a4-f175" name="War Mûmak of Harad" hidden="false" collective="false" import="true" targetId="5ed9-a83f-ad98-678f" type="selectionEntry"/>
         <entryLink id="7b02-c958-60ba-e745" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c735-082b-94bd-98de" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -26,6 +38,21 @@
       <entryLinks>
         <entryLink id="635f-06d5-8450-4cc2" name="Haradrim Chieftain" hidden="false" collective="false" import="true" targetId="7b92-0e7b-2637-a09d" type="selectionEntry"/>
         <entryLink id="af2a-9f13-0459-7c13" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24a4-75c5-0dca-6d77" name="Taskmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fbc9-73c9-9a00-0013" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d504-7f9f-2bfc-a8af" name="Haradrim Taskmaster" hidden="false" collective="false" import="true" targetId="e2a8-1554-a481-dd59" type="selectionEntry"/>
+        <entryLink id="3e75-2c50-14bc-e83b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e572-5a8c-c833-a02e" name="Dragons of the North" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="e1a2-2ce5-a8b3-e36a" name="Dragon" hidden="false" collective="false" import="true" targetId="4203-5f4e-fdfd-53a7" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1f94-9c9d-d7f7-4b35" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6a78-9140-e77e-c8d1" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="e017-e8c1-5eb7-7d79" name="Cave Drake" hidden="false" collective="false" import="true" targetId="3863-7e13-dffc-e8d0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="1cb7-4d3d-211b-cb96" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="edaa-8841-0e14-cde2" name="The Dragons&apos; Hoard" publicationId="8e2e-f1ed-1aa8-11ca" page="160" hidden="false">
+      <description>Each time a friendly model slays an enemy model in Combat they may roll a D6. On a natural 6, they have located some gold upon the body of the fallen and claimed it for themselves - keep a note of how much gold each model claims in this way. Friendly models gain the following benefits depending on how much gold they have collected. These benefits are cumulative:
+
+•1 gold - The model may re-roll a single To Wound Roll when making Strikes.
+•2-3 gold - The model may re-roll a single D6 during a Duel Roll.
+•4-5 gold - The model gains the Fearless special rule.
+•6+ gold - At the end of the game, their controlling player will gain an additional 1 Victory Point. This can never take this Army&apos;s total number of Victory Points above 20.</description>
+    </rule>
+    <rule id="7e73-98dd-1585-d8c3" name="Beast of Legend" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>The Dragon that is your General may select up to three options rather than the usual two.</description>
+    </rule>
+    <rule id="c1b1-e66b-749d-7fbf" name="Supreme Jealousy" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>Each Dragon in your Army must have a differeny combination of option. Dragons that have no options do not count for he purpose of this special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

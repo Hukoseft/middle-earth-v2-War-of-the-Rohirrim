@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="083c-50d2-89a7-e73f" name="Minas Morgul" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="083c-50d2-89a7-e73f" name="Minas Morgul" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="58c1-2bd1-b9c4-92fe" name="Witch-king&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -87,6 +87,15 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="2986-917b-0e12-331d" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f41e-832b-8f2f-e7aa" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2bc1-fae4-637d-db6c" name="Mordor Orc Shaman" hidden="false" collective="false" import="true" targetId="4211-61ca-c28b-c103" type="selectionEntry"/>
+        <entryLink id="508a-7eb6-e736-486c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

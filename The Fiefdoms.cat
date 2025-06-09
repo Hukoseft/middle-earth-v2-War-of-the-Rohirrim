@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="f95c-2a4f-4475-eb32" name="The Fiefdoms" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5607-c427-06cd-706d" name="Imrahil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3769-b4bf-6445-6ee0" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b399-6604-a417-90e0" name="Prince Imrahil of Dol Amroth" hidden="false" collective="false" import="true" targetId="7e3a-526d-1010-e0d9" type="selectionEntry"/>
+        <entryLink id="9e3b-5189-0c2a-b103" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="068e-9386-bac5-f9fe" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1602-93f0-38c0-bb44" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="21b3-66ef-40c0-f94d" name="Captain of Dol Amroth" hidden="false" collective="false" import="true" targetId="ae1a-757f-80f3-b7de" type="selectionEntry"/>
+        <entryLink id="11da-b5da-4802-a3c8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="dc79-995f-123e-26cc" name="Forlong&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8334-b271-a15d-f912" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cb76-0cb3-0491-4f6b" name="Forlong the Fat" hidden="false" collective="false" import="true" targetId="a7c2-f660-d0d7-491a" type="selectionEntry"/>
+        <entryLink id="b5b8-5041-362d-b711" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="441c-a090-e6de-ac89" name="Duinhir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="990f-a142-38d4-30fb" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="a13b-4221-a4da-e640" name="Blackroot Vale" hidden="false" targetId="9d84-50de-9981-dd30" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="252e-a1d8-c1fa-a0ae" name="Duinhir, Lord of the Blackroot Vale" hidden="false" collective="false" import="true" targetId="ed04-c308-74ce-9787" type="selectionEntry"/>
+        <entryLink id="d55f-1f57-8cbf-b4f1" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7e29-dc28-6392-7831" name="Angbor&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c851-26f1-22c2-5c0b" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cd94-45d9-a90f-49ae" name="Angbor the Fearless" hidden="false" collective="false" import="true" targetId="5c2e-552b-8384-6e49" type="selectionEntry"/>
+        <entryLink id="24b6-e61b-dba5-bb03" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="0d20-11d5-9d0f-905f" name="Leaders of the the Fiefdoms" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>If a friendly Hero Charges into Combat, then during the Fight Phase, friendly Infantry models within 6&quot; of the Hero that share both of the same Faction Keywords as the Hero gain an additional +1 bonus To Wound when making Strikes.</description>
+    </rule>
+    <rule id="6848-241b-709f-4d25" name="&quot;For the White City!&quot;" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>The first turn in which this Army would be Broken and therefore have to take Courage Tests as a result of being a Broken Army, all friendly models will automaically pass Courage Tests for being Broken that turn.</description>
+    </rule>
+  </rules>
+</catalogue>

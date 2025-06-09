@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="906e-ff2a-40c1-877d" name="Battle of Bywater" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="ecec-b8fe-3d79-64ff" name="Merry&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="921c-d4af-a2c4-7a2f" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9798-25d5-f33e-3a7e" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="b474-dda3-da82-0e01" name="Brandybuck" hidden="false" targetId="6a9d-f84c-0fc7-420c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8c76-9ada-16e8-b0b2" name="Meriadoc Brandybuck, Captain of the Shire" hidden="false" collective="false" import="true" targetId="4a46-0501-0cf5-c7e2" type="selectionEntry"/>
+        <entryLink id="10fe-ed04-64fc-01bf" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6b87-a45c-f4cd-abb9" name="Pippin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d141-c1fa-b018-01cd" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="540c-05b1-bafe-a19a" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="fa1b-0fe5-010d-c75f" name="Took" hidden="false" targetId="415f-985a-1d6f-5b36" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6289-4d39-9852-7cf8" name="Peregrin Took, Captain of the Shire" hidden="false" collective="false" import="true" targetId="c6ff-fb7e-18c4-461f" type="selectionEntry"/>
+        <entryLink id="fdc8-07aa-bb2b-9df8" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9004-8b83-24bb-0b32" name="Sam&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="77a1-ea24-c08e-39ec" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7310-cf07-c53c-ae22" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9254-9234-1a53-041b" name="Samwise the Brave" hidden="false" collective="false" import="true" targetId="b779-381e-11e1-9cfa" type="selectionEntry"/>
+        <entryLink id="3104-2df8-fa46-724b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2ecd-c9e0-c5fd-d263" name="Hamfast&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5365-4feb-1c84-0121" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="da48-acb0-e02f-06a2" name="Hamfast &apos;Gaffer&apos; Gamgee" hidden="false" collective="false" import="true" targetId="30ae-3521-cc19-8d20" type="selectionEntry"/>
+        <entryLink id="c7d9-85b8-f567-9037" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f936-6eff-ba36-79c7" name="Cotton&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="09d3-794e-8cf7-b002" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0892-d7a7-fbff-2a3c" name="Farmer Tolman Cotton" hidden="false" collective="false" import="true" targetId="c06f-5599-9ba7-1cf9" type="selectionEntry"/>
+        <entryLink id="d91b-6467-b9d8-ec5b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="96e1-36ae-5a0e-24d3" name="Maggot&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a168-08fe-f0b9-d7ca" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="3884-7152-442d-60ac" name="Maggot" hidden="false" targetId="37ce-f0ea-f37c-c534" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="65cf-6de7-098e-86f6" name="Farmer Maggot" hidden="false" collective="false" import="true" targetId="fc51-56a8-9f10-2df2" type="selectionEntry"/>
+        <entryLink id="c804-954e-4c4a-8eda" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5898-0c58-5b81-b84a" name="Robin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3416-a16b-4b2b-b891" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="fc48-d8a8-dadb-cb43" name="Hobbit Shirriff" hidden="false" targetId="38de-7978-da99-08ae" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="25aa-1410-303a-5314" name="Robin Smallburrow, Hobbit Shirriff" hidden="false" collective="false" import="true" targetId="3930-1107-2e17-1edb" type="selectionEntry"/>
+        <entryLink id="7d59-d10e-c85e-18c6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f976-4c67-0acf-4ca9" name="Holfoot&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c04e-b539-4416-2426" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="dbba-b910-8f18-2518" name="Hobbit Shirriff" hidden="false" targetId="38de-7978-da99-08ae" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a779-ddf5-9631-de7c" name="Holfoot Bracegirdle, Shirriff-leader" hidden="false" collective="false" import="true" targetId="16df-9c8e-399f-d159" type="selectionEntry"/>
+        <entryLink id="51cc-c452-1dab-d179" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bf11-5ac5-d26c-be13" name="Will&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e259-d716-8cb1-978b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="44d5-0b39-280c-20dd" name="Hobbit Shirriff" hidden="false" targetId="38de-7978-da99-08ae" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9832-f778-beeb-3b5c" name="Will Witfoot, Mayor of Michel Delving" hidden="false" collective="false" import="true" targetId="1983-176f-b407-4d17" type="selectionEntry"/>
+        <entryLink id="0838-2525-2595-0ff5" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="deb8-86b0-9677-5775" name="Frodo&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3d21-aeec-aaed-b864" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6d37-6813-09f0-06d1" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6796-29c3-ea30-1316" name="Frodo of the Nine Fingers" hidden="false" collective="false" import="true" targetId="92f9-924c-69f3-f062" type="selectionEntry"/>
+        <entryLink id="7f23-8b22-fb28-8934" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f084-c4bb-5bdb-30f5" name="Paladin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e711-3169-1c5c-6d00" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="6a78-5560-d96b-cc31" name="Took" hidden="false" targetId="415f-985a-1d6f-5b36" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="83d2-be79-694a-dcb4" name="Paladin Took, Thain of the Shire" hidden="false" collective="false" import="true" targetId="2662-776a-2246-0d14" type="selectionEntry"/>
+        <entryLink id="7a66-3fe0-a6ca-38ba" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="09a4-7d1a-68e4-9a48" name="Baldo&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5952-237f-6bbb-b960" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="28cf-aec5-9c7c-1265" name="Baldo Tulpenny" hidden="false" collective="false" import="true" targetId="36b6-07fa-7152-8b82" type="selectionEntry"/>
+        <entryLink id="9d82-0ee8-62ad-1fab" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3275-e7b5-886e-24c5" name="Fatty&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e507-109f-8916-7cfe" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7cd1-d807-2ecf-b133" name="Fredegar &apos;Fatty&apos; Bolger" hidden="false" collective="false" import="true" targetId="1d4e-bda2-959a-0a9f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="79df-1874-11da-8044" value="1.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="8030-9fde-1e22-cbba" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="a041-a05a-bdc9-7651" name="Rosie Cotton" hidden="false" collective="false" import="true" targetId="2608-65f6-64ea-1fd9" type="selectionEntry"/>
+    <entryLink id="d436-19ab-a5e8-d755" name="Lobelia Sackville-Baggins" hidden="false" collective="false" import="true" targetId="c6c3-3058-3e95-e8a7" type="selectionEntry"/>
+    <entryLink id="5b1e-db20-abff-0291" name="Folco Boffin" hidden="false" collective="false" import="true" targetId="241a-bcca-fb7b-04e2" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="bc36-1b0f-b21a-1132" name="&quot;Fear! Fire! Foes!&quot;" publicationId="8e2e-f1ed-1aa8-11ca" page="72" hidden="false">
+      <description>Friendly Hobbit models gain the Woodland Creature and Mountain Dweller special rules.</description>
+    </rule>
+    <rule id="50af-4969-7644-931e" name="Heroes of the Shire" publicationId="8e2e-f1ed-1aa8-11ca" page="72" hidden="false">
+      <description>Friendly Hobbit Hero models may benefit from the Stand Fast of either Merry or Pippin.</description>
+    </rule>
+    <rule id="f753-44ee-5803-20d8" name="Ambush" publicationId="8e2e-f1ed-1aa8-11ca" page="72" hidden="false">
+      <description>At the start of the game, before either side has deployed, you may choose a single Warband in your Army that is not led by either Frodo, Sam, Merry or Pippin. The chose Warband is ambushing and does not arrive as normal. Instead, at the end of the Move Phase on the third turn (after both sides have moved all their models), the ambushing Warband must choose one of the following;
+
+•Move onto the board from any board edge via the rules for Reinforcements.
+
+•Deploy in, or within 1&quot; of, a wood, building, rocky outcrop or other similar piece of terrain that Hobbis could hide in. A degree of common sense is required when deciding which pieces of terrain Hobbits can hide in - they shouldn&apos;t be leaping out of a river or from behind a single rock! You should always agree with your opponent at the beginning of the game which terrain pieces are eligible for Hobbits to ambush from, Models deployed in this way cannot be placed in base contact with, or within the Control Zones of, enemy models. Models that enter the board in this way do not Activate as part of the Move Phase, and will count as having Moved half their Move Value for the purposes of shooting.</description>
+    </rule>
+  </rules>
+</catalogue>

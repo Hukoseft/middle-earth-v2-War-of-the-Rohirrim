@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d9c9-1ecb-df78-95c7" name="Minas Tirith" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d9c9-1ecb-df78-95c7" name="Minas Tirith" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="b92b-ec03-a564-e58c" name="Denethor&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -81,5 +81,35 @@
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e4bc-814f-1078-1d41" name="Ingold&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="af26-77fe-bb09-391a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1be2-5831-ca5d-c044" name="Ingold, Warden of the Rammas Echor" hidden="false" collective="false" import="true" targetId="fda1-fc6b-219b-51a2" type="selectionEntry"/>
+        <entryLink id="1ed3-ee38-04b0-2ca2" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e1ce-1735-8190-bc34" name="Húrin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5ba1-1eca-4fb7-a203" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0fd1-f73e-1389-773d" name="Húrin the tall, Warden of the Keys" hidden="false" collective="false" import="true" targetId="9517-25f7-8439-f5c4" type="selectionEntry"/>
+        <entryLink id="de2a-1dfa-c94a-ec68" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="3804-dd4d-6992-4021" name="Beregond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="076f-98e4-5ece-fa73" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ab59-8081-3185-aad6" name="Beregond, Guard of the Citadel" hidden="false" collective="false" import="true" targetId="1357-3b3e-f0ba-3cca" type="selectionEntry"/>
+        <entryLink id="247f-7143-cd18-8505" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="31f5-c14e-42c2-5e06" name="Gondor Avenger Bolt Thrower" hidden="false" collective="false" import="true" targetId="6853-fe9e-ea61-3850" type="selectionEntry"/>
+  </entryLinks>
 </catalogue>

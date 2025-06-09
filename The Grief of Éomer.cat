@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="214c-b4f0-6362-3419" name="The Grief of Éomer" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="09d5-4735-e6fc-0f92" name="Éomer&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e8f7-c401-1487-7603" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="1660-6e98-b547-4b26" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="452e-4d31-0b75-58bc" name="Rohan" hidden="false" targetId="0d50-809e-7dc4-939a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f76c-f7eb-5ede-10a3" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="a36f-5e2a-9013-e3ca" name="Éomer, Marshal of the Riddermark" hidden="false" collective="false" import="true" targetId="16a7-271a-69c0-6b85" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ab1e-a7a2-c5d0-c1ef" name="Imrahil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b997-4cd7-c8f8-3ab2" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="5012-1c87-5b87-5c7c" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dadb-f99c-65df-3d00" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="e870-7b7f-a0f8-c419" name="Prince Imrahil of Dol Amroth" hidden="false" collective="false" import="true" targetId="7e3a-526d-1010-e0d9" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9ea1-9243-4959-63a1" name="Húrin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b8c7-5cd6-6422-3558" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="c8c1-fd4f-5a23-7cfa" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="865d-c911-1851-0364" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="8dca-2840-9be1-7e7d" name="Húrin the tall, Warden of the Keys" hidden="false" collective="false" import="true" targetId="9517-25f7-8439-f5c4" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9b59-d524-3119-8181" name="Captain of Rohan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0b7d-7fde-ee85-7e29" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="7d66-549a-400d-ec61" name="Rohan" hidden="false" targetId="0d50-809e-7dc4-939a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="69ca-45ad-8f9a-970b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="aeca-1216-2ffd-26e4" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ff88-a4a4-8b55-32b5" name="Captain of Dol Amroth&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ec7d-5c91-f364-b710" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="29e4-86fa-7a75-cf9b" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="235c-38cd-992b-b0fc" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="cecf-8ae9-717c-ee06" name="Captain of Dol Amroth" hidden="false" collective="false" import="true" targetId="ae1a-757f-80f3-b7de" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="28f1-b21b-bb59-d002" name="Captain of Minas Tirith&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="80ed-3842-0353-38cd" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="5789-4154-0a49-5369" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d635-bf66-258b-5007" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="6795-79b7-becc-d3c1" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="3c40-161c-ab11-9dc9" name="Éomer&apos;s  Warth" publicationId="8e2e-f1ed-1aa8-11ca" page="87" hidden="false">
+      <description>Éomer is always treated as being under the effects of his The Price of Grief special rule. Additionally, Éomer gains a bonus of +1 to his Fight Value on a turn in which he Charges.</description>
+    </rule>
+    <rule id="47b2-586d-f4aa-c10a" name="Fear no enemy" publicationId="8e2e-f1ed-1aa8-11ca" page="87" hidden="false">
+      <description>Éomer gains the Fearless special rule. Additionally, friendly Rohan models that can draw Line of Sight to Éomer automatically pass any Courage Tests they are required to take.</description>
+    </rule>
+    <rule id="af5e-cebb-802a-1e71" name="Ride of Dol Amroth" publicationId="8e2e-f1ed-1aa8-11ca" page="87" hidden="false">
+      <description>Friendly Gondor models may re-roll To Wound Rolls of a natural 1 when making Strikes in a turn in which they Charged.</description>
+    </rule>
+  </rules>
+</catalogue>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="9b73-8d94-bcdb-4200" name="Moria" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="982f-f7ef-10a8-61cf" name="Durbûrz&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ed28-157d-77f8-7845" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="441c-a92a-f8d0-413a" name="Durbûrz, Goblin-king of Moria" hidden="false" collective="false" import="true" targetId="487e-d3bb-23fc-8f7a" type="selectionEntry"/>
+        <entryLink id="bbdf-7e84-ea1a-2419" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9da7-9d5f-6c7a-7014" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="bc39-c0d3-1938-be41" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="54da-8959-7c01-c218" name="Moria Goblin Shaman" hidden="false" collective="false" import="true" targetId="08fb-c2ef-0811-bfba" type="selectionEntry"/>
+        <entryLink id="71ca-b7b9-9bfd-127e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c101-34f9-2d3f-8b5c" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8548-e28e-1949-b7cf" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="76c7-8a78-80f1-1a97" name="Moria Goblin Captain" hidden="false" collective="false" import="true" targetId="be58-9759-de81-8d67" type="selectionEntry"/>
+        <entryLink id="a1c5-1f53-4b02-2f85" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f42b-ebfb-268e-324a" name="Drûzhag&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ab45-6a8c-f3d5-9560" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="3d09-74a3-33ed-948f" name="Beast" hidden="false" targetId="185c-07da-d0a7-1849" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c0f2-9643-1890-1599" name="Drûzhag, the Beastcaller" hidden="false" collective="false" import="true" targetId="afe1-301d-11ee-2ecf" type="selectionEntry"/>
+        <entryLink id="b220-e191-bb88-6a93" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="585c-e720-ae14-de61" name="Drake&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9130-9e23-0175-a248" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d2f1-42c1-409d-49dd" name="Cave Drake" hidden="false" collective="false" import="true" targetId="3863-7e13-dffc-e8d0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1b37-69e8-6e24-d5d4" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6ba5-d252-88f6-abdb" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b501-6bbd-4826-09f3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="302b-d593-9732-42b8" name="Dragon&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="97b8-d987-41d6-7de2" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d99b-5b86-670a-cce7" name="Dragon" hidden="false" collective="false" import="true" targetId="4203-5f4e-fdfd-53a7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7306-cd83-a3c3-05ec" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2ba1-4c0f-4abc-f617" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f3c3-7290-049f-b496" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="a70c-fe67-0a48-2fba" name="The Watcher in the Water" hidden="false" collective="false" import="true" targetId="7943-ab4e-a479-3c6d" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="0093-9420-69c4-56db" name="Durbûrz&apos;s Will" publicationId="8e2e-f1ed-1aa8-11ca" page="165" hidden="false">
+      <description>Once per game, at the start of his Activation, Durbûrz may declare he is using this ability. If he does, Durbûrz may not Move during his Activation; however, all friendly Moria Goblin models gain a bonus of +2&quot; to their Move Value until the End Phase of the turn. Additionally, in a turn in which Durbûrz uses this ability, all friendly Moria Goblin models within 6&quot; of him automatically pass any Courage Tests require when attempting to Charge a model with the Terror special rule.</description>
+    </rule>
+    <rule id="b2fa-8297-3edb-1e31" name="Skittering Warriors" publicationId="8e2e-f1ed-1aa8-11ca" page="165" hidden="false">
+      <description>Friendly Moria Goblin models gain the Mountain Dweller special rule.</description>
+    </rule>
+    <rule id="f058-de14-8a66-5d6b" name="&quot;We cannot get out, they are coming&quot;" publicationId="8e2e-f1ed-1aa8-11ca" page="165" hidden="false">
+      <description>Friendly Moria Goblin models Engaged in Combat with an enemy model that would be condsidered Trapped gain a bonus of +1 to their Fight Value for the duration of the Combat.</description>
+    </rule>
+  </rules>
+</catalogue>

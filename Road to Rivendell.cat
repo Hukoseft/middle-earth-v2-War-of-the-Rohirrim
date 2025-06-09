@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dade-d5e9-f01f-ae2a" name="Road to Rivendell" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dade-d5e9-f01f-ae2a" name="Road to Rivendell" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="2390-53f6-82bd-79e1" name="Aragorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -122,6 +122,8 @@
         <categoryLink id="fd8e-199d-f766-a4a6" name="Independent Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
       </categoryLinks>
     </entryLink>
+    <entryLink id="5ccc-01cb-30ab-595c" name="Tom Bombadil" hidden="false" collective="false" import="true" targetId="62bc-dfb7-6a09-9efb" type="selectionEntry"/>
+    <entryLink id="8462-2b0a-7203-31d9" name="Goldberry" hidden="false" collective="false" import="true" targetId="0ef4-6395-7c31-73c2" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="2315-e8b4-72d1-530f" name="&quot;We do not stop &apos;til nightfall&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">

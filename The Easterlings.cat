@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="4830-05b2-51f4-c528" name="The Easterlings" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5d83-17f0-1e08-ec8b" name="Priest&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d782-0b7a-7472-72a7" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9bc0-5905-7dbe-bcea" name="Easterling War Priest" hidden="false" collective="false" import="true" targetId="0895-8943-5206-d301" type="selectionEntry"/>
+        <entryLink id="47de-28c2-30c8-9f29" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e2fc-f20a-ab0b-ef60" name="Infantry Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="88a0-65d7-c743-0604" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="60e5-7bcc-1529-5b88" name="Easterling Captain" hidden="false" collective="false" import="true" targetId="dbb7-1ded-4dfc-def8" type="selectionEntry"/>
+        <entryLink id="8c39-052b-f320-53f8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7a12-68bd-f576-8dd0" name="Kataphrakt Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="39ff-719a-e840-ade7" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="96d3-587d-5358-a820" name="Easterling Kataphrakt Captain" hidden="false" collective="false" import="true" targetId="0156-7c08-a86f-275b" type="selectionEntry"/>
+        <entryLink id="4f57-399b-8054-2407" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="94e0-ce62-ff57-c38e" name="Knight&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c4ae-41f4-caa2-4eb2" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="2ebc-3e24-4c8e-f4ee" name="Black Dragon" hidden="false" targetId="4a72-9b0e-9a1c-3881" primary="false"/>
+        <categoryLink id="e10d-35ae-820a-af1b" name="Dragon Knight" hidden="false" targetId="efee-4410-dfee-f34d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5e9a-ab7e-d7dd-8b01" name="Easterling Dragon Knight" hidden="false" collective="false" import="true" targetId="25c2-59ac-2b5d-e41d" type="selectionEntry"/>
+        <entryLink id="f3a3-8720-76b1-516b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a0f7-9520-228e-9372" name="Amdûr&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e8a3-224a-deb1-803e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7049-db9a-95aa-8497" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d630-2253-744d-e7eb" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="0858-a7a0-82bb-50d2" name="Black Dragon" hidden="false" targetId="4a72-9b0e-9a1c-3881" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="411b-553c-ab04-adda" name="Amdûr, Lord of Blades" hidden="false" collective="false" import="true" targetId="a3ab-6fbd-b823-7bfd" type="selectionEntry"/>
+        <entryLink id="19a3-8423-13c6-2551" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="7aaa-5a63-94b6-d65b" name="No quarter was asked..." publicationId="8e2e-f1ed-1aa8-11ca" page="179" hidden="false">
+      <description>Friendly Easterling models gain a bonus of +1 to any Courage Tests they are required to take once their Army is Broken. Additionally, once per game in Scenarios in which a dice is rolled to see when the game ends, you may choose to have the dice re-rolled if the Scenario ends before you wish it to.</description>
+    </rule>
+    <rule id="77f6-3cc3-95a8-a13d" name="Press the advantage" publicationId="8e2e-f1ed-1aa8-11ca" page="179" hidden="false">
+      <description>Whilst the enemy Army is Broken, friendly Easterling Hero models gain the Fearless special rule.</description>
+    </rule>
+    <rule id="7de4-69e5-fd86-b0f1" name="Raze the White City" publicationId="8e2e-f1ed-1aa8-11ca" page="179" hidden="false">
+      <description>Friendly models gain the Ancient Enemies (Gondor) special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

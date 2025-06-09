@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="67a1-f8cb-5b6d-6f13" name="Riders of Théoden" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="67a1-f8cb-5b6d-6f13" name="Riders of Théoden" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="6161-b5a5-a43b-41f2" name="Éomer&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -72,8 +72,43 @@
         <categoryLink id="efb3-2ea7-9379-36b0" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="aa03-235f-cc0d-d9e0" name="Éowyn, Shieldmaiden of Rohan" hidden="false" collective="false" import="true" targetId="b9a5-82a3-89d1-0913" type="selectionEntry"/>
+        <entryLink id="aa03-235f-cc0d-d9e0" name="Éowyn, Shieldmaiden of Rohan" hidden="false" collective="false" import="true" targetId="b9a5-82a3-89d1-0913" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ecf6-f242-2125-bb5d" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="12ab-6937-3ea3-2e47" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b54c-36c0-e46e-054a" name="Déorwine&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b8bf-c039-ca9c-74b1" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="ae3b-b6b2-85a7-3693" name="New CategoryLink" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="15c4-d1c1-90f0-bb38" name="Déorwine, Chief of the King&apos;s Knights" hidden="false" collective="false" import="true" targetId="fe95-b1c9-fb94-0b25" type="selectionEntry"/>
+        <entryLink id="0393-685e-d2fb-1f84" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8194-87f2-dc4a-38fa" name="Elfhelm&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="87a4-02ed-af58-7bce" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="90b5-d093-7c8e-7e8d" name="Elfhelm, Captain of Rohan" hidden="false" collective="false" import="true" targetId="a2b3-b7a5-8d8e-5a83" type="selectionEntry"/>
+        <entryLink id="6481-18fa-86be-af10" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>

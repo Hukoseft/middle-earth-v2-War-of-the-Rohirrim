@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="79a9-7b84-4577-69c9" name="Paths of the Drúadan" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="0888-2567-f91b-40b3" name="Théoden&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0bc7-5fda-c0db-cb18" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="ef47-fd50-462d-e401" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="314d-8e27-42d7-cee2" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="59c3-6d5c-dc31-7f7d" name="Théoden, King of Rohan" hidden="false" collective="false" import="true" targetId="f1c7-d9e9-1b15-254b" type="selectionEntry"/>
+        <entryLink id="161f-c359-46d2-675c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a3aa-55f0-3077-bbb4" name="Gamling&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="370e-94dc-9fd0-feae" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="9574-7e10-a33a-a7ea" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="245a-6cea-9547-344a" name="Gamling, Captain of Rohan" hidden="false" collective="false" import="true" targetId="47ca-767f-a729-9f24" type="selectionEntry"/>
+        <entryLink id="68a5-5c30-d493-3e40" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a6f5-3707-6cfa-7cb5" name="Éomer&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0274-95b0-1573-78c2" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="ef96-b977-dbe0-fa6e" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="edd4-0f0c-3204-0f34" name="Éomer, Marshal of the Riddermark" hidden="false" collective="false" import="true" targetId="16a7-271a-69c0-6b85" type="selectionEntry"/>
+        <entryLink id="3203-dc73-6554-9574" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="120c-892a-d493-bc09" name="Ghân-Buri-Ghân&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="811b-5728-f6aa-0ab1" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d428-20e9-5fd0-8d2c" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="0a12-481c-1549-97a2" name="Drúadan" hidden="false" targetId="1e3a-27e0-d407-c820" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7766-88e4-f556-3bbb" name="Ghân-Buri-Ghân" hidden="false" collective="false" import="true" targetId="eaab-bb94-31d7-61cb" type="selectionEntry"/>
+        <entryLink id="1073-daf0-db4a-2154" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17a5-264d-852b-fe6e" name="Déorwine&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="335a-7eba-494f-15a9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="172d-408c-1c30-6940" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f6ab-b892-fe4e-773f" name="Déorwine, Chief of the King&apos;s Knights" hidden="false" collective="false" import="true" targetId="fe95-b1c9-fb94-0b25" type="selectionEntry"/>
+        <entryLink id="e838-7788-222a-87ab" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33f5-bc78-aa36-1c75" name="Elfhelm&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d72d-5541-34ea-1aed" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3719-60dd-8d07-269e" name="Elfhelm, Captain of Rohan" hidden="false" collective="false" import="true" targetId="a2b3-b7a5-8d8e-5a83" type="selectionEntry"/>
+        <entryLink id="688f-5228-ec57-ec7c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b91-4eb0-03fb-d3f9" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="97f5-2990-2d72-3389" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c4aa-9e60-8fac-8e9d" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="3863-cc56-cf8d-603a" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="8734-0889-bf41-36f7" name="Éowyn, Shieldmaiden of Rohan" hidden="false" collective="false" import="true" targetId="b9a5-82a3-89d1-0913" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="ca09-18e6-43ac-4e7a" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <rules>
+    <rule id="3428-03e0-af7b-b591" name="Know All Paths" publicationId="8e2e-f1ed-1aa8-11ca" page="83" hidden="false">
+      <description>if, during the Declare Heroic Actions step of a Move Phase, both sides have declared a Heroic Move and a roll-off is required to see which side&apos;s Heroic Move happens first, this Army will gain a bonus to that roll. If they would normally win the roll-off on a 4+, they will instead win it on a 3+. If they would normally win the roll-off on a 1, 2 or 3, they will instead win the roll-off on a 1, 2, 3 or 4.</description>
+    </rule>
+    <rule id="6230-d75d-bc92-7f11" name="Kill Orc-folk" publicationId="8e2e-f1ed-1aa8-11ca" page="83" hidden="false">
+      <description>Friendly models may re-roll To Wound Rolls of a natural 1 when making Strikes against Orc, Goblin or Uruk-hai models.</description>
+    </rule>
+    <rule id="c1a1-0179-d977-c7ce" name="Waypoints" publicationId="8e2e-f1ed-1aa8-11ca" page="83" hidden="false">
+      <description>At the start of the game, after both sides have been deployed, you may place up to three 25mm Waypoint Markers anywhere on the battlefield. Whilst within 6&quot; of a friendly Waypoint Marker, friendly Rohan models don&apos;t suffer any penalties for Moving, or Charging, through Difficult Terrain.</description>
+    </rule>
+  </rules>
+</catalogue>

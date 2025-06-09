@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="bc09-f0ce-3887-c97a" name="Umbar" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="651f-7bd8-5ddb-2bbd" name="Dalamyr&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3960-53e9-44ca-90f1" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="74c9-8c49-b04e-633b" name="Dalamyr, Fleetmaster of Umbar" hidden="false" collective="false" import="true" targetId="b506-599f-e86f-8c54" type="selectionEntry"/>
+        <entryLink id="2338-6fc2-ce08-2e42" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a0c2-175c-28ba-3750" name="Delgamar&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4fb7-36dd-ab9d-100d" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="df5c-3d09-892d-10ce" name="Delgamar, Gatemaster of Umbar" hidden="false" collective="false" import="true" targetId="594f-13fb-9882-549b" type="selectionEntry"/>
+        <entryLink id="4a69-6620-531d-4756" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ef70-88c4-fd41-3409" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b650-9531-3511-75bb" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="82a5-b208-dbbc-9561" name="Haradrim Chieftain" hidden="false" collective="false" import="true" targetId="7b92-0e7b-2637-a09d" type="selectionEntry"/>
+        <entryLink id="f197-31c0-c84f-d477" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="f52c-23ea-9a82-f77a" name="Hâsharin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9501-d2b5-db68-6b39" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="cc5f-6fa6-46af-598f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bc18-3736-77ee-51a1" name="Hâsharin" hidden="false" collective="false" import="true" targetId="a573-9adf-207b-b3a4" type="selectionEntry"/>
+        <entryLink id="92c2-773c-062a-e8a8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="022e-00c7-b7cc-d945" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="48dc-1270-1b5d-9217" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3fcb-9468-09ae-8ad8" name="Corsair Captain" hidden="false" collective="false" import="true" targetId="61a7-12dd-9618-bde4" type="selectionEntry"/>
+        <entryLink id="63f2-dc01-fecb-387e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="c5d9-86ee-eb94-a263" name="Bo&apos;sun&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4d55-838c-fd5f-6275" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="86f1-6c60-8127-509d" name="Corsair Bo&apos;sun" hidden="false" collective="false" import="true" targetId="d376-bd96-e155-91c0" type="selectionEntry"/>
+        <entryLink id="42c5-8f7d-f619-5e23" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e51f-0964-64f6-1d6d" name="Marshal&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1758-6425-87ea-04d1" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ede0-f137-6e78-d4ff" name="Black Númenórean Marshall" hidden="false" collective="false" import="true" targetId="a8c9-27ec-622b-06cf" type="selectionEntry"/>
+        <entryLink id="ef37-3d69-5c3e-5cc7" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="c499-7444-7370-2edb" name="Shadows of Umbar" publicationId="8e2e-f1ed-1aa8-11ca" page="185" hidden="false">
+      <description>Friendly models gain the Stalk Unseen special rule.</description>
+    </rule>
+    <rule id="bcb6-4a96-a34b-acc2" name="Seize Command" publicationId="8e2e-f1ed-1aa8-11ca" page="185" hidden="false">
+      <description>If during the End Phase of any turn, your General has only a single Wound remaining and is within 3&quot; and Line of Sight of a friendly Hâsharin, you may choose to remove your General as a casualty. If you do, you may immediately choose another friendly Hero to be your new General (this must still be a Hero with the highest Heroic Tier remaining). The previous model loses the General keyword and no longer counts as a General for the purpose of special rules or Victory Points. If a Hâsharin is your General, they cannot use this special rule to kill themselves - a different Hâsharin would have to be within 3&quot; to use this special rule.</description>
+    </rule>
+    <rule id="ea7b-fab2-14d9-fcc8" name="Death to Gondor" publicationId="8e2e-f1ed-1aa8-11ca" page="185" hidden="false">
+      <description>Friendly models gain the Hatred (Gondor) special rule.</description>
+    </rule>
+  </rules>
+</catalogue>

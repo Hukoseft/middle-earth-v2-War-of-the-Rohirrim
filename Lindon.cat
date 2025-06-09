@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="08d0-1ea8-df00-37b0" name="Lindon" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="08d0-1ea8-df00-37b0" name="Lindon" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="6710-20d8-61b8-3721" name="Gil-Galad&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -73,6 +73,15 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="9f84-7bf8-6d68-9005" name="Glofindel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b97e-bc6a-90c1-aacb" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="739e-8758-1bfe-ba4d" name="Glorfindel, Lord of the West" hidden="false" collective="false" import="true" targetId="20e9-e8bd-c470-7158" type="selectionEntry"/>
+        <entryLink id="ea38-26a6-798f-d57f" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="0e30-df42-5824-7a47" name="Grand Army of the South" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5b22-e9be-7a83-cf30" name="War Leader&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c35a-4fdb-3ba1-aeb3" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="9f7d-6efd-ea85-c8cd" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4157-1c93-abd9-e682" name="Mûmak War Leader" hidden="false" collective="false" import="true" targetId="f0c8-cf8a-d98f-9e88" type="selectionEntry"/>
+        <entryLink id="fb93-c81a-80c8-6092" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="72be-7584-d33b-7c52" name="Amdûr&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b927-9d73-9c80-1ad9" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="e8ff-b81e-4204-02a7" name="Easterling" hidden="false" targetId="35ba-7f33-c093-2662" primary="false"/>
+        <categoryLink id="43e9-3e04-b3bd-5f76" name="Black Dragon" hidden="false" targetId="4a72-9b0e-9a1c-3881" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="38f7-cb33-e1c6-5e73" name="Amdûr, Lord of Blades" hidden="false" collective="false" import="true" targetId="a3ab-6fbd-b823-7bfd" type="selectionEntry"/>
+        <entryLink id="5576-1ce9-a87f-b69c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cbb0-c1e4-5bb7-38e7" name="Râza&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="206f-d1a2-47a5-0ec5" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="c164-efbc-de39-12bd" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+        <categoryLink id="db92-55ad-5096-8b4c" name="Serpent Guard" hidden="false" targetId="1a7e-5429-722d-642c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="57f9-0406-9ae7-a1e3" name="Râza, Fang of the Serpent" hidden="false" collective="false" import="true" targetId="e969-153e-5e22-c64a" type="selectionEntry"/>
+        <entryLink id="bcf4-b71a-d1b7-5fd0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3fe-a968-3d93-3937" name="Dragon Knight&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5135-8424-4af5-4806" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="1681-e4f3-be7f-1630" name="Black Dragon" hidden="false" targetId="4a72-9b0e-9a1c-3881" primary="false"/>
+        <categoryLink id="02cf-9759-9e49-1ca6" name="Easterling" hidden="false" targetId="35ba-7f33-c093-2662" primary="false"/>
+        <categoryLink id="2c64-61ab-91c0-4f4f" name="Dragon Knight" hidden="false" targetId="efee-4410-dfee-f34d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aea6-1209-da1f-5ccb" name="Easterling Dragon Knight" hidden="false" collective="false" import="true" targetId="25c2-59ac-2b5d-e41d" type="selectionEntry"/>
+        <entryLink id="6d5a-44fe-1bd5-c1fb" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b19b-61b0-dbfd-4926" name="Dalamyr&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="52fa-bde9-6369-a14c" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="7e42-4e2b-437d-2150" name="Corsair" hidden="false" targetId="5ce0-6bc5-a0fd-8348" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="04be-f572-6a19-d0fc" name="Dalamyr, Fleetmaster of Umbar" hidden="false" collective="false" import="true" targetId="b506-599f-e86f-8c54" type="selectionEntry"/>
+        <entryLink id="103c-1474-de2e-cf61" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="709f-9bb3-e982-68cc" name="Suladân&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="dc27-98b9-2e17-3ee1" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="8a07-fb1d-0034-fc0d" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+        <categoryLink id="f888-d9ab-66a4-bc71" name="Serpent Guard" hidden="false" targetId="1a7e-5429-722d-642c" primary="false"/>
+        <categoryLink id="7a16-2328-c8e5-fca9" name="Serpent Rider" hidden="false" targetId="c310-8640-6445-1bbc" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7ebd-5102-ee22-af28" name="Suladân, the Serpent Lord" hidden="false" collective="false" import="true" targetId="b9f0-a4f7-6d7e-d895" type="selectionEntry"/>
+        <entryLink id="3e86-4973-af2f-af64" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4268-0551-996c-bf05" name="Delgamar&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4aaf-a1fb-ab6d-e046" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="99a6-c8f1-30a5-806f" name="Corsair" hidden="false" targetId="5ce0-6bc5-a0fd-8348" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e48e-f7a1-29be-0686" name="Delgamar, Gatemaster of Umbar" hidden="false" collective="false" import="true" targetId="594f-13fb-9882-549b" type="selectionEntry"/>
+        <entryLink id="4a89-8262-7313-5a64" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3ac-decb-f546-c755" name="Mûmak&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="dbe0-f5b3-51e0-5bdb" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="d642-52c1-7103-c9ac" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="905e-c255-383b-0927" name="War Mûmak of Harad" hidden="false" collective="false" import="true" targetId="5ed9-a83f-ad98-678f" type="selectionEntry"/>
+        <entryLink id="603a-546c-836e-cfdf" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ee05-c6b3-1b0e-f987" name="Taskmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c15f-5964-dc5a-b093" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="82e8-72b3-d2b6-6f64" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3389-5343-273c-0577" name="Haradrim Taskmaster" hidden="false" collective="false" import="true" targetId="e2a8-1554-a481-dd59" type="selectionEntry"/>
+        <entryLink id="fc0e-b82f-442b-2905" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="769f-f4bd-31b7-6124" name="Kataphrakt Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="522d-ef9f-06cf-8b71" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="0e7e-29b1-9397-d979" name="Easterling" hidden="false" targetId="35ba-7f33-c093-2662" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7f7b-5aa3-2015-aaee" name="Easterling Kataphrakt Captain" hidden="false" collective="false" import="true" targetId="0156-7c08-a86f-275b" type="selectionEntry"/>
+        <entryLink id="1b4e-a98a-0cdc-1fd7" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a9a4-43c1-523f-7437" name="Priest&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3d29-8a82-f210-a220" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="dee4-d729-169f-0861" name="Easterling" hidden="false" targetId="35ba-7f33-c093-2662" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="53af-4e61-66ad-fae5" name="Easterling War Priest" hidden="false" collective="false" import="true" targetId="0895-8943-5206-d301" type="selectionEntry"/>
+        <entryLink id="06ef-a8f6-ce35-4e5d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33cd-b061-0d61-1fa3" name="Hâsharin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f27f-a663-26bc-eec8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="8d2e-67ce-a1a1-706a" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f359-9254-2438-4e48" name="Hâsharin" hidden="false" collective="false" import="true" targetId="a573-9adf-207b-b3a4" type="selectionEntry"/>
+        <entryLink id="5ecc-5074-29c8-5c8d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c7df-2853-653d-9eee" name="Corsair Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="af0d-c350-0576-4993" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="1d05-8a1a-cfa1-28b1" name="Corsair" hidden="false" targetId="5ce0-6bc5-a0fd-8348" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5c49-aa39-8612-efa8" name="Corsair Captain" hidden="false" collective="false" import="true" targetId="61a7-12dd-9618-bde4" type="selectionEntry"/>
+        <entryLink id="5a86-4166-e891-f6b9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4125-fc59-c5a6-17db" name="Bo&apos;sun&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="60fe-587d-fc0c-af48" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="0540-bd38-0051-5d95" name="Corsair" hidden="false" targetId="5ce0-6bc5-a0fd-8348" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="473e-30f1-8bbd-9fa4" name="Corsair Bo&apos;sun" hidden="false" collective="false" import="true" targetId="d376-bd96-e155-91c0" type="selectionEntry"/>
+        <entryLink id="482d-76d9-6ee8-7f93" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9beb-09f4-ec12-96dc" name="Easterling Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3ebd-c6ae-8070-a1f9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="31a4-c3c8-7a08-d392" name="Easterling" hidden="false" targetId="35ba-7f33-c093-2662" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3ad1-49e4-9508-409e" name="Easterling Captain" hidden="false" collective="false" import="true" targetId="dbb7-1ded-4dfc-def8" type="selectionEntry"/>
+        <entryLink id="41ab-0147-4ed4-8ac8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4d08-f1ca-f036-4957" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="291b-ee8a-12a8-50c1" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="31c1-4fed-c694-73a1" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="59d5-81a5-0154-26d0" name="Haradrim Chieftain" hidden="false" collective="false" import="true" targetId="7b92-0e7b-2637-a09d" type="selectionEntry"/>
+        <entryLink id="51f1-70c6-59c6-6d27" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="96f4-33a8-ef83-6ebb" name="Pride of the Southlands" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>Friendly models gain a bonus of +1 to any Courage Tests they are required to take.</description>
+    </rule>
+  </rules>
+</catalogue>

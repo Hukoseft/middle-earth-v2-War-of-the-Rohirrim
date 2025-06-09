@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="24a6-3259-2d77-5b47" name="Muster of Isengard" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="24a6-3259-2d77-5b47" name="Muster of Isengard" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="4972-d131-498a-506e" name="Saruman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -49,6 +49,15 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="e9f7-e6c5-bd75-0379" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="acb5-a711-3a5e-79cf" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0ad8-f1bf-d590-8eea" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="9a4c-6f29-e7f9-0b46" name="Uruk-hai Shaman" hidden="false" collective="false" import="true" targetId="93cc-ef43-4615-436b" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

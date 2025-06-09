@@ -1,29 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3483-71cc-8cd3-40c6" name="Erebor &amp; Dale" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3483-71cc-8cd3-40c6" name="Erebor &amp; Dale" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9f58-aad5-71fa-49ab" name="Thrór&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="9d20-f644-e438-6f9e" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9d20-f644-e438-6f9e" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="e705-8649-81d8-a353" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
         <categoryLink id="d72a-f25c-67d3-e7d1" name="Thrór" hidden="false" targetId="961e-6497-c1b3-e107" primary="false"/>
         <categoryLink id="ca65-6ca7-04e0-a741" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+        <categoryLink id="5e6c-359c-ad18-b660" name="Unique Erebor" hidden="false" targetId="6e8c-f5b4-ba47-f3d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c5ec-7e99-262c-6197" name="Thrór, King Under the Mountain" hidden="false" collective="false" import="true" targetId="06e7-896d-d1f5-3d05" type="selectionEntry"/>
@@ -37,27 +20,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="87ee-c89e-7475-a5ea" name="Thorin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="4b83-cf68-8344-ce1d" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b83-cf68-8344-ce1d" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="21a8-ba47-c636-9153" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
         <categoryLink id="8569-589c-084c-4043" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+        <categoryLink id="c6f8-8362-8a57-40d7" name="Unique Erebor" hidden="false" targetId="6e8c-f5b4-ba47-f3d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="05d1-5569-708c-b62a" name="Young Thorin Oakenshield" hidden="false" collective="false" import="true" targetId="c7ff-da69-5a9c-939f" type="selectionEntry"/>
@@ -71,27 +37,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d03c-2d45-c9dd-6e4c" name="Balin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="ec79-d0f7-9937-d691" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ec79-d0f7-9937-d691" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="e24c-8a37-9287-fd20" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
         <categoryLink id="7f5b-1ee8-b69c-d534" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+        <categoryLink id="d5ee-9c71-12c7-a252" name="Unique Erebor" hidden="false" targetId="6e8c-f5b4-ba47-f3d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="5d8b-efb0-1cf9-fbfc" name="Young Balin the Dwarf" hidden="false" collective="false" import="true" targetId="095d-4fa5-d3c4-09e5" type="selectionEntry"/>
@@ -153,27 +102,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="d7e3-6784-2605-3832" name="Dwalin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="dc45-fa71-ec7c-7761" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dc45-fa71-ec7c-7761" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="7ea7-81f3-de8e-e034" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
         <categoryLink id="e9bb-0102-48b4-3275" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+        <categoryLink id="7c5f-3ae2-b65e-bde3" name="Unique Erebor" hidden="false" targetId="6e8c-f5b4-ba47-f3d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="2009-d154-4731-44fc" name="Young Dwalin the Dwarf" hidden="false" collective="false" import="true" targetId="e6d6-acf7-de38-e9b9" type="selectionEntry"/>
@@ -206,27 +138,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1ec9-6d28-b1f0-be19" name="Thráin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="6b62-5ec7-33b9-7967" value="1.0">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9f58-aad5-71fa-49ab" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1ec9-6d28-b1f0-be19" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d03c-2d45-c9dd-6e4c" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d7e3-6784-2605-3832" type="equalTo"/>
-                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="87ee-c89e-7475-a5ea" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6b62-5ec7-33b9-7967" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="4d11-2292-2a5e-83a1" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
         <categoryLink id="61c8-4adb-441a-cd86" name="Dwarf" hidden="false" targetId="9d10-67eb-ac11-f2e4" primary="false"/>
+        <categoryLink id="8d89-769a-0001-104e" name="Unique Erebor" hidden="false" targetId="6e8c-f5b4-ba47-f3d9" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="0d06-26c7-ed92-dbaf" name="Thráin, Son of Thrór" hidden="false" collective="false" import="true" targetId="b625-1878-17dc-a70e" type="selectionEntry"/>

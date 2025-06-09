@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="ac20-2983-11dd-0565" name="Host of the Dragon Emperor" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="8a79-276c-8728-ed51" name="Emperor&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f882-5210-c902-6867" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf73-4465-7bdb-73c8" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b83d-a17f-dc7f-3156" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="fc15-8504-35be-8657" name="Black Dragon" hidden="false" targetId="4a72-9b0e-9a1c-3881" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="17a6-7043-6b8c-4b3c" name="The Dragon Emperor of Rhûn" hidden="false" collective="false" import="true" targetId="6a2a-863b-bdb1-3262" type="selectionEntry"/>
+        <entryLink id="7e98-a945-cf2b-6a83" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1fed-4ccd-6ab2-4cf4" name="Rutabi&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0e7a-c328-7262-b514" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="a8c4-226e-87ff-df79" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="519d-ec7a-4941-f838" name="Rutabi, General of the Dragon Legion" hidden="false" collective="false" import="true" targetId="a06a-cf41-2b2a-ec7a" type="selectionEntry"/>
+        <entryLink id="6e76-d5cb-f078-ca07" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4def-44e8-0246-38d6" name="Brórgír&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8358-ee29-b20c-a9fe" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3168-f506-addf-3038" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c0f0-d9a0-7994-bd41" name="Brórgír" hidden="false" collective="false" import="true" targetId="146b-71fd-de79-6ac2" type="selectionEntry"/>
+        <entryLink id="07b2-2ba0-af26-a8ac" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="44fe-4c3f-b424-1958" name="Infantry Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="705a-5420-6ad4-ba0a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="be77-34d7-21cc-62dd" name="Easterling Captain" hidden="false" collective="false" import="true" targetId="dbb7-1ded-4dfc-def8" type="selectionEntry"/>
+        <entryLink id="ba5b-657a-9700-6e07" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d419-79e0-1cee-56d6" name="Kataphrakt Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="43d2-775c-65a3-3109" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="false"/>
+        <categoryLink id="fd70-dd59-646f-da01" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6d10-1e33-c8c9-27fa" name="Easterling Kataphrakt Captain" hidden="false" collective="false" import="true" targetId="0156-7c08-a86f-275b" type="selectionEntry"/>
+        <entryLink id="e73a-d4ae-636c-f57c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d34b-5da1-a638-2fe2" name="Priest&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3511-bc99-85c8-e89d" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cc60-985b-7745-0541" name="Easterling War Priest" hidden="false" collective="false" import="true" targetId="0895-8943-5206-d301" type="selectionEntry"/>
+        <entryLink id="a8dd-51cc-ce1f-5644" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d8e-1aa7-3d09-8b87" name="Knight&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5602-3d75-d792-ce1e" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="4a04-2216-f0db-dfdf" name="Black Dragon" hidden="false" targetId="4a72-9b0e-9a1c-3881" primary="false"/>
+        <categoryLink id="9edb-b3c4-cfc2-fea8" name="Dragon Knight" hidden="false" targetId="efee-4410-dfee-f34d" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3b8d-553b-9826-81b7" name="Easterling Dragon Knight" hidden="false" collective="false" import="true" targetId="25c2-59ac-2b5d-e41d" type="selectionEntry"/>
+        <entryLink id="1be0-b09f-71de-505d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="6a5b-8db1-bbdf-69de" name="Heroes of the Easterlings" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>Friendly Easterling Hero models may re-roll a single D6 in a Duel Roll.</description>
+    </rule>
+    <rule id="4a53-6b2a-c904-e57a" name="Easterling Phalanxes" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>Friendly models Supported by two other friendly models gain a bonus of +1 To Wound when making Strikes.</description>
+    </rule>
+  </rules>
+</catalogue>

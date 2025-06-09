@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f54e-7cad-1b7c-a99e" name="Men of the West" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f54e-7cad-1b7c-a99e" name="Men of the West" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="99c6-9438-4a4a-6c6f" name="Aragorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -136,6 +136,97 @@
         <entryLink id="fc65-a23b-97e7-bcb0" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
         <entryLink id="ee1b-8659-acb3-d29c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e32-af79-920a-bab2" name="Beregond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="38a5-61ab-5e6b-6d33" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="906e-2038-46a9-29ff" name="Beregond, Guard of the Citadel" hidden="false" collective="false" import="true" targetId="1357-3b3e-f0ba-3cca" type="selectionEntry"/>
+        <entryLink id="2436-1741-2220-b748" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10f5-6bae-d5c8-c842" name="Captain of Dol Amroth&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5345-edfd-7a0c-03f2" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ff51-5414-f4a2-04d7" name="Captain of Dol Amroth" hidden="false" collective="false" import="true" targetId="ae1a-757f-80f3-b7de" type="selectionEntry"/>
+        <entryLink id="f3f5-d6b6-d849-7528" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a216-da1a-db0a-913e" name="Imrahil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="0a75-1a4c-f942-dcfb" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5b30-4048-f96e-62a8" name="Prince Imrahil of Dol Amroth" hidden="false" collective="false" import="true" targetId="7e3a-526d-1010-e0d9" type="selectionEntry"/>
+        <entryLink id="71f5-d8a9-de07-d728" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f9e-2fa1-4623-54c9" name="Twin&apos;s Warbands" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1fbd-f9fb-705a-633f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="ea0f-a401-3747-c909" name="Twins" hidden="false" targetId="557f-c13b-ea47-c1a7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b7e4-0388-6d1b-8b23" name="Elrohir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="352d-d0e6-7fb2-4384" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="17e3-a173-4981-73c7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6db3-5565-0add-2cc2" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+            <entryLink id="4339-d897-2148-f49a" name="Elrohir" hidden="false" collective="false" import="true" targetId="f6fc-d3c3-3b11-10ed" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="97d2-8a88-f892-0c3e" name="Elladan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e4fc-3b3f-f9ae-f281" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="aa7f-26ff-19ff-15f5" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="95ef-c918-0ff5-eaa1" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+            <entryLink id="2a38-6bbe-8ff1-3782" name="Elladan" hidden="false" collective="false" import="true" targetId="6008-3674-8dd1-fcd6" type="selectionEntry"/>
+          </entryLinks>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>

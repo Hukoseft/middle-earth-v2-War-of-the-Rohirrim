@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="08e1-50c4-c398-5e15" name="Atop the Walls" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="08e1-50c4-c398-5e15" name="Atop the Walls" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9bc9-1749-0630-e850" name="Gandalf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -50,6 +50,24 @@
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a3da-5167-e41a-0da1" name="Húrin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1083-b657-7cfc-a1a5" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="401b-b661-62dd-9bbf" name="Húrin the tall, Warden of the Keys" hidden="false" collective="false" import="true" targetId="9517-25f7-8439-f5c4" type="selectionEntry"/>
+        <entryLink id="a6ef-5811-74ff-f8e4" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="aa4d-2c6a-493a-add3" name="Beregond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3681-2489-adbf-bd1f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cf13-f9d3-618b-3bc0" name="Beregond, Guard of the Citadel" hidden="false" collective="false" import="true" targetId="1357-3b3e-f0ba-3cca" type="selectionEntry"/>
+        <entryLink id="a506-6dbe-df2b-2204" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="880b-1c0f-2b85-4ffd" name="Peregrin Took, Guard of the Citadel" hidden="false" collective="false" import="true" targetId="fd3f-fa33-cf62-b4f0" type="selectionEntry">
@@ -57,25 +75,8 @@
         <categoryLink id="b2af-423f-d9cf-0ced" name="Independant Hero" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="dc98-92e1-7e5c-23cb" name="Gondor Battlecry Trebuchet" hidden="false" collective="false" import="true" targetId="7276-9a27-52dc-a7fa" type="selectionEntry">
-      <modifiers>
-        <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9bc9-1749-0630-e850" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5f69-b9a6-20e9-da72" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" field="9969-ffcf-3b2f-4bf9" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1d9a-c0c5-654e-7e46" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink id="dc98-92e1-7e5c-23cb" name="Gondor Battlecry Trebuchet" hidden="false" collective="false" import="true" targetId="7276-9a27-52dc-a7fa" type="selectionEntry"/>
+    <entryLink id="7588-1b27-6bf2-47fd" name="Gondor Avenger Bolt Thrower" hidden="false" collective="false" import="true" targetId="6853-fe9e-ea61-3850" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="2660-b167-e261-838d" name="&quot;Fight to the last Man&quot;" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
