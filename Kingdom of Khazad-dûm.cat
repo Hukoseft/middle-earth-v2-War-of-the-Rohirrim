@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="a09f-62e2-2467-e539" name="Kingdom of Khazad-dûm" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="c525-206b-5a77-571b" name="Durin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="bb7e-8f35-d8af-f350" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="e4fd-8124-fc92-2098" name="Khazâd Guard" hidden="false" targetId="e9d8-23eb-ff25-20d0" primary="false"/>
+        <categoryLink id="0909-76a6-d6cb-4686" name="Durin" hidden="false" targetId="1035-91c0-7c43-fce0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0325-06d6-d46b-2dfb" name="Durin, King of Khazad-Dûm" hidden="false" collective="false" import="true" targetId="dbd9-7d70-1dd1-e3bb" type="selectionEntry"/>
+        <entryLink id="2c81-1b8a-e53e-bc34" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="40d7-b951-2b97-4f25" name="Mardin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0e14-6815-dd2e-02d3" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9b16-ac5e-00c6-bb63" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3f9c-7afc-837d-e620" name="Mardin, the King&apos;s Ward" hidden="false" collective="false" import="true" targetId="cdf5-4ac9-b950-7d7a" type="selectionEntry"/>
+        <entryLink id="e686-6f45-5747-d168" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f0d-e42e-4731-5f9a" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c305-512e-8109-69e4" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f1b8-6041-176c-168b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="fb4a-b0fd-a0dc-8f41" name="Dwarf Captain" hidden="false" collective="false" import="true" targetId="59a3-c86b-49e0-f2e4" type="selectionEntry"/>
+        <entryLink id="5e90-2c01-5ad4-5e03" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="13e7-f8e7-e5ab-7eef" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="add" field="category" value="e9d8-23eb-ff25-20d0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="68b7-fc9b-6d13-64c3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1a41-5b0e-5c6a-37b2" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="6e7d-d5fa-d690-8ae1" name="Khazad-dûm" hidden="false" targetId="774f-acf4-4c50-c082" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8b34-0bf9-fdf7-fe02" name="Dwarf King" hidden="false" collective="false" import="true" targetId="1b24-f559-d9ce-bf16" type="selectionEntry"/>
+        <entryLink id="58d0-3831-ed80-6450" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="65ef-56a1-ffd8-6336" name="Dwarven Ballista" hidden="false" collective="false" import="true" targetId="ac6c-c78e-ee26-fa6b" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="6d58-a0db-0102-4be3" name="&quot;The wealth of Moria lay not in gold or jewels, but in Mithril&quot;" publicationId="8e2e-f1ed-1aa8-11ca" page="95" hidden="false">
+      <description>Friendly models may re-roll To Wound Rolls of a natural 1 when making Strikes.</description>
+    </rule>
+    <rule id="f7b7-9347-9ce6-8c00" name="Steadfast Warriors" publicationId="8e2e-f1ed-1aa8-11ca" page="95" hidden="false">
+      <description>Friendly Dwarf Captains, Dwarf Warriors and Dwarf Rangers gain the Dominant (2) special rule.</description>
+    </rule>
+    <rule id="2865-ccfa-9db4-25f7" name="The Stubbornness of Dwarves" publicationId="8e2e-f1ed-1aa8-11ca" page="95" hidden="false">
+      <description>During a Duel Roll, before any re-roll have been used, if the opposition player has rolled more dice (including Supporting models), then a single friendly Khazad-dûm model may re-roll a single D6 as part of the Duel Roll.</description>
+    </rule>
+    <rule id="62e2-b947-58ac-d581" name="Dwarven Mirrors" publicationId="8e2e-f1ed-1aa8-11ca" page="95" hidden="false">
+      <description>At the start of the game, after both sides have deployed, you may deploy two 40mm Dwarven Mirror Markers anywhere on the battlefield that is not within the opposition deployment zone. The area within 6&quot; of a Dwarven Mirror Marker with a shooting attack suffers a -1 penalty to the To Hit Roll.
+
+Additionally, Orc models, Goblin models, or models with the Cave Dweller special rule, suffer a -1 penalty to any Courage Tests they are required to take whilst within 6&quot; of a Dwarven Mirror Marker. If, during the End Phase of a turn, an enemy model is in base contact with a Dwarven Mirror Marker, that model hasn&apos;t done anything during that turn except Move (i.e., has not made a shooting attack, cast a Magical Power, been Engaged in Combat), and that model was not affected by a Magical Power that turn, then it can remove the Dwarven Mirror Marker from play. Models cannot overlap a Dwarven Mirror Marker for any reason, though a War Beast or Chariot that Moves into base contact with one (via Trample or Chariot Charge respectively) will immediately remove it from play and may carry on as normal.</description>
+    </rule>
+  </rules>
+</catalogue>

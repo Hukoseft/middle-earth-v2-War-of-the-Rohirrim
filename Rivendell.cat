@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0a14-85c6-3e84-b516" name="Rivendell" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0a14-85c6-3e84-b516" name="Rivendell" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="188f-e4f4-e484-338c" name="Elrond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -68,6 +68,46 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="b5e2-be0d-5e3e-42c4" name="Glorfindel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6b86-edcd-4724-9ef6" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6953-7097-d69b-ab37" name="Glorfindel, Lord of the West" hidden="false" collective="false" import="true" targetId="20e9-e8bd-c470-7158" type="selectionEntry"/>
+        <entryLink id="3652-66bb-0031-0601" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="04b2-deed-7340-7ca0" name="Twin&apos;s Warbands" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="023d-64f1-3e2c-ed3e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="1db0-1b42-e301-adea" name="Twins" hidden="false" targetId="557f-c13b-ea47-c1a7" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="6b55-0aa7-73e5-e9f7" name="Elladan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="971b-0827-42da-d976" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="135e-8b66-2359-4e43" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6745-a498-9964-27e9" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+            <entryLink id="78cf-71b8-b22b-6570" name="Elladan" hidden="false" collective="false" import="true" targetId="6008-3674-8dd1-fcd6" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntry>
+        <selectionEntry id="1ff3-65ee-a8e0-69fb" name="Elrohir&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f56a-30d2-2a0c-635a" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5c46-d432-ee7b-895f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="727b-f1bb-17b9-e76f" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+            <entryLink id="5d5b-f5cd-a86f-6865" name="Elrohir" hidden="false" collective="false" import="true" targetId="f6fc-d3c3-3b11-10ed" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="4cb2-1c62-3dab-1cd9" name="Twins Horses" hidden="false" collective="false" import="true" targetId="89cf-118e-6553-fded" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

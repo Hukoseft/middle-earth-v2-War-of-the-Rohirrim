@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="5075-6976-f01e-622c" name="Wolves of Isengard" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="5075-6976-f01e-622c" name="Wolves of Isengard" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="1496-95f3-27d1-da3d" name="Sharku&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -33,6 +33,15 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="ad88-d478-0bb5-b7e1" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2558-e8a9-6343-493d" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ce23-5160-e320-dbf9" name="Isengard Orc Shaman" hidden="false" collective="false" import="true" targetId="5307-68b6-c4e9-2b96" type="selectionEntry"/>
+        <entryLink id="629e-8689-4840-9422" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

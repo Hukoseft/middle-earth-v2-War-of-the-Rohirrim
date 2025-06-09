@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="48ac-227e-e93d-2844" name="The Last Alliance" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="48ac-227e-e93d-2844" name="The Last Alliance" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="2ea0-037a-dc40-b770" name="Elendil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="1a3b-de1f-c6ba-47d5" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="730f-ac21-475c-bc2a" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1a3b-de1f-c6ba-47d5" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="dac3-ef59-4545-d005" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
         <categoryLink id="4535-f4cb-2277-6fb0" name="Númenor" hidden="false" targetId="734e-e20e-e60f-72ec" primary="false"/>
+        <categoryLink id="11e0-28c0-f0df-b322" name="Unique Númenor" hidden="false" targetId="9857-d271-aaa7-38d6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c2f3-aa55-13a4-2744" name="Elendil, High King of Gondor and Arnor" hidden="false" collective="false" import="true" targetId="e499-8560-efa7-5676" type="selectionEntry"/>
@@ -28,19 +19,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="88bb-178a-2f91-0272" name="Gil-Galad&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="f5c9-22d9-702a-6792" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0dc4-ee21-ac34-490a" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f5c9-22d9-702a-6792" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="3eca-0391-19ff-e487" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
         <categoryLink id="4d4b-2b3f-d7b9-088e" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+        <categoryLink id="5960-93f9-c461-0cf3" name="Unique Rivendell" hidden="false" targetId="b3f9-6c12-2610-17b5" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="de06-cd9a-05e2-05e9" name="Gil-Galad, High King of the Noldor" hidden="false" collective="false" import="true" targetId="ced9-2c70-14cb-a7a3" type="selectionEntry"/>
@@ -70,19 +52,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="0dc4-ee21-ac34-490a" name="Elrond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="019d-c6bc-9231-8516" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="88bb-178a-2f91-0272" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="019d-c6bc-9231-8516" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="25b5-faf3-d2f4-1800" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
         <categoryLink id="1e90-a489-0d3a-4cad" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+        <categoryLink id="1303-dd7f-a38b-2e9b" name="Unique Rivendell" hidden="false" targetId="b3f9-6c12-2610-17b5" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c43d-5d45-1cb0-1a8b" name="Elrond, Master of Rivendell" hidden="false" collective="false" import="true" targetId="5126-1b1a-3e92-b853" type="selectionEntry">
@@ -100,19 +73,10 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="730f-ac21-475c-bc2a" name="Isildur&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="6b38-166c-4941-1a44" value="1.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2ea0-037a-dc40-b770" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6b38-166c-4941-1a44" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="9cf5-1e99-be16-60ff" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
         <categoryLink id="e865-2860-54e9-3719" name="Númenor" hidden="false" targetId="734e-e20e-e60f-72ec" primary="false"/>
+        <categoryLink id="8cf2-1980-205d-04f1" name="Unique Númenor" hidden="false" targetId="9857-d271-aaa7-38d6" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f027-3a4e-bb13-307a" name="Isildur, Prince of Númenor" hidden="false" collective="false" import="true" targetId="db13-df84-5b76-8c93" type="selectionEntry"/>

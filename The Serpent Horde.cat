@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="90ef-373f-f925-d8c8" name="The Serpent Horde" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5f7d-b3a4-1743-38bd" name="Suladân&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f7ad-346b-7d7b-bb50" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f7b8-29cf-76a2-be77" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="0c45-4a08-6e23-4fb2" name="Serpent Guard" hidden="false" targetId="1a7e-5429-722d-642c" primary="false"/>
+        <categoryLink id="22bb-81ed-3466-537e" name="Serpent Rider" hidden="false" targetId="c310-8640-6445-1bbc" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9f01-bd35-08f5-28ad" name="Suladân, the Serpent Lord" hidden="false" collective="false" import="true" targetId="b9f0-a4f7-6d7e-d895" type="selectionEntry"/>
+        <entryLink id="7f7d-cf6d-dcf2-263b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="69ad-ebeb-1345-c01b" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="35b0-43fe-6522-79d7" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c411-8d68-5a12-8c9f" name="Haradrim Chieftain" hidden="false" collective="false" import="true" targetId="7b92-0e7b-2637-a09d" type="selectionEntry"/>
+        <entryLink id="8f6e-2936-cbd5-6c13" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5a07-f552-0a93-c136" name="Mûmak&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a8f0-cb5c-6fc9-8d25" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="87d8-b34f-dd82-cc3f" name="War Mûmak of Harad" hidden="false" collective="false" import="true" targetId="5ed9-a83f-ad98-678f" type="selectionEntry"/>
+        <entryLink id="d530-2296-d136-1818" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="6ea3-7db5-2acd-34ba" name="Taskmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9434-1623-de79-a57d" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f082-19e6-8970-c92b" name="Haradrim Taskmaster" hidden="false" collective="false" import="true" targetId="e2a8-1554-a481-dd59" type="selectionEntry"/>
+        <entryLink id="0059-dab9-30f3-dba8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="1738-c926-d889-4b66" name="Râza&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d813-1c7b-9739-01a6" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="9c1a-1fb3-08b3-85c9" name="Serpent Guard" hidden="false" targetId="1a7e-5429-722d-642c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0b89-3ac2-3be5-2514" name="Râza, Fang of the Serpent" hidden="false" collective="false" import="true" targetId="e969-153e-5e22-c64a" type="selectionEntry"/>
+        <entryLink id="37c0-b60a-a7b5-4687" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="9d23-f4b3-f813-750d" name="Suladân&apos;s Bodyguard" publicationId="8e2e-f1ed-1aa8-11ca" page="183" hidden="false">
+      <description>So long as Suladân has Will Points remaining, friendly Elite models gain the Sworn Protector (Suladân) special rule.</description>
+    </rule>
+    <rule id="c5a0-9a5b-2396-7357" name="The Scorpion&apos;s Sting" publicationId="8e2e-f1ed-1aa8-11ca" page="183" hidden="false">
+      <description>Friendly models with the Poisoned Attacks (bow) special rule exchange it for Poisonsed Attacks on all of their weapons.</description>
+    </rule>
+    <rule id="9785-7fb1-9784-bead" name="Lethal Toxins" publicationId="8e2e-f1ed-1aa8-11ca" page="183" hidden="false">
+      <description>Once per game, at the start of any Fight Phase, Suladân can use this special rule so long as he is alive and on the battlefield. If he does, then friendly Harad models gain the Bane of Kings special rule until the End Phase of the turn. This is treated as an Active ability belonging to Suladân.</description>
+    </rule>
+  </rules>
+  <infoLinks>
+    <infoLink id="6940-967a-25ea-ebab" name="Sworn Protector (X) [Passive]" hidden="false" targetId="e31a-6f96-9f22-d2d1" type="rule">
+      <modifiers>
+        <modifier type="set" field="name" value="Sworn Protector (Suladân) [Passive]"/>
+      </modifiers>
+    </infoLink>
+    <infoLink id="295e-4c12-d3d1-19e2" name="Bane of Kings [Active]" hidden="false" targetId="3b25-0a6b-d43e-f7e9" type="rule"/>
+  </infoLinks>
+</catalogue>

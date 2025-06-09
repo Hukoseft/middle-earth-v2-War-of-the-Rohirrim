@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1108-7d85-e40e-ee4d" name="Shadows of Angmar" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1108-7d85-e40e-ee4d" name="Shadows of Angmar" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="e5f9-2c2d-63d1-4b64" name="Gûlavhar&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="76be-9f68-b566-fe8a" type="min"/>
-      </constraints>
       <categoryLinks>
         <categoryLink id="747a-79b8-8170-1362" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
       </categoryLinks>

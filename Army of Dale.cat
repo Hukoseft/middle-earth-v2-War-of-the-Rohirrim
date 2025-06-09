@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="73ca-9b98-7ee8-b158" name="Army of Dale" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="63aa-baec-c871-e7d2" name="Brand&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0337-554d-7daa-ff82" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f617-8cdd-d0ec-8818" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ea40-8bdb-a917-d07a" name="Brand, King of Dale" hidden="false" collective="false" import="true" targetId="f85b-5d89-7d47-3072" type="selectionEntry"/>
+        <entryLink id="6dbc-e82c-a2f4-a45c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8cb5-7ea4-3419-7e56" name="Bard II&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="facd-7727-ef4f-a3e3" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b190-6af7-dfb0-9791" name="Bard II, Prince of Dale" hidden="false" collective="false" import="true" targetId="5d92-1de6-931b-29cd" type="selectionEntry"/>
+        <entryLink id="8377-22a5-7379-a401" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b99e-f88f-1c15-1e02" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9923-4cd0-846b-eb29" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1cc6-53b1-6f13-85cb" name="Captain of Dale" hidden="false" collective="false" import="true" targetId="2ec6-5dca-c177-7f37" type="selectionEntry"/>
+        <entryLink id="c50d-3bd9-2962-bc1e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="a6d7-067b-1d20-b427" name="Windlance" hidden="false" collective="false" import="true" targetId="ed0b-ed64-e184-4050" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="0633-0b56-2050-b4fb" name="Stoic Defence" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>Once per game, at the start of any Move Phase before the Declare Heroic Actions step, you may declare you are using this ability. If you do, then during the Move Phase friendly models cannot Move during their Activation (but can otherwise act normally). Additionally, until he End Phase of the turn, friendly models gain the Dominant (2) special rule and may re-roll any failed To Wound Rolls when making Strikes.</description>
+    </rule>
+    <rule id="e8dd-54ea-934c-4020" name="Protect the King" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>Friendly models gain the Sworn Protector (Brand) special rule.</description>
+    </rule>
+    <rule id="cfcb-e7a3-c8b4-4c96" name="Skilled Bowmen" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
+      <description>Friendly Dale models improve their Shoot Value to 3+.</description>
+    </rule>
+  </rules>
+</catalogue>

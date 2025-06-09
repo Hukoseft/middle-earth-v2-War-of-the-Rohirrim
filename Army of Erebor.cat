@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="6fb2-3253-41fb-106a" name="Army of Erebor" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="64bc-c989-d6a0-8730" name="Dáin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b193-3d70-bc4d-418e" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cb5d-fb23-d2da-d39f" name="Dáin Ironfoot, King under the Mountain" hidden="false" collective="false" import="true" targetId="61f5-5178-3fad-5193" type="selectionEntry"/>
+        <entryLink id="0259-d4f9-b3ee-6d77" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e328-0dd7-3608-03d0" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6f6b-759a-f52b-5b70" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="a16a-2450-15ba-04b0" name="Erebor" hidden="false" targetId="1e48-8a8f-0bb6-174b" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5824-2fc5-37b2-7b30" name="Dwarf King" hidden="false" collective="false" import="true" targetId="1b24-f559-d9ce-bf16" type="selectionEntry"/>
+        <entryLink id="f9ba-0476-0124-6695" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e1a4-e0c3-e6cf-0a25" name="Bifur&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8d5d-f7c9-91a6-8b13" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e998-bbd7-6a03-7693" name="Bifur the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="685b-2377-ddac-7629" type="selectionEntry"/>
+        <entryLink id="8575-faa3-8196-b335" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e52c-a305-6796-fd1e" name="Thorin III&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fa8d-0641-fc1a-33c2" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c61c-6b5d-9f2b-e571" name="Thorin III Stonehelm" hidden="false" collective="false" import="true" targetId="2886-6f19-a339-4974" type="selectionEntry"/>
+        <entryLink id="054c-acc7-a794-c02e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e01-4b32-a2cc-9826" name="Dwalin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2d99-39e4-000e-e7ba" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="067e-ebe9-d090-8d93" name="Dwalin the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="e3bf-efd2-280d-da3c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="b8de-6494-7d60-eed0" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="bdd2-9123-493a-4299" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86a7-026a-3a9f-5827" name="Bofur&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="896e-49ba-0cb6-e915" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7d61-aee1-ab33-42c0" name="Bofur the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="d8c7-c8db-bf9d-0274" type="selectionEntry"/>
+        <entryLink id="8442-14d2-4a11-5020" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b936-8fa0-c3cd-3b96" name="Nori&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="53fa-5e24-1efc-1fff" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="559b-5eb6-c953-e500" name="Nori the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="9b65-f6c0-37f2-c2ee" type="selectionEntry"/>
+        <entryLink id="5fbb-31a1-c6b2-0cba" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d2ad-5580-f4ec-c5ef" name="Dori&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9093-9108-88fc-9d27" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c835-6d63-9da3-4d80" name="Dori the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="b83f-be71-3f91-4bf7" type="selectionEntry"/>
+        <entryLink id="5fd5-3a20-2f7c-1f25" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="22d0-924d-2c43-e1d3" name="Gimli&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="cb3a-07d0-53f0-55d5" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ae46-00a9-ef5e-f1ad" name="Gimli, Son of Glóin" hidden="false" collective="false" import="true" targetId="4072-d158-632b-17b9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b16-0ba5-cb83-ef99" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f64e-dfc1-c327-9e63" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6322-da98-eab6-bc7c" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e7f0-d49a-4969-882e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c902-da9e-2a8c-88c4" name="Iron Hills Captain" hidden="false" collective="false" import="true" targetId="4ada-6ebf-3529-9dad" type="selectionEntry"/>
+        <entryLink id="21fc-6316-3e73-e564" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9897-e94d-36fc-39c7" name="Glóin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1b0c-f6c3-597a-23e6" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c8b2-59c6-3e4c-f44d" name="Glóin the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="72db-fd1f-cd9c-9395" type="selectionEntry"/>
+        <entryLink id="e2c9-583d-1695-8bc9" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="b838-48b8-7e31-c0eb" name="Wall of Steel" publicationId="8e2e-f1ed-1aa8-11ca" page="97" hidden="false">
+      <description>Friendly models that are Supporting gain a bonus of +1 To Wound when making Strikes.</description>
+    </rule>
+    <rule id="d787-8b4c-e8bc-a5ff" name="&quot;For Erebor!&quot;" publicationId="8e2e-f1ed-1aa8-11ca" page="97" hidden="false">
+      <description>Each friendly Hero model may, once per game, declare a Heroic Combat for free.</description>
+    </rule>
+    <rule id="73ed-4719-6fdc-5b28" name="Like Father, Like Son" publicationId="8e2e-f1ed-1aa8-11ca" page="97" hidden="false">
+      <description>Whilst within 3&quot; of each other, Gimli and Glóin may re-roll any failed To Wound Rolls when making Strikes.</description>
+    </rule>
+  </rules>
+</catalogue>

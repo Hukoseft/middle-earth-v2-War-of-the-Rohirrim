@@ -1,26 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c8b4-cd9a-8a47-131d" name="Arathorn&apos;s Stand" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c8b4-cd9a-8a47-131d" name="Arathorn&apos;s Stand" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="c076-0db7-8691-2939" name="Arathorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c98f-3126-fc5b-7cf7" type="min"/>
       </constraints>
       <categoryLinks>
-        <categoryLink id="daef-070c-936d-92fb" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="83c6-a85e-e090-7cdc" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="a237-fc28-2d15-6878" name="Arathorn, Chieftain of the Dúnedain" hidden="false" collective="false" import="true" targetId="5a38-fdeb-da2b-9931" type="selectionEntry"/>
         <entryLink id="0000-a053-2e69-e5e6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="234e-e32d-2852-9609" name="Halbarad&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="4017-997d-2fec-1f4b" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="abbb-4bf1-80bf-adea" name="Halbarad" hidden="false" collective="false" import="true" targetId="4431-2a2c-a316-01b8" type="selectionEntry"/>
+        <entryLink id="abbb-4bf1-80bf-adea" name="Halbarad" hidden="false" collective="false" import="true" targetId="4431-2a2c-a316-01b8" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e725-594a-5f18-7bd3" type="min"/>
+          </constraints>
+        </entryLink>
         <entryLink id="f0cd-0ce2-b0ce-744a" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

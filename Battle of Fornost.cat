@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e8e-770f-2814-6df9" name="Battle of Fornost" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="5" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e8e-770f-2814-6df9" name="Battle of Fornost" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9a08-ef50-ac66-031a" name="Glorfindel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -59,7 +59,12 @@
         <categoryLink id="03d2-4500-9b28-2db5" name="Dúnedain" hidden="false" targetId="f16a-7b75-3d75-fd19" primary="false"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="35b7-a025-4a21-c037" name="Ranger of the North" hidden="false" collective="false" import="true" targetId="314b-1db4-c42a-fa4f" type="selectionEntry"/>
+        <entryLink id="35b7-a025-4a21-c037" name="Ranger of the North" hidden="false" collective="false" import="true" targetId="314b-1db4-c42a-fa4f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c339-3648-4af3-35dc" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6d7a-dc76-6cf2-93b1" type="max"/>
+          </constraints>
+        </entryLink>
         <entryLink id="fc73-8bdf-a841-3a04" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>

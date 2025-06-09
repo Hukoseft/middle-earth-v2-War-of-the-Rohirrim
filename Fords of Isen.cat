@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e017-2b6b-f344-6bc7" name="Fords of Isen" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="a534-56a0-c13a-0e62" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="63d1-290e-9ffb-d99f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8f5d-641d-1fc6-0c8d" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="df7e-0267-ce14-4515" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="1616-12f2-038d-f37e" name="Elfhelm&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="da85-e75c-0b43-e539" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0773-e2d5-54e8-e1ba" name="Elfhelm, Captain of Rohan" hidden="false" collective="false" import="true" targetId="a2b3-b7a5-8d8e-5a83" type="selectionEntry"/>
+        <entryLink id="5d6e-d5ab-dd33-fc45" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8aed-ad7a-da46-83aa" name="Théodred&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="890b-fab9-7658-9ee5" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6950-54b7-d58f-6bdc" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="eaf1-1099-df8e-2dc1" name="Rohan Royal Guard" hidden="false" targetId="3414-6388-2318-1371" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d8f5-f6e8-32a0-40fa" name="Théodred, Prince of Rohan" hidden="false" collective="false" import="true" targetId="366b-80dc-b64a-3fe6" type="selectionEntry"/>
+        <entryLink id="9072-06e5-c859-b399" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="8026-9f40-86c3-9d46" name="Protect the Prince" publicationId="8e2e-f1ed-1aa8-11ca" page="81" hidden="false">
+      <description>Friendly models gain the Sworn Protector (Théodred) special rule.</description>
+    </rule>
+    <rule id="5ec8-5a9e-6fa4-3db7" name="Resolute Rohirrim" publicationId="8e2e-f1ed-1aa8-11ca" page="81" hidden="false">
+      <description>If your Army is Broken, friendly models gain the Dominant (2) special rule.</description>
+    </rule>
+    <rule id="c966-402d-1c25-928b" name="The Courage of Elfhelm" publicationId="8e2e-f1ed-1aa8-11ca" page="81" hidden="false">
+      <description>If Théodredis Engaged in Combat within 6&quot; of Elfhelm, then enemy models may not make Strikes against Théodred if there is another model they could make Strikes against instead.</description>
+    </rule>
+  </rules>
+</catalogue>

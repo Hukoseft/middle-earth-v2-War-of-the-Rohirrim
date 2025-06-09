@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="373a-ba54-8792-c30a" name="Assualt Upon Helm&apos;s Deep" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="373a-ba54-8792-c30a" name="Assualt Upon Helm&apos;s Deep" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="884c-6673-5bed-8ec4" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -34,17 +34,18 @@
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="83bf-e7cf-f5e4-dfd1" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b959-2a2b-c568-4ce0" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e160-99c7-a45d-c64e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+        <entryLink id="a954-caa0-6e90-0ec6" name="Uruk-hai Shaman" hidden="false" collective="false" import="true" targetId="93cc-ef43-4615-436b" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="9172-1256-8b53-da19" name="Isengard Assault Ballista" hidden="false" collective="false" import="true" targetId="4807-096b-b538-6fad" type="selectionEntry">
-      <modifiers>
-        <modifier type="increment" field="cecd-985d-067e-5590" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="884c-6673-5bed-8ec4" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink id="9172-1256-8b53-da19" name="Isengard Assault Ballista" hidden="false" collective="false" import="true" targetId="4807-096b-b538-6fad" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="57f4-92f5-d84a-d325" name="Commander of the Uruk-hai" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a31e-11b5-5c65-f6c4" name="Lothlórien" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a31e-11b5-5c65-f6c4" name="Lothlórien" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="7b4d-b1b8-ed00-b553" name="Galadriel&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="3375-c5d0-65e1-66c1" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="8290-a984-d917-ab42" name="Galadriel" hidden="false" targetId="fc90-82e8-bbeb-e33a" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="f4d0-501b-726a-c403" name="Galadriel" hidden="false" collective="false" import="true" targetId="49e4-f047-d567-7b4b" type="selectionEntry"/>
@@ -19,6 +20,7 @@
     <selectionEntry id="a38b-42d0-507a-f9bb" name="Celeborn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="0881-bafc-283a-e639" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="10be-71f8-1ed4-9cf1" name="Celeborn" hidden="false" targetId="9f22-c30a-4d63-7fd7" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="89b2-306c-90ff-0997" name="Celeborn, Lord of Lothlórien" hidden="false" collective="false" import="true" targetId="5bb9-aa8d-fb0a-4e4b" type="selectionEntry"/>
@@ -75,6 +77,24 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="61b0-e435-48fc-73c5" name="Rúmil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="06cc-6086-dfd8-b85a" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1fc7-a014-2656-0e24" name="Rúmil, Warden of Caras Galadhon" hidden="false" collective="false" import="true" targetId="8e3f-6e64-f9a7-cbde" type="selectionEntry"/>
+        <entryLink id="005e-6094-7856-1295" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5ad5-509c-26a3-dbd4" name="Orophin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a399-293f-8f57-cf53" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ca0c-25c1-a68c-ad21" name="Orophin, Galadhrim Captain" hidden="false" collective="false" import="true" targetId="0ed0-6c99-e27b-642f" type="selectionEntry"/>
+        <entryLink id="c90c-3718-e4e6-0415" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>

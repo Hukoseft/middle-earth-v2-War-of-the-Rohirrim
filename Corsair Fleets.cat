@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="88ca-7707-278c-0323" name="Corsair Fleets" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="88ca-7707-278c-0323" name="Corsair Fleets" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="fc85-c981-c0d9-e9e7" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -32,8 +32,21 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="7568-d4b8-8022-a661" name="General&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="42c6-f5f5-b216-ad4d" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b506-599f-e86f-8c54" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="30a1-7c51-8827-4d3f" value="0.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b506-599f-e86f-8c54" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="42c6-f5f5-b216-ad4d" type="min"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="42c6-f5f5-b216-ad4d" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="30a1-7c51-8827-4d3f" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="368f-5e90-e900-8fda" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
@@ -42,23 +55,56 @@
         <entryLink id="c870-de8a-549a-fd0b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
         <entryLink id="b942-0977-212e-b3b2" name="Corsair General" hidden="false" collective="false" import="true" targetId="f21c-0ce8-4dd2-b2d6" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3a63-04b6-3c93-27e1" name="Delgamar&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="fa36-cc9d-ecda-e9da" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="d074-c5b4-9836-f7d3" name="Delgamar, Gatemaster of Umbar" hidden="false" collective="false" import="true" targetId="594f-13fb-9882-549b" type="selectionEntry"/>
+        <entryLink id="e591-ee70-5d85-4426" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9722-fb56-5243-5dbd" name="Dalamyr&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="3263-9248-afd1-fc80" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f21c-0ce8-4dd2-b2d6" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3263-9248-afd1-fc80" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9997-6af5-9df8-8620" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dae2-5a1f-08c6-069f" name="Dalamyr, Fleetmaster of Umbar" hidden="false" collective="false" import="true" targetId="b506-599f-e86f-8c54" type="selectionEntry"/>
+        <entryLink id="0e69-2fac-f796-ea73" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="de87-f7ca-3bad-9e14" name="Corsair Ballista" hidden="false" collective="false" import="true" targetId="dbd6-b1e6-c291-b66e" type="selectionEntry">
-      <modifiers>
-        <modifier type="increment" field="387a-7bb7-9592-a168" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fc85-c981-c0d9-e9e7" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-        <modifier type="increment" field="387a-7bb7-9592-a168" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fb9e-d1c8-48ca-5ed8" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-    </entryLink>
+    <entryLink id="de87-f7ca-3bad-9e14" name="Corsair Ballista" hidden="false" collective="false" import="true" targetId="dbd6-b1e6-c291-b66e" type="selectionEntry"/>
   </entryLinks>
   <rules>
     <rule id="2c65-2bfe-f683-600a" name="The Fleetmaster" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">

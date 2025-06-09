@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="921a-2666-3e51-3310" name="The Shire" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="921a-2666-3e51-3310" name="The Shire" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="1535-f02c-0b0d-961e" name="Gandalf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -108,6 +108,84 @@
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0ca2-dc09-d8da-7377" name="Paladin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5501-3a80-b6d2-acf9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="9b28-0d51-0e81-3f45" name="Took" hidden="false" targetId="415f-985a-1d6f-5b36" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="50ab-6aa8-39ce-c3be" name="Paladin Took, Thain of the Shire" hidden="false" collective="false" import="true" targetId="2662-776a-2246-0d14" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="08bc-05b6-49f9-1ff2" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3aff-1f26-411d-d8cf" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="84d1-4e0e-b2c1-d701" name="Will&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8384-a77e-f15f-03a3" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="cc31-cfe3-833e-fcb1" name="Shirriff" hidden="false" targetId="38de-7978-da99-08ae" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dc77-e290-381a-d138" name="Will Witfoot, Mayor of Michel Delving" hidden="false" collective="false" import="true" targetId="1983-176f-b407-4d17" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8718-93b1-5e0b-cacc" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ab6b-a6aa-ca26-4465" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="305a-d924-de9a-3410" name="Cotton&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="b2ca-4102-7ecb-a5c8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="18fb-e621-8e11-faef" name="Farmer Tolman Cotton" hidden="false" collective="false" import="true" targetId="c06f-5599-9ba7-1cf9" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="998b-1d8d-1534-2205" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="aae8-cf78-0b88-690c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b16-c163-dd02-4ef5" name="Lotho&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="a1b6-df03-5ead-e83b" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0a9c-f624-7422-db23" name="Lotho Sackville-Baggins" hidden="false" collective="false" import="true" targetId="f981-ce3d-6134-5bc5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e5f7-3808-3ce1-c6fb" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="762c-81f5-6c9c-e01e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <entryLinks>
     <entryLink id="a218-39f8-a2c7-a2d3" name="Meriadoc Brandybuck" hidden="false" collective="false" import="true" targetId="f4f2-ed76-cf8c-26d3" type="selectionEntry">
@@ -128,6 +206,16 @@
     <entryLink id="f57c-c729-3b37-c899" name="Lobelia Sackville-Baggins" hidden="false" collective="false" import="true" targetId="c6c3-3058-3e95-e8a7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="8f83-70e1-0424-687a" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="5c55-8880-5afa-daa6" name="Fredegar &apos;Fatty&apos; Bolger" hidden="false" collective="false" import="true" targetId="1d4e-bda2-959a-0a9f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="56e8-2bc3-39d7-ab45" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="b06f-52c9-a3d4-3316" name="Folco Boffin" hidden="false" collective="false" import="true" targetId="241a-bcca-fb7b-04e2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="0a8f-dadb-a2ed-7d6f" name="New CategoryLink" hidden="false" targetId="13f2-59a9-5a73-a03f" primary="true"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
