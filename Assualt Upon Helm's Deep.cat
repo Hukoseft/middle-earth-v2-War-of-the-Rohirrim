@@ -1,51 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="373a-ba54-8792-c30a" name="Assualt Upon Helm&apos;s Deep" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="373a-ba54-8792-c30a" name="Assualt Upon Helm&apos;s Deep" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <selectionEntries>
-    <selectionEntry id="884c-6673-5bed-8ec4" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="884c-6673-5bed-8ec4" name="Uruk-hai Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
-        <categoryLink id="490c-3f0e-f9a5-0759" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink targetId="ef35-8c21-6b9c-cbb8" id="cff0-01c1-8ed6-5061" primary="true" name="Hero of Fortitude"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="9a6b-847c-d0cf-c189" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
-        <entryLink id="6404-02bc-2c96-803f" name="Uruk-hai Captain" hidden="false" collective="false" import="true" targetId="af8a-ad6f-1ab0-6c75" type="selectionEntry"/>
+        <entryLink id="6404-02bc-2c96-803f" name="Uruk-hai Captain" hidden="false" collective="false" import="true" targetId="af8a-ad6f-1ab0-6c75" type="selectionEntry">
+          <categoryLinks>
+            <categoryLink targetId="ef35-8c21-6b9c-cbb8" id="c09f-848e-90e9-c51c" primary="true" name="Hero of Fortitude"/>
+          </categoryLinks>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
-        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0"/>
       </costs>
-    </selectionEntry>
-    <selectionEntry id="5d8d-a371-1759-8872" name="General&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f8cd-1fa0-adfe-677c" type="min"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fcc-55e6-7d55-b4f5"/>
       </constraints>
-      <categoryLinks>
-        <categoryLink id="a34f-dad2-2cbe-7d0c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="4d9a-b4da-d045-76e3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
-        <entryLink id="b891-71fb-4788-6611" name="Uruk-hai General" hidden="false" collective="false" import="true" targetId="93b7-1199-4a91-ad56" type="selectionEntry"/>
-      </entryLinks>
-      <costs>
-        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
-        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="83bf-e7cf-f5e4-dfd1" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
-      <categoryLinks>
-        <categoryLink id="b959-2a2b-c568-4ce0" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
-      </categoryLinks>
-      <entryLinks>
-        <entryLink id="e160-99c7-a45d-c64e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
-        <entryLink id="a954-caa0-6e90-0ec6" name="Uruk-hai Shaman" hidden="false" collective="false" import="true" targetId="93cc-ef43-4615-436b" type="selectionEntry"/>
-      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
-    <entryLink id="9172-1256-8b53-da19" name="Isengard Assault Ballista" hidden="false" collective="false" import="true" targetId="4807-096b-b538-6fad" type="selectionEntry"/>
+    <entryLink id="9172-1256-8b53-da19" name="Isengard Assault Ballista" hidden="false" collective="false" import="true" targetId="4807-096b-b538-6fad" type="selectionEntry">
+      <constraints>
+        <constraint type="max" value="0" field="selections" scope="roster" shared="true" id="0fa8-17ef-7249-6402" automatic="false" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifiers>
+        <modifier type="increment" value="1" field="0fa8-17ef-7249-6402">
+          <repeats>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ef35-8c21-6b9c-cbb8" shared="true" roundUp="false" includeChildSelections="false" includeChildForces="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <rules>
     <rule id="57f4-92f5-d84a-d325" name="Commander of the Uruk-hai" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
