@@ -7,11 +7,7 @@
       </categoryLinks>
       <entryLinks>
         <entryLink id="9a6b-847c-d0cf-c189" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
-        <entryLink id="6404-02bc-2c96-803f" name="Uruk-hai Captain" hidden="false" collective="false" import="true" targetId="af8a-ad6f-1ab0-6c75" type="selectionEntry">
-          <categoryLinks>
-            <categoryLink targetId="ef35-8c21-6b9c-cbb8" id="c09f-848e-90e9-c51c" primary="true" name="Hero of Fortitude"/>
-          </categoryLinks>
-        </entryLink>
+        <entryLink id="6404-02bc-2c96-803f" name="Uruk-hai Captain" hidden="false" collective="false" import="true" targetId="af8a-ad6f-1ab0-6c75" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0"/>
@@ -32,7 +28,7 @@
       <modifiers>
         <modifier type="increment" value="1" field="0fa8-17ef-7249-6402">
           <repeats>
-            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ef35-8c21-6b9c-cbb8" shared="true" roundUp="false" includeChildSelections="false" includeChildForces="false"/>
+            <repeat value="1" repeats="1" field="selections" scope="roster" childId="ef35-8c21-6b9c-cbb8" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
           </repeats>
         </modifier>
       </modifiers>
