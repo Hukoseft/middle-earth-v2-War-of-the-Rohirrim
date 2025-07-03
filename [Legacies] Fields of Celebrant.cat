@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="0834-acdd-906f-6b8b" name="[Legacies] Fields of Celebrant" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="e02e-42ea-653f-2430" name="Eorl&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a5ef-290c-6280-2cea" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="16a5-1772-a9b7-edb9" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="06f5-ced8-3e5e-0fa4" name="Hero of Legend" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="898d-ca6e-89da-fa4b" name="Rohan" hidden="false" targetId="0d50-809e-7dc4-939a" primary="false"/>
+        <categoryLink id="02fc-e060-3084-7c5f" name="Son of Eorl" hidden="false" targetId="1f43-6bf5-d1d5-33a2" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bea9-2cf0-bdf1-9921" name="Eorl the Young" hidden="false" collective="false" import="true" targetId="d9ca-a115-bd4d-9b57" type="selectionEntry"/>
+        <entryLink id="d75c-9a93-9866-ca38" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a60-3b9e-f834-74f4" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0770-cfb1-30b1-f588" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d296-d18e-e21b-dd3e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="3eee-76e5-ab41-377e" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="a4d0-c852-155f-4f1d" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+        <categoryLink id="46a0-2ecc-225a-3583" name="Citadel Guard" hidden="false" targetId="6c3c-5224-1f9a-60d8" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="615c-826d-fe18-7713" name="King of Men" hidden="false" collective="false" import="true" targetId="4bfd-e398-c033-7911" type="selectionEntry"/>
+        <entryLink id="fd39-9d04-7a80-7684" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fecc-0789-b790-9cc2" name="Captain of Rohan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="37e6-e681-5748-65ea" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="0e31-0cec-d25e-bd51" name="Rohan" hidden="false" targetId="0d50-809e-7dc4-939a" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b2d0-0fc6-fee1-e831" name="Captain of Rohan" hidden="false" collective="false" import="true" targetId="4299-42b8-c5ec-79e4" type="selectionEntry"/>
+        <entryLink id="2791-46f4-5df6-fb64" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b554-31c6-d4f8-7c9d" name="Captain of Minas Tirith&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2493-b4c8-e3f6-d713" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="2e89-48ef-de39-1e0b" name="Gondor" hidden="false" targetId="b4ea-7715-d55b-7e78" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="54b7-c3bd-0135-a6d5" name="Captain of Minas Tirith" hidden="false" collective="false" import="true" targetId="93a2-881f-44d1-4302" type="selectionEntry"/>
+        <entryLink id="5d6d-2b6e-112d-f43b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="0214-8ea1-00f4-39c1" name="Birth of an Alliance" publicationId="578d-15f9-16d7-4804" page="20" hidden="false">
+      <description>Friendly models within 6&quot; of both a friendly Rohan Hero model and a friendly Gondor Hero model gain a bonus of +1 to any Courage or Intelligence Tests they are required to take.</description>
+    </rule>
+    <rule id="27b7-8971-ad53-ff59" name="Gondor&apos;s Last Defence" publicationId="578d-15f9-16d7-4804" page="20" hidden="false">
+      <description>Friendly Gondor models within range of an Objective Marker may re-roll To Wound rolls of a natural 1 when making Strikes.</description>
+    </rule>
+    <rule id="a01e-6db4-fe6d-55e6" name="The Charge of Eorl" publicationId="578d-15f9-16d7-4804" page="20" hidden="false">
+      <description>Once per game, at the start of any friendly Activation Phase, Eorl can use this special rule so long as he is alive and on the battlefield, and has the Cavalry keyword. If he does, then until the end of the turn all friendly Cavalry models must Charge when they Move if able. Additionally, until the end of the turn, friendly Cavalry models that Charged this turn may re-roll any failed To Wound rolls when making Strikes.</description>
+    </rule>
+  </rules>
+</catalogue>

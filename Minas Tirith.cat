@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d9c9-1ecb-df78-95c7" name="Minas Tirith" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d9c9-1ecb-df78-95c7" name="Minas Tirith" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="b92b-ec03-a564-e58c" name="Denethor&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -89,6 +89,12 @@
         <entryLink id="1be2-5831-ca5d-c044" name="Ingold, Warden of the Rammas Echor" hidden="false" collective="false" import="true" targetId="fda1-fc6b-219b-51a2" type="selectionEntry"/>
         <entryLink id="1ed3-ee38-04b0-2ca2" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e1ce-1735-8190-bc34" name="Húrin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -98,6 +104,12 @@
         <entryLink id="0fd1-f73e-1389-773d" name="Húrin the tall, Warden of the Keys" hidden="false" collective="false" import="true" targetId="9517-25f7-8439-f5c4" type="selectionEntry"/>
         <entryLink id="de2a-1dfa-c94a-ec68" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3804-dd4d-6992-4021" name="Beregond&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -107,6 +119,74 @@
         <entryLink id="ab59-8081-3185-aad6" name="Beregond, Guard of the Citadel" hidden="false" collective="false" import="true" targetId="1357-3b3e-f0ba-3cca" type="selectionEntry"/>
         <entryLink id="247f-7143-cd18-8505" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="22c9-e78e-84cd-418c" name="Knight&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="99ef-5269-95b4-2627" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="99ef-5269-95b4-2627" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f06f-06af-36a4-7d7f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="d9fa-b49f-bf3a-d087" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1c96-36d0-9643-af75" name="Knight of the White Tower" hidden="false" collective="false" import="true" targetId="c34a-ef52-6ba0-e66c" type="selectionEntry"/>
+        <entryLink id="0c1b-0a35-43f6-23cd" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="684c-b21c-568c-59a6" name="Cirion&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="38df-cd39-73e5-3cc5" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="38df-cd39-73e5-3cc5" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d351-f922-84e0-0e99" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="e68b-43ec-2838-7d7a" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0746-7ed1-e7a8-6aa2" name="Cirion, Lieutenant of Amon Barad" hidden="false" collective="false" import="true" targetId="0209-77f9-7618-c094" type="selectionEntry"/>
+        <entryLink id="5263-1fb5-3da9-501e" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

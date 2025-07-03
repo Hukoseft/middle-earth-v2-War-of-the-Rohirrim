@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="12a3-6144-6ec5-7f78" name="[Legacies] Army of Dunland" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="e5e5-0faa-6fb0-b1cc" name="Thrydan&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2529-2b54-fc3c-caa6" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2efb-7745-4a56-1167" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="dd31-0743-efdb-3801" name="Dunlending Huscarl" hidden="false" targetId="ca7e-8058-3b46-7b56" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="dbc1-aadf-f868-bc17" name="Thrydan Wolfsbane" hidden="false" collective="false" import="true" targetId="18e4-22fa-6e4b-b182" type="selectionEntry"/>
+        <entryLink id="63d5-3f4b-13fd-7887" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="47b9-456a-71d0-6a59" name="Gorûlf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6a81-5ab9-975a-e637" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="f59e-bf5f-cdbf-1f9e" name="Dunlending Huscarl" hidden="false" targetId="ca7e-8058-3b46-7b56" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="725a-6caa-3d45-c28d" name="Gorûlf Ironskin" hidden="false" collective="false" import="true" targetId="3716-acb5-6aea-b7af" type="selectionEntry"/>
+        <entryLink id="e2bf-3c28-6a02-7985" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ba3-5f14-6de1-8f53" name="Frída&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="8500-76bc-eb7c-ecb8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="2625-faac-229d-7424" name="Dunlending Huscarl" hidden="false" targetId="ca7e-8058-3b46-7b56" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="98f6-52f7-8ae8-c03d" name="Frída Tallspear" hidden="false" collective="false" import="true" targetId="9999-4653-bf7a-7e01" type="selectionEntry"/>
+        <entryLink id="de4d-129d-eaba-e97e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df5a-d971-2644-9699" name="Oathmaker&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9816-9699-1947-77cb" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="16ab-6e75-133b-4ce9" name="Wild Man Oathmaker" hidden="false" collective="false" import="true" targetId="4060-c555-24e8-c23b" type="selectionEntry"/>
+        <entryLink id="1afc-348b-6c63-1492" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1ea7-4810-4995-9cea" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="cc78-a0c6-5a8e-4d8c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="abd2-c4d3-5b6d-278f" name="Dunlending Chieftain" hidden="false" collective="false" import="true" targetId="c554-d4e5-edcc-8831" type="selectionEntry"/>
+        <entryLink id="a76d-0b1b-db69-2c6e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="18c9-b814-c278-43a2" name="“Death to the Forgoil!”" publicationId="6ac7-77f7-50fb-5c00" page="44" hidden="false">
+      <description>Friendly Dunland models gain the Hatred (Rohan) special rule.</description>
+    </rule>
+    <rule id="3c7b-b3f2-c87f-b304" name="Dunlending War Cry" publicationId="6ac7-77f7-50fb-5c00" page="44" hidden="false">
+      <description>Once per game, at the start of any Fight Phase, Thrydan can use this special rule so long as he is alive and on the battlefield. If he does, then until the end of the turn friendly Dunland models within 12&quot; of Thrydan gain a bonus of +1 To Wound when making Strikes.</description>
+    </rule>
+    <rule id="ba82-dcc6-4c9e-da52" name="Dunlending Pride" publicationId="6ac7-77f7-50fb-5c00" page="44" hidden="false">
+      <description>Friendly banners have a range of 6&quot; rather than 3&quot;.</description>
+    </rule>
+  </rules>
+</catalogue>

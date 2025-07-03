@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="50a7-dced-3d60-cef4" name="[Legacies] The Spider Queen&apos;s Brood" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="06d9-1937-c9d5-18d4" name="Queen&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="50f1-5ec6-5ed9-a403" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7b3a-9b76-e648-a705" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="6e38-3c1c-1905-e802" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="98f3-d53f-7d83-a91d" name="The Spider Queen" hidden="false" collective="false" import="true" targetId="7f1b-713f-5adc-22ed" type="selectionEntry"/>
+        <entryLink id="e297-8768-87ef-fe69" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2af7-92da-e959-d8e5" name="Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="e8af-03f9-4257-9956" name="New CategoryLink" hidden="false" targetId="b885-8240-03d0-da23" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="185d-5910-54ec-b4e4" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="7b63-ef15-c2b9-ff4b" name="Beasts of the Forest" publicationId="6ac7-77f7-50fb-5c00" page="48" hidden="false">
+      <description>Warbands from this Army do not need a Hero to lead them if they number six or more models. Instead, one Warrior model within the Warband takes on the role of the Warband’s Captain for the purposes of deployment. Warbands without a Hero model leading them may not include more than 12 models.</description>
+    </rule>
+    <rule id="d0ba-6dde-1f23-1149" name="“Worse are the Webs”" publicationId="6ac7-77f7-50fb-5c00" page="48" hidden="false">
+      <description>After both sides have deployed, but before the first turn begins, a player using this Army List may place four 25mm Web Markers on the board. Web Markers cannot be set up within 3&quot; of an enemy model or Objective Marker, and cannot be set up within 6&quot; of the edge of the board or within 9&quot; of another Web Marker. Any non-Spider model within 3&quot; of a Web Marker is considered to be in Difficult Terrain. Additionally, Spider models do not need Line of Sight to Charge a model within 3&quot; of a Web Marker.</description>
+    </rule>
+    <rule id="4b44-d457-6564-e880" name="Pounce" publicationId="6ac7-77f7-50fb-5c00" page="48" hidden="false">
+      <description>When a friendly Spider Warrior model Charges an enemy Infantry model, they gain the Knock to the Ground bonus as if they were Cavalry. This bonus is lost if they are subsequently Charged by an enemy Cavalry model.</description>
+    </rule>
+    <rule id="ca50-7352-9f46-5d65" name="Protect the Queen" publicationId="6ac7-77f7-50fb-5c00" page="48" hidden="false">
+      <description>Whenever the Spider Queen suffers a Wound, before any Fate Rolls are made, she may roll a D6. On a 3+, she may choose a single friendly Spider model within 1&quot; to immediately suffer the Wound instead of her.</description>
+    </rule>
+    <rule id="2f2d-7ba6-2119-0b27" name="The Queen&apos;s Cunning" publicationId="6ac7-77f7-50fb-5c00" page="48" hidden="false">
+      <description>If the Spider Queen declares a Heroic Move in the same turn as an enemy Hero, and subsequently loses the roll-off to see which Heroic Move will go first, she may choose to cancel her Heroic Move and regain the Might point spent to declare it.</description>
+    </rule>
+    <rule id="1ba4-5170-e533-9bbb" name="Additional Rules" publicationId="6ac7-77f7-50fb-5c00" page="48" hidden="false">
+      <description>• Friendly models can still pick up Objective Markers even though they have the Beast keyword.</description>
+    </rule>
+  </rules>
+</catalogue>

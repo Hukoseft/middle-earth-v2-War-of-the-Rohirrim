@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="e5d0-0619-5154-a098" name="[Legacies] Battle of Greenfields" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="5de9-b859-0beb-8da5" name="Bandobras&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5db9-e574-a799-e129" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8025-2f55-caef-e9ad" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="2302-0aec-afdc-df72" name="Shirriff" hidden="false" targetId="38de-7978-da99-08ae" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5265-7237-489a-61d5" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="d9d0-b757-6a7c-ecf4" name="Bandorbras Took" hidden="false" collective="false" import="true" targetId="13ba-dde7-48a1-0fe9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3ed8-6e6e-9246-ab0c" name="Ranger&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="7f6a-0d2e-5dc6-c7ba" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c30a-1c26-cec8-2e58" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="0890-795b-dc77-c9f9" name="Ranger of the North" hidden="false" collective="false" import="true" targetId="314b-1db4-c42a-fa4f" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fc2c-5db5-eccd-e7cd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dde6-410e-4dc2-401d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="ccd9-6d1a-568f-5cf7" name="The Bullroarer" publicationId="578d-15f9-16d7-4804" page="19" hidden="false">
+      <description>Bandobras Took may declare a Heroic Combat each turn for free.</description>
+    </rule>
+    <rule id="8bd3-5cdc-ae39-5256" name="&quot;They&apos;re dangerous folk, wandering the wilds&quot;" publicationId="578d-15f9-16d7-4804" page="19" hidden="false">
+      <description>Rangers of the North increase their Attacks value to 2.</description>
+    </rule>
+    <rule id="b82a-24ef-bd6b-5552" name="&quot;Defend the Shire!&quot;" publicationId="578d-15f9-16d7-4804" page="19" hidden="false">
+      <description>Friendly Hobbit Warrior models within 3&quot; of Bandobras gain the Dominant (2) special rule.</description>
+    </rule>
+    <rule id="2aa7-018a-5977-3b51" name="The Bounders" publicationId="578d-15f9-16d7-4804" page="19" hidden="false">
+      <description>Whilst wholly within their own deployment zone, friendly Hobbit models may re-roll To Hit rolls of a natural 1 when making shooting attacks.</description>
+    </rule>
+  </rules>
+</catalogue>

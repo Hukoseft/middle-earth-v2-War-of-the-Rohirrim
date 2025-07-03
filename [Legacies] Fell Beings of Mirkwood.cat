@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="7789-6f1c-a6b3-92a6" name="[Legacies] Fell Beings of Mirkwood" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="3d1f-8771-f5e8-4a2c" name="Razgûsh&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6dc7-5ffc-b55e-c23b" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="f0ae-83e5-e0b7-2950" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="80a1-6e6b-8fb5-be85" name="Razgûsh, War Leader of the North" hidden="false" collective="false" import="true" targetId="4e56-6c2d-ec08-7559" type="selectionEntry"/>
+        <entryLink id="3c92-a9dd-fae5-518e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="9c38-80f7-7744-52ce" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="3a00-1462-4f19-54b3" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6fb4-fcb3-26b4-48a1" name="Mordor Orc Captain" hidden="false" collective="false" import="true" targetId="8d65-4f5b-0377-030e" type="selectionEntry"/>
+        <entryLink id="a5c8-7800-e25f-f66c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4ca3-2206-eed9-6704" name="Taskmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="6c98-f50c-2c8e-50ff" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8969-f14a-5c01-bd16" name="Mordor Orc Taskmaster" hidden="false" collective="false" import="true" targetId="e062-6d95-9bca-cfed" type="selectionEntry"/>
+        <entryLink id="1093-0731-b608-8d80" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="721b-b81f-8edb-93fb" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c37b-7c2e-07b3-6289" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ca4b-3e14-22a1-d3d6" name="Mordor Orc Shaman" hidden="false" collective="false" import="true" targetId="4211-61ca-c28b-c103" type="selectionEntry"/>
+        <entryLink id="050b-c7c3-82ff-4c83" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2bc9-edb3-e41f-a74a" name="Queen&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5ee1-5de5-5baf-2c79" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="203e-3f88-b7d8-f021" name="The Spider Queen" hidden="false" collective="false" import="true" targetId="7f1b-713f-5adc-22ed" type="selectionEntry"/>
+        <entryLink id="861c-4dfc-9733-025b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <entryLinks>
+    <entryLink id="cde0-2a10-066a-255a" name="Mordor Orc Drummer" hidden="false" collective="false" import="true" targetId="3761-bc72-e9e0-a232" type="selectionEntry"/>
+  </entryLinks>
+  <rules>
+    <rule id="4ae4-7af5-0ffd-1059" name="Through the Forest" publicationId="6ac7-77f7-50fb-5c00" page="42" hidden="false">
+      <description>Friendly Infantry models gain the Woodland Creature special rule.</description>
+    </rule>
+    <rule id="2d3b-97b8-4cef-c834" name="Death to the Elves" publicationId="6ac7-77f7-50fb-5c00" page="42" hidden="false">
+      <description>Friendly models gain the Hatred (Elf) special rule.</description>
+    </rule>
+    <rule id="7e92-309b-1d66-4d66" name="The War Leader" publicationId="6ac7-77f7-50fb-5c00" page="42" hidden="false">
+      <description>Whilst Engaged in Combat with an enemy Elf model, Razgûsh gains a bonus of +1 to his Fight Value.</description>
+    </rule>
+  </rules>
+</catalogue>

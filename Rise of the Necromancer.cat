@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d3a6-275d-bd0e-ed92" name="Rise of the Necromancer" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d3a6-275d-bd0e-ed92" name="Rise of the Necromancer" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="7104-0848-2c58-0be3" name="Sauron&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -73,6 +73,9 @@
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <entryLinks>
+    <entryLink id="564b-29da-c8e0-fb9e" name="Castellan of Dol Guldur" hidden="false" collective="false" import="true" targetId="7931-54af-36ec-1aa7" type="selectionEntry"/>
+  </entryLinks>
   <rules>
     <rule id="6dc8-a5c6-8957-c7c8" name="Power of the Necromancer" publicationId="a40a-1ac4-b5c2-a481" page="153" hidden="false">
       <description>Friendly models gain the Resistant to Magic special rule. Additionally, the Necromancer can attempt to Cast two Magical Powers when he Activates rather than one; however, he may not attempt to Cast the same Magical Power twice, or target the same enemy model twice.</description>

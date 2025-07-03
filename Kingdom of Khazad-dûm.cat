@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a09f-62e2-2467-e539" name="Kingdom of Khazad-dûm" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a09f-62e2-2467-e539" name="Kingdom of Khazad-dûm" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="c525-206b-5a77-571b" name="Durin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -76,6 +76,58 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="e13b-cd11-cf43-c396" name="Champion&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="eec7-e34e-bf3c-78c7" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="eec7-e34e-bf3c-78c7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e006-2b86-85f1-b0d1" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="bc27-e304-e948-02bf" name="King&apos;s Champion" hidden="false" targetId="f2a6-9bb5-a25d-eede" primary="false"/>
+        <categoryLink id="dd61-b1ab-5943-ad6f" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6859-1e38-b3cd-7603" name="King&apos;s Champion" hidden="false" collective="false" import="true" targetId="5f1c-d058-fd7b-45e5" type="selectionEntry"/>
+        <entryLink id="9736-2a2c-1d25-551b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="e015-da76-553a-deef" name="Herald" hidden="false" collective="false" import="true" targetId="ae0d-15a7-66f3-cb3a" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7efa-dde0-e7a0-07aa" name="Shieldbearer&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="42ce-b33c-5805-22da" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="42ce-b33c-5805-22da" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="bd0f-3547-4236-4557" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="ef8d-273f-4bab-f7c1" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8239-5a83-d8db-5f90" name="Dwarf Shieldbearer" hidden="false" collective="false" import="true" targetId="2a54-79fc-0f1e-d94c" type="selectionEntry"/>
+        <entryLink id="edeb-4fe4-d717-941f" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

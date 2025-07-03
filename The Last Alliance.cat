@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="48ac-227e-e93d-2844" name="The Last Alliance" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="48ac-227e-e93d-2844" name="The Last Alliance" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="2ea0-037a-dc40-b770" name="Elendil&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -97,6 +97,39 @@
       <entryLinks>
         <entryLink id="dcea-283b-2b9e-6a13" name="Captain of Númenor" hidden="false" collective="false" import="true" targetId="27c2-b047-6942-4120" type="selectionEntry"/>
         <entryLink id="bdf9-26d4-d846-f0e6" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b7a-ca35-b96a-299c" name="Erestor&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="4d40-080e-34a9-57d9" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4d40-080e-34a9-57d9" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="7f47-3725-8cbf-6c26" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="0875-6f03-c532-0a26" name="Rivendell" hidden="false" targetId="eec7-0c18-5168-1229" primary="false"/>
+        <categoryLink id="0867-38ca-eea3-b304" name="Unique Rivendell" hidden="false" targetId="b3f9-6c12-2610-17b5" primary="false"/>
+        <categoryLink id="6dc5-5e4a-c495-c9c8" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ee42-bad9-daee-29a5" name="Erestor" hidden="false" collective="false" import="true" targetId="7402-fc3a-14d3-4f8f" type="selectionEntry"/>
+        <entryLink id="25a3-25a1-7e83-3c2c" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="4e8f-9375-4118-40ea" name="[Legacies] Reclamation of Moria" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="3b4a-7d89-8898-62e6" name="Balin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="13a4-61a2-0ae9-1536" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2085-de0f-d358-f783" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
+        <categoryLink id="4bdb-686d-8166-a27b" name="Khazâd Guard" hidden="false" targetId="e9d8-23eb-ff25-20d0" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="511a-8064-af8f-aa74" name="Balin the Dwarf, King of Moria" hidden="false" collective="false" import="true" targetId="7046-60a7-6495-c82c" type="selectionEntry"/>
+        <entryLink id="93b7-8441-46de-37bb" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="93cb-19fb-8089-62f9" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2147-3115-936d-e507" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0b82-feae-7008-c8dd" name="Dwarf King" hidden="false" collective="false" import="true" targetId="1b24-f559-d9ce-bf16" type="selectionEntry"/>
+        <entryLink id="d5be-16d8-872a-ff54" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="682f-cd57-39fb-1dd9" name="Champion&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1ba3-409a-39fd-da7f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="fdb0-2780-20c3-7c37" name="King&apos;s Champion" hidden="false" targetId="f2a6-9bb5-a25d-eede" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="28f0-88e6-8731-dbb6" name="King&apos;s Champion" hidden="false" collective="false" import="true" targetId="5f1c-d058-fd7b-45e5" type="selectionEntry"/>
+        <entryLink id="c807-b332-6c8b-5c74" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+        <entryLink id="608b-5bc1-0bee-fdd4" name="Herald" hidden="false" collective="false" import="true" targetId="ae0d-15a7-66f3-cb3a" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="04ab-14fc-c09b-924e" name="Flói&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="f93d-2f82-f142-a4d9" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="77b3-0ece-7405-ec53" name="Flói Stonehand" hidden="false" collective="false" import="true" targetId="6760-c1c1-8f2f-0f19" type="selectionEntry"/>
+        <entryLink id="d5e3-aefb-03b6-21e2" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8473-0eb1-de6b-dd0d" name="Óin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="4987-4b65-666e-5839" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1e6d-a0cd-3b60-78d6" name="Óin the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="5855-6b18-8f15-1b1f" type="selectionEntry"/>
+        <entryLink id="6951-a1f9-e872-1402" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="e1c4-4a3c-d72d-6939" name="Ori&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2e68-1511-7991-2912" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3225-e7b1-5aa8-d92b" name="Ori the Dwarf, Champion of Erebor" hidden="false" collective="false" import="true" targetId="45a3-ca31-30d3-e1af" type="selectionEntry"/>
+        <entryLink id="b20e-d273-065a-b748" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="0099-3494-104e-500d" name="Shieldbearer&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="2d9c-afcd-0f00-97ed" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a2ec-3b24-803a-7e9a" name="Dwarf Shieldbearer" hidden="false" collective="false" import="true" targetId="2a54-79fc-0f1e-d94c" type="selectionEntry"/>
+        <entryLink id="07b8-251c-c743-eae9" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a029-98a7-01d1-9647" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="349b-7aec-3283-b627" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5796-13d4-4946-9e6e" name="Dwarf Captain" hidden="false" collective="false" import="true" targetId="59a3-c86b-49e0-f2e4" type="selectionEntry"/>
+        <entryLink id="2ba5-cb62-4d12-391b" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="dec1-4ea1-c46b-cb0b" name="Reclaim Moria" publicationId="578d-15f9-16d7-4804" page="21" hidden="false">
+      <description>At the end of the game, if you control more Objective Markers than your opponent (if applicable), or are in possession of more Objective Markers than your opponent (if applicable), you score an additional 2 Victory Points. This can never take this Army’s controlling player’s total Victory Points above 20. Models that escape the board carrying an Objective Marker count as still being in possession of that Objective Marker for the purpose of this special rule.</description>
+    </rule>
+    <rule id="bbe0-66f5-a74f-bf85" name="A Desperate Defence" publicationId="578d-15f9-16d7-4804" page="21" hidden="false">
+      <description>Whilst this Army is considered to be Broken, friendly models gain a bonus of +1 To Wound when making Strikes.</description>
+    </rule>
+    <rule id="a968-b443-c923-c34d" name="Balin&apos;s Last Stand" publicationId="578d-15f9-16d7-4804" page="21" hidden="false">
+      <description>At the beginning of the Fight Phase, at the start of the Declare Heroic Actions Step, any friendly Dwarf Hero models that would be considered Trapped may declare a Heroic Defence for free, even if they could not normally declare a Heroic Defence.</description>
+    </rule>
+  </rules>
+</catalogue>

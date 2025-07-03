@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="dade-d5e9-f01f-ae2a" name="Road to Rivendell" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="dade-d5e9-f01f-ae2a" name="Road to Rivendell" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="2390-53f6-82bd-79e1" name="Aragorn&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -92,6 +92,42 @@
           </constraints>
         </entryLink>
         <entryLink id="343b-4bd7-6d0e-d170" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e2d-9de1-703a-dd83" name="Gildor&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="6b10-d6a6-96ff-5399" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6b10-d6a6-96ff-5399" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="960f-a306-6d78-2e3e" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="7880-caed-4166-1c8a" name="Gildor" hidden="false" targetId="aa3a-2a51-9591-b2a1" primary="false"/>
+        <categoryLink id="4813-ed7b-8891-2862" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2543-87ff-666e-ff2b" name="Gildor Inglorion" hidden="false" collective="false" import="true" targetId="41b4-e855-c937-7a4e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e94d-b8c1-3eab-9809" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="aece-bfd5-f2c0-73ef" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>

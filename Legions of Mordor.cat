@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="801f-52ae-3745-1dba" name="Legions of Mordor" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="801f-52ae-3745-1dba" name="Legions of Mordor" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="8a52-f4ff-d92b-1556" name="Witch-king&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -325,6 +325,313 @@
       <entryLinks>
         <entryLink id="cfed-006b-0730-73c2" name="Râza, Fang of the Serpent" hidden="false" collective="false" import="true" targetId="e969-153e-5e22-c64a" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ca5a-06fe-b432-6f40" name="Betrayer&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c188-b0f7-aa3c-4856" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="bee9-e4e2-7b98-bd41" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+        <categoryLink id="cad3-7de9-7c2f-6709" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="187d-21d6-794f-a929" name="The Betrayer" hidden="false" collective="false" import="true" targetId="7098-fadb-9f22-1dfc" type="selectionEntry"/>
+        <entryLink id="7fde-1d25-d91b-179d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bbe0-50e2-7c6d-5dc1" name="Dark Marshal&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="e98f-121f-c4ee-82fe" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="17da-7814-a31f-303c" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="aecc-8fb7-ce7e-cb02" name="The Dark Marshal" hidden="false" collective="false" import="true" targetId="e574-3eb0-da65-32bd" type="selectionEntry"/>
+        <entryLink id="0983-3efd-4d8a-e23d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d029-1dac-9d2f-d030" name="Dwimmerlaik&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c913-aad1-e3bf-7557" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="7036-7117-a403-9230" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="bd70-c6b8-26b0-a014" name="The Dwimmerlaik" hidden="false" collective="false" import="true" targetId="3b2d-67c2-af95-51db" type="selectionEntry"/>
+        <entryLink id="721f-edba-05de-f12e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ba63-fc06-2a5e-6042" name="Khamûl&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="48ec-2eb9-0a3f-aa47" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="d1f6-0a90-f7cd-e75f" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+        <categoryLink id="8216-f3c2-3996-2b5d" name="Easterling" hidden="false" targetId="35ba-7f33-c093-2662" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c10e-d1b4-c9a6-fb54" name="Khamûl the Easterling" hidden="false" collective="false" import="true" targetId="238b-a924-6d8a-784e" type="selectionEntry"/>
+        <entryLink id="3e5c-b759-ce40-d82d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e2dc-8848-24ab-7f4e" name="Knight of Umbar&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6d76-534d-7c6d-734a" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="e56f-8731-9952-67f0" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b9af-c1b4-1e86-9c85" name="The Knight of Umbar" hidden="false" collective="false" import="true" targetId="4156-934a-2d85-dd72" type="selectionEntry"/>
+        <entryLink id="d14b-7f82-80bc-de2f" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c653-e312-9d34-3cc1" name="Shadow Lord&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="62ae-a16e-ee1d-e2a8" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="06b9-50c9-5a4b-8965" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3fbf-6d5b-497e-b57f" name="The Shadow Lord" hidden="false" collective="false" import="true" targetId="8594-5f71-697f-55ec" type="selectionEntry"/>
+        <entryLink id="9752-1c85-0cbf-8a16" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="04e8-48c4-4b6f-cb7d" name="Tainted&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="0e37-2113-84d0-ffe1" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="2eb4-0af0-f9cb-74a5" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1932-179c-c032-98f4" name="The Tainted" hidden="false" collective="false" import="true" targetId="e6b0-34e5-d734-590d" type="selectionEntry"/>
+        <entryLink id="0f87-7cfb-9d98-fc10" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="51b0-a6b7-ae58-6b3a" name="Undying&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6841-8c0b-5524-2b47" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="3413-eb2e-01d4-1b37" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9fcb-7acd-0deb-d7a0" name="The Undying" hidden="false" collective="false" import="true" targetId="b7ed-33a1-f077-0f53" type="selectionEntry"/>
+        <entryLink id="1462-a2eb-a903-a8b7" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b3f4-4b61-11da-9ace" name="Great Beast&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1c53-f4d2-44b2-e5d6" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="44e8-eb8d-7fa7-2e79" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="8989-f50a-4086-50ef" name="Great Beast of Gorgoroth" hidden="false" collective="false" import="true" targetId="b533-2882-e548-8e65" type="selectionEntry"/>
+        <entryLink id="04df-018c-eeb5-4ad6" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb0a-0e3c-118e-b870" name="Zagdûsh&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="32f8-0e7b-7988-7236" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="4498-8c5e-38a0-6360" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e439-d2e8-b72d-fc1d" name="Zagdûsh, Orc Captain" hidden="false" collective="false" import="true" targetId="16da-d71c-88cc-b2be" type="selectionEntry"/>
+        <entryLink id="aefd-0a9a-b1e7-20eb" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="05db-8c88-71ac-74ed" name="Goroth&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c559-82b0-c00e-03f6" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="240a-93a8-6aa0-2a37" name="Mordor" hidden="false" targetId="5edd-85a7-0250-3a10" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5524-f581-4bd2-6ec0" name="Goroth, Captain of the Morannon" hidden="false" collective="false" import="true" targetId="5053-c736-e8f9-e130" type="selectionEntry"/>
+        <entryLink id="1ca5-f83c-b5ef-cb60" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="75b3-c740-232f-6a15" name="Haradrim King&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="331b-0038-1542-9cc4" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="f2fe-ecef-b653-fd38" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ccae-140f-96f0-83c9" name="Haradrim King" hidden="false" collective="false" import="true" targetId="d4d2-6b8d-512e-9152" type="selectionEntry"/>
+        <entryLink id="1d87-2b60-bc3b-afa6" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="db88-7730-205d-b702" name="Golden King&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9d84-2372-19f9-4225" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="7288-89e5-3f6f-47b3" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ba2f-314e-4401-43eb" name="The Golden King of Abrakhân" hidden="false" collective="false" import="true" targetId="db73-8c4f-669b-597d" type="selectionEntry"/>
+        <entryLink id="8743-fff8-1e19-0a15" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>
