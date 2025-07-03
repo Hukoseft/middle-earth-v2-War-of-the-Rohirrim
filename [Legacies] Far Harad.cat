@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="b1f3-df3d-7b04-fea8" name="[Legacies] Far Harad" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="51bc-bb1c-c528-24f9" name="King&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="962a-11de-9859-fe25" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="2614-0399-0a41-a10f" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e36e-e56b-df2e-f653" name="Mahûd King" hidden="false" collective="false" import="true" targetId="52b3-27ad-00e4-bfd0" type="selectionEntry"/>
+        <entryLink id="d207-e741-d58c-6b65" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="6712-576b-27e3-808d" name="Tribesmaster&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="551e-8cf8-74a3-612c" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="a4c8-0a43-d960-efe8" name="Mahûd Tribesmaster" hidden="false" collective="false" import="true" targetId="55e2-e6b6-3489-992b" type="selectionEntry"/>
+        <entryLink id="db91-4393-4a39-c2b8" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="893c-0422-5023-cc02" name="Battle Frenzy" publicationId="6ac7-77f7-50fb-5c00" page="46" hidden="false">
+      <description>Whenever a friendly Mahûd model suffers a Wound, roll a D6. On the roll of natural 6, the Wound is ignored.</description>
+    </rule>
+    <rule id="4cf7-29c8-d23a-6308" name="Revel in Death" publicationId="6ac7-77f7-50fb-5c00" page="46" hidden="false">
+      <description>If your General slays an enemy Hero model in Combat, then until the end of the turn friendly Mahûd Warrior models within 6&quot; of your General gain a bonus of +1 to their Fight Value.</description>
+    </rule>
+    <rule id="c6f8-2473-29c3-d670" name="Warrior Pride" publicationId="6ac7-77f7-50fb-5c00" page="46" hidden="false">
+      <description>Mahûd Warrior models within 6&quot; of a friendly Mahûd Hero model that is Engaged in Combat automatically pass all Courage Tests they are required to take.</description>
+    </rule>
+  </rules>
+</catalogue>

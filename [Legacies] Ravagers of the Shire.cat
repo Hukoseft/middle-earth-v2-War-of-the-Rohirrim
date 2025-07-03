@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="8c9f-a9cd-81b6-c792" name="[Legacies] Ravagers of the Shire" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="e230-d86f-1581-8ef3" name="Golfimbul&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="e45c-3394-9d83-4177" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0b45-9d1f-8d4f-5971" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="801a-9402-257f-0ca8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="2598-a090-157b-8a2c" name="Golfimbul, Orc Captain" hidden="false" collective="false" import="true" targetId="ece7-d0c2-c831-76e6" type="selectionEntry"/>
+        <entryLink id="c145-4697-00d9-fc38" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a4c2-9d5a-8cc0-efc6" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="452a-a596-6a84-fa54" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="f502-0765-7f8d-1fb4" name="Mordor Orc Captain" hidden="false" collective="false" import="true" targetId="8d65-4f5b-0377-030e" type="selectionEntry"/>
+        <entryLink id="3ccb-28b1-63fe-b695" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7f13-a27c-2f02-7db7" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="9d49-bdf4-9fc9-340f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ea4c-ca74-65ea-daa1" name="Mordor Orc Shaman" hidden="false" collective="false" import="true" targetId="4211-61ca-c28b-c103" type="selectionEntry"/>
+        <entryLink id="8619-ae96-6930-a3d0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="991a-1437-fd65-651d" name="Golfimbul’s Rage" publicationId="6ac7-77f7-50fb-5c00" page="47" hidden="false">
+      <description>Golfimbul may declare a Heroic Combat each turn for free.</description>
+    </rule>
+    <rule id="29e8-a01c-ef8e-b4bb" name="Courage from Ignorance" publicationId="6ac7-77f7-50fb-5c00" page="47" hidden="false">
+      <description>Whilst Golfimbul is still alive and on the battlefield, friendly Orc models gain a bonus of +1 to any Courage Tests they are required to take.</description>
+    </rule>
+    <rule id="a3ab-f0e2-86b4-20ca" name="Overwhelm the Foe" publicationId="6ac7-77f7-50fb-5c00" page="47" hidden="false">
+      <description>Friendly Orc models gain a bonus of +1 To Wound when making Strikes against an enemy model that is outnumbered in a Combat.</description>
+    </rule>
+  </rules>
+</catalogue>

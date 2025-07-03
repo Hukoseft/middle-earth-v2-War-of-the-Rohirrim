@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="89f3-76d4-bb65-29fd" name="Kingdom of Rohan" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="89f3-76d4-bb65-29fd" name="Kingdom of Rohan" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="e997-bf75-abff-a801" name="Théoden&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -138,6 +138,101 @@
       <entryLinks>
         <entryLink id="8fa3-706a-3ac2-39ed" name="Elfhelm, Captain of Rohan" hidden="false" collective="false" import="true" targetId="a2b3-b7a5-8d8e-5a83" type="selectionEntry"/>
         <entryLink id="2136-d044-7132-3b82" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="41e1-cbcb-30c9-66a1" name="Grimbold&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="ebca-24a7-e302-b124" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ebca-24a7-e302-b124" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="d8c9-34de-46ca-b6b2" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="57fb-a1fc-d793-02ef" name="Grimbold" hidden="false" targetId="c7f6-6400-3c72-3903" primary="false"/>
+        <categoryLink id="2c41-b6b7-dd4c-b6a3" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7db7-afe4-7f13-9769" name="Grimbold of Grimslade" hidden="false" collective="false" import="true" targetId="5501-fe0f-16ef-423f" type="selectionEntry"/>
+        <entryLink id="285c-cf4b-8cba-a4f3" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="940f-43fa-84bf-a86e" name="Erkenbrand&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="5287-017e-0efc-7da7" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5287-017e-0efc-7da7" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8c10-c5dc-1f1a-b154" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="1820-3073-cc06-2b13" name="Erkenbrand" hidden="false" targetId="43b8-2232-98a2-3e55" primary="false"/>
+        <categoryLink id="86d0-7884-9b40-e717" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="9f52-4c80-2072-a403" name="Erkenbrand, Captain of Rohan" hidden="false" collective="false" import="true" targetId="e659-22e3-aa66-25de" type="selectionEntry"/>
+        <entryLink id="c9c4-09dd-76ae-2022" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77c2-2c90-695c-e925" name="Huntsman&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="dfa9-5d06-70cb-a386" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="dfa9-5d06-70cb-a386" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="be7e-a3c3-4037-ea44" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="3d88-fc30-a192-1645" name="Legacies" hidden="false" targetId="5466-1a2b-b4ce-2bbd" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ec88-85d0-56eb-54af" name="King&apos;s Huntsman" hidden="false" collective="false" import="true" targetId="07bf-2f59-55a9-59b7" type="selectionEntry"/>
+        <entryLink id="8e07-723c-a3ff-0aa0" name="Followers" hidden="false" collective="false" import="true" targetId="f88d-1ecb-eb54-b9eb" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>

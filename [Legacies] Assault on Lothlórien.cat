@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="038d-0119-3806-0fba" name="[Legacies] Assault on Lothlórien" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <selectionEntries>
+    <selectionEntry id="d555-7e25-4af9-109b" name="Ashrâk&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="29fe-0463-6329-1dfc" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="694c-fad7-0f5a-c398" name="Ashrâk" hidden="false" targetId="cd3f-3e20-176d-d737" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="de0d-6249-9079-c898" name="Ashrâk" hidden="false" collective="false" import="true" targetId="0dc7-895d-dccf-8958" type="selectionEntry"/>
+        <entryLink id="9baa-8392-0829-c012" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="8a5b-b3aa-d2bb-2752" name="Orc Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="ca2a-2ead-7a12-53e5" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="61d7-3e1b-e1a5-a939" name="Mordor Orc Captain" hidden="false" collective="false" import="true" targetId="8d65-4f5b-0377-030e" type="selectionEntry"/>
+        <entryLink id="1844-76e4-aa69-d7b0" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4631-0116-43f4-99f5" name="Drûzhag&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="1194-9581-2cee-66e6" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="1a3b-5680-076f-2389" name="Drûzhag" hidden="false" targetId="f776-84b3-7b4d-3c8c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="4e54-25a6-0085-d3dc" name="Drûzhag, the Beastcaller" hidden="false" collective="false" import="true" targetId="afe1-301d-11ee-2ecf" type="selectionEntry"/>
+        <entryLink id="8a7c-01ce-616c-677c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="0bb8-e7e3-0463-3a99" name="Muzgúr&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4c81-5146-79df-ee0e" type="min"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="b832-5672-39de-2361" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="36cc-dea6-4f0d-20a3" name="Muzgúr, Orc Shaman" hidden="false" collective="false" import="true" targetId="bbc2-f122-f7b1-a616" type="selectionEntry"/>
+        <entryLink id="a24e-7b3d-1d5e-fdbe" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="b5c8-ab68-08e4-7138" name="Orc Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="244f-a5d3-a108-bf90" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="eb70-b429-b74b-4627" name="Mordor Orc Shaman" hidden="false" collective="false" import="true" targetId="4211-61ca-c28b-c103" type="selectionEntry"/>
+        <entryLink id="b985-e198-41f0-c746" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="ab79-e086-0b64-662c" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="d943-8bef-25b4-5088" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1b8c-0491-4ea0-18c9" name="Wild Warg Chieftain" hidden="false" collective="false" import="true" targetId="4089-8c6f-7c6d-3c2e" type="selectionEntry"/>
+        <entryLink id="accd-e913-938a-5ff3" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="2f13-efe5-3149-e85f" name="Goblin Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="5044-2464-74f6-c695" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3751-0f4a-485d-bd4b" name="Moria Goblin Shaman" hidden="false" collective="false" import="true" targetId="08fb-c2ef-0811-bfba" type="selectionEntry"/>
+        <entryLink id="af50-528a-db03-f4fa" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="a8a1-7b33-481b-f197" name="Goblin Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink id="c5e8-9679-3e55-a0e3" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c940-1a5c-1896-853b" name="Moria Goblin Captain" hidden="false" collective="false" import="true" targetId="be58-9759-de81-8d67" type="selectionEntry"/>
+        <entryLink id="7fbe-ec44-da86-ba36" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <rules>
+    <rule id="634e-c201-6170-72e9" name="Cover of Darkness" publicationId="6ac7-77f7-50fb-5c00" page="43" hidden="false">
+      <description>Any game using this Army List automatically takes place at night. Use the Fighting at Night special rules found on page 137 of the Middle-earth Strategy Battle Game Rules Manual.</description>
+    </rule>
+    <rule id="b357-7041-4d9a-79ce" name="Ruthless Savagery" publicationId="6ac7-77f7-50fb-5c00" page="43" hidden="false">
+      <description>Friendly Orc and Goblin models gain a bonus of +1 To Wound when making Strikes against an enemy model that is outnumbered in a Combat.</description>
+    </rule>
+  </rules>
+</catalogue>

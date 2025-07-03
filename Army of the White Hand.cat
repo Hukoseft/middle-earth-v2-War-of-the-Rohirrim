@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="98e0-c832-f13c-88cf" name="Army of the White Hand" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="98e0-c832-f13c-88cf" name="Army of the White Hand" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="964d-28c7-187c-6334" name="Saruman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -32,7 +32,7 @@
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7d3e-7be1-5332-ed99" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7d3e-7be1-5332-ed99" name="Wild Man Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="27f8-6120-afb6-137f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
       </categoryLinks>
@@ -85,6 +85,12 @@
         <entryLink id="47d6-b59b-35b9-9101" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
         <entryLink id="9b93-22f5-6c95-5480" name="Uruk-hai Shaman" hidden="false" collective="false" import="true" targetId="93cc-ef43-4615-436b" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d7a8-d379-d56a-19f3" name="Orc Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -93,6 +99,95 @@
       <entryLinks>
         <entryLink id="6e14-5895-063a-838f" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
         <entryLink id="74bf-7bb9-9233-fa15" name="Isengard Orc Shaman" hidden="false" collective="false" import="true" targetId="5307-68b6-c4e9-2b96" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e03d-18a1-c24d-0ac3" name="Vraskû&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="4f35-0899-64c2-ccc2" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="03f2-b5e0-687d-6e8e" name="Vraskû" hidden="false" collective="false" import="true" targetId="9be0-c355-0d4f-335b" type="selectionEntry"/>
+        <entryLink id="4eb9-e29b-e2c5-636c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="6367-c14b-eddc-83fc" name="Thrydan&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ac7f-72d5-6e25-8a37" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="716d-2cde-782a-bca3" name="Dunlending Huscarl" hidden="false" targetId="ca7e-8058-3b46-7b56" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1d1a-208f-fe30-d305" name="Thrydan Wolfsbane" hidden="false" collective="false" import="true" targetId="18e4-22fa-6e4b-b182" type="selectionEntry"/>
+        <entryLink id="30dc-250a-f328-4147" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="6843-4d4a-0808-cede" name="Dunlending Chieftain&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9afb-7976-4093-16d8" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1237-3765-d3e0-6dba" name="Dunlending Chieftain" hidden="false" collective="false" import="true" targetId="c554-d4e5-edcc-8831" type="selectionEntry"/>
+        <entryLink id="05b6-e0aa-363e-4729" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7293-b2b2-c958-5a34" name="Frída&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ce5f-3160-97de-0abc" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="d96b-f3b7-cfca-bae1" name="Dunlending Huscarl" hidden="false" targetId="ca7e-8058-3b46-7b56" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b0ee-b016-0648-dab8" name="Frída Tallspear" hidden="false" collective="false" import="true" targetId="9999-4653-bf7a-7e01" type="selectionEntry"/>
+        <entryLink id="3b59-85df-441c-18a9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="7f04-df97-3ef0-c3bc" name="Gorûlf&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="b42f-3100-bc43-1e19" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="37bf-a589-daff-0211" name="Dunlending Huscarl" hidden="false" targetId="ca7e-8058-3b46-7b56" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="b159-4358-4f9c-a4dc" name="Gorûlf Ironskin" hidden="false" collective="false" import="true" targetId="3716-acb5-6aea-b7af" type="selectionEntry"/>
+        <entryLink id="d329-d05a-0150-f7bb" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>

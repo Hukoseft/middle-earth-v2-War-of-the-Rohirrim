@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="013b-7330-66c7-6e43" name="Uglúk&apos;s Scouts" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="013b-7330-66c7-6e43" name="Uglúk&apos;s Scouts" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="91f9-8a36-6a8d-0db4" name="Uglúk&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -92,6 +92,29 @@
       <entryLinks>
         <entryLink id="99e4-d915-c8fe-1254" name="Isengard Orc Shaman" hidden="false" collective="false" import="true" targetId="5307-68b6-c4e9-2b96" type="selectionEntry"/>
         <entryLink id="43b1-d9f6-086a-ccb5" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4281-3c97-e0e2-89be" name="Mauhúr&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7a4b-2443-4efb-ac5f" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="272c-8bd8-9c05-2b05" name="Uruk-hai" hidden="false" targetId="b418-cc56-8f23-7008" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="461d-2238-09f0-58d0" name="Mauhúr" hidden="false" collective="false" import="true" targetId="cf33-70a2-3fa3-bf0d" type="selectionEntry"/>
+        <entryLink id="7041-fa5f-efe5-bb9c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>

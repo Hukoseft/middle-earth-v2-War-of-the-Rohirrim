@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0e30-df42-5824-7a47" name="Grand Army of the South" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0e30-df42-5824-7a47" name="Grand Army of the South" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="5b22-e9be-7a83-cf30" name="War Leader&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -255,6 +255,213 @@
       <entryLinks>
         <entryLink id="59d5-81a5-0154-26d0" name="Haradrim Chieftain" hidden="false" collective="false" import="true" targetId="7b92-0e7b-2637-a09d" type="selectionEntry"/>
         <entryLink id="51f1-70c6-59c6-6d27" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f836-4b7d-9710-d606" name="Khamûl&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6775-edbf-7d8d-a30a" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="fabf-9b8a-c4e5-4655" name="Easterling" hidden="false" targetId="35ba-7f33-c093-2662" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="faa9-0ddb-2976-48b6" name="Khamûl the Easterling" hidden="false" collective="false" import="true" targetId="238b-a924-6d8a-784e" type="selectionEntry"/>
+        <entryLink id="be75-dfc1-dfd8-31c7" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f20c-b331-f387-a2b9" name="Betrayer&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="417c-16ca-3bc6-532f" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="6a5e-82a8-e6cd-eab7" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7aaf-e4c5-ad80-530f" name="The Betrayer" hidden="false" collective="false" import="true" targetId="7098-fadb-9f22-1dfc" type="selectionEntry"/>
+        <entryLink id="bbad-6b48-b232-bb4e" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1757-715c-7693-2e57" name="Knight of Umbar&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="517a-7446-7d7a-28fc" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="4623-d36a-5c5c-cedb" name="Umbar" hidden="false" targetId="d0ea-9797-95da-01f9" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="ae7a-0450-0c54-c0c1" name="The Knight of Umbar" hidden="false" collective="false" import="true" targetId="4156-934a-2d85-dd72" type="selectionEntry"/>
+        <entryLink id="ef18-2958-26e1-78d7" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5c25-69f6-e187-5588" name="Haradrim King&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="7824-3a22-71c1-cc91" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="b742-cf02-c6bd-5dd2" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="59bb-015a-2f7d-1668" name="Haradrim King" hidden="false" collective="false" import="true" targetId="d4d2-6b8d-512e-9152" type="selectionEntry"/>
+        <entryLink id="c9f8-f0bf-3dfa-1223" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9de8-fabb-9878-a3ce" name="Golden King&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="511f-ee69-036c-9eb9" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="8949-1f65-e09a-541f" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="e1b1-1dbb-3a85-4292" name="The Golden King of Abrakhân" hidden="false" collective="false" import="true" targetId="db73-8c4f-669b-597d" type="selectionEntry"/>
+        <entryLink id="63e5-d7f4-b62a-723b" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7f65-8db0-f7d5-9de0" name="Mahûd King&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="d940-d7ce-62c7-f673" name="Hero of Valour" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="35e4-87ac-e7ce-251c" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="5e4d-60b5-07e6-2e33" name="Mahûd King" hidden="false" collective="false" import="true" targetId="52b3-27ad-00e4-bfd0" type="selectionEntry"/>
+        <entryLink id="44e3-0ea4-b8cb-1447" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f0e8-4918-d00a-f21f" name="Mahûd Tribesmaster&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1f9a-1db5-994c-7aaf" name="Hero of Fortitude" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="cb84-5de8-c09f-117c" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6d0b-58b3-937a-0137" name="Mahûd Tribesmaster" hidden="false" collective="false" import="true" targetId="55e2-e6b6-3489-992b" type="selectionEntry"/>
+        <entryLink id="34e5-1ac8-c7df-6584" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="84fb-9bdb-ce09-269d" name="Khandish King&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="c1a0-8ea3-b88a-ae12" name="New CategoryLink" hidden="false" targetId="f17d-8301-f19c-f80d" primary="true"/>
+        <categoryLink id="e69f-a094-44b5-76e6" name="Khand" hidden="false" targetId="4d8f-f71f-0617-48de" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="cf51-be6b-3d1a-0a24" name="Khandish King" hidden="false" collective="false" import="true" targetId="368b-021d-eaeb-aeb5" type="selectionEntry"/>
+        <entryLink id="a8e2-c11f-d67f-cef9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="02ae-c04f-1839-321a" name="Khandish Chieftain&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a993-5d7e-e36e-02dd" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="d0ec-a064-0fd3-14d9" name="Khand" hidden="false" targetId="4d8f-f71f-0617-48de" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0a94-e0b6-c6f7-e8fb" name="Khandish Chieftain" hidden="false" collective="false" import="true" targetId="0b21-46f6-1cc5-0c7e" type="selectionEntry"/>
+        <entryLink id="d0f0-02ab-3145-a34d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9b73-8d94-bcdb-4200" name="Moria" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9b73-8d94-bcdb-4200" name="Moria" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="982f-f7ef-10a8-61cf" name="Durbûrz&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -16,7 +16,7 @@
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9da7-9d5f-6c7a-7014" name="Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9da7-9d5f-6c7a-7014" name="Moria Goblin Shaman&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="bc39-c0d3-1938-be41" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
       </categoryLinks>
@@ -31,7 +31,7 @@
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c101-34f9-2d3f-8b5c" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c101-34f9-2d3f-8b5c" name="Moria Goblin Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="8548-e28e-1949-b7cf" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
       </categoryLinks>
@@ -49,7 +49,7 @@
     <selectionEntry id="f42b-ebfb-268e-324a" name="Drûzhag&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="ab45-6a8c-f3d5-9560" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
-        <categoryLink id="3d09-74a3-33ed-948f" name="Beast" hidden="false" targetId="185c-07da-d0a7-1849" primary="false"/>
+        <categoryLink id="533a-d0c5-929c-c7a3" name="Drûzhag" hidden="false" targetId="f776-84b3-7b4d-3c8c" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="c0f2-9643-1890-1599" name="Drûzhag, the Beastcaller" hidden="false" collective="false" import="true" targetId="afe1-301d-11ee-2ecf" type="selectionEntry"/>
@@ -101,6 +101,71 @@
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
         <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="91ba-921c-d1d2-c17f" name="Grôblog&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="9858-fcec-8ef2-0e52" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7e82-1fcd-de8d-6ab2" name="Grôblog" hidden="false" collective="false" import="true" targetId="033c-8097-7d25-b7a9" type="selectionEntry"/>
+        <entryLink id="6588-998e-cd22-2b3d" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="5d52-cb44-2fc3-e0fe" name="Ashrâk&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="1c7a-a761-07fa-9562" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+        <categoryLink id="b849-e16f-ac7f-d1cd" name="Ashrâk" hidden="false" targetId="cd3f-3e20-176d-d737" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="882a-dad4-468e-d65e" name="Ashrâk" hidden="false" collective="false" import="true" targetId="0dc7-895d-dccf-8958" type="selectionEntry"/>
+        <entryLink id="decb-74b6-8a03-aeb5" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="6cec-bde3-6a16-2c94" name="Moria Blackshield Captain&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="49af-3bd5-1cef-4142" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="c3a7-007b-93a0-e0c5" name="Moria Blackshield Captain" hidden="false" collective="false" import="true" targetId="daf5-25ce-66a9-8f36" type="selectionEntry"/>
+        <entryLink id="00c5-3ef3-03fe-7d53" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry id="4ab0-8e0f-3be9-6f83" name="Moria Blackshield Shaman&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a660-8060-80bd-3668" name="New CategoryLink" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="15f7-c511-ed13-e56a" name="Moria Blackshield Shaman" hidden="false" collective="false" import="true" targetId="2355-743a-9a0f-fcde" type="selectionEntry"/>
+        <entryLink id="9cc8-1671-a193-d2fd" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <entryLinks>

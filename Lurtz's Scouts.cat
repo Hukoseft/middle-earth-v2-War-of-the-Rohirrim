@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fb57-6d02-8db0-4565" name="Lurtz&apos;s Scouts" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="3" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fb57-6d02-8db0-4565" name="Lurtz&apos;s Scouts" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="5dfa-58f9-dfa7-6f5a" name="Lurtz&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -12,6 +12,12 @@
         <entryLink id="811a-217d-154c-b3cd" name="Lurtz, Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="62e1-6b2b-5e21-0142" type="selectionEntry"/>
         <entryLink id="b50c-8f93-6db7-af73" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="04aa-6738-3ef1-fc1c" name="Uglúk&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -21,6 +27,12 @@
         <entryLink id="a6d5-8e56-c422-67c3" name="Uglúk, Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="6639-dc82-2442-33fc" type="selectionEntry"/>
         <entryLink id="53ef-b9bf-207a-84e9" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4cd4-90c5-a2ce-6c4d" name="Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -29,6 +41,28 @@
       <entryLinks>
         <entryLink id="29d7-79f6-a857-d0fb" name="Uruk-hai Scout Captain" hidden="false" collective="false" import="true" targetId="57ce-308a-abe6-b341" type="selectionEntry"/>
         <entryLink id="f1e6-6a40-8c29-ad0a" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5638-24de-a1d6-a881" name="Mauhúr&apos;s Warband" hidden="true" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5119-fdaf-c57d-8b09" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="6eb7-2b7e-0d99-2a91" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="0e67-80db-5e8e-3282" name="Mauhúr" hidden="false" collective="false" import="true" targetId="cf33-70a2-3fa3-bf0d" type="selectionEntry"/>
+        <entryLink id="4355-fd30-c110-a84c" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntry>
   </selectionEntries>
