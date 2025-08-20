@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3483-71cc-8cd3-40c6" name="Erebor &amp; Dale" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3483-71cc-8cd3-40c6" name="Erebor &amp; Dale" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="9f58-aad5-71fa-49ab" name="Thrór&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -16,7 +16,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="87ee-c89e-7475-a5ea" name="Thorin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -33,7 +33,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d03c-2d45-c9dd-6e4c" name="Balin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -50,7 +50,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ac4a-10c2-4d63-bf27" name="Erebor Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -66,7 +66,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b3c-a59d-d06b-ba7d" name="Grim Hammer Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -82,13 +82,14 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d13-8ded-484e-2ebf" name="Dale Captain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
         <categoryLink id="1d4c-1895-64e7-47fd" name="New CategoryLink" hidden="false" targetId="ef35-8c21-6b9c-cbb8" primary="true"/>
         <categoryLink id="fc8a-ce67-dbfe-3efb" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="97cc-d65a-3dc9-3b5e" name="Dale" hidden="false" targetId="093e-6dc6-cf63-5702" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="376e-105a-5407-9c40" name="Captain of Dale" hidden="false" collective="false" import="true" targetId="2ec6-5dca-c177-7f37" type="selectionEntry"/>
@@ -98,7 +99,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d7e3-6784-2605-3832" name="Dwalin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -115,7 +116,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ac0-866f-a1e6-9fb4" name="Girion&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -125,6 +126,7 @@
       <categoryLinks>
         <categoryLink id="873e-c4d1-0521-6da9" name="New CategoryLink" hidden="false" targetId="6483-b676-c7e7-0831" primary="true"/>
         <categoryLink id="73a0-4caa-4165-ae10" name="Man" hidden="false" targetId="300e-7e9f-7968-93f7" primary="false"/>
+        <categoryLink id="3a0a-f069-9684-9aea" name="Dale" hidden="false" targetId="093e-6dc6-cf63-5702" primary="false"/>
       </categoryLinks>
       <entryLinks>
         <entryLink id="8c89-1f0c-9c94-2c43" name="Girion, Lord of Dale" hidden="false" collective="false" import="true" targetId="0329-12d9-62e6-2956" type="selectionEntry"/>
@@ -134,7 +136,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ec9-6d28-b1f0-be19" name="Thráin&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -151,7 +153,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
