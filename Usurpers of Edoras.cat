@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="543b-cfc8-c759-2308" name="Usurpers of Edoras" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="543b-cfc8-c759-2308" name="Usurpers of Edoras" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="e47d-b49e-f4a0-2088" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="8184-8839-955f-02cb" name="Freca&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
       <categoryLinks>
@@ -13,7 +13,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a5a2-2ac6-6d7f-ebc8" name="Wulf&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -28,7 +28,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c155-090d-919e-9167" name="Targg&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -43,7 +43,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a90-8e9c-692b-5ae3" name="Chieftain&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -58,7 +58,7 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c8c6-ae51-bff1-3f81" name="Thorne&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
@@ -74,8 +74,28 @@
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
         <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
-        <cost name="Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="dd96-4609-e913-f0f4" name="Mumak&apos;s Warband" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="1f53-893f-759e-d4be" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8184-8839-955f-02cb" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="1f53-893f-759e-d4be" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="9e66-7fe4-2b79-d42e" name="Minor Hero" hidden="false" targetId="69e9-a8ab-6276-49e0" primary="true"/>
+        <categoryLink id="fbfa-483e-fe25-64e7" name="Harad" hidden="false" targetId="f38f-e6bf-d67d-3a2c" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="7cb3-7086-c973-836d" name="War Mûmak of Harad" hidden="false" collective="false" import="true" targetId="5ed9-a83f-ad98-678f" type="selectionEntry"/>
+        <entryLink id="9a9c-0faa-cbe8-7844" name="Followers" hidden="false" collective="false" import="true" targetId="4b3d-aa13-9a19-0d55" type="selectionEntryGroup"/>
+      </entryLinks>
     </selectionEntry>
   </selectionEntries>
   <rules>
@@ -84,6 +104,10 @@
     </rule>
     <rule id="51e5-18e6-3564-63c4" name="Barbarous Killers" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
       <description>Friendly Dunland models gain a bonus of +1 To Wound when making Strikes against enemy Hero models.</description>
+    </rule>
+    <rule id="5acb-bab4-391f-2739" name="Additional Rules" publicationId="5d2d-eaa5-64b5-2f28" page="231*" hidden="false">
+      <description>• If a Usurpers of Edoras Army includes Freca, it cannot include any Harad models.
+• Harad Warrior models can only be included in the Warband of a War Mûmak of Harad. Additionally, they must deploy within the howdah.</description>
     </rule>
   </rules>
 </catalogue>

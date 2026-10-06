@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="23" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="e47d-b49e-f4a0-2088" name="Middle-Earth Strategy Battle Game v2 - War of the Rohirrim" revision="26" battleScribeVersion="2.03" authorName="Hukoseft" authorContact="hukoseft@gmail.com" authorUrl="https://github.com/Hukoseft/middle-earth-v2-War-of-the-Rohirrim/issues" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>If using this to submit a list, change the settings for rules and profiles to minimum.
 
 Please note, I will be moving to New Recruit in the future. For now though, while I get used to NR, the files will remain optimised for Battlescribe.</readme>
@@ -713,6 +713,7 @@ Please note, I will be moving to New Recruit in the future. For now though, whil
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="615d-0d68-9d07-3a63" name="0" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>Increase bow count</comment>
           <modifiers>
             <modifier type="increment" field="name" value="1">
               <repeats>
@@ -725,8 +726,15 @@ Please note, I will be moving to New Recruit in the future. For now though, whil
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="53e6-f57e-e0c0-f66c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="12eb-a53e-0634-d7fb" type="min"/>
           </constraints>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="c3de-69c3-e342-53e7" name="0" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>Increase total model count</comment>
           <modifiers>
             <modifier type="increment" field="name" value="1">
               <repeats>
@@ -739,45 +747,59 @@ Please note, I will be moving to New Recruit in the future. For now though, whil
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6b9c-c789-7f7e-4844" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8a18-d164-3b78-bc0d" type="min"/>
           </constraints>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="f3de-4e5c-4010-5aa2" name="0" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>Increase break point</comment>
           <modifiers>
             <modifier type="increment" field="name" value="0.5">
               <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="true"/>
               </repeats>
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a6-3259-2d77-5b47" type="notInstanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb57-6d02-8db0-4565" type="notInstanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="373a-ba54-8792-c30a" type="notInstanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a6-3259-2d77-5b47" type="notInstanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" field="name" value="0.66">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="true"/>
+              </repeats>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb57-6d02-8db0-4565" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="373a-ba54-8792-c30a" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a6-3259-2d77-5b47" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
             </modifier>
             <modifier type="append" field="name" value=" Dead to Break."/>
-            <modifier type="increment" field="f23c-e15e-83ae-3c09" value="0.66">
-              <repeats>
-                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="24a6-3259-2d77-5b47" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="fb57-6d02-8db0-4565" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="373a-ba54-8792-c30a" type="instanceOf"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f23c-e15e-83ae-3c09" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="ffc4-c721-25db-27eb" type="max"/>
           </constraints>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="5ca7-fcc1-82a0-6c25" name="0" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>Increase throwing weapon numbers</comment>
           <modifiers>
             <modifier type="increment" field="name" value="1">
               <repeats>
@@ -790,22 +812,41 @@ Please note, I will be moving to New Recruit in the future. For now though, whil
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3495-a459-db11-94f4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0205-6fcf-2589-719f" type="min"/>
           </constraints>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b78d-c0a8-6ca7-67bd" name="0" hidden="false" collective="false" import="true" type="upgrade">
+          <comment>Increase 25% point</comment>
           <modifiers>
             <modifier type="increment" field="name" value="1">
               <repeats>
                 <repeat field="selections" scope="roster" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="append" field="name" value=" Quartered."/>
+            <modifier type="append" field="name" value=" or less to Quarter."/>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4e53-71da-80e6-2cdd" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="41b9-8788-9111-b0d7" type="min"/>
           </constraints>
+          <costs>
+            <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+            <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+            <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+            <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+        <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+        <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
@@ -3987,12 +4028,15 @@ If Boromir is part of the same Army, then Denethor will automatically pass this 
             <entryLink id="2065-1557-4e2a-07f6" name="Brego" hidden="false" collective="false" import="true" targetId="f751-9c2d-c44a-6826" type="selectionEntry"/>
             <entryLink id="94d9-22df-9d86-5329" name="Shield" hidden="false" collective="false" import="true" targetId="db2f-1352-f8c0-a6b8" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="hidden" value="true">
+                <modifier type="set" field="cf90-e90e-ac2f-61a5" value="1.0">
                   <conditions>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e017-2b6b-f344-6bc7" type="instanceOf"/>
                   </conditions>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="cf90-e90e-ac2f-61a5" type="min"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -7195,7 +7239,7 @@ Strength</characteristic>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="150.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="200.0"/>
         <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -11197,7 +11241,7 @@ When the game ends, any Markers on the board are removed and the models associat
             </selectionEntry>
             <selectionEntry id="e87c-6cae-5ccc-bc36" name="The Slayer of Men" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fefd-0999-20b5-ccb7" type="max"/>
+                <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="fefd-0999-20b5-ccb7" type="max"/>
               </constraints>
               <infoGroups>
                 <infoGroup id="dd53-465e-d4b7-d2ac" name="Special Rules" hidden="false">
@@ -15976,7 +16020,7 @@ When the game ends, any Markers on the board are removed and the models associat
           </profiles>
           <rules>
             <rule id="b106-c40c-c9ea-69f9" name="&quot;Leave me flowers alone!&quot; [Passive]" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
-              <description>After both sides have deployed, before the first turn begins. Hamfast&apos;s controlling player may place three 25mm Flower Markers anywhere on the board. Models can move freely over Flower Markers, but may never end their Move overlapping a Flower Marker. They may also not Back Away or Make Way so that they are overlapping a Flower Marker. Onjects such as a Siege Engine, Heavy Object, or other such items can never be placed so that they are overlapping a Flower Marker. Friendly Hobbit models may re-roll failed To Wound rolls when making Strikes or shooting attacks that target an enemy model within 3&quot; of a friendly Flower Marker. Additionally, Hamfast gains a bonus of +1 To Wound when making Strikes or shooting attacks that target an enemy model within 3&quot; of a friendly Flower Marker.</description>
+              <description>After both sides have deployed, before the first turn begins. Hamfast&apos;s controlling player may place three 25mm Flower Markers anywhere on the board. Models can move freely over Flower Markers, but may never end their Move overlapping a Flower Marker. They may also not Back Away or Make Way so that they are overlapping a Flower Marker. Objects such as a Siege Engine, Heavy Object, or other such items can never be placed so that they are overlapping a Flower Marker. Friendly Hobbit models may re-roll failed To Wound rolls when making Strikes or shooting attacks that target an enemy model within 3&quot; of a friendly Flower Marker. Additionally, Hamfast gains a bonus of +1 To Wound when making Strikes or shooting attacks that target an enemy model within 3&quot; of a friendly Flower Marker.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -16549,7 +16593,7 @@ When the game ends, any Markers on the board are removed and the models associat
               <description>Whilst Sam is within 3&quot; of Rosie, Sam may re-roll any failed To Wound rolls when making Strikes.</description>
             </rule>
             <rule id="35c9-8cb8-9731-8108" name="&quot;Sweet Maiden of the Golden Ale&quot; [Passive]" publicationId="5d2d-eaa5-64b5-2f28" hidden="false">
-              <description>Friendly Hobbti models treat Rosie Cotton as a banner with a range of 6&quot;. Additionally, so long as she is alive, Rosie will also count as a banner for the purpose of Victory Points in Scenarios that award Vistory Points for having a banner left alive.</description>
+              <description>Friendly Hobbit models treat Rosie Cotton as a banner with a range of 6&quot;. Additionally, so long as she is alive, Rosie will also count as a banner for the purpose of Victory Points in Scenarios that award Victory Points for having a banner left alive.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -25449,7 +25493,7 @@ The Rider may be either Aragorn or Théodred.</description>
           <profiles>
             <profile id="2237-50aa-2692-504d" name="Gûlavhar, the Terror of Arnor" publicationId="8e2e-f1ed-1aa8-11ca" page="125" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
               <characteristics>
-                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">12&quot;</characteristic>
                 <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">7</characteristic>
                 <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">5+</characteristic>
                 <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">8</characteristic>
@@ -27043,7 +27087,7 @@ Resolve</characteristic>
               </constraints>
               <rules>
                 <rule id="03f1-09b7-d3df-5b7e" name="Breathe Fire [Active]" publicationId="8e2e-f1ed-1aa8-11ca" hidden="false">
-                  <description>The Dragon can Breathe Fire as a shooting attack during the Shoot Phase; treat this as a bow with a range of 12&quot;. If the shot hits, then the model that is hit, and all models (friend or foe) within 2&quot; of the hit model will suffer a Strength 10 hit. Any model that suffers a Wound from this shooting attack which is not prevented is automatically slain. This is a fire-based attack.</description>
+                  <description>The Dragon can Breathe Fire as a shooting attack during the Shoot Phase; treat this as a bow with a range of 12&quot;. If the shot hits, then the model that is hit suffers a Strength 10 hit and if they suffer a Wound from this hit, which is not prevented, they are automatically slain. Additionally, all other models (friend and foe) within 2&quot; are immediately Set Ablaze – though they will not be automatically slain if wounded. This is a firebased attack.</description>
                 </rule>
               </rules>
               <costs>
@@ -27170,24 +27214,24 @@ Resolve</characteristic>
           <profiles>
             <profile id="d499-84b5-f6c3-8154" name="Déorwine, Chief of the King&apos;s Knights" publicationId="8e2e-f1ed-1aa8-11ca" page="31" hidden="false" typeId="9024-6075-d709-7575" typeName="Hero">
               <characteristics>
-                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6"/>
-                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca"/>
-                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5"/>
-                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2"/>
-                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87"/>
-                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb"/>
-                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35"/>
-                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045"/>
-                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7"/>
-                <characteristic name="Might" typeId="8f23-2898-dff0-997c"/>
-                <characteristic name="Will" typeId="2f75-56dc-366a-646c"/>
-                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219"/>
-                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97"/>
-                <characteristic name="Faction" typeId="2c52-d571-e855-1691"/>
-                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372"/>
-                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0"/>
-                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523"/>
-                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9"/>
+                <characteristic name="Move Value" typeId="9da8-458f-bfb8-a7b6">6&quot;</characteristic>
+                <characteristic name="Fight Value" typeId="ea66-c75a-e31f-4eca">5</characteristic>
+                <characteristic name="Shoot Value" typeId="c128-5c6f-ac18-9dc5">4+</characteristic>
+                <characteristic name="Strength" typeId="9eef-1f89-2508-7df2">4</characteristic>
+                <characteristic name="Defence" typeId="4aeb-aa62-2c02-1f87">7</characteristic>
+                <characteristic name="Attacks" typeId="d418-dab1-da1e-8beb">2</characteristic>
+                <characteristic name="Wounds" typeId="2569-1ddb-a509-6b35">2</characteristic>
+                <characteristic name="Courage" typeId="466c-3fd9-0a42-2045">6+</characteristic>
+                <characteristic name="Intelligence" typeId="35c9-7edd-3d2d-3ce7">6+</characteristic>
+                <characteristic name="Might" typeId="8f23-2898-dff0-997c">2</characteristic>
+                <characteristic name="Will" typeId="2f75-56dc-366a-646c">2</characteristic>
+                <characteristic name="Fate" typeId="f44b-292c-0e5a-1219">2</characteristic>
+                <characteristic name="Race" typeId="28f7-f979-f6fe-7f97">Man</characteristic>
+                <characteristic name="Faction" typeId="2c52-d571-e855-1691">Rohan</characteristic>
+                <characteristic name="Unit Type" typeId="ac32-60b4-0b88-5372">Hero, Infantry, Unique</characteristic>
+                <characteristic name="Base Size" typeId="8a1b-63f1-add1-24f0">25mm</characteristic>
+                <characteristic name="Heroic Actions" typeId="b13f-554b-5c5b-c523">March, Strike</characteristic>
+                <characteristic name="Heroic Tier" typeId="0cb6-ae3e-dec7-20b9">Hero of Fortitude</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -27651,7 +27695,6 @@ Resolve</characteristic>
     </selectionEntry>
     <selectionEntry id="08fb-c2ef-0811-bfba" name="Moria Goblin Shaman" hidden="false" collective="false" import="true" type="model">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2ed5-29a7-8dd6-8871" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="d8c6-ec9c-a457-24e9" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0c7c-56c2-06e0-465f" type="min"/>
       </constraints>
@@ -27878,7 +27921,7 @@ Resolve</characteristic>
           </profiles>
           <rules>
             <rule id="1123-d311-ccd2-3dea" name="&quot;This is our country&quot; [Passive]" publicationId="8e2e-f1ed-1aa8-11ca" page="17" hidden="false">
-              <description>Friendly Hobbit models within 3&quot; of Farmer Cotton may re-roll and rolls of a 1 when making a Duel Roll.</description>
+              <description>Friendly Hobbit models within 3&quot; of Farmer Cotton may re-roll any rolls of a 1 when making a Duel Roll.</description>
             </rule>
           </rules>
           <infoLinks>
@@ -29673,14 +29716,14 @@ Strike</characteristic>
           <infoLinks>
             <infoLink id="b1c6-d88d-ccca-e000" name="Enrage Beast" hidden="false" targetId="918d-0fbe-9a4b-2e4b" type="profile">
               <modifiers>
-                <modifier type="set" field="51ed-0de5-710e-bbf2" value="Self"/>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="6&quot;"/>
                 <modifier type="set" field="51ed-0de5-710e-bbf2" value="3+"/>
               </modifiers>
             </infoLink>
             <infoLink id="920c-f85a-a5f5-597a" name="Fury (X)" hidden="false" targetId="9bc7-ca8e-df5b-693d" type="profile">
               <modifiers>
                 <modifier type="set" field="name" value="Fury (Beast)"/>
-                <modifier type="set" field="51ed-0de5-710e-bbf2" value="12&quot;"/>
+                <modifier type="set" field="51ed-0de5-710e-bbf2" value="Self"/>
                 <modifier type="set" field="51ed-0de5-710e-bbf2" value="3+"/>
               </modifiers>
             </infoLink>
@@ -30999,7 +31042,7 @@ Strike</characteristic>
       <costs>
         <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
         <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
-        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="160.0"/>
+        <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="140.0"/>
         <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
       </costs>
     </selectionEntry>
@@ -32400,7 +32443,7 @@ Strike</characteristic>
               <description>At any point during his Activation, Tom may spend a Will Point to sing one of the songs listed below to gain the relevant effect. Tom may sing any number of these songs during his Activation, and may sing each of these songs as many times as he wishes during his Activation unless otherwise stated. Every time Tom sings a song it will cost him a Will Point.
 
 • &quot;Hey! Come Merry Dol!&quot; - Choose a friendly model within 6&quot; of Tom Bombadil. The chosen model immediately regains a single Wound lost earlier in the battle. A model may only be chosen by this song once per turn.
-• &quot;Hop along, my hearties!&quot; - Until the end of the turn, friendly models that begin their Activation within 6&quot; of Tom Bombadil may add 3&quot; to their Move Value and will treat all areas of Difficult Terrain as Open Ground.
+• &quot;Hop along, my hearties!&quot; - Until the end of the turn, friendly models that begin their Activation within 6&quot; of Tom Bombadil may add 3&quot; to their Move Value and will treat all areas of Difficult Terrain as Open Ground. This song may only be sung once per turn.
 • &quot;Wake now my merry lads!&quot; - Choose a friendly model within 6&quot; of Tom Bombadil. The chosen model immediately recovers from the effects of any enemy Magical Powers currently cast upon them. Additionally, until the end of the turn, the chosen mode cannot be chosen as the target of any enemy Magical Powers or special rules.
 • &quot;Ring a dong dillo!&quot; - Until the end of the turn, friendly models within 6&quot; of Tom Bombadil automatically pass any Courage Tests they are required to take.
 • &quot;Get out, you old Wight!&quot; - Choose an enemy Spirit model within 6&quot; of Tom Bombadil. The chosen model immediately suffers a Wound. This song may only be sung once per turn.</description>
@@ -37660,7 +37703,7 @@ Strike</characteristic>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e4cd-89cd-502b-ba34" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="906e-ff2a-40c1-877d" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a09f-62e2-2467-e539" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d3c-ae7d-8746-b42a" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0834-acdd-906f-6b8b" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e017-2b6b-f344-6bc7" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f95c-2a4f-4475-eb32" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="214c-b4f0-6362-3419" type="instanceOf"/>
@@ -37669,6 +37712,10 @@ Strike</characteristic>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7e8e-770f-2814-6df9" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6fb2-3253-41fb-106a" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="21fd-47cc-7b68-bc98" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8d3c-ae7d-8746-b42a" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2da4-31d5-c7fb-e38f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="4e8f-9375-4118-40ea" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e5d0-0619-5154-a098" type="instanceOf"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -41701,6 +41748,11 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                         <repeat field="selections" scope="e81a-76b4-6ea6-8c1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6df5-3b3e-4796-f8fc" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
+                    <modifier type="increment" field="5c04-22f1-fd0b-9279" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="e81a-76b4-6ea6-8c1e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6df5-3b3e-4796-f8fc" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="9bc6-e1dc-4265-f122" type="max"/>
@@ -45448,7 +45500,7 @@ If any memeber of Bard&apos;s Family is slain, then make a note of the model tha
                     <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">4</characteristic>
                     <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
                     <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
-                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">2</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">6</characteristic>
                     <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
                     <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
                     <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
@@ -53105,6 +53157,92 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                     <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="7c7f-cd25-846d-c54f" name="Banner and Light Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="26.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1cb-349a-85d8-607f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="707e-9803-e93d-4eb6" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="b310-5acf-4cd0-cf5a" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                    <infoLink id="9dd3-9a7b-0210-7ccf" name="Light Shield" hidden="false" targetId="dc35-c7c1-baf2-9099" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7e89-7e91-e991-40a6" name="Banner" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1cb-349a-85d8-607f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8af4-7b78-548f-496a" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="73e1-78f1-c7f5-6f4b" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="8010-cbba-33e1-1b5f" name="War Horn" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1cb-349a-85d8-607f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2829-af95-1c44-d349" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="77e5-f04f-9755-cd13" name="War Horn" hidden="false" targetId="0148-1ad8-4e0a-aa9c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="449f-93d6-a1f3-4fbc" name="War Horn and Light Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="26.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="b1cb-349a-85d8-607f" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="a07d-3a34-204c-5cc9" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="54d2-aaf8-7422-6678" name="War Horn" hidden="false" targetId="0148-1ad8-4e0a-aa9c" type="profile"/>
+                    <infoLink id="1e85-5825-7fbe-cc9f" name="Light Shield" hidden="false" targetId="dc35-c7c1-baf2-9099" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -53670,8 +53808,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                 <conditionGroup type="or">
                   <conditions>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3ead-47ab-f886-0aab" type="instanceOf"/>
-                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="879b-9e9d-0e20-6b96" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="197d-2b06-50e7-1ae2" type="instanceOf"/>
                     <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="083c-50d2-89a7-e73f" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="879b-9e9d-0e20-6b96" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="75b4-5ec5-6896-b88d" type="instanceOf"/>
                   </conditions>
                   <conditionGroups>
                     <conditionGroup type="and">
@@ -54577,6 +54718,7 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                         <conditionGroup type="or">
                           <conditions>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="0e30-df42-5824-7a47" type="instanceOf"/>
+                            <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="543b-cfc8-c759-2308" type="instanceOf"/>
                             <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="801f-52ae-3745-1dba" type="instanceOf"/>
                           </conditions>
                         </conditionGroup>
@@ -54725,6 +54867,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                         <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0c17-1bf4-f648-4316" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="543b-cfc8-c759-2308" type="instanceOf"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="83bc-99ab-be4e-d656" type="max"/>
@@ -54745,6 +54892,11 @@ If, during the End Phase of a turn, an enemy model is in base contact with a Dem
                       <repeats>
                         <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0c17-1bf4-f648-4316" repeats="1" roundUp="false"/>
                       </repeats>
+                    </modifier>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="543b-cfc8-c759-2308" type="instanceOf"/>
+                      </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -56611,6 +56763,92 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                     <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="311e-98e1-53c2-5e7c" name="Banner" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a6-04e8-beec-0490" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2985-8cf7-6347-9cee" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="dd8d-a4c9-12c6-e2d6" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="d989-2437-aedc-b008" name="War Horn and Light Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="26.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a6-04e8-beec-0490" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="da4b-0bf3-57ac-20e2" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="47d8-6ac1-4f19-9f65" name="Light Shield" hidden="false" targetId="dc35-c7c1-baf2-9099" type="profile"/>
+                    <infoLink id="b565-9f90-c9fc-7dc5" name="War Horn" hidden="false" targetId="0148-1ad8-4e0a-aa9c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="55af-e383-53b7-7324" name="War Horn" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a6-04e8-beec-0490" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c47e-f64e-ce38-aebd" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="92f5-5f18-cb75-36e1" name="War Horn" hidden="false" targetId="0148-1ad8-4e0a-aa9c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="3194-a53c-e67d-c4d2" name="Banner and Light Shield" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="39c8-4238-d8ca-bac5" value="26.0">
+                      <repeats>
+                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="26a6-04e8-beec-0490" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="6f23-7284-7450-380e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="0288-824b-bff3-5108" name="Light Shield" hidden="false" targetId="dc35-c7c1-baf2-9099" type="profile"/>
+                    <infoLink id="aa1e-e84d-8fc8-e152" name="Banner" hidden="false" targetId="e51e-de39-5e66-988c" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
+                    <cost name=" Warrior" typeId="5141-e5a1-1d1f-e715" value="0.0"/>
+                    <cost name=" Points" typeId="39c8-4238-d8ca-bac5" value="0.0"/>
+                    <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -56823,9 +57061,9 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                     <characteristic name="Fight Value" typeId="b953-e100-8ec4-a066">2</characteristic>
                     <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">6+</characteristic>
                     <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">2</characteristic>
-                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">3</characteristic>
+                    <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">2</characteristic>
                     <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">2</characteristic>
-                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">4</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">3</characteristic>
                     <characteristic name="Courage" typeId="4945-957c-7d95-b50b">8+</characteristic>
                     <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
                     <characteristic name="Race" typeId="ed84-84e4-720a-002f">Bird</characteristic>
@@ -58333,7 +58571,7 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                     <cost name=" Throwing Weapons" typeId="59c3-8846-5912-9f3b" value="0.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="a010-bae5-fe22-839c" name="Exchange Shield for War Drum" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="a010-bae5-fe22-839c" name="Exchange Shield for War Drum (Eastering)" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="39c8-4238-d8ca-bac5" value="25.0">
                       <repeats>
@@ -58345,7 +58583,11 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="82f3-8bd6-520c-7c9f" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="299c-9350-408b-7c33" name="War Drum (X)" hidden="false" targetId="5c89-1a66-8e59-6b0e" type="profile"/>
+                    <infoLink id="299c-9350-408b-7c33" name="War Drum (X)" hidden="false" targetId="5c89-1a66-8e59-6b0e" type="profile">
+                      <modifiers>
+                        <modifier type="set" field="name" value="War Drum (Eastering)"/>
+                      </modifiers>
+                    </infoLink>
                   </infoLinks>
                   <costs>
                     <cost name=" Bow" typeId="5c04-22f1-fd0b-9279" value="0.0"/>
@@ -59266,8 +59508,8 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
                     <characteristic name="Shoot Value" typeId="592a-39ba-34a5-0e48">4+</characteristic>
                     <characteristic name="Strength" typeId="089f-6aad-0e4a-8537">3</characteristic>
                     <characteristic name="Defence" typeId="8a4a-f7d8-59f4-eac3">4</characteristic>
-                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">3</characteristic>
-                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">3</characteristic>
+                    <characteristic name="Attacks" typeId="ab88-945d-7ba5-d9cb">1</characteristic>
+                    <characteristic name="Wounds" typeId="a4d3-2542-769c-30d7">1</characteristic>
                     <characteristic name="Courage" typeId="4945-957c-7d95-b50b">7+</characteristic>
                     <characteristic name="Intelligence" typeId="5d3a-0422-64a2-0025">7+</characteristic>
                     <characteristic name="Race" typeId="ed84-84e4-720a-002f">Man</characteristic>
@@ -60193,9 +60435,14 @@ This Move cannot be used to Move a model out of Combat, make a model dismount, d
         <selectionEntry id="3ea9-459f-5186-3f3e" name="Moria Goblin Drum" hidden="true" collective="false" import="true" type="upgrade">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b73-8d94-bcdb-4200" type="instanceOf"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d30b-4eff-973a-a098" type="instanceOf"/>
+                    <condition field="selections" scope="primary-catalogue" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="9b73-8d94-bcdb-4200" type="instanceOf"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <infoGroups>
@@ -63842,7 +64089,7 @@ Whilst the Drum is being played it has the following effects:
 Models that are Prone or have the Cavalry keyword cannot benefit from, or provide an ally with the benefit from this special rule.</description>
     </rule>
     <rule id="2cd8-d1b0-0bfe-3861" name="Woodland Creature [Active]" publicationId="1133-b502-84bf-3366" hidden="false">
-      <description>A model with this special rule may Move through areas of woods and forests that are classed as Difficult Terrain as if they are Open Ground. If a Cavalry model has this special rule, but their Mount does not, then this rule does not apply to the Mount. If a Mount has this special rule, then they will still gain their Cavalry Charge bonuses when they Charge, even if the rider does not have this special rule.</description>
+      <description>A model with this special rule may Move through areas of woods and forests that are classed as Difficult Terrain as if they are Open Ground. If a Cavalry model has this special rule, but their Mount does not, then this rule does not apply to the Mount. If a Mount has this special rule, then they will still gain their Cavalry Charge bonuses when they Charge, even if the rider does not have this special rule. This special rule may be used by models that are not yet on the battlefield.</description>
     </rule>
     <rule id="1c3a-ce22-8e32-65d1" name="Expert Rider [Active]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>If a Cavalry model with this special rule may re-roll the dice on any Jump, Swim or Thrown Rider Tests, and can pick up Light Objects without having to Dismount.
@@ -63893,7 +64140,7 @@ So long as the bodyguarded Hero is alive and on the battlefield, all models who 
       <description>A model with this special rule does not suffer the -1 penalty to the Duel Roll for using a two-handed weapon. Additionally, a model with this special rule can still Move full Move Value whilst carrying a Heavy Object.</description>
     </rule>
     <rule id="c4c9-1a66-5f95-c72e" name="Cave Dweller [Active]" publicationId="1133-b502-84bf-3366" hidden="false">
-      <description>A model with this special rule applies a +1 modifier to any Jump, Leap &amp; Climb Tests they take. Additionally, a model with this special rule suffers no penalties to how far they can see when fighting in the dark.</description>
+      <description>A model with this special rule applies a +1 modifier to any Jump, Leap &amp; Climb Tests they take. Additionally, a model with this special rule suffers no penalties to how far they can see when fighting in the dark. This special rule may be used by models that are not yet on the battlefield.</description>
     </rule>
     <rule id="d019-d3e8-8d92-9491" name="Dominant (X) [Passive]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>This model counts as the number of models as shown in brackets when working out how many models are in range of an objective, in a specific area of the board, or when working out how many models have escaped the battlefield. So, a model with Dominant (3) would count as three models in range of an objective, or in a specific area of the board, or three models when working out how many models have escaped the battlefield. If a model would gain this special rule whilst in range of another model or specific area of the board, and then Moves off the board, they will not gain the benefit of this special rule once off the board.
@@ -63910,7 +64157,7 @@ If a model wishes to do something part way through its Move whilst Flying (such 
 
 A model with this special rule can choose not to Fly, and in which case will treat its Move Value as 4&quot; rather than that listed in its profile (usually 12&quot;). If it does, then it gains none of the benefits of the Fly special rule, though it may enter a piece of woodland terrain; however, if it enters a piece of woodland terrain, it cannot elect to Fly again until it has completely left the woods.
 
-A model that chooses to Fly will ignore enemy Control Zones as it Moves. A model that wishes to Charge when it is flying can Charge any model whose Control Zone it finishes its Move in. If a Flying model wishes to Charge a model that is already Engaged in Combat (or has otherwise lost their Control Zone) then it can only do so if it can land in a position where it is not within the Control Zones of other enemy models.</description>
+A model that chooses to Fly will ignore enemy Control Zones as it Moves. A model that wishes to Charge when it is flying can Charge any model whose Control Zone it finishes its Move in. If a Flying model wishes to Charge a model that is already Engaged in Combat (or has otherwise lost their Control Zone) then it can only do so if it can land in a position where it is not within the Control Zones of other enemy models. This special rule may be used by models that are not yet on the battlefield.</description>
     </rule>
     <rule id="642b-15a7-cfa1-ded0" name="General Hunter [Active]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>If this model slays the enemy General in a Combat, they immediately regain a single point of Might spent earlier in the battle.</description>
@@ -63955,7 +64202,7 @@ None of the above applies to Sauron or Ringwraith models - see the Will of Evil 
 Additionally, if this model Charges and subseuently wins the Duel Roll, then all enemy models involved in the Combat with a Strength characteristic lower than this model, will be immediately knocked Prone before this model makes Strike. Cavalry models will automatically count as suffering the Knocked Flying result on the Thrown Rider Chart.</description>
     </rule>
     <rule id="a355-bf0e-93ad-5bf8" name="Mountain Dweller [Active]" publicationId="1133-b502-84bf-3366" hidden="false">
-      <description>A model with this special rule may Move through areas of rocky terrain that are classed as Difficult Terrain as if they are Open Ground. If a Cavalry model has this special rule, but their Mount does not, then this rule does not apply to the Mount. If a Mount has this special rule, then they will still gain their Cavalry Charge bonuses when they Charge, even if the rider does not have this special rule.
+      <description>A model with this special rule may Move through areas of rocky terrain that are classed as Difficult Terrain as if they are Open Ground. If a Cavalry model has this special rule, but their Mount does not, then this rule does not apply to the Mount. If a Mount has this special rule, then they will still gain their Cavalry Charge bonuses when they Charge, even if the rider does not have this special rule. This special rule may be used by models that are not yet on the battlefield.
 
 Additionally, a model with this special rule may re-roll any Jump, Leap or Climb Tests.</description>
     </rule>
@@ -63975,7 +64222,7 @@ If a model is immune to fire-based attacks, they cannot be Set Ablaze under any 
       <description>When a model with this special rule makes a Shooting Attack that targets a Cavalry model, it may choose either the rider or the Mount as its target. Additionally, if a model with this special rule hits a Cavalry model that it targeted with a Shooting Attack, it does not need to make the In The Way Test to see which part of the model it hits - it will automatically hit the part of the model it targeted, either rider or Mount.</description>
     </rule>
     <rule id="789e-ba72-c6d9-e1c2" name="Spectral Walk [Passive]" publicationId="1133-b502-84bf-3366" hidden="false">
-      <description>A model with this special rule is never slowed by Difficult Terrain. Additonally, a model with this special rule always counts as rolling a 6 for any Climb, Jump, Leap or Swim Tests.</description>
+      <description>A model with this special rule is never slowed by Difficult Terrain. Additonally, a model with this special rule always counts as rolling a 6 for any Climb, Jump, Leap or Swim Tests. This special rule may be used by models that are not yet on the battlefield.</description>
     </rule>
     <rule id="0b43-1fba-fbd5-33dd" name="Stalk Unseen [Passive]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>An Infantry model with this special rule that is partially concealed from view by a piece of terrain cannot be seen at distances of more than 6&quot;. This means that enemy models cannot target this model with Shooting Attacks, Magical Powers, special rules, or anything else that requires Line of Sight unless they have a completely clear view of this model.</description>
@@ -63986,7 +64233,7 @@ If a model is immune to fire-based attacks, they cannot be Set Ablaze under any 
     <rule id="2f06-ba26-313d-cb3d" name="Swift Movement [Active]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>A model with this special rule is never slowed by Difficult Terrain, with the exception of water features. It can also ignore Obstacles as it Moves, allowing it to Move at any angle without having to make a Climb or Jump Test, though it will still count any vertical distance it has Moved towards its Move Value.
 
-A model with this special rule must finish its Move as flat to the playing surfase as possible - no models finishing upside down, halfway up a wall, or at an angle, for exampls!</description>
+A model with this special rule must finish its Move as flat to the playing surfase as possible - no models finishing upside down, halfway up a wall, or at an angle, for exampls! This special  rule may be used by models that are not yet on the battlefield.</description>
     </rule>
     <rule id="74d1-c571-e6a4-ed75" name="Fearful [Passive]" publicationId="1133-b502-84bf-3366" hidden="false">
       <description>If a model with this special rule wishes to Charge, then it must take a Courage Test at the start of its Move. If the test is failed, the model may not Move that turn but may otherwise act normally.</description>
@@ -64155,7 +64402,7 @@ Models placed on the board in this manner cannot be placed in the Control Zones 
       <description>Whilst within 3&quot; of Boromir of Gondor, a model with this rule may spend Boromir&apos;s Might Points as if they were his own.</description>
     </rule>
     <rule id="64b7-7801-242f-0a93" name="Deadly Shot [Active]" publicationId="a40a-1ac4-b5c2-a481" page="64" hidden="false">
-      <description>Legolas may make three shooting attacks during the Shoot Phase instead of one, using all the normal rules for shooting. Additionally, Legolas may still make shooting attacks whilst he is Engaged in Combat and does not suffer the -1 penalty To Hit for Moving and Shooting so long as he has the Infantry keyword. If Legolas shoots whislt he is Engaged in Combat, he may shoot at models he is Engaged in Combat with, and does not need to make In The Way Test for shooting at models he is Engaged in Combat with (though they may still block Line of Sight as normal).</description>
+      <description>Legolas may make three shooting attacks during the Shoot Phase instead of one, using all the normal rules for shooting. Additionally, Legolas may still make shooting attacks whilst he is Engaged in Combat if there are no other friendly models engaged in the same combat, and does not suffer the -1 penalty To Hit for Moving and Shooting so long as he has the Infantry keyword. If Legolas shoots whilst he is Engaged in Combat, he may shoot at enemy models he is Engaged in Combat with, and does not need to make In The Way Tests for shooting at models he is Engaged in Combat with (though they may still block Line of Sight as normal).</description>
     </rule>
     <rule id="e7a1-0f5f-d6e7-48ea" name="Pinpoint Shot [Active]" publicationId="a40a-1ac4-b5c2-a481" page="64" hidden="false">
       <description>Instead of shooting normally, Legolas may make a single shooting attack against an enemy model Engaged in Combat with a friendly model (including himself). If he does, then if the To Hit Roll is successful, Legolas doesn&apos;t need to make any In The Way Rolls - the shot will automatically hit its target.</description>
